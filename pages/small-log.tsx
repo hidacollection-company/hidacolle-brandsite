@@ -8,7 +8,13 @@ const Home: NextPage = () => {
     return (
       <div className="contents-body body-small_log">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>小さな丸太を生かす</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">
@@ -60,7 +66,7 @@ const Home: NextPage = () => {
           </div>
 
           <Image
-            src="/test.jpg"
+            src="/images/small-log/illust-1.jpg"
             alt="Picture of the author"
             width={1280}
             height={855}
@@ -81,7 +87,7 @@ const Home: NextPage = () => {
             <h2>ヒダコレの小さな丸太を生かす取り組み</h2>
           </div>
           <div className="box-why">
-            <p className="title">飛騨の紅葉樹はなぜチップに消費されるのか</p>
+            <p className="title">飛騨の広葉樹はなぜチップに消費されるのか</p>
             <div className="bold">
               <p>飛騨地域の豊かな森は、広葉樹の天然林面積の比率も大きいのですが、コナラ・ミズナラ・ブナ・クルミ・クリ・サクラ・カバ、その他多種多様の広葉樹の植生があり、家具メーカーの大量生産に見合う均一化された樹種、均一化されたサイズ、均一化された数量のものが揃わないのです。</p>
               <p>多種多様な樹種が混在している伐採された広葉樹は、どのような樹種でもまとめて全部買ってくれるチップ業者へ流れてしまうのです。</p>
@@ -91,7 +97,7 @@ const Home: NextPage = () => {
           <div className="box-aciton">
             <div className="layout__aciton">
               {/* だからヒダコレは… */}
-              <p>チップになる飛騨の紅葉樹（小さな丸太）を<br />少しでも救いだし、家具作りに活かしたい</p>
+              <p>チップになる飛騨の広葉樹（小さな丸太）を<br />少しでも救いだし、家具作りに活かしたい</p>
               {/* と考えています。 */}
             </div>
           </div>
@@ -142,10 +148,10 @@ const Home: NextPage = () => {
               </div>
             </div>
             <Image
-              src="/test.jpg"
-              alt="Picture of the author"
-              width={1280}
-              height={855}
+              src="/images/small-log/images-1.jpg"
+              alt="丸太に触れる森を感じるのイメージ写真"
+              width={1180}
+              height={400}
             />
           </section>
           <section id="contenets-2" className="block-contents_small_log">
@@ -160,10 +166,10 @@ const Home: NextPage = () => {
               </div>
             </div>
             <Image
-              src="/test.jpg"
-              alt="Picture of the author"
-              width={1280}
-              height={855}
+              src="/images/small-log/images-2.jpg"
+              alt="丸太から直接家具をつくるのイメージ写真"
+              width={1180}
+              height={400}
             />
           </section>
         </section>

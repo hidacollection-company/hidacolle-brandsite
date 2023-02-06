@@ -2,15 +2,25 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { CtaBox } from '/components/CtaBox/CtaBox'
-import { IchimaiitaList } from '/components/Ichimaiita/IchimaiitaList'
-import { Links } from '/components/Ichimaiita/Links'
+import { CtaBox } from 'components/CtaBox/CtaBox'
+import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
+import { Links } from 'components/Ichimaiita/Links'
+
+type Props = {
+  heading: string ;
+}
 
 const Home: NextPage = () => {
     return (
       <div className="contents-body body-ichimaiita">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>一枚板の家具</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">

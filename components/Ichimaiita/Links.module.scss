@@ -13,23 +13,45 @@
         &.index_contents{
             position: relative;
             &:nth-child(1){
+                &::before{
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    background-image: url(/star.svg);
+                    display: block;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 80px;
+                    z-index: 333;
+                }
                 &::after{
                     content: "";
                     margin: 70px 0 0;
                     width: 490px;
                     height: 490px;
-                    background-image: url(/test.jpg);
+                    background-image: url(/images/ichimaiita/index/left.jpg);
                     border-radius: 8px 8px 8px 80px;
                     display: block;
                 }
             }
             &:nth-child(2){
+                &::before{
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    background-image: url(/star.svg);
+                    display: block;
+                    position: absolute;
+                    bottom: 485px;
+                    right: 50px;
+                    z-index: 333;
+                }
                 &::after{
                     content: "";
                     margin: 70px 0 0;
                     width: 490px;
                     height: 490px;
-                    background-image: url(/test.jpg);
+                    background-image: url(/images/ichimaiita/index/right.jpg);
                     border-radius: 8px 8px 80px 8px;
                     display: block;
                 }

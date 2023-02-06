@@ -3,12 +3,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Home: NextPage = () => {
+
     return (
       <section className="contents-body body-furniture_that_thinks">
+
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>考える家具</span>
+        </div>
+
         <h1 className='heading'>考える家具</h1>
         <div className="lead-furniture_that_thinks">
           <div className="block-lead_furniture_that_thinks">
-            <p>ものづくりを起点に、暮らしを考えるきっかけを提供したい。小さな共感を大切に社会とつながり、自然とつながり、「考えること」の輪作る。</p>
+            <p>ものづくりを起点に、暮らしを考えるきっかけを提供したい。小さな共感を大切に社会とつながり、自然とつながり、「考えること」の輪を作る。</p>
             <p>ヒダコレの目指したい未来の姿は、自身の「暮らし」の事を考え始めることからはじまります。「暮らし」を考えると、次に「地域・社会」を考えはじめ、そして「自然・地球」を考えるようになるといいなって思っています。</p>
           </div>
           <div className="block-lead_furniture_that_thinks">
@@ -22,50 +32,61 @@ const Home: NextPage = () => {
           </div>
         </div>
         <section className="box-logo_that_thinks">
-          <h2>ヒダコレ家具のロゴに込められた想い</h2>
+          <h2>ヒダコレ家具の、このマークの意味は、</h2>
           <div className="contents-logo_that_thinks">
             <div className="block-logo_that_thinks">
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/furniture-that-thinks/logo-1.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
                 />
-                <figcaption>家具づくりを通してお客様の暮らしに寄り添う。<br />ヒダコレ家具の立ち位置を示したロゴマークです。</figcaption>
+                <figcaption>「家具づくり」を通して、お客様の暮らしに寄り添うために、<br />ヒダコレ家具とお客様との立ち位置を示しています。</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/furniture-that-thinks/logo-2.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
                 />
-                <figcaption>家具づくりを通してお客様の暮らしに寄り添う。<br />ヒダコレ家具の立ち位置を示したロゴマークです。</figcaption>
+                <figcaption>お客様のお部屋の、そして暮らし方の「形」と、<br />家具を作るための木である「丸太」を組み合わせると、</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/furniture-that-thinks/logo-3.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
                 />
-                <figcaption>家具づくりを通してお客様の暮らしに寄り添う。<br />ヒダコレ家具の立ち位置を示したロゴマークです。</figcaption>
+                <figcaption>お客様の暮らしと、森の丸太の間に、<br />ヒダコレ家具が浮かび上がってきます。</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/furniture-that-thinks/logo-4.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
                 />
-                <figcaption>家具づくりを通してお客様の暮らしに寄り添う。<br />ヒダコレ家具の立ち位置を示したロゴマークです。</figcaption>
+                <figcaption>またこのマークの組み合わせで、<br />ヒダコレ家具のものづくりのバリエーションも表しています。</figcaption>
+              </figure>
+            </div>
+            <div className="block-logo_that_thinks">
+              <figure>
+                <Image
+                  src="/images/furniture-that-thinks/logo-5.jpg"
+                  alt="Picture of the author"
+                  width={1280}
+                  height={855}
+                />
+                {/* <figcaption>またこのマークの組み合わせで、<br />ヒダコレ家具のものづくりのバリエーションも表しています。</figcaption> */}
               </figure>
             </div>
           </div>

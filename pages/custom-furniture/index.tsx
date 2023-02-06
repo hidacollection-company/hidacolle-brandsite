@@ -2,15 +2,21 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { CustomFurnitureList } from '/components/CustomFurniture/CustomFurnitureList'
+import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
+import { OrderFlow } from 'components/CtaBox/OrderFlow'
 
 const Home: NextPage = () => {
     return (
       <section className="contents-body body-custom-furniture">
 
         {/* パンクズ */}
-        {/* component */}
-        <div className="box-beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>ヒダコレのカスタムオーダー家具は、</span>
+        </div>
 
         <div className="box-heading">
           <div className="inner-heading">
@@ -63,7 +69,7 @@ const Home: NextPage = () => {
           <h2>家具づくりを、<br />一緒に考える。<br />ということ。</h2>
           <div className="block-catch">
             <p>お客様にとって「家づくり」は大変な工程で、でもとっても楽しい作業ですよね。</p>
-            <p>同じように「家具づくり」もとっても楽しい作業で、「暮らしづくり」には欠かせないものです。実はそん「家具づくり」にもお客様はご参加いただけるのです。</p>
+            <p>同じように「家具づくり」もとっても楽しい作業で、「暮らしづくり」には欠かせないものです。実はその「家具づくり」にもお客様はご参加いただけるのです。</p>
             <p>ただ今までは寄り添ってくれるところ、「家具づくり」を一緒に考えてくれるところがなかっただけです。</p>
             <p>ヒダコレのカスタムオーダー家具は、それぞれのお客様のお部屋の形・暮らし方に合わせてパーソナライズしてつくる家具をお届けします。</p>
             <p>でも高級はフレンチのコース料理ではなく、お客様と会話しながらお好みをお聞きして作る家庭的な料理を目指しています。</p>
@@ -77,16 +83,16 @@ const Home: NextPage = () => {
           </div>
           <ul className="list-make">
             <li>
-              <div className="heading-list_make">ネットで天板を選ぶ</div>
-              <div className="inner-list_make">耳付きの自然木の天板、丸や四角や楕円など形もいろいろお作りできます。また７つの樹種から木を選ぶこともできます。</div>
+              <div className="heading-list_make">まずは何でもお気軽に<br />ご相談ください</div>
+              <div className="inner-list_make">本当にほしい家具、必要としている家具、お部屋にピッタリの家具は、お客様のそれぞれのお部屋や暮らし方によって違うので、なかなか既製品では見つかりません。</div>
             </li>
             <li>
-              <div className="heading-list_make">ネットで脚を選ぶ</div>
-              <div className="inner-list_make">ホタテタイプやロの字タイプ、座卓になる兼用脚などデザインも豊富で、鉄でつくるアイアン脚も選ぶことができます。</div>
+              <div className="heading-list_make">お客様に合った家具の<br />設計をします</div>
+              <div className="inner-list_make">お困りごとやご希望をお聞きしながら家具の設計図を作っていきます。メールのやり取りが主流で、何度も聞き取りをして図面修正しながらの打合せも無料対応です。</div>
             </li>
             <li>
-              <div className="heading-list_make">注文してあとは待つだけ</div>
-              <div className="inner-list_make">ご注文はボタン一つで簡単にできます。その他サイズ対応や仕様の変更などは、お問合せフォームからお問合せください。</div>
+              <div className="heading-list_make">お見積り後のご判断で<br />大丈夫です</div>
+              <div className="inner-list_make">デザインやサイズなど、ご希望の仕様が決まってきましたら「お見積り」のご案内をさせていただきます。その後のご注文ですので、「お試し感覚」でご相談ください。</div>
             </li>
           </ul>
         </section>
@@ -102,7 +108,7 @@ const Home: NextPage = () => {
               <div className="list-layout">
                 <div className="visual-attempt">
                   <Image
-                    src="/test.jpg"
+                    src="/images/custom-furniture/index/illust-1.jpg"
                     alt="Picture of the author"
                     width={1280}
                     height={855}
@@ -124,7 +130,7 @@ const Home: NextPage = () => {
               <div className="list-layout reverse">
                 <div className="visual-attempt">
                   <Image
-                    src="/test.jpg"
+                    src="/images/custom-furniture/index/illust-2.jpg"
                     alt="Picture of the author"
                     width={1280}
                     height={855}
@@ -145,7 +151,7 @@ const Home: NextPage = () => {
               <div className="list-layout">
                 <div className="visual-attempt">
                   <Image
-                    src="/test.jpg"
+                    src="/images/custom-furniture/index/illust-3.jpg"
                     alt="Picture of the author"
                     width={1280}
                     height={855}
@@ -167,88 +173,17 @@ const Home: NextPage = () => {
         </div>
 
         <div className="images">
-          <p>オーダー家具を”なんでも”作っています</p>
+          <p>お客様からお聞きした色々なご希望や思いを、<br />自分たちの工房で家具という「形」にしていく工程は、<br />私たちにとってはお客様の笑顔を想像しながらのワクワクする楽しい時間です。</p>
           <Image
-            src="/images/custom-furniture/banner.jpg"
+            src="/images/custom-furniture/index/images-1.jpg"
             alt="Picture of the author"
             width={1180}
-            height={393}
+            height={400}
           />
         </div>
 
-        <section className="box-order_flow">
-          <h2>ご相談から「家具づくり」までの流れ</h2>
-          <ul className="contents-order_flow">
-              <li>
-                  <div className="heading">
-                      <span className="number">1</span>
-                      <h3>お問い合わせ</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          まずは、お客さまとの“相談の場”をつくります。<br />ページ下部の「問い合わせフォーム」から。<br />
-                          またははお電話でお問い合わせください。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">2</span>
-                      <h3>聞き取り</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          担当者からお客さまへご連絡の上、聞き取りをさせていただきます。<br />
-                          ご希望やお困り事、暮らし方のイメージなどをお聞かせください。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">3</span>
-                      <h3>ご提案</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          お客様と一緒に考える土台として、<br />
-                          サイズや仕様を図面などでご提案いたします。<br />
-                          これをもとにまたご意見をお聞きし、<br />
-                          図面修正を行っていきます。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">4</span>
-                      <h3>修正</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          お客様のご意見をもとに修正案を作成、<br />
-                          ご提案いたします。<br />
-                          修正案は何度でも、無料で作成いたします。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">5</span>
-                      <h3>お見積り</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          修正案が出来上がった後に、<br />
-                          お見積もりをいたします。<br />
-                          仕様・サイズ・金額などすべてOKでしたら、<br />
-                          ご成約となります。
-                      </p>
-                  </div>
-              </li>
-          </ul>
-          <div className="layout-button">
-            <Link href='/contact' legacyBehavior><a className="button_to_form">お問合わせフォームはこちら</a></Link>
-          </div>
-        </section>
+        <OrderFlow />
+
       </section>
     );
 };

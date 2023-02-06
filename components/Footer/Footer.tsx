@@ -3,47 +3,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.scss'
 
+import { Inquiry } from 'components/CtaBox/Inquiry'
+
 export const Footer = memo(() => {
-  
+
     return (
       <>
         <div className={styles.footer}>
-          <section className={styles.box__inquiry}>
-            <div className={styles.box__layout}>
-              <div className={styles.box__layout_heading}>
-                <div className={styles.box__heading}>
-                  <p className={styles.small}>INQUIRY</p>
-                  <h2>お問い合わせ</h2>
-                  <p className={styles.caption}>お問い合わせはメールフォーム、<br />またはお電話にてお気軽にご連絡ください。<br />その他ご連絡方法はこちらからご確認ください。</p>
-                </div>
-              </div>
-              <div className={styles.box__layout_contents}>
-                <ul>
-                  <li className={styles.to_mailform}>
-                    <div className={styles.heading__to_mailform}>
-                      <h3>メールフォームから</h3>
-                      <p>メールフォームからの<br />ご相談・お問い合わせはこちらからどうぞ。</p>
-                    </div>
-                    <div className={styles.inner__to_mailform}>
-                      <div className={styles.layout_button}>
-                        <Link href='/contact' legacyBehavior><a className="button target_this_site">メールフォームはこちら</a></Link>
-                      </div>
-                    </div>
-                  </li>
-                  <li className={styles.to_telephone}>
-                    <div className={styles.heading__to_telephone}>
-                      <h3>お電話から</h3>
-                      <p>受付時間 : 9:30 ~ 17:30<br />定休日 : 毎週水曜日</p>
-                    </div>
-                    <div className={styles.inner__to_telephone}>
-                      <p>フリーダイヤル</p>
-                      <Link href='/' legacyBehavior><a className="">0120-690-315</a></Link>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+
+          <div className={styles.layout__Inquiry}>
+            <Inquiry />
+          </div>
+
           <section className={styles.box__footer_nav}>
 
             <ul className={styles.box_nav_main_layout}>
@@ -60,7 +31,7 @@ export const Footer = memo(() => {
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
-                <p className={styles.title}>MARUTA Projects</p>
+                <p className={styles.title}>MARUTA Project</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/small-log' legacyBehavior><a className="">小さな丸太を生かす</a></Link></li>
                   <li className={styles.link}><Link href='/large-log' legacyBehavior><a className="">大きな丸太を循環させる</a></Link></li>
@@ -70,7 +41,7 @@ export const Footer = memo(() => {
 
             <ul className={styles.box_nav_main_layout}>
               <li className={styles.box_nav_main_list}>
-                <p className={styles.title}>HIDACOLLE ICHIMAIITA</p>
+                <p className={styles.title}>Ichimaiita furniture</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/ichimaiita' legacyBehavior><a className="">一枚板の家具</a></Link></li>
                   <li className={styles.link}><Link href='/ichimaiita/maintenance' legacyBehavior><a className="">テーブル修理・再生</a></Link></li>
@@ -78,10 +49,10 @@ export const Footer = memo(() => {
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
-                <p className={styles.title}>HIDACOLLE Costum furniture</p>
+                <p className={styles.title}>Costum furniture</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/custom-furniture' legacyBehavior><a className="">ヒダコレのオーダー家具は、</a></Link></li>
-                  <li className={styles.link}><Link href='/custom-furniture/kitchen' legacyBehavior><a className="">お困りごと解決事例(*6)</a></Link></li>
+                  {/* <li className={styles.link}><Link href='/custom-furniture/kitchen' legacyBehavior><a className="">お困りごと解決事例(*6)</a></Link></li> */}
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
@@ -136,10 +107,10 @@ export const Footer = memo(() => {
               </div>
               <div className={styles.site_information}>
                   <ul className={styles.site_information_menu}>
-                      <li><a href="/view/page/order-guide">ご注文・お問合わせガイド</a></li>
-                      <li><a href="/view/contract">特定商取引法に基づく表示</a></li>
-                      <li><a href="/view/policy">プライバシーポリシー</a></li>
-                      <li><a href="/view/company">会社概要</a></li>
+                      {/* <li><a href="/view/page/order-guide">ご注文・お問合わせガイド</a></li>
+                      <li><a href="/view/contract">特定商取引法に基づく表示</a></li> */}
+                      <li><a href="/privacy">プライバシーポリシー</a></li>
+                      <li><a href="/company">会社概要</a></li>
                   </ul>
                   <p className={styles.copyright}>© HIDACOLLE All Rights Reserved.</p>
               </div>

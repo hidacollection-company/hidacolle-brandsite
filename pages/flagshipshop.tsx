@@ -22,7 +22,13 @@ const Home: NextPage = () => {
     return (
       <div className="contents-body body-flagshipshop">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>ヒダコレ 家具ショップ</span>
+        </div>
 
         <div className="box__hero_slider">
           <div className="heading__hero_slider">
@@ -87,7 +93,7 @@ const Home: NextPage = () => {
         <section className='box-entrance box-floor'>
           <div className="image-floor">
             <Image
-              src="/test.jpg"
+              src="/images/flagshipshop/illust-1.jpg"
               alt="Picture of the author"
               width={1280}
               height={855}
@@ -136,7 +142,7 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>丸太</p>
+                  <p className='title'>ベンチ</p>
                   <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
                 </figcaption>
               </figure>
@@ -151,7 +157,7 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>丸太</p>
+                  <p className='title'>デッキ</p>
                   <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
                 </figcaption>
               </figure>
@@ -180,7 +186,7 @@ const Home: NextPage = () => {
         <section className='box-first_floor box-floor'>
           <div className="image-floor">
             <Image
-              src="/test.jpg"
+              src="/images/flagshipshop/illust-2.jpg"
               alt="Picture of the author"
               width={1280}
               height={855}
@@ -273,7 +279,7 @@ const Home: NextPage = () => {
         <section className='box-second_floor box-floor'>
           <div className="image-floor">
             <Image
-              src="/test.jpg"
+              src="/images/flagshipshop/illust-3.jpg"
               alt="Picture of the author"
               width={1280}
               height={855}
@@ -447,19 +453,19 @@ const Home: NextPage = () => {
 
         <section className="box__googlemap">
           <h3>グーグルマップ</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.1059066814633!2d137.2428516390083!3d36.13780195561022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6002bb3029696093%3A0x7e8859fab0c483b8!2z6aOb6aio44Kz44Os44Kv44K344On44OzIOOBj-OCieOBl-OBruWItuS9nOaJgA!5e0!3m2!1sja!2sjp!4v1675304020323!5m2!1sja!2sjp" width="1000" height="550" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.1059066814633!2d137.2428516390083!3d36.13780195561022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6002bb3029696093%3A0x7e8859fab0c483b8!2z6aOb6aio44Kz44Os44Kv44K344On44OzIOOBj-OCieOBl-OBruWItuS9nOaJgA!5e0!3m2!1sja!2sjp!4v1675304020323!5m2!1sja!2sjp"></iframe>
           <div className="layout__button">
           </div>
           <div className="layout__button_centering">
             <div className="layout-button">
-              <Link href='' legacyBehavior><a href="" className="button target_this_site">Google mapでみる</a></Link>
+              <Link href='https://g.page/hidacolle?share' legacyBehavior><a className="button target_blank" target="_blank">Google mapでみる</a></Link>
             </div>
           </div>
         </section>
 
         <section className="box-calender">
           <h3>営業日カレンダー</h3>
-          {/* Add Googl calender */}
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTz=0&amp;height=480&amp;wkst=1&amp;bgcolor=%23f9f8f4&amp;src=puqgcifs2jjoq12pv12hluutog%40group.calendar.google.com&amp;color=%239bc693&amp;ctz=Asia%2FTokyo"></iframe>
         </section>
 
       </div>

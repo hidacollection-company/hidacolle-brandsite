@@ -8,7 +8,13 @@ const Home: NextPage = () => {
     return (
       <div className="contents-body body-large_log">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>大きな丸太を循環させる</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">
@@ -53,7 +59,7 @@ const Home: NextPage = () => {
           </div>
 
           <Image
-            src="/test.jpg"
+            src="/images/large-log/solid-woods.jpg"
             alt="Picture of the author"
             width={1280}
             height={855}

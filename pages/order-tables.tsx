@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { GoToOnlineshop } from '../components/OnlineChallenge/GoToOnlineshop'
+import { GoToOnlineshop } from 'components/OnlineChallenge/GoToOnlineshop'
 
 import {Link as Scroll} from "react-scroll"
 
@@ -10,7 +10,13 @@ const Home: NextPage = () => {
     return (
       <div className="contents-body body-order_tables">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>オーダーテーブルをネットで</span>
+        </div>
 
         <div className="box-heading_order_tables">
           <div className="layout__heading_order_tables">
@@ -77,7 +83,7 @@ const Home: NextPage = () => {
                 />
                 <figcaption>
                   <p className='title'>長さ・奥行き・高さを考える</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='caption'>お部屋の広さからテーブル天板のサイズを考えることができます。4人掛けで、長さ１５００～１６００くらいが目安のサイズかと思います。</p>
                 </figcaption>
               </figure>
               <Scroll to="contents-1" smooth={true} duration={600} offset={-150}>
@@ -95,7 +101,7 @@ const Home: NextPage = () => {
                 />
                 <figcaption>
                   <p className='title'>7つの樹種から選ぶ</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='caption'>ナチュラルな色目、濃い色目などお好みの木をお選びいただけます。床の色などは考えずに、お好みの木をお選びいただくのが最適な選択です。</p>
                 </figcaption>
               </figure>
               <Scroll to="contents-2" smooth={true} duration={600} offset={-150}>
@@ -106,14 +112,14 @@ const Home: NextPage = () => {
               <span className="number">3</span>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/order-tables/008.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>きほんの脚をみる</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>基本形の脚を見る</p>
+                  <p className='caption'>まずはヒダコレの定番の脚をご覧ください。木の脚・鉄の脚などいろいろなデザインの脚をご用意しています。もちろん高さもオーダー対応ができます。</p>
                 </figcaption>
               </figure>
               <Scroll to="contents-3" smooth={true} duration={600} offset={-150}>
@@ -148,7 +154,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/order-tables/illust-1.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -159,7 +165,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/order-tables/illust-2.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -288,7 +294,7 @@ const Home: NextPage = () => {
             </div>
             <div className="visual">
               <Image
-                src="/test.jpg"
+                src="/images/order-tables/008.jpg"
                 alt="Picture of the author"
                 width={1280}
                 height={855}
@@ -350,8 +356,9 @@ const Home: NextPage = () => {
 
         <GoToOnlineshop
           slug="order-tables"
-          caption="オーダーテーブルの説明"
-          ec_url="https://www.hida-collection.shop/"
+          title="無垢のテーブルも、<br />簡単にネットで注文"
+          caption="ヒダコレのカスタムオーダー家具の中から、まずネットでも簡単にご注文いただけるようにセミオーダーテーブルを考えました。"
+          ec_url="https://www.hida-collection.shop/view/category/hida-crafts"
         />
       </div>
     );

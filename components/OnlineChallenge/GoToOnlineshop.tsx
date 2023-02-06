@@ -1,9 +1,16 @@
-import { memo } from 'react'
+import { memo, ReactNode } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './GoToOnlineshop.module.scss'
 
-export const GoToOnlineshop = memo((props) => {
+type Props = {
+  title?: ReactNode;
+  caption?: ReactNode;
+  ec_url: string;
+  slug?: ReactNode;
+}
+
+export const GoToOnlineshop = memo((props: Props) => {
   return (
       <>
         <section className={styles.box_go_to_onlineshop}>
@@ -11,8 +18,8 @@ export const GoToOnlineshop = memo((props) => {
             <div className={styles.heading_go_to_onlineshop}>
               <div className={styles.inner_go_to_onlineshop}>
                 <div className={styles.title}>
-                  <h2>ヒダコレ オンラインショップでみる</h2>
-                  <p>{props.caption}</p>
+                  <h2 dangerouslySetInnerHTML={{__html: `${props.title}`}}></h2>
+                  <p dangerouslySetInnerHTML={{__html: `${props.caption}`}}></p>
                 </div>
               </div>
               <div className={styles.layout_button}>

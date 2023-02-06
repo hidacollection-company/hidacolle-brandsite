@@ -2,15 +2,25 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { CtaBox } from '/components/CtaBox/CtaBox'
-import { IchimaiitaList } from '/components/Ichimaiita/IchimaiitaList'
-import { Links } from '/components/Ichimaiita/Links'
+import { CtaBox } from 'components/CtaBox/CtaBox'
+import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
+import { Links } from 'components/Ichimaiita/Links'
 
 const Home: NextPage = () => {
     return (
       <div className="contents-body body-drying">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <Link href={"/ichimaiita"} legacyBehavior>
+            <a className="">一枚板の家具</a>
+          </Link>
+          <span>&gt;</span>
+          <span>乾燥中の一枚板</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">
@@ -22,7 +32,7 @@ const Home: NextPage = () => {
           </div>
           <div className="visual-heading">
             <Image
-              src="/test.jpg"
+              src="/images/ichimaiita/drying/001.jpg"
               alt="Picture of the author"
               width={1280}
               height={855}
@@ -45,7 +55,7 @@ const Home: NextPage = () => {
             </div>
             <div className="visaul-contents">
               <Image
-                src="/test.jpg"
+                src="/images/ichimaiita/drying/002.jpg"
                 alt="Picture of the author"
                 width={1280}
                 height={855}
@@ -60,7 +70,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-1.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -71,7 +81,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-2.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -82,7 +92,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-3.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -93,7 +103,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-4.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -104,7 +114,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-5.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -115,7 +125,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-6.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -126,7 +136,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-7.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -137,7 +147,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-8.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -148,7 +158,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi01-9.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -167,7 +177,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi02-1.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -178,7 +188,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi02-2.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -189,7 +199,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi02-3.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -200,7 +210,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi02-4.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -219,7 +229,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-1.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -230,7 +240,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-2.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -241,7 +251,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-3.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -252,7 +262,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-4.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -263,7 +273,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-5.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -274,7 +284,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-6.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -285,7 +295,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-7.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -296,7 +306,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-8.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -307,7 +317,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-9.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}
@@ -318,7 +328,7 @@ const Home: NextPage = () => {
             <li>
               <figure>
                 <Image
-                  src="/test.jpg"
+                  src="/images/ichimaiita/drying/tochi03-10.jpg"
                   alt="Picture of the author"
                   width={1280}
                   height={855}

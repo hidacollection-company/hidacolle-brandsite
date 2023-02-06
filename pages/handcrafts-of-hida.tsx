@@ -1,19 +1,28 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { GoToOnlineshop } from '../components/OnlineChallenge/GoToOnlineshop'
-
-import fsPromises from 'fs/promises'
-import path from 'path';
+import { GoToOnlineshop } from 'components/OnlineChallenge/GoToOnlineshop'
 
 import {Link as Scroll} from "react-scroll"
 
+import data from 'data.json'
+
+interface postLists {
+  id: string;
+  slug: string;
+  profession: string;
+  name: string;
+  caption: string;
+  ec_url: string;
+}
+
+interface PropType { 
+  data: postLists[];
+}
+
 export const getStaticProps = async () => {
-  const filePath = path.join(process.cwd(), 'data.json');
-  const data = await fsPromises.readFile(filePath);
-  const objectData = JSON.parse(data)
   return {
-    props: objectData
+    props: data
   }
 }
 
@@ -29,14 +38,22 @@ export function getOddEven(id: number): string {
   }
 }
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
 
-    const postLists = props.postLists;
+  console.log(data.postLists);
+
+  const postLists = data.postLists;
 
     return (
       <div className="contents-body body-handcrafts-of-hida">
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <span>飛騨の手仕事</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">
@@ -46,14 +63,14 @@ const Home: NextPage = (props) => {
               <h1>飛騨の手仕事</h1>
               <div className="caption">
                 <div className="layout-button">
-                  <Link href='/' legacyBehavior><a className="go_to_online target_blank">オンラインショップでみる</a></Link>
+                  <Link href='https://www.hida-collection.shop/view/category/hida-crafts' legacyBehavior><a className="go_to_online target_blank" target="_blank">オンラインショップでみる</a></Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="visual-heading">
             <Image
-              src="/test.jpg"
+              src="/images/handcrafts-of-hida/001.jpg"
               alt="Picture of the author"
               width={1280}
               height={855}
@@ -68,11 +85,11 @@ const Home: NextPage = (props) => {
             ということ。
           </p>
           <div className='bold-introduction'>
-            <p>私達は、家具をつくるプロセスもお客様と共有したいと考えています。</p>
-            <p>丸太の状態から素材に触れ、どう使っていくのかを一緒に考える。</p>
-            <p>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
-            <p>店頭に並んでいるのを選ぶのもいいけれど、つくる過程にこだわった自分だけの特別な家具もきっといい。</p>
-            <p>そんな特別な体験が、暮らしや家具を大事にするきっかけに。そして、それを支えてくれている森や木のことについて考えるきっかけになると良いなとヒダコレは思っています。</p>
+            <p> 木工、陶芸、吹きガラス、張り子など、飛騨のクラフト作家をご紹介。</p>
+            <p> 「HIDA・COLLECTION」という名前には、飛騨のいいもの・こだわりのものを全国の人に知っていただきたいという思いがあります。</p>
+            <p> 飛騨の匠の歴史から続く工芸・民芸の文化と、飛騨の豊かな自然の中で丁寧につくりあげられた作品には、それぞれの作家さんの唯一無二の個性と温かみがあふれています。</p>
+            <p> 思わず手にとってしまうほど心惹かれるクラフト作品と出会えるところ。</p>
+            <p> ヒダコレがそのような場所と機会になれるように、今まで通りに「飛騨のいいもの・こだわり」をご紹介していきたいと思います。</p>
           </div>
         </section>
 
@@ -83,7 +100,7 @@ const Home: NextPage = (props) => {
           <nav className="nav-craftman">
             {postLists.map(post =>
               <Scroll to={post.slug} smooth={true} duration={600} offset={-105}>
-                <p className="profession">{post.profession}</p>
+                <p className="profession" key={post.id}>{post.profession}</p>
                 <p className="name">{post.name}</p>
               </Scroll>
             )}
@@ -132,9 +149,12 @@ const Home: NextPage = (props) => {
 
         <GoToOnlineshop
           slug="handcrafts-of-hida"
-          caption="飛騨の手仕事の説明"
+          title="温かみのある飛騨のクラフトも<br />ネットでお選びいただけます。"
+          caption="ヒダコレ オンラインショップでは飛騨のクラフト作品も多く取り揃えております。ぜひオンラインショップで選んでみてください。"
           ec_url="https://www.hida-collection.shop/view/category/hida-crafts"
         />
+
+
       </div>
     );
 };

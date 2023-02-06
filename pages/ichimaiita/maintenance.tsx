@@ -9,7 +9,17 @@ const Home: NextPage = () => {
       <div className="contents-body body-maintenance">
 
         {/* パンクズ */}
-        <div className="box__beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <Link href={"/ichimaiita"} legacyBehavior>
+            <a className="">一枚板の家具</a>
+          </Link>
+          <span>&gt;</span>
+          <span>テーブル修理・再生</span>
+        </div>
 
         {/* Component */}
         <div className="box-heading">
@@ -103,7 +113,7 @@ const Home: NextPage = () => {
               <li>
                 <figure className="before">
                   <Image
-                    src="/test.jpg"
+                    src="/images/ichimaiita/maintenace/003_before.jpg"
                     alt="Picture of the author"
                     width={1280}
                     height={855}
@@ -113,7 +123,7 @@ const Home: NextPage = () => {
                 <div className="arrow"></div>
                 <figure className="after">
                   <Image
-                    src="/test.jpg"
+                    src="/images/ichimaiita/maintenace/004_after.jpg"
                     alt="Picture of the author"
                     width={1280}
                     height={855}
@@ -300,7 +310,7 @@ const Home: NextPage = () => {
                     <div className="box__example_images">
                       <div className="block__example_image">
                         <Image
-                            src="/images/ichimaiita/maintenace/006_after.jpg"
+                            src="/images/ichimaiita/maintenace/009.jpg"
                             alt="Picture of the author"
                             width={1280}
                             height={855}
@@ -308,7 +318,7 @@ const Home: NextPage = () => {
                       </div>
                       <div className="block__example_image">
                         <Image
-                            src="/images/ichimaiita/maintenace/006_after.jpg"
+                            src="/images/ichimaiita/maintenace/010.jpg"
                             alt="Picture of the author"
                             width={1280}
                             height={855}
@@ -359,7 +369,7 @@ const Home: NextPage = () => {
               </li>
           </ul>
           <div className="layout-button">
-            <Link href='/contact' legacyBehavior><a className="button_to_form">お問合わせフォームはこちら</a></Link>
+            <Link href='/contact' legacyBehavior><a className="button_to_form">まずは何でもお気軽にお問合せください</a></Link>
           </div>
         </section>
       </div>

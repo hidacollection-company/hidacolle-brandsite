@@ -2,14 +2,26 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { CustomFurnitureList } from '/components/CustomFurniture/CustomFurnitureList'
-import { CtaBox } from '/components/CtaBox/CtaBox'
+import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
+import { CtaBox } from 'components/CtaBox/CtaBox'
+
+import { OrderFlow } from 'components/CtaBox/OrderFlow'
 
 const Home: NextPage = () => {
     return (
       <div className="contents-body body-custom_furniture_pages">
         {/* パンクズ */}
-        <div className="box-beadlist">パンクズナビ</div>
+        <div className="box__beadlist">
+          <Link href={"/"} legacyBehavior>
+            <a className="">ホーム</a>
+          </Link>
+          <span>&gt;</span>
+          <Link href={"/custom-furniture"} legacyBehavior>
+            <a className="">ヒダコレのカスタムオーダー家具は、</a>
+          </Link>
+          <span>&gt;</span>
+          <span>ワークスペースのお困りごと解決事例</span>
+        </div>
 
         <div className="box-heading">
             <h1>ワークスペースの<br />お困りごと解決事例</h1>
@@ -94,88 +106,17 @@ const Home: NextPage = () => {
         </div>
 
         <div className="images">
-          <p>オーダー家具を”なんでも”作っています</p>
+          <p>お客様からお聞きした色々なご希望や思いを、<br />自分たちの工房で家具という「形」にしていく工程は、<br />私たちにとってはお客様の笑顔を想像しながらのワクワクする楽しい時間です。</p>
           <Image
-            src="/images/custom-furniture/banner.jpg"
+            src="/images/custom-furniture/index/images-1.jpg"
             alt="Picture of the author"
             width={1180}
-            height={393}
+            height={400}
           />
         </div>
 
-        <section className="box-order_flow">
-          <h2>ご相談から「家具づくり」までの流れ</h2>
-          <ul className="contents-order_flow">
-              <li>
-                  <div className="heading">
-                      <span className="number">1</span>
-                      <h3>お問い合わせ</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          まずは、お客さまとの“相談の場”をつくります。<br />ページ下部の「問い合わせフォーム」から。<br />
-                          またははお電話でお問い合わせください。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">2</span>
-                      <h3>聞き取り</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          担当者からお客さまへご連絡の上、聞き取りをさせていただきます。<br />
-                          ご希望やお困り事、暮らし方のイメージなどをお聞かせください。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">3</span>
-                      <h3>ご提案</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          お客様と一緒に考える土台として、<br />
-                          サイズや仕様を図面などでご提案いたします。<br />
-                          これをもとにまたご意見をお聞きし、<br />
-                          図面修正を行っていきます。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">4</span>
-                      <h3>修正</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          お客様のご意見をもとに修正案を作成、<br />
-                          ご提案いたします。<br />
-                          修正案は何度でも、無料で作成いたします。
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div className="heading">
-                      <span className="number">5</span>
-                      <h3>お見積り</h3>
-                  </div>
-                  <div className="caption">
-                      <p>
-                          修正案が出来上がった後に、<br />
-                          お見積もりをいたします。<br />
-                          仕様・サイズ・金額などすべてOKでしたら、<br />
-                          ご成約となります。
-                      </p>
-                  </div>
-              </li>
-          </ul>
-          <div className="layout-button">
-            <Link href='/contact' legacyBehavior><a className="button_to_form">お問合わせフォームはこちら</a></Link>
-          </div>
-        </section>
+        <OrderFlow />
+        
       </div>
     );
 };

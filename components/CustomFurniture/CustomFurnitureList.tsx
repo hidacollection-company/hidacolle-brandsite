@@ -58,7 +58,7 @@ export const CustomFurnitureList = memo((props) => {
                     />
                   </div>
                   <div className={styles.heading_example}>テレビボード</div>
-                  <div className={styles.inner_example}>「一般的なテレビボードの形に、<br />もっと収納スペースを追加したい」</div>
+                  <div className={styles.inner_example}>「壁掛けテレビに合わせた、<br />シンプルなＴＶボードがほしい」</div>
                 </a>
               </Link>
             </li>
@@ -75,7 +75,7 @@ export const CustomFurnitureList = memo((props) => {
                     />
                   </div>
                   <div className={styles.heading_example}>収納</div>
-                  <div className={styles.inner_example}>「リビングとキッチンの間に、<br />ちょうどいい大きさの収納があるといいな」</div>
+                  <div className={styles.inner_example}>「お店のスペースにピッタリの<br />大きなキャスター付き収納があるといいな」</div>
                 </a>
               </Link>
             </li>

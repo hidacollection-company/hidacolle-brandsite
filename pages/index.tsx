@@ -2,23 +2,35 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Links } from '/components/Ichimaiita/Links'
-import { CustomFurnitureList } from '/components/CustomFurniture/CustomFurnitureList'
+import { Links } from 'components/Ichimaiita/Links'
+import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
+import { OriginalProductsList } from 'components/OriginalProducts/OriginalProductsList'
+
+import data from 'list-original-prodacts.json'
+
+export const getStaticProps = async () => {
+  return {
+    props: data
+  }
+}
 
 const Home: NextPage = () => {
+
+    const postLists = data.postLists;
+
     return (
       <section className="contents-body body-index">
         <section className="box__main_visual">
           <Image
             // loader={myLoader}
-            src="/images/index/top_001.jpg"
+            src="/images/index/001.jpg"
             alt="Picture of the author"
-            width={1280}
-            height={855}
+            width={1180}
+            height={680}
           />
         </section>
         <section className="box-home_about">
-          <h1 className="heading-home_about">丸太から<br />一枚板とオーダー家具</h1>
+          <h1 className="heading-home_about">丸太から<br />一枚板とカスタムオーダー家具</h1>
           <p className="title-home_about">なぜ「丸太から」？</p>
           <p className="text-home_about">SDGsの中に「つくる責任 つかう責任」という目標があります。<br />単なる資材としての木材から家具を作るのではなく、木材はもともと丸太であって、森で木として生きていたことを考えながら家具づくりをすることで、自然・社会・地域に少しでも「つくる責任」を果たせるように努めたいと考えています。</p>
         </section>
@@ -49,16 +61,14 @@ const Home: NextPage = () => {
             </div>
             <div className="list-maruta_project">
               <section className="section-maruta_project">
-                <div className="visual-maruta_project add_corner">
-                  <Link href='/small-log'>
-                    <Image
-                      // loader={myLoader}
-                      src="/images/small-log/001.jpg"
-                      alt="Picture of the author"
-                      width={1280}
-                      height={855}
-                    />
-                  </Link>
+                <div className="visual-maruta_project">
+                  <Image
+                    // loader={myLoader}
+                    src="/images/small-log/001.jpg"
+                    alt="大きな丸太を循環のイメージ写真"
+                    width={1280}
+                    height={855}
+                  />
                 </div>
                 <div className="inner-maruta_project">
                   <h2>小さな丸太を生かす</h2>
@@ -71,16 +81,14 @@ const Home: NextPage = () => {
                 </div>
               </section>
               <section className="section-maruta_project">
-                <div className="visual-maruta_project add_corner">
-                  <Link href='/large-log'>
-                    <Image
-                      // loader={myLoader}
-                      src="/images/large-log/001.jpg"
-                      alt="Picture of the author"
-                      width={1280}
-                      height={855}
-                    />
-                  </Link>
+                <div className="visual-maruta_project">
+                  <Image
+                    // loader={myLoader}
+                    src="/images/large-log/001.jpg"
+                    alt="大きな丸太を循環させるのイメージ写真"
+                    width={1280}
+                    height={855}
+                  />
                 </div>
                 <div className="inner-maruta_project">
                   <h2>大きな丸太を循環させる</h2>
@@ -93,6 +101,9 @@ const Home: NextPage = () => {
                 </div>
               </section>
             </div>
+          </div>
+          <div className="bg__illust">
+            <Image src="/images/index/maruta_project.jpg" alt="丸太プロジェクトのイラスト" width={595} height={842} />
           </div>
         </section>
         <section className="box-ichimaiita_furiniture">
@@ -170,13 +181,13 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="layout__CustomFurnitureList">
             <CustomFurnitureList />
           </div>
 
         </section>
-        
+
         <section className="box-online_challnege">
           <div className="heading-online_challnege">
             <p className="text">オンラインチャレンジ</p>
@@ -227,7 +238,7 @@ const Home: NextPage = () => {
               <li><Image src="/images/order-tables/m002.jpg" alt="Picture of the author" width={1280} height={855} /></li>
               <li><Image src="/images/order-tables/m003.jpg" alt="Picture of the author" width={1280} height={855} /></li>
             </ul>
-          
+
             {/* Component */}
             <ul className="buttons">
               <li>
@@ -258,24 +269,24 @@ const Home: NextPage = () => {
                   <figure>
                     <Image
                       // loader={myLoader}
-                      src="/test.jpg"
+                      src="/images/original-products/001.jpg"
                       alt="Picture of the author"
                       width={1000}
                       height={213}
                     />
-                    <figcaption>今ある家具に合わせて使える</figcaption>
+                    <figcaption>シンプルだから今ある家具に合わせて使える</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <Image
                       // loader={myLoader}
-                      src="/test.jpg"
+                      src="/images/original-products/002.jpg"
                       alt="Picture of the author"
                       width={1000}
                       height={213}
                     />
-                    <figcaption>伝統的な和家具を今の暮らしに合うように</figcaption>
+                    <figcaption>使わない時は隙間に収納できるくらい小さく</figcaption>
                   </figure>
                 </li>
               </ul>
@@ -298,96 +309,18 @@ const Home: NextPage = () => {
               </ul>
 
               <section className="box-products">
-                <p className='heading-products'>ラインナップ</p>
-                <div className="lists-products">
-                  <div className="block-product">
-                    <figure>
-                      <Link href='/' legacyBehavior>
-                        <a className="add_corner">
-                          <Image
-                            src="/test.jpg"
-                            alt="Picture of the author"
-                            width={1280}
-                            height={855}
-                          />
-                        </a>
-                      </Link>
-                      <figcaption>
-                        <div className="hidacolle_number"><span className="line">HIDACOLLE No.</span><span className="number">001</span></div>
-                        <h3>コンソールデスク</h3>
-                        {/* <div className="caption">飾り棚として用いられる奥行きの浅いミニテーブル。その発祥の地ヨーロッパでは、多くの人々に使われていたといいます。このコンソールをヒダコレがリデザイン。様々な用途に使えるようにしました。</div>
-                        <div className="layout-button">
-                          <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでみる</a></Link>
-                        </div> */}
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div className="block-product">
-                    <figure>
-                      <Link href='/' legacyBehavior>
-                        <a className="add_corner">
-                          <Image
-                            src="/test.jpg"
-                            alt="Picture of the author"
-                            width={1280}
-                            height={855}
-                          />
-                        </a>
-                      </Link>
-                      <figcaption>
-                        <div className="hidacolle_number"><span className="line">HIDACOLLE No.</span><span className="number">001</span></div>
-                        <h3>コンソールデスク</h3>
-                        {/* <div className="caption">飾り棚として用いられる奥行きの浅いミニテーブル。その発祥の地ヨーロッパでは、多くの人々に使われていたといいます。このコンソールをヒダコレがリデザイン。様々な用途に使えるようにしました。</div>
-                        <div className="layout-button">
-                          <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでみる</a></Link>
-                        </div> */}
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div className="block-product">
-                    <figure>
-                      <Link href='/' legacyBehavior>
-                        <a className="add_corner">
-                          <Image
-                            src="/test.jpg"
-                            alt="Picture of the author"
-                            width={1280}
-                            height={855}
-                          />
-                        </a>
-                      </Link>
-                      <figcaption>
-                        <div className="hidacolle_number"><span className="line">HIDACOLLE No.</span><span className="number">001</span></div>
-                        <h3>コンソールデスク</h3>
-                        {/* <div className="caption">飾り棚として用いられる奥行きの浅いミニテーブル。その発祥の地ヨーロッパでは、多くの人々に使われていたといいます。このコンソールをヒダコレがリデザイン。様々な用途に使えるようにしました。</div>
-                        <div className="layout-button">
-                          <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでみる</a></Link>
-                        </div> */}
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div className="block-product">
-                    <figure>
-                      <Link href='/' legacyBehavior>
-                        <a className="add_corner">
-                          <Image
-                            src="/test.jpg"
-                            alt="Picture of the author"
-                            width={1280}
-                            height={855}
-                          />
-                        </a>
-                      </Link>
-                      <figcaption>
-                        <div className="hidacolle_number"><span className="line">HIDACOLLE No.</span><span className="number">001</span></div>
-                        <h3>コンソールデスク</h3>
-                        {/* <div className="caption">飾り棚として用いられる奥行きの浅いミニテーブル。その発祥の地ヨーロッパでは、多くの人々に使われていたといいます。このコンソールをヒダコレがリデザイン。様々な用途に使えるようにしました。</div>
-                        <div className="layout-button">
-                          <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでみる</a></Link>
-                        </div> */}
-                      </figcaption>
-                    </figure>
-                  </div>
+                <p className='heading-products'>商品の一部をご紹介</p>
+                <div className="layout__lists-products">
+                  {postLists.map(post =>
+                    <OriginalProductsList
+                      id = {post.id}
+                      hidacolle_number = {post.hidacolle_number}
+                      item_name = {post.item_name}
+                      caption = {post.caption}
+                      ec_url = {post.ec_url}
+                      index = {true}
+                    />
+                  )}
                 </div>
               </section>
 
@@ -426,7 +359,7 @@ const Home: NextPage = () => {
               <div className="heading-flagship_shop">
                 <p>Flagship shop</p>
               </div>
-              <p className="small-flagship_shop">くらしを考える場所</p>
+              <p className="small-flagship_shop">森と、丸太と、出会える場所</p>
               <h2 className="title-flagship_shop">ヒダコレ 家具ショップ</h2>
               <div className="text-flagship_shop">
                 <p>ものづくりを起点に、暮らしを考えるきっかけを提供したい。</p>
@@ -461,8 +394,8 @@ const Home: NextPage = () => {
                       height={213}
                     />
                     <figcaption>
-                      <p className="small-images_flagship_shop">MARUTA Project</p>
-                      <p className="title-images_flagship_shop">丸太から家具を考えるプロジェクト</p>
+                      <p className="small-images_flagship_shop">Ichimaiita furniture</p>
+                      <p className="title-images_flagship_shop">一枚板の家具</p>
                     </figcaption>
                   </figure>
                 </li>
@@ -476,8 +409,8 @@ const Home: NextPage = () => {
                       height={213}
                     />
                     <figcaption>
-                      <p className="small-images_flagship_shop">HIDACOLLE ICHIMAIITA</p>
-                      <p className="title-images_flagship_shop">一枚板の家具家具</p>
+                      <p className="small-images_flagship_shop">MARUTA Project</p>
+                      <p className="title-images_flagship_shop">丸太から家具を考えるプロジェクト</p>
                     </figcaption>
                   </figure>
                 </li>
@@ -496,7 +429,7 @@ const Home: NextPage = () => {
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一枚板</figcaption>
+                  <figcaption>地元の農家さんから譲っていただいた<br />80年前の稲架棒から什器を。</figcaption>
                 </figure>
               </li>
               <li>
@@ -508,7 +441,7 @@ const Home: NextPage = () => {
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一枚板</figcaption>
+                  <figcaption>飛騨で活躍するクラフト作家。<br />手仕事による地元の工芸品を紹介。</figcaption>
                 </figure>
               </li>
               <li>
@@ -520,7 +453,7 @@ const Home: NextPage = () => {
                     width={1280}
                     height={855}
                   />
-                  <figcaption>丸太</figcaption>
+                  <figcaption>考える家具って、<br />お客様と一緒に考えて・一緒につくる家具です。</figcaption>
                 </figure>
               </li>
               <li>
@@ -532,7 +465,7 @@ const Home: NextPage = () => {
                     width={1280}
                     height={855}
                   />
-                  <figcaption>エントランス</figcaption>
+                  <figcaption>国道158号線に面したエントランス。<br />白い空間と丸太が目印です。</figcaption>
                 </figure>
               </li>
             </ul>
@@ -541,7 +474,7 @@ const Home: NextPage = () => {
         <section className="box-furniture_studio">
           <div className="layout-furniture_studio">
             <p className="heading-furniture_studio">Furniture studio</p>
-            <p className="small-furniture_studio">ヒダコレ家具が木と向き合う場所</p>
+            <p className="small-furniture_studio">「家具づくり」を暮らしへ</p>
             <h3 className="title-furniture_studio">ヒダコレ 家具工房</h3>
             <div className="text-furniture_studio">
               <p>ヒダコレの家具には、品番や商品カタログはありません。</p>
@@ -566,29 +499,28 @@ const Home: NextPage = () => {
               <p>HIDACOLLE<br />Member</p>
             </div>
             <div className="box-layout_right">
-              <p>ヒダコレ家具に集まる様々な人</p>
+              <p>プロジェクトを支える多様な人</p>
               <h3>ヒダコレ メンバー</h3>
             </div>
           </div>
           <div className="image-box-member">
             <Image
-              // loader={myLoader}
-              src="/test.jpg"
-              alt="Picture of the author"
+              src="/images/index/member.jpg"
+              alt="プロジェクトを支える多様な人 ヒダコレ メンバーの写真"
               width={1280}
               height={855}
             />
           </div>
           <div className="caption-box-member">
             <p>私達は10人ほどの小さな家具工房ですが、多種多様なメンバーがヒダコレの”考える家具”を支えてくれています。</p>
-            <p>関わり方も人それぞれで、他の仕事と兼業で働くスタッフもいれば、個人事業主の屋号を持っているメンバーに業務委託することも。</p>
+            <p>関わり方も人それぞれで、他の仕事と兼業で働くスタッフもいれば、個人事業主の屋号を持っているメンバーもいます。</p>
             <p>家具づくりを専門とするメンバーや、販促を専門とするメンバー、林業と掛け持ちするメンバーまで。</p>
             <p>多種多様なメンバーがお互いに関わり合った状態でプロジェクトが進んでいます。メンバーそれぞれのバックボーンがあるから面白く、だからこそ、お客様へお届けできるヒダコレならではの価値があると思っています。</p>
             <p>これからの時代、働き方はより多様化していくと思います。</p>
             <p>私達は「雇用」という考え方にこだわらず、そのメンバーに合った関係性を探りながらプロジェクトを進めています。</p>
           </div>
           <section className="recruit-box-member">
-            <p className="title-recruit_box-member">”考える家具”を<br />一緒につくってくれる<br />メンバーを募集しています。</p>
+            <p className="title-recruit_box-member">”考える家具”を<br />一緒に育ててくれる<br />メンバーを募集しています。</p>
             <p className="bold-recruit_box-member">ヒダコレでは様々なポジションでメンバーを募集しています。<br />興味がある方はお気軽にご連絡ください。</p>
             <div className="layout-button">
               <Link href='/contact' legacyBehavior><a className="button target_this_site">こちらからご連絡ください</a></Link>

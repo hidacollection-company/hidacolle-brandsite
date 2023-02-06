@@ -10,7 +10,7 @@ export const IchimaiitaList = memo((props) => {
           <p className={styles.heading}>今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
           <ul className={styles.items}>
             <li>
-              <Link href='/ichimaiita/example/keyaki'>
+              <Link href='/ichimaiita/keyaki'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}
@@ -38,7 +38,7 @@ export const IchimaiitaList = memo((props) => {
               </Link>
             </li>
             <li>
-              <Link href='/ichimaiita/example/kuri'>
+              <Link href='/ichimaiita/kuri'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}
@@ -66,7 +66,7 @@ export const IchimaiitaList = memo((props) => {
               </Link>
             </li>
             <li>
-              <Link href='/ichimaiita/example/kusu'>
+              <Link href='/ichimaiita/kusu'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}
@@ -94,7 +94,7 @@ export const IchimaiitaList = memo((props) => {
               </Link>
             </li>
             <li>
-              <Link href='/ichimaiita/example/mizumezakura'>
+              <Link href='/ichimaiita/mizumezakura'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}
@@ -122,7 +122,7 @@ export const IchimaiitaList = memo((props) => {
               </Link>
             </li>
             <li>
-              <Link href='/ichimaiita/example/tochi'>
+              <Link href='/ichimaiita/tochi'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}
@@ -150,7 +150,7 @@ export const IchimaiitaList = memo((props) => {
               </Link>
             </li>
             <li>
-              <Link href='/ichimaiita/example/yamazakura'>
+              <Link href='/ichimaiita/yamazakura'>
                 <div className={`${styles.visual_item} add_corner `}>
                   <Image
                     // loader={myLoader}

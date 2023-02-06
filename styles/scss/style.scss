@@ -16,6 +16,17 @@ a{
     }
 }
 
+.box__beadlist{
+    margin: 50px auto 0;
+    width: $wl;
+    display: flex;
+    gap: 0 10px;
+    @include fts(ja, small);
+    a{
+        text-decoration: underline;
+    }
+}
+
 /****** Elad Shechter's RESET *******/
 /*** box sizing border-box for all elements ***/
 *,
@@ -87,6 +98,7 @@ figure{
     .box-maruta_project{
         margin: 250px auto 0;
         width: $wl;
+        position: relative;
         .catch-maruta_project{
             p{
                 @include fts(en, catch);
@@ -144,6 +156,17 @@ figure{
                         }
                     }
                 }
+            }
+        }
+        .bg__illust{
+            width: 929px;
+            position: absolute;
+            top: -200px;
+            right: -100px;
+            z-index: -1;
+            img{
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -254,6 +277,9 @@ figure{
         background-color: c(nc,g2);
         position: relative;
         box-sizing: border-box;
+        background-image: url(/bg_tables_w.svg);
+        background-position: top 320px center;
+        background-size: 100%;
         .heading-online_challnege{
             width: 560px;
             height: 560px;
@@ -466,59 +492,12 @@ figure{
                     @include fts(ja, title);
                     text-align: center;
                 }
-                .lists-products{
+                .layout__lists-products{
                     margin: 100px 0 0;
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    gap: 75px 20px;
-                    .block-product{
-                        width: $wxxs;
-                        position: relative;
-                        figure{
-                            a.add_corner{
-                                display: inline-block;
-                                img{
-                                    width: 100%;
-                                    height: auto;
-                                    border-radius: 8px;
-                                }
-                            }
-                            figcaption{
-                                .hidacolle_number{
-                                    text-align: center;
-                                    border-bottom: 4px solid #CBD97B;
-                                    position: absolute;
-                                    top: -40px;
-                                    right: 0;
-                                    .line{
-                                        color: #CBD97B;
-                                        @include fts(ja, minimum);
-                                        letter-spacing: 0;
-                                        display: block;
-                                    }
-                                    .number{
-                                        color: #CBD97B;
-                                        @include fts(ja, lead);
-                                        letter-spacing: 0;
-                                        display: block;
-                                    }
-                                }
-                                h3{
-                                    margin: 30px 0 0;
-                                    @include fts(ja, title);
-                                }
-                                .caption{
-                                    margin: 20px 0 0;
-                                    height: 160px;
-                                    @include fts(ja, text);
-                                }
-                                .layout-button{
-                                    margin: 30px 0 0;
-                                }
-                            }
-                        }
-                    }
+                    gap: 120px 20px;
                 }
             }
         }
@@ -798,9 +777,10 @@ figure{
 }
 
 .body-furniture_that_thinks{
-    margin: 180px auto 0;
-    width: $wm;
+    margin: 0 auto;
+    width: $wl;
     h1.heading{
+        margin: 50px 0 0;
         @include fts(ja, catch);
         text-align: center;
     }
@@ -837,7 +817,8 @@ figure{
         }
     }
     .box-logo_that_thinks{
-        margin: 200px 0 0;
+        margin: 200px auto 0;
+        width: $wm;
         h2{
             @include fts(ja, lead);
         }
@@ -1065,72 +1046,6 @@ figure{
             width: $wl;
             border-radius: 8px;
             display: block;
-        }
-    }
-    .box-order_flow{
-        margin: 200px auto 0;
-        width: $wm;
-        h2{
-            @include fts(ja, lead);
-        }
-        ul.contents-order_flow{
-            margin: 50px 0 0;
-            li{
-                margin: 40px auto 0;
-                padding: 0 0 40px;
-                width: $ws;
-                border-bottom: 3px solid c(nc, b1);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-                &:last-child{
-                    border-bottom: 0;
-                }
-                &::after{
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    border-right: 10px solid transparent;
-                    border-left: 10px solid transparent;
-                    border-top: 13px solid c(nc, b1);
-                    position: absolute;
-                    bottom: -13px;
-                    left: calc(50% - 5px);
-                }
-                &:last-child::after{
-                    border: 0;
-                }
-                .heading{
-                    width: 40%;
-                    text-align: center;
-                    .number{
-                        @include fts(en, numberling);
-                        &::after{
-                            content: '';
-                            margin: 2px auto 0;
-                            width: 60px;
-                            height: 4px;
-                            background-color: c(nc, b1);
-                            display: block;
-                        }
-                    }
-                    h3{
-                        margin: 20px 0 0;
-                        @include fts(ja, title);
-                    }
-                }
-                .caption{
-                    width: 60%;
-                    p{
-                        @include fts(ja, text);
-                    }
-                }
-            }
-        }
-        .layout-button{
-            margin: 50px auto 0;
-            width: $wxxs;
         }
     }
 }
@@ -2551,6 +2466,7 @@ figure{
                 img{
                     width: 100%;
                     height: auto;
+                    border-radius: 8px;
                 }
                 figcaption{
                     margin: 20px 0 0;
@@ -2566,60 +2482,12 @@ figure{
         .heading-products{
             @include fts(ja, lead);
         }
-        .lists-products{
+        .layout__lists-products{
             margin: 100px 0 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 75px 20px;
-            .block-product{
-                width: $wxxs;
-                position: relative;
-                figure{
-                    a.add_corner{
-                        display: inline-block;
-                        img{
-                            width: 100%;
-                            height: auto;
-                            border-radius: 8px;
-                        }
-                    }
-                    figcaption{
-                        .hidacolle_number{
-                            text-align: center;
-                            border-bottom: 4px solid #CBD97B;
-                            position: absolute;
-                            top: -40px;
-                            right: 0;
-                            .line{
-                                color: #CBD97B;
-                                @include fts(ja, minimum);
-                                letter-spacing: 0;
-                                display: block;
-                            }
-                            .number{
-                                color: #CBD97B;
-                                @include fts(ja, lead);
-                                letter-spacing: 0;
-                                display: block;
-                            }
-                        }
-                        h3{
-                            margin: 30px 0 0;
-                            @include fts(ja, title);
-                        }
-                        .caption{
-                            margin: 20px 0 0;
-                            height: 160px;
-                            @include fts(ja, text);
-                        }
-                        .layout-button{
-                            margin: 30px 0 0;
-                        }
-                    }
-                }
-                
-            }
+            gap: 120px 20px;
         }
     }
     .box-custom_order_service{
@@ -2849,6 +2717,7 @@ figure{
 
 .body-flagshipshop{
     .box__hero_slider{
+        margin: 50px 0 0;
         position: relative;
         .heading__hero_slider{
             margin: auto;
@@ -3037,6 +2906,9 @@ figure{
     .box-layout_add_bgimage{
         padding: 200px 0 0;
         box-sizing: border-box;
+        background-image: url(/images/flagshipshop/iilust-floormap.jpg);
+        background-size: 62%;
+        background-position: top 90px right -70px;
         .box-reserve{
             margin: 0 auto;
             width: $wm;
@@ -3071,7 +2943,7 @@ figure{
                         margin: 0 0 30px;
                         display: block;
                         th{
-                            width: 170px;
+                            width: 120px;
                             @include fts(ja, bold);
                             text-align-last: left;
                             vertical-align: top;
@@ -3093,6 +2965,8 @@ figure{
         }
         iframe{
             margin: 50px 0 0;
+            width: 100%;
+            height: 650px;
         }
         .layout__button_centering{
             margin: 50px 0 0;
@@ -3110,7 +2984,43 @@ figure{
             @include fts(ja, lead);
             line-height: 100%;
         }
+        iframe{
+            margin: 50px 0 0;
+            width: 100%;
+            height: 650px;
+        }
     }
 }
 
 
+.body-privacy,.body-company{
+    .heading{
+        margin: 50px auto;
+        @include fts(ja, lead);
+        width: $wm;
+    }
+    .caption{
+        margin: 70px auto 0;
+        width: $ws;
+        @include fts(ja, bold);
+    }
+    .box__contents{
+        margin: 70px auto 0;
+        width: 660px;
+        ul{
+            li{
+                margin: 40px 0 0;
+                padding: 0 0 40px;
+                border-bottom: 1px solid #E1E1E1;
+                .title{
+                    @include fts(ja, text);
+                }
+                .line{
+                    margin: 20px 0 0;
+                    @include fts(ja, bold);
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

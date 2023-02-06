@@ -3,103 +3,12 @@
 @import "/styles/scss/_utilities";
 
 .footer{
-  .box__inquiry{
+  .layout__Inquiry{
     margin: 200px 0 0;
     padding: 75px 0;
     border-top: 3px solid c(nc, g2);
     border-bottom: 3px solid c(nc, g2);
     box-sizing: border-box;
-    .box__layout{
-      margin: 0 auto;
-      width: $wl;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .box__layout_heading{
-        .box__heading{
-          .small{
-            @include fts(en, text);
-          }
-          h2{
-            margin: 10px 0 0;
-            @include fts(ja, lead);
-          }
-          .caption{
-            margin: 30px 0 0;
-            @include fts(ja, text);
-          }
-        }
-      }
-      .box__layout_contents{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 20px 0;
-        .to_mailform{
-          padding: 0 50px;
-          width: 750px;
-          height: 140px;
-          background-color: c(yellow, m);
-          border-radius: 8px;
-          box-sizing: border-box;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .heading__to_mailform{
-            color: c(nc, w1);
-            h3{
-              @include fts(ja, title);
-            }
-            p{
-              @include fts(ja, text);
-              line-height: 175%;
-            }
-          }
-          .inner__to_mailform{
-            width: 290px;
-          }
-        }
-        .to_telephone{
-          margin: 20px 0 0;
-          padding: 0 50px;
-          width: 750px;
-          height: 140px;
-          background-color: c(yellow, u1);
-          border-radius: 8px;
-          box-sizing: border-box;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .heading__to_telephone{
-            color: c(nc, w1);
-            h3{
-              @include fts(ja, title);
-            }
-            p{
-              @include fts(ja, text);
-              line-height: 175%;
-            }
-          }
-          .inner__to_telephone{
-            width: 290px;
-            color: c(nc, w1);
-            p{
-              @include fts(ja, text);
-              text-align: center;
-            }
-            a{
-              margin: 5px;
-              @include fts(ja, lead);
-              line-height: 100%;
-              text-align: center;
-              letter-spacing: 1px;
-              display: block;
-            }
-          }
-        }
-      }
-    }
   }
   .box__footer_nav{
     margin: 100px auto 0;
