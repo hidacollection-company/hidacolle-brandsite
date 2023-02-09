@@ -3048,7 +3048,9 @@ a{
     }
 
 
-    .body-privacy,.body-company{
+    .body-privacy,
+    .body-company,
+    .body-contact{
         .heading{
             margin: 50px auto;
             @include fts(ja, lead);
