@@ -2,19 +2,21 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 const Home: NextPage = () => {
 
+    const bread_list : { [key: string]: string }[] = [
+        {
+            name: "プライバシーポリシー",
+            url: ""
+        }
+    ];
 
     return (
       <section className="contents-body body-privacy">
 
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>プライバシーポリシー</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         <h1 className='heading'>プライバシーポリシー</h1>
 

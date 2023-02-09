@@ -85,14 +85,17 @@ export const Footer = memo(() => {
               <div className={styles.layout_box}>
                   <div className={styles.left_contents}>
                       <div className={styles.shop_information}>
-                          <p className={styles.title}>ヒダコレ ショップ</p>
-                          <p className={styles.line}>営業時間 : 9:30-17:30 （水曜日 定休）</p>
-                          <p className={styles.line}>電話番号 : 0577-57-7555<span className={styles.pc_only}> / </span><br className={styles.sp_only} />メール : info@hida-collection.shop</p>
-                          <p className={styles.caption}>ウェブでのご注文は24時間365日承っています。</p>
-                      </div>
-                      <div className={styles.address}>
+                          <p className={styles.title}>ヒダコレ家具</p>
                           <p className={styles.line}>〒506-0055 岐阜県高山市上岡本町3-362</p>
+                          <p className={styles.line}>営業時間 : 9:30-17:30 （水曜日 定休）</p>
+                          <p className={styles.line}>電話番号 : 0577-57-7555<span className="pc_only"> / </span><br className="sp_only" />メール : info@hida-collection.shop</p>
+                      </div>
+                      <div className={styles.googlemap}>
                           <a className={styles.caption} href="https://g.page/hidacolle?share" target="_blank" rel="noopener">Google mapで地図をみる</a>
+                      </div>
+                      <div className={styles.webshop_information}>
+                        <p className={styles.caption}>ウェブでのご注文は24時間365日承っています。</p>
+                        <a className={styles.caption} href="https://www.hida-collection.shop/" target="_blank" rel="noopener">https://www.hida-collection.shop/</a>
                       </div>
                   </div>
                   <div className={styles.right_contents}>

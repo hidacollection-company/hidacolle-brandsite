@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           />
         </section>
         <section className="box-home_about">
-          <h1 className="heading-home_about">丸太から<br />一枚板とカスタムオーダー家具</h1>
+          <h1 className="heading-home_about">丸太から<br />一枚板と<br className='sp_only' />カスタムオーダー家具</h1>
           <p className="title-home_about">なぜ「丸太から」？</p>
           <p className="text-home_about">SDGsの中に「つくる責任 つかう責任」という目標があります。<br />単なる資材としての木材から家具を作るのではなく、木材はもともと丸太であって、森で木として生きていたことを考えながら家具づくりをすることで、自然・社会・地域に少しでも「つくる責任」を果たせるように努めたいと考えています。</p>
         </section>
@@ -42,17 +42,19 @@ const Home: NextPage = () => {
             <p>やはりもう「物」を大量に生産して、大量に消費することができなくなりそうですね。</p>
             <p>だからこそ、私たち「つくる手」とお客様の「つかい手」が一緒になって考えることの必要性を感じています。</p>
           </div>
-          <div className="layout-button">
-            <Link href='/furniture-that-thinks' legacyBehavior><a className="button target_this_site">考える家具とは</a></Link>
+          <div className="layout__centering">
+            <div className="layout-button">
+              <Link href='/furniture-that-thinks' legacyBehavior><a className="button target_this_site">考える家具とは</a></Link>
+            </div>
           </div>
         </section>
         <section className="box-maruta_project">
           <div className="catch-maruta_project">
-            <p>MARUTA<br />Project</p>
-            <h1>丸太から家具を考えるプロジェクト</h1>
+            <p>MARUTA <br className='pc_only' />Project</p>
+            <h1>丸太から家具を<br className='sp_only' />考えるプロジェクト</h1>
           </div>
           <div className="contents-maruta_project">
-            <h3 className="lead-maruta_project">「丸太から家具を考えるプロジェクト」とは、</h3>
+            <h3 className="lead-maruta_project">「丸太から家具を<br className='sp_only' />考えるプロジェクト」とは、</h3>
             <div className="bold-maruta_project">
               <p>ヒダコレの家具は、無垢の木で作られています。その無垢の木は元は丸太であり、森で育っていたのです。</p>
               <p>みなさんに家具づくりを通して、丸太を感じていただき、森を知っていただきたいと思っています。</p>
@@ -152,7 +154,7 @@ const Home: NextPage = () => {
           {/* Component */}
           <div className="listcontents-make">
             <div className="heading-make">
-              <p>本当に欲しい家具は<br />買うものではなく「つくる」もの</p>
+              <p>本当に欲しい家具は<br />買うものではなく<br className='sp_only' />「つくる」もの</p>
             </div>
             <ul className="list-make">
               <li>
@@ -183,7 +185,9 @@ const Home: NextPage = () => {
           </div>
 
           <div className="layout__CustomFurnitureList">
-            <CustomFurnitureList />
+            <CustomFurnitureList
+              title = "ヒダコレのカスタムオーダー家具は<br />こんなことができます"
+            />
           </div>
 
         </section>
@@ -195,8 +199,8 @@ const Home: NextPage = () => {
             <p className="text">ゆっくりおうちで家具えらび<br />全国どこでもつながるヒダコレ家具の<br />オンラインの取り組み</p>
           </div>
           <div className="box-whats_online_challenge">
-            <p className="text-en">What’s Online challenge</p>
-            <p className="title-ja">オンラインチャレンジってなに?</p>
+            <p className="text-en">What's Online challenge</p>
+            <p className="title-ja">オンラインチャレンジ<br className='sp_only' />ってなに?</p>
             <p className="text-ja">全国の方にヒダコレの家具を使っていただきたいという思いから、<br />３つのオンライン販売の取り組みを始めました。</p>
             <ol>
               <li>オーダーテーブルのネット注文が簡単にできるように</li>
@@ -338,8 +342,10 @@ const Home: NextPage = () => {
                 <p>「日々の暮らしを豊かに」という思いは、ヒダコレの家具づくりと同じです。</p>
                 <p>飛騨高山という場所で一緒にモノづくりをしている仲間を、ヒダコレ目線でご紹介したいと思います。</p>
               </div>
-              <div className="layout-button">
-                <Link href='/handcrafts-of-hida' legacyBehavior><a className="button target_this_site">飛騨の手仕事をもっとみる</a></Link>
+              <div className="layout__centering">
+                <div className="layout-button">
+                  <Link href='/handcrafts-of-hida' legacyBehavior><a className="button target_this_site">飛騨の手仕事をもっとみる</a></Link>
+                </div>
               </div>
             </div>
             <div className="bgimage-handicrafts_of_hida">
@@ -418,7 +424,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="contents-flagship_shop">
-            <p className="lead-contents_flagship_shop">木を知り、森を感じる。<br />家具を考え、地域につなげる。<br />飛騨高山の地で、そんなことを目指している家具工房です。</p>
+            <p className="lead-contents_flagship_shop">木を知り、森を感じる。<br />家具を考え、地域につなげる。<br />飛騨高山の地で、<br className='sp_only' />そんなことを目指している<br className='sp_only' />家具工房です。</p>
             <ul className="list-contents__flagship_shop">
               <li>
                 <figure>

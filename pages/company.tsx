@@ -2,19 +2,21 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 const Home: NextPage = () => {
 
+    const bread_list : { [key: string]: string }[] = [
+        {
+        name: "会社概要",
+        url: ""
+        }
+    ];
 
     return (
       <section className="contents-body body-company">
 
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>会社概要</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         <h1 className='heading'>会社概要</h1>
 

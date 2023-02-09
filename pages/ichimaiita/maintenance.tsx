@@ -2,29 +2,32 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 import {Link as Scroll} from "react-scroll"
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "一枚板の家具",
+        url: "/ichimaiita"
+      },
+      {
+        name: "テーブル修理・再生",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-maintenance">
 
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <Link href={"/ichimaiita"} legacyBehavior>
-            <a className="">一枚板の家具</a>
-          </Link>
-          <span>&gt;</span>
-          <span>テーブル修理・再生</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
-            <p className="catch">Ichimaiita<br />funiture</p>
+            <p className="catch">Ichimaiita<br className='pc_only' />funiture</p>
             <div className="heading">
             <h1>テーブル修理・再生</h1>
             </div>
@@ -40,7 +43,7 @@ const Home: NextPage = () => {
         </div>
 
         <section className='box-introduction'>
-          <p className="heading-introduction">大切な家具を<br />次の世代に使いつなげるために</p>
+          <p className="heading-introduction">大切な家具を<br className='pc_only' />次の世代に<br className='sp_only' />使いつなげるために</p>
           <p className='bold-introduction'>飛騨の家具づくりの技術と経験を生かして、みなさんの大切な家具を再生させます。</p>
           <div className="visual-introduction">
             <Image
@@ -108,7 +111,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="box-before_after">
-            <h3>メンテナンスのビフォー・アフター</h3>
+            <h3>メンテナンスの<br className='sp_only' />ビフォー・アフター</h3>
             <ul>
               <li>
                 <figure className="before">
@@ -150,7 +153,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="box-before_after">
-            <h3>修理・再生のビフォー・アフター</h3>
+            <h3>修理・再生の<br className='sp_only' />ビフォー・アフター</h3>
             <ul>
               <li>
                 <figure className="before">
@@ -279,7 +282,7 @@ const Home: NextPage = () => {
         </section>
 
         <section id="order_flow" className="box-order_flow">
-          <h2>ご相談からメンテナンス・修理・買取までの流れ</h2>
+          <h2>ご相談から<br className='sp_only' />メンテナンス・修理・買取<br className='sp_only' />までの流れ</h2>
           <ul className="contents-order_flow">
               <li>
                 <div className="layout__header">

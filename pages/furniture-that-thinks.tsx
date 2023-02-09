@@ -2,18 +2,21 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "考える家具",
+        url: ""
+      }
+    ];
 
     return (
       <section className="contents-body body-furniture_that_thinks">
 
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>考える家具</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         <h1 className='heading'>考える家具</h1>
         <div className="lead-furniture_that_thinks">
@@ -32,7 +35,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <section className="box-logo_that_thinks">
-          <h2>ヒダコレ家具の、このマークの意味は、</h2>
+          <h2>ヒダコレ家具の、<br className='sp_only' />このマークの意味は、</h2>
           <div className="contents-logo_that_thinks">
             <div className="block-logo_that_thinks">
               <figure>
@@ -42,7 +45,7 @@ const Home: NextPage = () => {
                   width={1280}
                   height={855}
                 />
-                <figcaption>「家具づくり」を通して、お客様の暮らしに寄り添うために、<br />ヒダコレ家具とお客様との立ち位置を示しています。</figcaption>
+                <figcaption>「家具づくり」を通して、お客様の暮らしに寄り添うために、<br className='pc_only' />ヒダコレ家具とお客様との立ち位置を示しています。</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">
@@ -53,7 +56,7 @@ const Home: NextPage = () => {
                   width={1280}
                   height={855}
                 />
-                <figcaption>お客様のお部屋の、そして暮らし方の「形」と、<br />家具を作るための木である「丸太」を組み合わせると、</figcaption>
+                <figcaption>お客様のお部屋の、そして暮らし方の「形」と、<br className='pc_only' />家具を作るための木である「丸太」を組み合わせると、</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">
@@ -75,7 +78,7 @@ const Home: NextPage = () => {
                   width={1280}
                   height={855}
                 />
-                <figcaption>またこのマークの組み合わせで、<br />ヒダコレ家具のものづくりのバリエーションも表しています。</figcaption>
+                <figcaption>またこのマークの組み合わせで、<br className='pc_only' />ヒダコレ家具のものづくりのバリエーションも表しています。</figcaption>
               </figure>
             </div>
             <div className="block-logo_that_thinks">

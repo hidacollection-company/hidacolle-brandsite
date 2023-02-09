@@ -3,20 +3,23 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { GoToOnlineshop } from 'components/OnlineChallenge/GoToOnlineshop'
+import { BreadList } from 'components/BreadList/BreadList'
 
 import {Link as Scroll} from "react-scroll"
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "オーダーテーブルをネットで",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-order_tables">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>オーダーテーブルをネットで</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         <div className="box-heading_order_tables">
           <div className="layout__heading_order_tables">
@@ -183,9 +186,7 @@ const Home: NextPage = () => {
                 <span className="number">2</span>
                 <h2>集成材や合板は使わずに<br />無垢の木でテーブルを製作しています</h2>
                 <div className='caption'>
-                  <p>ニレ・タモ・クルミ・カバ・ナラなどの国産材と、</p>
-                  <p>ウォールナット・チェリーの世界銘木を加えた７樹種から、</p>
-                  <p>ご希望の木をお選びいただけます。</p>
+                  <p>ニレ・タモ・クルミ・カバ・ナラなどの国産材と、ウォールナット・チェリーの世界銘木を加えた７樹種から、ご希望の木をお選びいただけます。</p>
                 </div>
               </div>
             </div>

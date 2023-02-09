@@ -1,7 +1,9 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+
 import { GoToOnlineshop } from 'components/OnlineChallenge/GoToOnlineshop'
+import { BreadList } from 'components/BreadList/BreadList'
 
 import {Link as Scroll} from "react-scroll"
 
@@ -40,20 +42,19 @@ export function getOddEven(id: number): string {
 
 const Home: NextPage = () => {
 
-  console.log(data.postLists);
+  const bread_list : { [key: string]: string }[] = [
+    {
+      name: "飛騨の手仕事",
+      url: ""
+    }
+  ];
 
   const postLists = data.postLists;
 
     return (
       <div className="contents-body body-handcrafts-of-hida">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>飛騨の手仕事</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">

@@ -2,27 +2,31 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 import {Link as Scroll} from "react-scroll"
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "小さな丸太を生かす",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-small_log">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>小さな丸太を生かす</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
-            <p className="catch">MARUTA<br />Project</p>
+            <p className="catch">MARUTA<br className="pc_only" />Project</p>
             <div className="heading">
               <h1>小さな丸太を生かす</h1>
-              <p className="caption">飛騨の森の広葉樹はまとめて伐採され、そのほとんどがチップとして消費されています…</p>
+              <p className="caption">飛騨の森の広葉樹はまとめて伐採され、<br className="sp_only" />そのほとんどがチップとして消費されています…</p>
             </div>
           </div>
           <div className="visual-heading">
@@ -37,7 +41,7 @@ const Home: NextPage = () => {
 
         <section className='box-introduction'>
 
-          <p className="heading">飛騨地域の森林・木材への取り組み</p>
+          <p className="heading">飛騨地域の<br className="sp_only" />森林・木材への取り組み</p>
 
           <Image
             src="/images/small-log/002.jpg"
@@ -48,17 +52,17 @@ const Home: NextPage = () => {
           />
 
           <div className="block-introduction">
-            <p className="title">飛騨地域を代表する高山市の森林の状況は</p>
+            <p className="title">飛騨地域を代表する<br className="sp_only" />高山市の森林の状況は</p>
             <div className="bold">
-              <p>高山市の森林面積は約２００，０００ha 程であり、高山市全体の９２．１％を占め、日本一広い森林面積を有する市です。その内民有林の面積は１１９，０００ha程で、残る８０，０００ha程 は国有林であり、市の森林全体の４０．３％を占めています。</p>
-              <p>民有林の内スギやヒノキなどの人工林面積は４５，０００ha程 で、民有林の３７．８％を占めていますが、実は県内の他地域に比べ人工林の割合が低い状況となっています。</p>
-              <p>またコナラ・ミズナラ・ブナ・クルミ・クリ・サクラ・カバなどの広葉樹からなる天然林面積は、６８，０００ha 程で民有林の５７．６％を占めています。(マツ類も含む)</p>
-              <p>その中『特に広葉樹天然林については、利用率が低く、大半の活用方法がチップや薪などに限定されているため、新たな用途の研究・開拓、利用拡大が課題となっています。』</p>
+              <p>高山市の森林面積は約200,000ha程であり、高山市全体の92.1%を占め、日本一広い森林面積を有する市です。その内民有林の面積は119,000ha程で、残る80,000ha程 は国有林であり、市の森林全体の40.3%を占めています。</p>
+              <p>民有林の内スギやヒノキなどの人工林面積は45,000ha程で、民有林の37.8%を占めていますが、実は県内の他地域に比べ人工林の割合が低い状況となっています。</p>
+              <p>またコナラ・ミズナラ・ブナ・クルミ・クリ・サクラ・カバなどの広葉樹からなる天然林面積は、68,000ha程で民有林の57.6%を占めています。（マツ類も含む）</p>
+              <p>その中『特に広葉樹天然林については、利用率が低く、大半の活用方法がチップや薪などに限定されているため、新たな用途の研究・開拓、利用拡大が課題』となっています。</p>
             </div>
           </div>
 
           <div className="block-introduction">
-            <p className="title">高山市の100年を見据えた森林づくり</p>
+            <p className="title">高山市の<br className="sp_only" />100年を見据えた森林づくり</p>
             <div className="bold">
               <p>森林整備の課題を踏まえ、大まかなエリアごとの森林づくりの目標に基づく「将来目標区分」と、森林において重視すべき機能に基づく「森林機能区分」について、区分間の調整を図りつつ、それぞれの区分を設定しています。</p>
               <p>将来目標区分については、木材生産を目的とした「木材生産区域」、公益的機能を重視した「環境保全区域」、景観を重視した「観光景観区域」、身近な生活環境の保全を目的とした「生活保全区域」の４つの森林区分を設定して、それぞれの区域ごとに１００年後の望ましい姿に向けた森林づくりに取り組んでいます。</p>
@@ -84,10 +88,10 @@ const Home: NextPage = () => {
 
         <section className="box-attempt">
           <div className="heading-attempt">
-            <h2>ヒダコレの小さな丸太を生かす取り組み</h2>
+            <h2>ヒダコレの<br className="sp_only" />小さな丸太を生かす取り組み</h2>
           </div>
           <div className="box-why">
-            <p className="title">飛騨の広葉樹はなぜチップに消費されるのか</p>
+            <p className="title">飛騨の広葉樹は<br className="sp_only" />なぜチップに消費されるのか</p>
             <div className="bold">
               <p>飛騨地域の豊かな森は、広葉樹の天然林面積の比率も大きいのですが、コナラ・ミズナラ・ブナ・クルミ・クリ・サクラ・カバ、その他多種多様の広葉樹の植生があり、家具メーカーの大量生産に見合う均一化された樹種、均一化されたサイズ、均一化された数量のものが揃わないのです。</p>
               <p>多種多様な樹種が混在している伐採された広葉樹は、どのような樹種でもまとめて全部買ってくれるチップ業者へ流れてしまうのです。</p>
@@ -97,7 +101,7 @@ const Home: NextPage = () => {
           <div className="box-aciton">
             <div className="layout__aciton">
               {/* だからヒダコレは… */}
-              <p>チップになる飛騨の広葉樹（小さな丸太）を<br />少しでも救いだし、家具作りに活かしたい</p>
+              <p>チップになる飛騨の<br className="sp_only" />広葉樹（小さな丸太）を<br />少しでも救いだし<span className="pc_only">、</span><br className="sp_only" />家具作りに活かしたい</p>
               {/* と考えています。 */}
             </div>
           </div>

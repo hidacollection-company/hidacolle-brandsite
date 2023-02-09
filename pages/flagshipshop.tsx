@@ -2,10 +2,19 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "ヒダコレ 家具ショップ",
+        url: ""
+      }
+    ];
 
     const settings = {
       accessibility: false,
@@ -16,19 +25,14 @@ const Home: NextPage = () => {
       autoplay: true,
       speed: 100000,
       autoplaySpeed: 0,
-      cssEase: "linear"
+      cssEase: "linear",
+      touchMove: false,
     };
 
     return (
       <div className="contents-body body-flagshipshop">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>ヒダコレ 家具ショップ</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         <div className="box__hero_slider">
           <div className="heading__hero_slider">
@@ -38,7 +42,6 @@ const Home: NextPage = () => {
           <Slider {...settings}>
               <div>
                 <Image
-                  // loader={myLoader}
                   src="/images/flagshipshop/slide-1.jpg"
                   alt="Picture of the author"
                   width={1280}
@@ -47,7 +50,6 @@ const Home: NextPage = () => {
               </div>
               <div>
                 <Image
-                  // loader={myLoader}
                   src="/images/flagshipshop/slide-2.jpg"
                   alt="Picture of the author"
                   width={1280}
@@ -56,7 +58,6 @@ const Home: NextPage = () => {
               </div>
               <div>
                 <Image
-                  // loader={myLoader}
                   src="/images/flagshipshop/slide-3.jpg"
                   alt="Picture of the author"
                   width={1280}
@@ -68,12 +69,10 @@ const Home: NextPage = () => {
 
         <div className="box-introduction">
           <div className="heading-introduction">
-            <p className='lead-introduction'>ヒダコレ 家具ショップは<br />一緒に暮らしを考える場所です。</p>
+            <p className='lead-introduction'>ヒダコレ 家具ショップを<br />森と暮らしがつながる<br className='sp_only' />場所にしたい。</p>
             <p className='bold-introduction'>
-              ヒダコレのお店は飛騨高山にあります。<br />
-              様々な家具を見て、触って、<br />
-              楽しみながら選べるのはもちろん、<br />
-              家具づくりについて考えるお店です。
+              飛騨の匠の技を継承する飛騨高山は日本一の家具産地。<br />
+              飛騨の森で育った色々な広葉樹の丸太から、お客様が直接木に触れ、暮らしを考えながら、私たちと一緒に「家具づくり」ができるお店です。
             </p>
           </div>
           <div className="information">
@@ -82,7 +81,7 @@ const Home: NextPage = () => {
             <p className='title'>店舗お問合せ先（来店ご予約など）</p>
             <p className='caption'>
               電話番号 : 0577-57-7555<br />
-              メール : info@hida-collection.shop
+              メール : info@hidacolle.com
             </p>
             <div className="layout-button">
               <Link href='/large-log' legacyBehavior><a className="">Google mapはこちら</a></Link>
@@ -106,12 +105,12 @@ const Home: NextPage = () => {
             </div>
             <div className="caption">
               <p className='catch-caption'>
-                ヒダコレ家具ショップは<br />
-                入り口から楽しさいっぱい。
+                無垢の家具は、<br className='sp_only' />丸太の木から、<br />丸太は森から生まれています。
               </p>
               <div className='bold-caption'>
                 <p>日本人が独自の風土の中で育んだ「木の文化」。</p>
-                <p>その美意識と技術の一つとしての神社や仏閣、その建築材の中から「銘木」というものが生まれたんじゃないかと思っています。</p>
+                <p>それは「森の文化」とも言えます。</p>
+                <p>お客様に直接その「森」に触れていただくため、<br />ヒダコレ家具ショップの入口は「丸太」からはじまります。</p>
               </div>
             </div>
           </div>
@@ -127,8 +126,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>丸太</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>飛騨の丸太</p>
+                  <p className='caption'>無垢の木は、単なる資材としての「木材」ではなく、何十年もかけて育ってきた「丸太」であって、その丸太は「森」で長く生きていたのです。</p>
                 </figcaption>
               </figure>
             </li>
@@ -142,8 +141,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>ベンチ</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>森のベンチ</p>
+                  <p className='caption'>森の中を散策するような、ひと休みしてお茶を楽しむような、そんな時間の過ごし方も体験してほしいと思い、少し休んでいただけるベンチを作りました。</p>
                 </figcaption>
               </figure>
             </li>
@@ -157,8 +156,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>デッキ</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>無垢の木デッキ</p>
+                  <p className='caption'>飛騨の森で育った広葉樹。耳付きの自然木でそのままデッキを作りました。座って休んだり、子供の遊び場、ワークショップなども開催したいですね。</p>
                 </figcaption>
               </figure>
             </li>
@@ -195,16 +194,15 @@ const Home: NextPage = () => {
           <div className="layout-heading">
             <div className="head">
               <p className='en-section'>First floor</p>
-              <h2 className='ja-section'>一階</h2>
+              <h2 className='ja-section'>1階</h2>
             </div>
             <div className="caption">
               <p className='catch-caption'>
-                ヒダコレ家具ショップは<br />
-                入り口から楽しさいっぱい。
+                一枚板を<br className='sp_only' />循環させるプロジェクトと、<br />飛騨のクラフトを全国の人へ
               </p>
               <div className='bold-caption'>
-                <p>日本人が独自の風土の中で育んだ「木の文化」。</p>
-                <p>その美意識と技術の一つとしての神社や仏閣、その建築材の中から「銘木」というものが生まれたんじゃないかと思っています。</p>
+                <p>日本の森には、一枚板が取れるような大きな木はあまり残されていません。</p>
+                <p>あらたな大きな丸太から一枚板を製作するだけではなく、<br />以前に作られ使われてきた一枚板を再生させる、<br />再度循環させることも目指しています。</p>
               </div>
             </div>
           </div>
@@ -220,8 +218,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>一枚板</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>一枚板を循環させる</p>
+                  <p className='caption'>以前は欠点とされていた木の割れや節なども、実はその木の大切な「個性」の一つです。それが唯一無二の特徴でもあり、そこに愛着が湧くのだと思います。</p>
                 </figcaption>
               </figure>
             </li>
@@ -236,7 +234,7 @@ const Home: NextPage = () => {
                 />
                 <figcaption>
                   <p className='title'>ライブラリー</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='caption'>ヒダコレ家具ショップのテーマは「学び」「体験」「楽しさ」です。木のことを知っていただき、森のこと、地域のことを考えるキッカケになるといいですね。</p>
                 </figcaption>
               </figure>
             </li>
@@ -251,7 +249,7 @@ const Home: NextPage = () => {
                 />
                 <figcaption>
                   <p className='title'>飛騨の手仕事</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='caption'>飛騨の匠の歴史から続く工芸・民芸の文化と、飛騨の豊かな自然の中で丁寧につくりあげられた作品には、作家さんの唯一無二の個性と温かみがあふれています。</p>
                 </figcaption>
               </figure>
             </li>
@@ -288,16 +286,15 @@ const Home: NextPage = () => {
           <div className="layout-heading">
             <div className="head">
               <p className='en-section'>Second floor</p>
-              <h2 className='ja-section'>二階</h2>
+              <h2 className='ja-section'>2階</h2>
             </div>
             <div className="caption">
               <p className='catch-caption'>
-                ヒダコレ家具ショップは<br />
-                入り口から楽しさいっぱい。
+                お客様と<br className='sp_only' />一緒に考え、<br className='sp_only' />一緒につくる、<br />「家具づくり」が<br className='sp_only' />できる場所。
               </p>
               <div className='bold-caption'>
-                <p>日本人が独自の風土の中で育んだ「木の文化」。</p>
-                <p>その美意識と技術の一つとしての神社や仏閣、その建築材の中から「銘木」というものが生まれたんじゃないかと思っています。</p>
+                <p>本当にほしい家具は、「買うもの」ではなく「つくるもの」です。</p>
+                <p>メーカー既製品家具では見つからない、お客様のご希望に合った、<br />そしてお部屋のサイズや暮らし方に合った、<br />お客様オリジナルの家具をお作りします。</p>
               </div>
             </div>
           </div>
@@ -313,8 +310,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>テーブル</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>色々なテーブル</p>
+                  <p className='caption'>四角いテーブルだけではなく、丸いテーブル、変形の天板、また人気のコタツやちゃぶ台などもお作りできます。また７つもの樹種からお選びいただけます。</p>
                 </figcaption>
               </figure>
             </li>
@@ -328,8 +325,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>ソファー</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>オーダーソファ</p>
+                  <p className='caption'>もうソファはゆっくり座れるだけではいけません。リビングでの家族の過ごし方の変化に伴い、「休む」「癒す」「遊ぶ」「集う」「学ぶ」場に変化しています。</p>
                 </figcaption>
               </figure>
             </li>
@@ -343,8 +340,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>デスク</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>ワークスペース</p>
+                  <p className='caption'>お子様の学習机からリビングのカウンターデスク、そしてお部屋でのお仕事に合わせたワークスペースまで。収納やコンセントなどもカスタマイズします。</p>
                 </figcaption>
               </figure>
             </li>
@@ -358,8 +355,8 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>ベッド</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>オーダーベッド</p>
+                  <p className='caption'>特にベッド回りでの過ごし方は見落としがち。ケイタイの充電は、メガネは、本はどうする?棚があると便利、ナイトテーブルがほしいなども可能です。</p>
                 </figcaption>
               </figure>
             </li>
@@ -373,37 +370,23 @@ const Home: NextPage = () => {
                   height={855}
                 />
                 <figcaption>
-                  <p className='title'>こんな家具のある暮らし</p>
-                  <p className='caption'>そんな機会をつくりたくて、土場や製材の現場にお客様をお連れし、一緒に周ることもしばしば。時には一緒に森に入り、”生きている木”を見に行くことだってあります。</p>
+                  <p className='title'>インテリア小物</p>
+                  <p className='caption'>シングルハンガーや鏡などのインテリア。例えばもう少し縦長の鏡がほしいとか、洗面台にピッタリのサイズがほしいなど、お気軽にオーダー製作いたします。</p>
                 </figcaption>
               </figure>
             </li>
           </ul>
-          {/* <ul className="images">
-            <li>
-              <Image
-                src="/test.jpg"
-                alt="Picture of the author"
-                width={1280}
-                height={855}
-              />
-            </li>
-            <li>
-              <Image
-                src="/test.jpg"
-                alt="Picture of the author"
-                width={1280}
-                height={855}
-              />
-            </li>
-          </ul> */}
         </section>
 
         <div className="box-layout_add_bgimage">
 
           <section className="box-reserve">
-            <h3>ご来店の予約について</h3>
-            <p>土日の店舗へのご来店の際にはご予約をおすすめしております。<br />一枚板やヒダコレ家具を1つ1つを丁寧に説明させていただきます。</p>
+            <h3>ご来店の、<br className='sp_only' />事前の連絡について</h3>
+            <div className="caption__reserve">
+              <p>ヒダコレの一枚板やカスタムオーダー家具は、<br className='pc_only' />お客様のお部屋のサイズや暮らし方のイメージをお聞きしながら、<br className='pc_only' />一緒に考えて、一緒につくっていく家具です。</p>
+              <p>いつでも「お試し感覚」でお気軽にご来店いただいておりますが、<br className='pc_only' />もし事前にご来店の連絡をいただけますと、<br className='pc_only' />お客様のイメージを少しお聞きして、ご来店までにいろいろと準備もさせていただきます。</p>
+              <p>遠方からのお客様が多いので、<br className='pc_only' />「来た甲斐があった」と言っていただけるようにご対応させていただきます。</p>
+            </div>
             <div className="buttons">
               <div className="layout-button">
                 <Link href='' legacyBehavior><a href="" className="button target_this_site">電話で予約する</a></Link>
@@ -418,7 +401,7 @@ const Home: NextPage = () => {
           </section>
 
           <section className="box-information">
-            <h3>ご来店の予約について</h3>
+            <h3>店舗情報</h3>
             <table>
               <tbody>
                 <tr>

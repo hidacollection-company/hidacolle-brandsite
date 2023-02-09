@@ -72,7 +72,7 @@ export const Header = memo(() => {
                   <Link href='/contact' legacyBehavior><a className={styles.pc_navbar_button}>ご相談・お問い合わせはこちら</a></Link>
                 </div>
                 <div className={styles.box_nav_button} onClick={() => toggleFunction()}>
-                  <button className={styles.pc_navbar_button}>メニューを閉じる</button>
+                  <button className={styles.pc_navbar_button}>メニュー</button>
                 </div>
               </div>
             </div>
@@ -156,7 +156,9 @@ export const Header = memo(() => {
                 </Link>
               </div>
 
-              <Inquiry />
+              <div className={styles.layout__Inquiry}>
+                <Inquiry />
+              </div>
             </div>
           </div>
         </div>

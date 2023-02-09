@@ -3,12 +3,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './CustomFurnitureList.module.scss'
 
-export const CustomFurnitureList = memo((props) => {
+
+type Props = {
+  title : string;
+}
+
+export const CustomFurnitureList = memo((props: Props) => {
   return (
       <>
         <section className={styles.box_example}>
           <div className={styles.heading}>
-            <p>ヒダコレのカスタムオーダー家具は<br />こんなことができます</p>
+            <p dangerouslySetInnerHTML={{__html: `${props.title}`}}></p>
           </div>
           <ul className={styles.example}>
             <li>

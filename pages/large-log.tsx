@@ -2,27 +2,31 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { BreadList } from 'components/BreadList/BreadList'
+
 import {Link as Scroll} from "react-scroll"
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "大きな丸太を循環させる",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-large_log">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>大きな丸太を循環させる</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
-            <p className="catch">MARUTA<br />Project</p>
+            <p className="catch">MARUTA<br className="pc_only" />Project</p>
             <div className="heading">
             <h1>大きな丸太を循環させる</h1>
-              <p className="caption">もう日本の山々には、テーブル用の一枚板が取れるような大きな木は残されていません…</p>
+              <p className="caption">もう日本の山々には、<br className="sp_only" />テーブル用の一枚板が取れるような<br className="sp_only" />大きな木は残されていません…</p>
             </div>
           </div>
           <div className="visual-heading">
@@ -78,11 +82,11 @@ const Home: NextPage = () => {
 
         <section className="box-attempt">
           <div className="heading-attempt">
-            <h2>ヒダコレの大きな丸太を循環させる取り組み</h2>
+            <h2>ヒダコレの<br className="sp_only" />大きな丸太を循環させる取り組み</h2>
           </div>
           <div className="box-use">
             <div className="block-use">
-              <p className="title">残り少ない大きな丸太（一枚板）を長く使ってもらう</p>
+              <p className="title">残り少ない大きな丸太（一枚板）を<br className="sp_only" />長く使ってもらう</p>
               <div className="bold">
                 <p>もう残り少ない国産の一枚板を次の世代まで使いつなげてもらうために、私たちにまずできることは「木を生かしてつくる」「丁寧にしっかりつくる」ことだと考えています。</p>
                 <p>事前の乾燥を人工乾燥を通して含水率を１０％まで下げる、最後の磨き込みは＃４００の細かいサンドペーパーで磨き込む、メンテナンス可能なオイル塗装をおススメする、お届け後も無料メンテナンスの対応をする、など作り手としての責任を果たすことも大切なことだと感じています。</p>
@@ -166,7 +170,7 @@ const Home: NextPage = () => {
             </ul>
 
             <div className="block-use">
-              <p className="title">使い古された一枚板を修理する。再生する。</p>
+              <p className="title">使い古された一枚板を<br className="sp_only" />修理する。再生する。</p>
               <div className="bold">
                 <p>大きな丸太からつくる国産の一枚板は、もうあまり日本の森には残されていません。</p>
                 <p>ヒダコレのもう一つの取り組みは、あらたな大きな丸太から一枚板を製作するのではなく、以前に作られ使われてきた一枚板を再生させる、再度循環させることを目指しています。</p>
@@ -179,8 +183,8 @@ const Home: NextPage = () => {
           <div className="box-aciton">
             <div className="layout__aciton">
               <p>
-                世界的にみても大きな価値のある樹齢100年以上の<br />
-                大径木から作られる一枚板を再生・循環させたい
+                世界的にみても<br className="sp_only" />大きな価値のある<br className="sp_only" />樹齢100年以上の<br />
+                大径木から作られる一枚板を<br className="sp_only" />再生・循環させたい
               </p>
             </div>
           </div>
@@ -224,7 +228,7 @@ const Home: NextPage = () => {
               </li>
             </ul>
             <div className="link-to-maintenance">
-              <Link href='/ichimaiita/maintenance#purchase' legacyBehavior><a>テーブルのメンテナンス・修理・買取りについてもっと詳しくはこちら</a></Link>
+              <Link href='/ichimaiita/maintenance#purchase' legacyBehavior><a>テーブルの<br className="sp_only" />メンテナンス・修理・買取りについて<br className="sp_only" />もっと詳しくはこちら</a></Link>
             </div>
           </div>
         </section>

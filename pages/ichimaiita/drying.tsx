@@ -5,27 +5,30 @@ import Image from 'next/image';
 import { CtaBox } from 'components/CtaBox/CtaBox'
 import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
+import { BreadList } from 'components/BreadList/BreadList'
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "一枚板の家具",
+        url: "/ichimaiita"
+      },
+      {
+        name: "乾燥中の一枚板",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-drying">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <Link href={"/ichimaiita"} legacyBehavior>
-            <a className="">一枚板の家具</a>
-          </Link>
-          <span>&gt;</span>
-          <span>乾燥中の一枚板</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
-            <p className="catch">Ichimaiita<br />funiture</p>
+            <p className="catch">Ichimaiita<br className='pc_only' />funiture</p>
             <div className="heading">
               <h1>乾燥中の一枚板</h1>
             </div>
@@ -42,7 +45,7 @@ const Home: NextPage = () => {
 
         <section className='box-contents'>
 
-          <p className="heading">地元飛騨の山で育った大きな栃の木</p>
+          <p className="heading">地元飛騨の山で育った<br className='sp_only' />大きな栃の木</p>
 
           <div className="block-contents">
             <div className="inner-contents">

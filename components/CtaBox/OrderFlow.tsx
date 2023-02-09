@@ -7,7 +7,7 @@ export const OrderFlow = memo((props) => {
   return (
       <>
         <section className={styles.box__order_flow}>
-          <h2>ご相談から「家具づくり」までの流れ</h2>
+          <h2>ご相談から「家具づくり」<br className="sp_only" />までの流れ</h2>
           <ul className={styles.contents__order_flow}>
               <li>
                   <div className={styles.heading}>

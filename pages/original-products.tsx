@@ -1,8 +1,10 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+
 import { GoToOnlineshop } from 'components/OnlineChallenge/GoToOnlineshop'
 import { OriginalProductsList } from 'components/OriginalProducts/OriginalProductsList'
+import { BreadList } from 'components/BreadList/BreadList'
 
 import data from 'list-original-prodacts.json'
 
@@ -14,26 +16,26 @@ export const getStaticProps = async () => {
 
 const Home: NextPage = () => {
 
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "こんな家具のある暮らし",
+        url: ""
+      }
+    ];
+
     const postLists = data.postLists;
 
     return (
       <div className="contents-body body-original_products">
 
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>こんな家具のある暮らし</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
             <p className="catch">Online challenge</p>
             <div className="heading">
-              <h1>こんな家具のある暮らし</h1>
+              <h1>こんな家具のある<br className="sp_only" />暮らし</h1>
               <div className="caption">
                 <div className="layout-button">
                   <Link href='/' legacyBehavior><a className="go_to_online target_blank">オンラインショップでみる</a></Link>
@@ -52,7 +54,7 @@ const Home: NextPage = () => {
         </div>
 
         <section className='box-introduction'>
-          <p className='heading-introduction'>シンプルで合わせやすい、<br />暮らしに寄り添ったインテリア家具をつくりました。</p>
+          <p className='heading-introduction'>シンプルで合わせやすい、<br />暮らしに寄り添った<br className="sp_only" />インテリア家具を<br className="sp_only" />つくりました。</p>
           <p className='bold-introduction'>お客様と一緒に考え、一緒に家具づくりをしてきたヒダコレ家具だからこそ、使いやすく、生活に馴染む家具が生まれます。</p>
           <ul className="listimages-introduction">
             <li>
@@ -103,7 +105,7 @@ const Home: NextPage = () => {
         </section>
 
         <section className="box-products">
-          <p className='heading-products'>ヒダコレのインテリア家具をピックアップ</p>
+          <p className='heading-products'>ヒダコレのインテリア家具を<br className="sp_only" />ピックアップ</p>
           <div className="layout__lists-products">
             {postLists.map(post =>
               <OriginalProductsList
@@ -145,7 +147,7 @@ const Home: NextPage = () => {
 
         <GoToOnlineshop
           slug="original-products"
-          title="暮らしに寄り添ったインテリア家具を<br />ネットでご注文"
+          title="暮らしに寄り添った<br className='sp_only' />インテリア家具を<br />ネットでご注文"
           caption="使いやすく、生活に馴染むインテリア家具が「ヒダコレ オンラインショップ」ですぐにご購入いただけます。<br>ぜひ覗いてみてくださいね。"
           ec_url="https://www.hida-collection.shop/"
         />

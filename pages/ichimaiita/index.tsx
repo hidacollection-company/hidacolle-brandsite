@@ -5,27 +5,31 @@ import Image from 'next/image';
 import { CtaBox } from 'components/CtaBox/CtaBox'
 import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
+import { BreadList } from 'components/BreadList/BreadList'
 
 type Props = {
   heading: string ;
 }
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "一枚板の家具",
+        url: ""
+      }
+    ];
+
     return (
       <div className="contents-body body-ichimaiita">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>一枚板の家具</span>
-        </div>
+
+
+        <BreadList list={bread_list}></BreadList>
 
         {/* Component */}
         <div className="box-heading">
           <div className="inner-heading">
-            <p className="catch">Ichimaiita<br />funiture</p>
+            <p className="catch">Ichimaiita<br className='pc_only' />funiture</p>
             <div className="heading">
               <h1>一枚板の家具</h1>
             </div>
@@ -42,7 +46,7 @@ const Home: NextPage = () => {
 
         <section className='box-contents'>
 
-          <p className="heading">ヒダコレの一枚板テーブル</p>
+          <p className="heading">ヒダコレの<br className='sp_only' />一枚板テーブル</p>
 
           <div className="block-contents">
             <div className="inner-contents">

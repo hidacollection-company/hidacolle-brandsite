@@ -5,11 +5,23 @@ import Image from 'next/image';
 import { CtaBox } from 'components/CtaBox/CtaBox'
 import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
+import { BreadList } from 'components/BreadList/BreadList'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "一枚板の家具",
+        url: "/ichimaiita"
+      },
+      {
+        name: "欅の一枚板",
+        url: ""
+      }
+    ];
 
     function SampleNextArrow(props) {
       const { className, style, onClick } = props;
@@ -60,18 +72,8 @@ const Home: NextPage = () => {
 
 
       <div className="contents_body body__solidwood_product">
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <Link href={"/ichimaiita"} legacyBehavior>
-            <a className="">一枚板の家具</a>
-          </Link>
-          <span>&gt;</span>
-          <span>欅の一枚板</span>
-        </div>
+
+        <BreadList list={bread_list}></BreadList>
 
         <div className="box__heading box__layout">
           <h1>欅の一枚板</h1>

@@ -4,24 +4,28 @@ import Image from 'next/image';
 
 import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
 import { OrderFlow } from 'components/CtaBox/OrderFlow'
+import { BreadList } from 'components/BreadList/BreadList'
 
 const Home: NextPage = () => {
+
+    const bread_list : { [key: string]: string }[] = [
+      {
+        name: "ヒダコレのカスタムオーダー家具は、",
+        url: ""
+      }
+    ];
+
     return (
       <section className="contents-body body-custom-furniture">
 
-        {/* パンクズ */}
-        <div className="box__beadlist">
-          <Link href={"/"} legacyBehavior>
-            <a className="">ホーム</a>
-          </Link>
-          <span>&gt;</span>
-          <span>ヒダコレのカスタムオーダー家具は、</span>
-        </div>
+        <BreadList list={bread_list}></BreadList>
 
         <div className="box-heading">
           <div className="inner-heading">
-            <p>Custom Furniture</p>
-            <h1>ヒダコレの<br />カスタムオーダー家具は、</h1>
+            <p className="catch">Custom Furniture</p>
+            <div className="heading">
+              <h1>ヒダコレの<br />カスタムオーダー家具は、</h1>
+            </div>
           </div>
           <div className="visual-heading">
             <Image
@@ -34,7 +38,7 @@ const Home: NextPage = () => {
         </div>
 
         <section className='box-introduction'>
-          <h2>お部屋のお困りごとを<br />お客様と一緒に「家具づくり」で解決します</h2>
+          <h2>お部屋のお困りごとを<br />お客様と一緒に<br className='sp_only' />「家具づくり」で解決します</h2>
           <p>ヒダコレの家具は、お客様と一緒に“考える・つくる・なおす”家具です。<br />メーカー既製品家具では見つからない、お部屋の中のさまざまな家具をお作りします。</p>
           <div className="box__images">
             <div className="main_image">
@@ -62,11 +66,11 @@ const Home: NextPage = () => {
               />
             </div>
           </div>
-          
+
         </section>
 
         <section className="box-catch">
-          <h2>家具づくりを、<br />一緒に考える。<br />ということ。</h2>
+          <h2>家具づくりを、<br className='' />一緒に考える。<br />ということ。</h2>
           <div className="block-catch">
             <p>お客様にとって「家づくり」は大変な工程で、でもとっても楽しい作業ですよね。</p>
             <p>同じように「家具づくり」もとっても楽しい作業で、「暮らしづくり」には欠かせないものです。実はその「家具づくり」にもお客様はご参加いただけるのです。</p>
@@ -76,7 +80,6 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        {/* Component */}
         <section className='listcontents-make'>
           <div className="heading-make">
             <h2>本当にほしい家具は、<br />買うのではなく「つくる」もの。</h2>
@@ -98,7 +101,7 @@ const Home: NextPage = () => {
         </section>
 
         <section className="box-attempt">
-          <h2>ヒダコレでは、お客様と一緒に<br />「３つのつくる」に取り組んでいます。</h2>
+          <h2>ヒダコレでは、お客様と一緒に<br />「３つのつくる」に<br className='sp_only' />取り組んでいます。</h2>
           <ul className="list-attempt">
             <li>
               <div className="heading">
@@ -160,7 +163,7 @@ const Home: NextPage = () => {
                 <div className="inner-attempt">
                   <p>人の暮らしは「十人十色」。</p>
                   <p>みなさんそれぞれの暮らしの形は違っていますので、既製品の家具では、本来決してピッタリ納まることはないのです。</p>
-                  <p>「もう２ｃｍ小さければ入ったのに・・・」、「ここにもう一つ棚があれば・・・」、「電気の線をまとめたいんだけど・・・」、「この隙間を有効活用したい・・・」、「使い勝手のいいワークスペースがほしい・・・」などの暮らしの中の「あったら嬉しい、あったら便利」を形することが、ヒダコレのオーダー家具の目指すところです。</p>
+                  <p>「もう2cm小さければ入ったのに・・・」、「ここにもう一つ棚があれば・・・」、「電気の線をまとめたいんだけど・・・」、「この隙間を有効活用したい・・・」、「使い勝手のいいワークスペースがほしい・・・」などの暮らしの中の「あったら嬉しい、あったら便利」を形することが、ヒダコレのオーダー家具の目指すところです。</p>
                   <p>お客様の声に耳を傾けながら、既製品では見つからない家具、みなさんの暮らしにフィットする家具をお作りしたいと思います。</p>
                 </div>
               </div>
@@ -169,11 +172,17 @@ const Home: NextPage = () => {
         </section>
 
         <div className="layout__CustomFurnitureList">
-          <CustomFurnitureList />
+          <CustomFurnitureList
+            title = "その他、お困りごと解決ポイント"
+          />
         </div>
 
         <div className="images">
-          <p>お客様からお聞きした色々なご希望や思いを、<br />自分たちの工房で家具という「形」にしていく工程は、<br />私たちにとってはお客様の笑顔を想像しながらのワクワクする楽しい時間です。</p>
+          <p>
+            お客様からお聞きした色々なご希望や思いを、<br className='pc_only' />
+            自分たちの工房で、家具という「形」にしていく工程は、<br className='pc_only' />
+            みなさんの笑顔を想像しながらのワクワクする楽しい時間なんです。
+          </p>
           <Image
             src="/images/custom-furniture/index/images-1.jpg"
             alt="Picture of the author"
