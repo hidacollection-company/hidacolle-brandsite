@@ -35,14 +35,13 @@ export const Inquiry = memo((props) => {
                   </div>
                   <div className={styles.inner__to_telephone}>
                     <p>フリーダイヤル</p>
-                    <Link href='/' legacyBehavior><a className="">0120-690-315</a></Link>
+                    <Link href='' legacyBehavior><a href="tel:0120-690-315" className="">0120-690-315</a></Link>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        
       </>
   );
 })

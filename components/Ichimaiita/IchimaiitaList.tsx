@@ -26,11 +26,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>2,300 × 830-950 × 65 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>ky-23001</td>
                       </tr>
                     </tbody>
                   </table>
@@ -54,11 +54,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>2,100 × 850-900 × 60 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>kr-23001</td>
                       </tr>
                     </tbody>
                   </table>
@@ -82,11 +82,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>1,800 × 800-900 × 60 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>ks-23001</td>
                       </tr>
                     </tbody>
                   </table>
@@ -110,11 +110,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>2,200 × 650-800 × 55 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>mz-23001</td>
                       </tr>
                     </tbody>
                   </table>
@@ -138,11 +138,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>2,100 × 900-1,130 × 55 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>tc-23001</td>
                       </tr>
                     </tbody>
                   </table>
@@ -166,11 +166,11 @@ export const IchimaiitaList = memo((props) => {
                     <tbody>
                       <tr>
                         <th>サイズ</th>
-                        <td>1000*1000*1000 (mm)</td>
+                        <td>2,080 × 900-1,030 × 53 (mm)</td>
                       </tr>
                       <tr>
                         <th>管理番号</th>
-                        <td>123456</td>
+                        <td>yz-23001</td>
                       </tr>
                     </tbody>
                   </table>

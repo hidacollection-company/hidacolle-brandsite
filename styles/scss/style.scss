@@ -1831,12 +1831,12 @@ a{
                 width: 100%;
                 table{
                     tbody{
-                        tr.table-delivery_schedule,tr.table-tree_species,tr.table-size{
+                        tr{
                             margin: 0 0 15px;
                             display: block;
                             vertical-align: top;
                             th.table-title{
-                                width: 55px;
+                                width: 100px;
                                 @include fts(ja, small);
                                 line-height: 150%;
                                 text-align-last: left;
@@ -3047,7 +3047,6 @@ a{
         }
     }
 
-
     .body-privacy,
     .body-company,
     .body-contact{
@@ -3081,7 +3080,160 @@ a{
             }
         }
     }
-    
+    .body-contact{
+        .box__contents{
+            form{
+                .form-unit{
+                    margin: 30px 0 0;
+                    .title{
+                        @include fts(ja, bold);
+                    }
+                    .layout__check_box{
+                        margin: 15px 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 20px 0;
+                        .block__check_box{
+                            width: 100%;
+                            display: flex;
+                            gap: 0 10px;
+                            input[type="checkbox"]{
+                                width: 30px;
+                                height: 30px;
+                                border: 2px solid c(nc, b1);
+                                border-radius: 3px;
+                            }
+                            label{
+                                @include fts(ja, text);
+                            }
+                        }
+                    }
+                }
+                label{
+                    @include fts(ja, bold);
+                    display: flex;
+                    align-items: center;
+                    gap: 0 15px;
+                    .required_label{
+                        padding: 5px 10px;
+                        color: c(nc, w1);
+                        @include fts(ja, small);
+                        background-color: c(red,d2);
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                input[type="text"],
+                input[type="email"]{
+                    margin: 15px 0 0;
+                    padding: 0 10px;
+                    width: 100%;
+                    height: 50px;
+                    @include fts(ja, bold);
+                    border: 2px solid c(nc, b1);
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                }
+                textarea{
+                    margin: 20px 0 0;
+                    padding: 10px;
+                    width: 100%;
+                    height: 180px;
+                    @include fts(ja, bold);
+                    border: 2px solid c(nc, b1);
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                }
+            }
+            .layout__confirm{
+                .title{
+                    @include fts(ja, title);
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                .form-unit{
+                    .form-unit-title{
+                        @include fts(ja, bold);
+                    }
+                    .form-unit-value{
+                        margin: 20px 0 0;
+                        @include fts(ja, title);
+                    }
+                }
+            }
+            .form-validateMessage{
+                margin: 50px auto 0;
+                width: 100%;
+                height: 60px;
+                color: c(nc, w1);
+                @include fts(ja, text);
+                background-color: c(red,d2);
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .form-buttonWrapper{
+                margin: 20px 0 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                .form-backButton{
+                    margin: 50px 0 0;
+                    width: $wxxs;
+                    height: 100%;
+                    height: 60px;
+                    @include fts(ja, text);
+                    background-color: c(nc,g1);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .form-submitButton{
+                    margin: 20px 0 0;
+                    width: 100%;
+                    height: 60px;
+                    color: c(nc, w1);
+                    @include fts(ja, text);
+                    background-color: c(green,m);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .body-contact_complete{
+        margin: 100px auto 0;
+        width: $mainWidth_sp;
+        .heading{
+            @include fts(ja, lead);
+            text-align: center;
+            text-decoration: underline;
+        }
+        .caption{
+            margin: 50px 0 0;
+            @include fts(ja, bold);
+            text-align: center;
+        }
+        .home-backButton{
+            margin: 50px auto 0;
+            width: 100%;
+            height: 60px;
+            color: c(nc, w1);
+            @include fts(ja, text);
+            background-color: c(green,m);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 @include mq(m) {
@@ -4841,12 +4993,12 @@ a{
                 width: $wxxs;
                 table{
                     tbody{
-                        tr.table-delivery_schedule,tr.table-tree_species,tr.table-size{
+                        tr{
                             margin: 0 0 15px;
                             display: block;
                             vertical-align: top;
                             th.table-title{
-                                width: 55px;
+                                width: 80px;
                                 @include fts(ja, small);
                                 line-height: 150%;
                                 text-align-last: left;
@@ -6030,7 +6182,9 @@ a{
     }
     
     
-    .body-privacy,.body-company{
+    .body-privacy,
+    .body-company,
+    .body-contact{
         .heading{
             margin: 50px auto;
             @include fts(ja, lead);
@@ -6061,5 +6215,233 @@ a{
             }
         }
     }
-    
+
+    .body-contact{
+        .box__contents{
+            form{
+                .form-unit{
+                    margin: 50px 0 0;
+                    .title{
+                        @include fts(ja, bold);
+                    }
+                    .layout__check_box{
+                        margin: 20px 0 0;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 20px 0;
+                        .block__check_box{
+                            width: 50%;
+                            display: flex;
+                            gap: 0 10px;
+                            input[type="checkbox"]{
+                                width: 30px;
+                                height: 30px;
+                                border: 2px solid c(nc, b1);
+                                border-radius: 3px;
+                            }
+                            label{
+                                @include fts(ja, text);
+                            }
+                        }
+                    }
+                }
+                label{
+                    @include fts(ja, bold);
+                    display: flex;
+                    align-items: center;
+                    gap: 0 15px;
+                    .required_label{
+                        padding: 5px 10px;
+                        color: c(nc, w1);
+                        @include fts(ja, small);
+                        background-color: c(red,d2);
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                input[type="text"],
+                input[type="email"]{
+                    margin: 20px 0 0;
+                    padding: 0 10px;
+                    width: 100%;
+                    height: 50px;
+                    @include fts(ja, bold);
+                    border: 2px solid c(nc, b1);
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                }
+                textarea{
+                    margin: 20px 0 0;
+                    padding: 10px;
+                    width: 100%;
+                    height: 180px;
+                    @include fts(ja, bold);
+                    border: 2px solid c(nc, b1);
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                }
+            }
+            .layout__confirm{
+                .title{
+                    @include fts(ja, title);
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                .form-unit{
+                    .form-unit-title{
+                        @include fts(ja, bold);
+                    }
+                    .form-unit-value{
+                        margin: 20px 0 0;
+                        @include fts(ja, title);
+                    }
+                }
+            }
+            .form-validateMessage{
+                margin: 50px auto 0;
+                width: 100%;
+                height: 60px;
+                color: c(nc, w1);
+                @include fts(ja, text);
+                background-color: c(red,d2);
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .form-buttonWrapper{
+                margin: 100px 0 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                .form-backButton{
+                    width: $wxxs;
+                    height: 60px;
+                    // color: c(nc, w1);
+                    @include fts(ja, text);
+                    background-color: c(nc,g1);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .form-submitButton{
+                    margin: 0 0 0 0;
+                    width: $wxxs;
+                    height: 60px;
+                    color: c(nc, w1);
+                    @include fts(ja, text);
+                    background-color: c(green,m);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .box__selectable{
+            margin: 200px 0 0;
+            .heading__selectable{
+                margin: 0 auto;
+                width: $wm;
+                h2{
+                    @include fts(ja, lead);
+                }
+                .s_caption{
+                    margin: 30px 0 0;
+                    @include fts(ja, bold);
+                }
+            }
+            .contents__selectable{
+                margin: 50px 0 0;
+                padding: 100px 0;
+                width: 100%;
+                background-color: c(nc, g2);
+                box-sizing: border-box;
+                .layout__selectable{
+                    margin: 0 auto;
+                    width: $wm;
+                    display: flex;
+                    justify-content: space-between;
+                    .block__select{
+                        width: $wxxs;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h3{
+                            @include fts(ja, title);
+                            line-height: 100%;
+                            text-align: center;
+                        }
+                        .catch{
+                            margin: 30px 0 0;
+                        }
+                        .s_caption{
+                            margin: 30px 0 0;
+                            p{
+                                margin: 0 0 20px;
+                                @include fts(ja, text);
+                            }
+                            .attention{
+                                width: 100%;
+                                height: 80px;
+                                color: c(nc, w1);
+                                @include fts(ja, text);
+                                background-color: c(green, m);
+                                border-radius: 8px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                        .layout__buttons{
+                            margin: 20px 0 0;
+                            .block__button{
+                                width: 100%;
+                                height: 80px;
+                                color: c(yellow, m);
+                                @include fts(ja, bold);
+                                background-color: c(nc, w1);
+                                border: 3px solid c(yellow, m);
+                                border-radius: 100px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .body-contact_complete{
+        margin: 100px auto 0;
+        width: $wl;
+        .heading{
+            @include fts(ja, lead);
+            text-align: center;
+            text-decoration: underline;
+        }
+        .caption{
+            margin: 50px 0 0;
+            @include fts(ja, bold);
+            text-align: center;
+        }
+        .home-backButton{
+            margin: 50px auto 0;
+            width: $wxxs;
+            height: 60px;
+            color: c(nc, w1);
+            @include fts(ja, text);
+            background-color: c(green,m);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }

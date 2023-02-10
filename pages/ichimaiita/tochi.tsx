@@ -201,11 +201,15 @@ const Home: NextPage = () => {
                   </tr> */}
                   <tr className="table-size">
                     <th className="table-title">サイズ</th>
-                    <td className="table-line">幅 950mm × 奥行 350mm × 高さ 720mm</td>
+                    <td className="table-line">2,100 × 900-1,130 × 55 (mm)</td>
+                  </tr>
+                  <tr className="table-numbering">
+                    <th className="table-title">管理番号</th>
+                    <td className="table-line">tc-23001</td>
                   </tr>
                 </tbody>
               </table>
-              <div className="price">113,630<span className="yen">円 (税込)</span></div>
+              <div className="price">616,000<span className="yen">円 (税込)</span></div>
               <div className="layout-button">
                 <Link href='/contact' legacyBehavior><a className="button_green">お問い合わせはこちら</a></Link>
               </div>

@@ -88,7 +88,7 @@ export const Footer = memo(() => {
                           <p className={styles.title}>ヒダコレ家具</p>
                           <p className={styles.line}>〒506-0055 岐阜県高山市上岡本町3-362</p>
                           <p className={styles.line}>営業時間 : 9:30-17:30 （水曜日 定休）</p>
-                          <p className={styles.line}>電話番号 : 0577-57-7555<span className="pc_only"> / </span><br className="sp_only" />メール : info@hida-collection.shop</p>
+                          <p className={styles.line}>電話番号 : 0120-690-315<span className="pc_only"> / </span><br className="sp_only" />メール : info@hidacolle.com</p>
                       </div>
                       <div className={styles.googlemap}>
                           <a className={styles.caption} href="https://g.page/hidacolle?share" target="_blank" rel="noopener">Google mapで地図をみる</a>
@@ -104,14 +104,11 @@ export const Footer = memo(() => {
                       <ul className={styles.sns_menu}>
                           <li><a href="https://www.instagram.com/hidacolle_kagu/" target="_blank" rel="noopener">Instagram</a></li>
                           <li><a href="https://www.facebook.com/hidacolle" target="_blank" rel="noopener">Facebook</a></li>
-                          {/* <li><a href="https://lin.ee/lIjTB1c" target="_blank" rel="noopener">LINE</a></li> */}
                       </ul>
                   </div>
               </div>
               <div className={styles.site_information}>
                   <ul className={styles.site_information_menu}>
-                      {/* <li><a href="/view/page/order-guide">ご注文・お問合わせガイド</a></li>
-                      <li><a href="/view/contract">特定商取引法に基づく表示</a></li> */}
                       <li><a href="/privacy">プライバシーポリシー</a></li>
                       <li><a href="/company">会社概要</a></li>
                   </ul>
