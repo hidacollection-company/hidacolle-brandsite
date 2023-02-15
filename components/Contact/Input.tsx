@@ -17,40 +17,52 @@ export const Input = memo((props) => {
   const [checkBoxValues, setcheckBoxValues] = useState<checkBoxType[]>([
     {
       id: "1",
-      name: "MARUTA projectsについて",
-      checked: false,
-      disabled: false,
-    },
-    {
-      id: "2",
       name: "一枚板について",
       checked: false,
       disabled: false,
     },
     {
+      id: "2",
+      name: "いろいろなテーブルなど",
+      checked: false,
+      disabled: false,
+    },
+    {
       id: "3",
-      name: "オーダー家具について",
+      name: "ソファなど",
       checked: false,
       disabled: false,
     },
     {
       id: "4",
-      name: "メンテナンス・修理・買い取りについて",
+      name: "ＴＶボードなど",
       checked: false,
       disabled: false,
     },
     {
       id: "5",
-      name: "店舗のついて",
+      name: "ベッドなど",
       checked: false,
       disabled: false,
     },
     {
       id: "6",
-      name: "工房について",
+      name: "家具全般について",
       checked: false,
       disabled: false,
     },
+    {
+      id: "7",
+      name: "メンテナンス・修理・買い取りについて",
+      checked: false,
+      disabled: false,
+    },
+    {
+      id: "8",
+      name: "その他",
+      checked: false,
+      disabled: false,
+    }
   ]);
 
   const router = useRouter();
@@ -89,6 +101,26 @@ export const Input = memo((props) => {
             /> */}
           </div>
 
+          <div className="form-unit">
+            <label htmlFor="yourEmail">メールアドレス<span className='required_label'>必須</span></label>
+            <input
+              type="text"
+              className="input-text"
+              placeholder=""
+              {...register('yourEmail', {
+                required: true
+              })}
+            />
+
+            {/* <ErrorMessage
+              errors={errors}
+              name="yourEmail"
+              render={({ message }) =>
+                message ? <p className="form-validateMessage">{message}</p> : null
+              }
+            /> */}
+          </div>
+
 
           <div className="form-unit">
 
@@ -104,26 +136,6 @@ export const Input = memo((props) => {
             {/* <ErrorMessage
               errors={errors}
               name="yourTell"
-              render={({ message }) =>
-                message ? <p className="form-validateMessage">{message}</p> : null
-              }
-            /> */}
-          </div>
-
-          <div className="form-unit">
-            <label htmlFor="yourEmail">メールアドレス<span className='required_label'>必須</span></label>
-            <input
-              type="text"
-              className="input-text"
-              placeholder=""
-              {...register('yourEmail', {
-                required: true
-              })}
-            />
-
-            {/* <ErrorMessage
-              errors={errors}
-              name="yourEmail"
               render={({ message }) =>
                 message ? <p className="form-validateMessage">{message}</p> : null
               }

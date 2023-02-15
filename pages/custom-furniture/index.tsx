@@ -6,6 +6,7 @@ import PageHead from 'components/PageHead/PageHead'
 import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
 import { OrderFlow } from 'components/CtaBox/OrderFlow'
 import { BreadList } from 'components/BreadList/BreadList'
+import { CustomOrderCta } from 'components/CtaBox/CustomOrderCta'
 
 const Home: NextPage = () => {
 
@@ -123,7 +124,7 @@ const Home: NextPage = () => {
                   <div className="visual-attempt">
                     <Image
                       src="/images/custom-furniture/index/illust-1.jpg"
-                      alt="Picture of the author"
+                      alt="「ご縁・相談の場をつくる」のイメージイラスト"
                       width={1280}
                       height={855}
                     />
@@ -145,7 +146,7 @@ const Home: NextPage = () => {
                   <div className="visual-attempt">
                     <Image
                       src="/images/custom-furniture/index/illust-2.jpg"
-                      alt="Picture of the author"
+                      alt="「一緒に家具を考える時間をつくる」のイメージイラスト"
                       width={1280}
                       height={855}
                     />
@@ -166,7 +167,7 @@ const Home: NextPage = () => {
                   <div className="visual-attempt">
                     <Image
                       src="/images/custom-furniture/index/illust-3.jpg"
-                      alt="Picture of the author"
+                      alt="「既製品では見つからない家具をつくる」のイメージイラスト"
                       width={1280}
                       height={855}
                     />
@@ -180,6 +181,10 @@ const Home: NextPage = () => {
                 </div>
               </li>
             </ul>
+          </section>
+
+          <section className="layout__CustomOrderCta">
+            <CustomOrderCta />
           </section>
 
           <div className="layout__CustomFurnitureList">

@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
     const bread_list : { [key: string]: string }[] = [
         {
-            name: "お問合わせ",
+            name: "ご相談・お問合わせ",
             url: ""
         }
     ];
@@ -45,10 +45,44 @@ const Home: NextPage = () => {
 
                 <BreadList list={bread_list}></BreadList>
 
-                <h1 className='heading'>お問合わせ</h1>
+                <h1 className='heading'>ご相談・お問合わせ</h1>
+
+                <div className="introduction">
+                    <h2>人の暮らしは「十人十色」</h2>
+                    <p>みなさんそれぞれの暮らしの形は違っていますので、<br className="pc_only" />既製品の家具では、なかなかピッタリ納まることはないですよね。</p>
+                    <p>お客様の声に耳を傾けながら、既製品では見つからない家具、<br className="pc_only" />みなさんの暮らしにフィットする家具をお作りしたいと思います。</p>
+                </div>
+
+                <ul className="list-attempt">
+                    <li>
+                        <Image
+                            src="/images/custom-furniture/index/illust-1.jpg"
+                            alt="「ご縁・相談の場をつくる」のイメージイラスト"
+                            width={1280}
+                            height={855}
+                        />
+                    </li>
+                    <li>
+                        <Image
+                            src="/images/custom-furniture/index/illust-2.jpg"
+                            alt="「一緒に家具を考える時間をつくる」のイメージイラスト"
+                            width={1280}
+                            height={855}
+                        />
+                    </li>
+                    <li>
+                        <Image
+                            src="/images/custom-furniture/index/illust-3.jpg"
+                            alt="「既製品では見つからない家具をつくる」のイメージイラスト"
+                            width={1280}
+                            height={855}
+                        />
+                    </li>
+                </ul>
 
                 <div className="caption">
-                    <p>お見積もりまでは何度でも無料ですので、<br />みなさん「お試し感覚」でご利用いただいています。<br />お名前・メールアドレスだけでも構いませんので、<br />まずは以下よりお気軽にお問合せください。</p>
+                    <p>ご相談からお見積もりまでは何度でも無料ですので、みなさん「お試し感覚」でご利用いただいています。</p>
+                    <p>お名前・メールアドレスだけでも構いませんので、まずは以下より、お気軽にお問合せください。</p>
                 </div>
 
                 <div className="box__contents">
@@ -70,7 +104,7 @@ const Home: NextPage = () => {
                 <div className="box__selectable">
                     <div className="heading__selectable">
                         <h2>選べるご相談方法</h2>
-                        <p className='s_caption'>ヒダコレではお客さのご都合の良い方法でご相談いただけるよう、<br />様々な選べるご相談方法をご用意しております。</p>
+                        <p className='s_caption'>ヒダコレではお客さのご都合の良い方法でご相談いただけるよう、<br className='pc_only' />様々な選べるご相談方法をご用意しております。</p>
                     </div>
 
                     <div className="contents__selectable">
@@ -92,7 +126,8 @@ const Home: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className="layout__buttons">
-                                    <a className="block__button" href="tel:0120-690-315">お電話 : 0120-690-315</a>
+                                    <a href="tel:0120-690-315" className="block__button">お電話 : 0120-690-315</a>
+                                    <a href="mailto:info@hidacolle.com?subject=ヒダコレ家具 ブランドサイトからのお問合せ / (from : ご相談・お問合わせ)" className="block__button">メールで予約する</a>
                                 </div>
                             </div>
                             <div className="block__select">

@@ -221,7 +221,7 @@ const Home: NextPage = () => {
                 <p className="caption">もう日本の山々には、テーブル用の一枚板が取れるような大きな木は残されていません…</p>
                 <div className="layout_centering">
                   <div className="layout-button">
-                    <Link href='/large-log' legacyBehavior><a className="button target_this_site">大きな丸太を循環させる取り組みを詳しくみる</a></Link>
+                    <Link href='/large-log' legacyBehavior><a className="button target_this_site">大きな丸太の取り組みをみる</a></Link>
                   </div>
                 </div>
               </div>

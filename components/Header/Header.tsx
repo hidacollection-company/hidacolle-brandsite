@@ -135,7 +135,7 @@ export const Header = memo(() => {
                 </Link>
                 <Link href='/original-products' legacyBehavior>
                   <a className="">
-                    こんな家具の暮らし
+                    こんな家具のある暮らし
                     <span className="en__mim">Original products</span>
                   </a>
                 </Link>

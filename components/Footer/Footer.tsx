@@ -15,6 +15,29 @@ export const Footer = memo(() => {
             <Inquiry />
           </div>
 
+          <section className={styles.box__follow_us}>
+            <div className={styles.layout__follow_us}>
+              <p className={styles.title}>Follow us</p>
+              <p className={styles.caption}>ヒダコレ家具の最新情報は各種SNSでも発信しています。<br />ぜひフォローしてくださいね。</p>
+              <ul className={styles.buttons}>
+                <li>
+                  <div className={styles.layout_button}>
+                    <Link href='https://www.instagram.com/hidacolle_kagu/' legacyBehavior>
+                      <a className="button instagram target_blank" target="_blank" rel="noopener">Instagram</a>
+                    </Link>
+                  </div>
+                </li>
+                <li>
+                  <div className="layout-button">
+                    <Link href='https://www.facebook.com/hidacolle/' legacyBehavior>
+                      <a className="button facebook target_blank" target="_blank" rel="noopener">Facebook</a>
+                    </Link>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           <section className={styles.box__footer_nav}>
 
             <ul className={styles.box_nav_main_layout}>
@@ -59,7 +82,7 @@ export const Footer = memo(() => {
                 <p className={styles.title}>Online challenge</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/order-tables' legacyBehavior><a className="">オーダーテーブルをネットで</a></Link></li>
-                  <li className={styles.link}><Link href='/original-products' legacyBehavior><a className="">こんな家具の暮らし</a></Link></li>
+                  <li className={styles.link}><Link href='/original-products' legacyBehavior><a className="">こんな家具のある暮らし</a></Link></li>
                   <li className={styles.link}><Link href='/handcrafts-of-hida' legacyBehavior><a className="">飛騨の手仕事</a></Link></li>
                 </ul>
               </li>

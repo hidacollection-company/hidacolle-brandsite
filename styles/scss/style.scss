@@ -294,17 +294,20 @@ a{
                         }
                     }
                 }
-                ul.buttons{
-                    margin: 50px auto 0;
-                    width: $baseTextWidth_sp;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    gap: 20px 0;
-                }
+            }
+            .layout__CustomOrderCta{
+                margin: 75px 0 0;
             }
             .layout__CustomFurnitureList{
                 margin: 75px 0 0;
+            }
+            ul.buttons{
+                margin: 50px auto 0;
+                width: $baseTextWidth_sp;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px 0;
             }
         }
         .box-online_challnege{
@@ -718,6 +721,7 @@ a{
                     }
                 }
             }
+
         }
         .box-furniture_studio{
             margin: 100px auto 0;
@@ -1084,7 +1088,10 @@ a{
                                 margin: 0  0 20px;
                             }
                         }
-                    }
+         
+         .layout__CustomOrderCta{
+            margin: 100px 0 0;
+        }           }
                 }
             }
         }
@@ -1187,6 +1194,9 @@ a{
                 border-radius: $baseRadius_sp;
                 display: block;
             }
+        }
+        .layout__CustomOrderCta{
+            margin: 100px 0 0;
         }
         .layout__CtaBox{
             margin: 75px 0 0;
@@ -1810,13 +1820,13 @@ a{
                         right: -30px;
                     }
                     ul.slick-dots{
-                        margin: 0 0 0;
+                        margin: 0 auto;
                         display: flex !important;
                         justify-content: space-between;
                         flex-wrap: wrap;
-                        gap: 3px 3px;
+                        gap: 3px 4px;
                         li{
-                            width: 19%;
+                            width: 24%;
                             img{
                                 width: 100%;
                                 height: auto;
@@ -2168,20 +2178,44 @@ a{
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                .catch{
+                    @include fts(ja, title);
+                    line-height: 100%;
+                }
                 .heading{
-                    display: flex;
-                    flex-direction: column-reverse;
                     h1{
                         margin: 10px 0 0;
                         @include fts(ja, lead);
                     }
-                    p{
-                        margin: 0 0 0;
-                        @include fts(ja, title);
-                        line-height: 100%;
+                    .layout-button{
+                        margin: 10px 0 0;
+                        .go_to_online{
+                            @include fts(ja, small);
+                            text-decoration: underline;
+                            &.target_blank{
+                                &::after {
+                                    content: url("/target-brank.svg");
+                                    margin: 0 0 0 15px;
+                                    width: 18px;
+                                    height: 18px;
+                                    position: relative;
+                                    top: 5px;
+                                    left: 0;
+                                    transition: all 0.2s ease;
+                                }
+                            }
+                            &:hover{
+                                &.target_blank{
+                                    &::after {
+                                        position: relative;
+                                        top: 0;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                .catch{
+                .lead{
                     margin: 100px auto 0;
                     width: $baseTextWidth_sp;
                     @include fts(ja, title);
@@ -2495,7 +2529,6 @@ a{
                 margin: 0 auto;
                 width: $baseTextWidth_sp;
                 @include fts(ja, title);
-                
             }
             .bold-introduction{
                 margin: 20px auto 0;
@@ -2551,50 +2584,8 @@ a{
                 gap: 75px 0;
             }
         }
-        .box-custom_order_service{
-            margin: 100px auto 0;
-            padding: 0 25px 25px;
-            width: $mainWidth_sp;
-            border: 3px solid c(nc, b1);
-            border-radius: 8px;
-            box-sizing: border-box;
-            .layout-custom_order_service{
-                margin: 0 auto;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column-reverse;
-                .inner-custom_order_service{
-                    margin: 15px 0 0;
-                    width: 100%;
-                    .small-custom_order_service{
-                        @include fts(ja, small);
-                    }
-                    .heading-custom_order_service{
-                        margin: 5px 0 0;
-                        @include fts(ja, title);
-                    }
-                    .caption-custom_order_service{
-                        margin: 20px 0 0;
-                        p{
-                            margin: 0 0 20px;
-                            @include fts(ja, text);
-                        }
-                    }
-                    .layout-button{
-                        margin: 0 0 0;
-                        width: 100%;
-                        display: inline-block;
-                    }
-                }
-                .visual-custom_order_service{
-                    width: 100%;
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
+        .layout__CustomOrderCta{
+            margin: 100px 0 0;
         }
     }
     
@@ -3055,10 +3046,44 @@ a{
             @include fts(ja, lead);
             width: $mainWidth_sp;
         }
+        .introduction{
+            margin: 100px auto 0;
+            width: $mainWidth_sp;;
+            h2{
+                margin: 0 0 30px;
+                width: 100%;
+                @include fts(ja, title);
+                text-align: center;
+                text-decoration: underline;
+            }
+            p{
+                margin: 0 auto 20px;
+                width: $baseTextWidth_sp;
+                @include fts(ja, bold);
+            }
+        }
+        .list-attempt{
+            margin: 40px auto 0;
+            width: $mainWidth_sp;
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-between;
+            li{
+                width: 33%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
         .caption{
             margin: 70px auto 0;
             width: $mainWidth_sp;
-            @include fts(ja, bold);
+            p{
+                margin: 0 auto 20px;
+                width: $baseTextWidth_sp;
+                @include fts(ja, bold);
+            }
         }
         .box__contents{
             margin: 70px auto 0;
@@ -3099,14 +3124,53 @@ a{
                             display: flex;
                             gap: 0 10px;
                             input[type="checkbox"]{
-                                width: 30px;
-                                height: 30px;
-                                border: 2px solid c(nc, b1);
-                                border-radius: 3px;
+                                display: none;
+                                &:checked + label {
+                                    &::before{
+                                        opacity: 1;
+                                    }
+                                }
                             }
                             label{
+                                padding: 0 0 0 45px;
                                 @include fts(ja, text);
+                                position: relative;
+                                &::before,
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 50%;
+                                }
+                                &::before {
+                                    left: 9px;
+                                    margin-top: -11px;
+                                    width: 12px;
+                                    height: 16px;
+                                    border-right: 3px solid c(nc, b1);
+                                    border-bottom: 3px solid c(nc, b1);
+                                    transform: rotate(45deg);
+                                    opacity: 0;
+                                }
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 50%;
+                                    left: 0;
+                                    margin: -15px 0 0 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    border: 2px solid c(nc, b1);
+                                    border-radius: 3px;
+                                }
+                                &:hover{
+                                    &::after{
+                                        border-color: #0171bd; 
+                                    }
+                                }
                             }
+                            
                         }
                     }
                 }
@@ -3164,46 +3228,130 @@ a{
                     }
                 }
             }
-            .form-validateMessage{
-                margin: 50px auto 0;
-                width: 100%;
-                height: 60px;
-                color: c(nc, w1);
-                @include fts(ja, text);
-                background-color: c(red,d2);
-                border-radius: 3px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .form-buttonWrapper{
-                margin: 20px 0 0;
-                width: 100%;
-                display: flex;
-                flex-direction: column-reverse;
-                .form-backButton{
-                    margin: 50px 0 0;
-                    width: $wxxs;
-                    height: 100%;
+            .form-actionArea{
+                margin: 20px auto 0;
+                .form-validateMessage{
+                    margin: 20px auto 0;
+                    width: 100%;
                     height: 60px;
+                    color: c(nc, w1);
                     @include fts(ja, text);
-                    background-color: c(nc,g1);
+                    background-color: c(red,d2);
                     border-radius: 3px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
-                .form-submitButton{
-                    margin: 20px 0 0;
+                .form-buttonWrapper{
+                    margin: 0 0 0;
                     width: 100%;
-                    height: 60px;
-                    color: c(nc, w1);
-                    @include fts(ja, text);
-                    background-color: c(green,m);
-                    border-radius: 3px;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: column-reverse;
+                    .form-backButton{
+                        margin: 0 0 0;
+                        width: $wxxs;
+                        height: 100%;
+                        height: 60px;
+                        @include fts(ja, text);
+                        background-color: c(nc,g1);
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .form-submitButton{
+                        margin: 20px 0 0;
+                        width: 100%;
+                        height: 60px;
+                        color: c(nc, w1);
+                        @include fts(ja, text);
+                        background-color: c(green,m);
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .box__selectable{
+            margin: 100px 0 0;
+            .heading__selectable{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                h2{
+                    @include fts(ja, title);
+                }
+                .s_caption{
+                    margin: 30px 0 0;
+                    @include fts(ja, bold);
+                }
+            }
+            .contents__selectable{
+                margin: 50px 0 0;
+                padding: 75px 0;
+                width: 100%;
+                background-color: c(nc, g2);
+                box-sizing: border-box;
+                .layout__selectable{
+                    margin: 0 auto;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px 0;
+                    .block__select{
+                        margin: 0 auto;
+                        width: $baseTextWidth_sp;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h3{
+                            @include fts(ja, title);
+                            line-height: 100%;
+                            text-align: center;
+                        }
+                        .catch{
+                            margin: 10px 0 0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .s_caption{
+                            margin: 0;
+                            p{
+                                margin: 0 0 20px;
+                                @include fts(ja, text);
+                            }
+                            .attention{
+                                width: 100%;
+                                height: 80px;
+                                color: c(nc, w1);
+                                @include fts(ja, text);
+                                background-color: c(green, m);
+                                border-radius: 8px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                        .layout__buttons{
+                            margin: 20px 0 0;
+                            .block__button{
+                                margin: 0 0 20px;
+                                width: 100%;
+                                height: 80px;
+                                color: c(yellow, m);
+                                @include fts(ja, bold);
+                                background-color: c(nc, w1);
+                                border: 3px solid c(yellow, m);
+                                border-radius: 100px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -3449,15 +3597,15 @@ a{
                         }
                     }
                 }
-                ul.buttons{
-                    margin: 100px auto 0;
-                    display: flex;
-                    justify-content: center;
-                    gap: 0 50px;
-                }
             }
             .layout__CustomFurnitureList{
-                margin: 200px 0 0;
+                margin: 150px 0 0;
+            }
+            ul.buttons{
+                margin: 100px auto 0;
+                display: flex;
+                justify-content: center;
+                gap: 0 50px;
             }
         }
         .box-online_challnege{
@@ -3566,6 +3714,22 @@ a{
                     }
                     .box-layout_right{
                         @include fts(ja, bold);
+                        position: relative;
+                        &:before{
+                            content: "1";
+                            width: 50px;
+                            height: 50px;
+                            color: c(nc,w1);
+                            @include fts(ja, title);
+                            background-color: c(green,d2);
+                            border-radius: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 3px;
+                            left: -65px;
+                        }
                     }
                 }
                 .title-order_tables_online{
@@ -3639,6 +3803,22 @@ a{
                     }
                     .box-layout_right{
                         @include fts(ja, bold);
+                        position: relative;
+                        &:before{
+                            content: "2";
+                            width: 50px;
+                            height: 50px;
+                            color: c(nc,w1);
+                            @include fts(ja, title);
+                            background-color: c(green,d2);
+                            border-radius: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 3px;
+                            left: -65px;
+                        }
                     }
                 }
                 .images-original_products{
@@ -3713,6 +3893,22 @@ a{
                     .title-contents_handicrafts_of_hida{
                         margin: 100px 0 0 770px;
                         @include fts(ja, title);
+                        position: relative;
+                        &:before{
+                            content: "3";
+                            width: 50px;
+                            height: 50px;
+                            color: c(nc,w1);
+                            @include fts(ja, title);
+                            background-color: c(green,d2);
+                            border-radius: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 12px;
+                            left: -65px;
+                        }
                     }
                     .text-contents_handicrafts_of_hida{
                         margin: 30px 0 0 770px;
@@ -3841,6 +4037,14 @@ a{
                     }
                 }
             }
+            .layout_centering{
+                margin: 100px 0 0;
+                display: flex;
+                justify-content: center;
+                .layout-button{
+                    display: inline-block;
+                }
+            }
         }
         .box-furniture_studio{
             margin: 400px auto 0;
@@ -3932,35 +4136,6 @@ a{
                 .layout-button{
                     margin: 30px 0 0;
                     display: inline-block;
-                }
-            }
-        }
-        .box-follow_us{
-            margin: 250px auto 0;
-            width: $wm;
-            // border-top: 3px solid c(nc, g1);
-            .title{
-                @include fts(ja, lead);
-            }
-            .caption{
-                margin: 50px 0 0;
-                @include fts(ja, bold);
-            }
-            ul.buttons{
-                margin: 100px 0 0;
-                display: flex;
-                justify-content: space-between;
-                li{
-                    width: $wxs;
-                    .layout-button{
-                        width: 100%;
-                    }
-                    a.button{
-                        @include fts(ja, bold);
-                        display: flex;
-                        justify-content: center;
-                        gap: 0 30px;
-                    }
                 }
             }
         }
@@ -4222,6 +4397,9 @@ a{
                 }
             }
         }
+        .layout__CustomOrderCta{
+            margin: 200px 0 0;
+        }
         .layout__CustomFurnitureList{
             margin: 200px 0 0;
         }
@@ -4376,6 +4554,9 @@ a{
                 margin: 50px auto 0;
                 width: $wxxs;
             }
+        }
+        .layout__CustomOrderCta{
+            margin: 200px 0 0;
         }
         .layout__CtaBox{
             margin: 200px 0 0;
@@ -4972,13 +5153,13 @@ a{
                         right: -30px;
                     }
                     ul.slick-dots{
-                        margin: 5px 0 0;
+                        margin: 5px auto 0;
                         display: flex !important;
                         justify-content: space-between;
                         flex-wrap: wrap;
-                        gap: 10px 0;
+                        gap: 10px 10px;
                         li{
-                            width: 125px;
+                            width: 157px;
                             img{
                                 width: 100%;
                                 height: auto;
@@ -5319,15 +5500,45 @@ a{
                 margin: 140px auto 0;
                 width: $wm;
                 position: relative;
+                p.catch{
+                    @include fts(ja, lead);
+                }
                 .heading{
+                    margin: 20px 0 0;
                     h1{
+                        margin: 0 0 0 -4px;
                         @include fts(ja, catch);
+                        line-height: 125%;
                     }
-                    p{
-                        @include fts(ja, title);
+                    .layout-button{
+                        margin: 20px 0 0;
+                        .go_to_online{
+                            @include fts(ja, small);
+                            text-decoration: underline;
+                            &.target_blank{
+                                &::after {
+                                    content: url("/target-brank.svg");
+                                    margin: 0 0 0 15px;
+                                    width: 18px;
+                                    height: 18px;
+                                    position: relative;
+                                    top: 5px;
+                                    left: 0;
+                                    transition: all 0.2s ease;
+                                }
+                            }
+                            &:hover{
+                                &.target_blank{
+                                    &::after {
+                                        position: relative;
+                                        top: 0;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                .catch{
+                .lead{
                     margin: 100px 0 0;
                     @include fts(ja, lead);
                 }
@@ -5349,6 +5560,9 @@ a{
                     p{
                         margin: 0 0 20px;
                         @include fts(ja, small);
+                        a{
+                            text-decoration: underline;
+                        }
                     }
                 }
                 .box-heading_images{
@@ -5677,48 +5891,8 @@ a{
                 gap: 120px 20px;
             }
         }
-        .box-custom_order_service{
-            margin: 200px auto 0;
-            padding: 70px 0;
-            width: $wl;
-            border: 3px solid c(nc, b1);
-            border-radius: 8px;
-            box-sizing: border-box;
-            .layout-custom_order_service{
-                margin: 0 auto;
-                width: $wm;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                .inner-custom_order_service{
-                    width: $wxxs;
-                    .small-custom_order_service{
-                        @include fts(ja, text);
-                    }
-                    .heading-custom_order_service{
-                        margin: 10px 0 0;
-                        @include fts(ja, title);
-                    }
-                    .caption-custom_order_service{
-                        margin: 30px 0 0;
-                        p{
-                            margin: 0 0 20px;
-                            @include fts(ja, bold);
-                        }
-                    }
-                    .layout-button{
-                        margin: 30px 0 0;
-                        display: inline-block;
-                    }
-                }
-                .visual-custom_order_service{
-                    width: $wxs;
-                    img{
-                        width: 100%;
-                        height: 455px;
-                    }
-                }
-            }
+        .layout__CustomOrderCta{
+            margin: 200px 0 0;
         }
     }
     
@@ -6190,10 +6364,42 @@ a{
             @include fts(ja, lead);
             width: $wm;
         }
-        .caption{
-            margin: 70px auto 0;
+        .introduction{
+            margin: 100px auto 0;
             width: $ws;
-            @include fts(ja, bold);
+            h2{
+                margin: 0 0 30px;
+                @include fts(ja, title);
+                text-align: center;
+                text-decoration: underline;
+            }
+            p{
+                margin: 0 0 20px;
+                @include fts(ja, bold);
+                text-align: center;
+            }
+        }
+        .list-attempt{
+            margin: 40px auto 0;
+            width: $wm;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: $wxxs;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .caption{
+            margin: 100px auto 0;
+            width: $ws;
+            p{
+                margin: 0 0 20px;
+                width: $wxxs;
+                @include fts(ja, bold);
+            }
         }
         .box__contents{
             margin: 70px auto 0;
@@ -6235,14 +6441,53 @@ a{
                             display: flex;
                             gap: 0 10px;
                             input[type="checkbox"]{
-                                width: 30px;
-                                height: 30px;
-                                border: 2px solid c(nc, b1);
-                                border-radius: 3px;
+                                display: none;
+                                &:checked + label {
+                                    &::before{
+                                        opacity: 1;
+                                    }
+                                }
                             }
                             label{
+                                padding: 0 0 0 45px;
                                 @include fts(ja, text);
+                                position: relative;
+                                &::before,
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 50%;
+                                }
+                                &::before {
+                                    left: 9px;
+                                    margin-top: -11px;
+                                    width: 12px;
+                                    height: 16px;
+                                    border-right: 3px solid c(nc, b1);
+                                    border-bottom: 3px solid c(nc, b1);
+                                    transform: rotate(45deg);
+                                    opacity: 0;
+                                }
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 50%;
+                                    left: 0;
+                                    margin: -15px 0 0 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    border: 2px solid c(nc, b1);
+                                    border-radius: 3px;
+                                }
+                                &:hover{
+                                    &::after{
+                                        border-color: #0171bd; 
+                                    }
+                                }
                             }
+                            
                         }
                     }
                 }
@@ -6313,7 +6558,7 @@ a{
                 align-items: center;
             }
             .form-buttonWrapper{
-                margin: 100px 0 0;
+                margin: 50px 0 0;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -6401,6 +6646,8 @@ a{
                         .layout__buttons{
                             margin: 20px 0 0;
                             .block__button{
+                                margin: 0 0 20px;
+                                margin: 0 0 20px;
                                 width: 100%;
                                 height: 80px;
                                 color: c(yellow, m);

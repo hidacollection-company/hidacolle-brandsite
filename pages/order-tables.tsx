@@ -34,11 +34,14 @@ const Home: NextPage = () => {
 
           <div className="box-heading_order_tables">
             <div className="layout__heading_order_tables">
+              <p className="catch">Online challenge</p>
               <div className="heading">
                 <h1>オーダーテーブルを<br />ネットで</h1>
-                <p>Order made table</p>
+                <div className="layout-button">
+                  <Link href='https://hida-collection.shop/view/page/oder-tables' legacyBehavior><a className="go_to_online target_blank" target="_blank">オンラインショップでみる</a></Link>
+                </div>
               </div>
-              <p className='catch'>
+              <p className='lead'>
                 ネットでも簡単に<br />
                 ご注文できるように、<br />
                 セミオーダーテーブルを<br />
@@ -51,7 +54,7 @@ const Home: NextPage = () => {
               </div>
               <div className="attention-heading">
                 <p>通常の基本形以外のサイズやデザイン、またまったく違った家具のご相談などもお気軽に言ってくださいね。</p>
-                <p>別途「お問合せフォーム」からお問合せいただきましたら、カスタムオーダー家具のご対応をさせていただきます。</p>
+                <p>別途「<Link href='/contact' legacyBehavior><a className="">お問合せフォーム</a></Link>」からお問合せいただきましたら、カスタムオーダー家具のご対応をさせていただきます。</p>
               </div>
 
               {/* absolute?? */}
@@ -370,7 +373,7 @@ const Home: NextPage = () => {
             slug="order-tables"
             title="無垢のテーブルも、<br />簡単にネットで注文"
             caption="ヒダコレのカスタムオーダー家具の中から、まずネットでも簡単にご注文いただけるようにセミオーダーテーブルを考えました。"
-            ec_url="https://www.hida-collection.shop/view/category/hida-crafts"
+            ec_url="https://hida-collection.shop/view/page/oder-tables"
           />
         </div>
       </>

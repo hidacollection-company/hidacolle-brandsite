@@ -7,6 +7,7 @@ import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureL
 import { CtaBox } from 'components/CtaBox/CtaBox'
 import { OrderFlow } from 'components/CtaBox/OrderFlow'
 import { BreadList } from 'components/BreadList/BreadList'
+import { CustomOrderCta } from 'components/CtaBox/CustomOrderCta'
 
 const Home: NextPage = () => {
 
@@ -109,13 +110,17 @@ const Home: NextPage = () => {
             </ul>
           </section>
 
-          <div className="layout__CtaBox">
+          <section className="layout__CustomOrderCta">
+            <CustomOrderCta />
+          </section>
+
+          {/* <div className="layout__CtaBox">
             <CtaBox
               heading = "お部屋のお困りごと、<br />ありませんか?"
               caption = "暮らしていると、「ココ何とかしたいなあ」ってとこが出てきます。<br />ぜひ、まずはお試し感覚でお問合せください。"
               button_caption = "お問い合わせはこちら"
             />
-          </div>
+          </div> */}
 
           <div className="layout__CustomFurnitureList">
             <CustomFurnitureList

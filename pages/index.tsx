@@ -161,11 +161,11 @@ const Home: NextPage = () => {
                   <p>棚板一枚からでもお作りすることができますので、まずはお気軽にお問い合わせください。</p>
                 </div>
                 <div className="layout-button">
-                  <Link href='/custom-furniture' legacyBehavior><a className="button target_this_site">カスタムオーダー家具をもっとみる</a></Link>
+                  <Link href='/custom-furniture' legacyBehavior><a className="button target_this_site">カスタムオーダー家具をみる</a></Link>
                 </div>
               </div>
             </div>
-            {/* Component */}
+
             <div className="listcontents-make">
               <div className="heading-make">
                 <p>本当に欲しい家具は<br />買うものではなく<br className='sp_only' />「つくる」もの</p>
@@ -184,18 +184,6 @@ const Home: NextPage = () => {
                   <div className="inner-list_make">デザインやサイズなど、ご希望の仕様が決まってきましたら「お見積り」のご案内をさせていただきます。その後のご注文ですので、まずは「お試し感覚」でご相談ください。</div>
                 </li>
               </ul>
-              <ul className="buttons">
-                <li>
-                  <div className="layout-button">
-                    <Link href='/custom-furniture' legacyBehavior><a className="button target_this_site">カスタムオーダー家具をもっとみる</a></Link>
-                  </div>
-                </li>
-                <li>
-                  <div className="layout-button">
-                    <Link href='/contact' legacyBehavior><a className="button target_this_site">カスタムオーダー家具について相談・お問合せをする</a></Link>
-                  </div>
-                </li>
-              </ul>
             </div>
 
             <div className="layout__CustomFurnitureList">
@@ -203,6 +191,19 @@ const Home: NextPage = () => {
                 title = "ヒダコレのカスタムオーダー家具は<br />こんなことができます"
               />
             </div>
+
+            <ul className="buttons">
+              <li>
+                <div className="layout-button">
+                  <Link href='/custom-furniture' legacyBehavior><a className="button target_this_site">カスタムオーダー家具をみる</a></Link>
+                </div>
+              </li>
+              <li>
+                <div className="layout-button">
+                  <Link href='/contact' legacyBehavior><a className="button target_this_site">相談・お問合せをする</a></Link>
+                </div>
+              </li>
+            </ul>
 
           </section>
 
@@ -230,7 +231,7 @@ const Home: NextPage = () => {
                   <p>Order tables. Online.</p>
                 </div>
                 <div className="box-layout_right">
-                  <p>樹種、天板の形、脚の<br />デザインの組み合わせを自由に選ぶ</p>
+                  <p>オーダーテーブルのネット注文が<br />簡単にできるように</p>
                 </div>
               </div>
               <div className="title-order_tables_online">
@@ -256,17 +257,15 @@ const Home: NextPage = () => {
                 <li><Image src="/images/order-tables/m002.jpg" alt="Picture of the author" width={1280} height={855} /></li>
                 <li><Image src="/images/order-tables/m003.jpg" alt="Picture of the author" width={1280} height={855} /></li>
               </ul>
-
-              {/* Component */}
               <ul className="buttons">
                 <li>
                   <div className="layout-button">
-                    <Link href='/order-tables' legacyBehavior><a className="button target_this_site">オーダーテーブルをもっとみる</a></Link>
+                    <Link href='/order-tables' legacyBehavior><a className="button target_this_site">オーダーテーブルをみる</a></Link>
                   </div>
                 </li>
                 <li>
                   <div className="layout-button">
-                    <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでテーブルをみる</a></Link>
+                    <Link href='https://hida-collection.shop/view/page/oder-tables' legacyBehavior><a className="button target_blank" target="_blank">オンラインショップでみる</a></Link>
                   </div>
                 </li>
               </ul>
@@ -279,7 +278,7 @@ const Home: NextPage = () => {
                   <p>Original products</p>
                 </div>
                 <div className="box-layout_right">
-                  <p>シンプルで合わせやすい、<br />暮らしに寄り添う家具を<br />つくっています。</p>
+                  <p>すぐに暮らしに役立つ<br />インテリア家具の開発</p>
                 </div>
               </div>
               <ul className="images-original_products">
@@ -313,18 +312,6 @@ const Home: NextPage = () => {
                   <p>オリジナルのインテリア家具は、飛騨高山の直営店舗でも、オンランショップでもすぐにご購入いただけます。</p>
                   <p>こたつ、ちゃぶ台、ハンガーラック、収納ボックス、スツールなどなど、ぜひご覧ください。</p>
                 </div>
-                <ul className="buttons">
-                  <li>
-                    <div className="layout-button">
-                      <Link href='/original-products' legacyBehavior><a className="button target_this_site">インテリア家具をもっとみる</a></Link>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="layout-button">
-                      <Link href='/' legacyBehavior><a className="button target_blank">オンラインショップでインテリア家具をみる</a></Link>
-                    </div>
-                  </li>
-                </ul>
 
                 <section className="box-products">
                   <p className='heading-products'>商品の一部をご紹介</p>
@@ -342,6 +329,19 @@ const Home: NextPage = () => {
                   </div>
                 </section>
 
+                <ul className="buttons">
+                  <li>
+                    <div className="layout-button">
+                      <Link href='/original-products' legacyBehavior><a className="button target_this_site">インテリア家具をみる</a></Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="layout-button">
+                      <Link href='https://hida-collection.shop/' legacyBehavior><a className="button target_blank" target="_blank">オンラインショップでみる</a></Link>
+                    </div>
+                  </li>
+                </ul>
+
             </section>
 
             <section className="box-handicrafts_of_hida">
@@ -350,7 +350,7 @@ const Home: NextPage = () => {
                 <p>Handicrafts of Hida</p>
               </div>
               <div className="contents-handicrafts_of_hida">
-                <p className="title-contents_handicrafts_of_hida">飛騨の匠の流れを継承する<br />飛騨のクラフト・ものづくり。</p>
+                <p className="title-contents_handicrafts_of_hida">飛騨の陶器やガラスなどの<br />クラフト作家の紹介</p>
                 <div className="text-contents_handicrafts_of_hida">
                   <p>飛騨の家具だけではなく、陶器やガラス、布、張り子など多くのクラフト作家が製作活動をしています。</p>
                   <p>「日々の暮らしを豊かに」という思いは、ヒダコレの家具づくりと同じです。</p>
@@ -358,7 +358,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="layout__centering">
                   <div className="layout-button">
-                    <Link href='/handcrafts-of-hida' legacyBehavior><a className="button target_this_site">飛騨の手仕事をもっとみる</a></Link>
+                    <Link href='/handcrafts-of-hida' legacyBehavior><a className="button target_this_site">飛騨の手仕事をみる</a></Link>
                   </div>
                 </div>
               </div>
@@ -389,14 +389,14 @@ const Home: NextPage = () => {
                   <p>みなさんの地元地域のことも考えるきっかけになるといいなって思っています。</p>
                 </div>
                 <div className="layout-button">
-                  <Link href='/flagshipshop' legacyBehavior><a className="button target_this_site">ヒダコレ 家具ショップをもっとみる</a></Link>
+                  <Link href='/flagshipshop' legacyBehavior><a className="button target_this_site">ヒダコレ 家具ショップをみる</a></Link>
                 </div>
                 <div className="information-flagship_shop">
                   <div className="heading-information_flagship_shop"><p>営業情報</p></div>
                   <div className="inner-information_flagship_shop">
                     〒506-0055<br />
                     岐阜県高山市上岡本町3-362<br />
-                    フリーダイヤル : 0000-00-0000<br />
+                    フリーダイヤル : 0120-690-315<br />
                     営業時間 : 9:30-17:30 （水曜日 定休）<br />
                     駐車場有り
                   </div>
@@ -490,6 +490,11 @@ const Home: NextPage = () => {
                 </li>
               </ul>
             </div>
+            <div className="layout_centering">
+              <div className="layout-button">
+                <Link href='/flagshipshop' legacyBehavior><a className="button target_this_site">ヒダコレ 家具ショップをみる</a></Link>
+              </div>
+            </div>
           </section>
           <section className="box-furniture_studio">
             <div className="layout-furniture_studio">
@@ -546,27 +551,6 @@ const Home: NextPage = () => {
                 <Link href='/contact' legacyBehavior><a className="button target_this_site">こちらからご連絡ください</a></Link>
               </div>
             </section>
-          </section>
-
-          <section className="box-follow_us">
-            <p className='title'>Follow us</p>
-            <p className='caption'>ヒダコレ家具の最新情報は各種SNSでも発信しています。<br />ぜひフォローしてくださいね。</p>
-            <ul className="buttons">
-              <li>
-                <div className="layout-button">
-                  <Link href='https://www.instagram.com/hidacolle_kagu/' legacyBehavior>
-                    <a className="button instagram target_blank" target="_blank" rel="noopener">Instagram</a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="layout-button">
-                  <Link href='https://www.facebook.com/hidacolle/' legacyBehavior>
-                    <a className="button facebook target_blank" target="_blank" rel="noopener">Facebook</a>
-                  </Link>
-                </div>
-              </li>
-            </ul>
           </section>
         </section>
       </>

@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      speed: 100000,
+      speed: 50000,
       autoplaySpeed: 0,
       cssEase: "linear",
       touchMove: false,
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                 メール : info@hidacolle.com
               </p>
               <div className="layout-button">
-                <Link href='/large-log' legacyBehavior><a className="">Google mapはこちら</a></Link>
+                <Link href='https://g.page/hidacolle?share' legacyBehavior><a className="" target="_blank">Google mapはこちら</a></Link>
               </div>
             </div>
           </div>
@@ -400,13 +400,13 @@ const Home: NextPage = () => {
               </div>
               <div className="buttons">
                 <div className="layout-button">
-                  <Link href='' legacyBehavior><a href="" className="button target_this_site">電話で予約する</a></Link>
+                  <a href="tel:0120-690-315" className="button target_this_site">電話で予約する</a>
                 </div>
                 <div className="layout-button">
-                  <Link href='' legacyBehavior><a href="" className="button target_this_site">メールで予約する</a></Link>
+                  <a href="mailto:info@hidacolle.com?subject=ヒダコレ家具 ブランドサイトからのお問合せ / (from : ヒダコレ家具ショップ)" className="button target_this_site">メールで予約する</a>
                 </div>
                 <div className="layout-button">
-                  <Link href='' legacyBehavior><a href="" className="button target_this_site">メールフォームから予約する</a></Link>
+                  <Link href='/contact' legacyBehavior><a className="button target_this_site">メールフォームから予約する</a></Link>
                 </div>
               </div>
             </section>

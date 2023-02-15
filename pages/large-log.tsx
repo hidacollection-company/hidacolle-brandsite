@@ -101,7 +101,7 @@ const Home: NextPage = () => {
                 <p className="title">残り少ない大きな丸太（一枚板）を<br className="sp_only" />長く使ってもらう</p>
                 <div className="bold">
                   <p>もう残り少ない国産の一枚板を次の世代まで使いつなげてもらうために、私たちにまずできることは「木を生かしてつくる」「丁寧にしっかりつくる」ことだと考えています。</p>
-                  <p>事前の乾燥を人工乾燥を通して含水率を１０％まで下げる、最後の磨き込みは＃４００の細かいサンドペーパーで磨き込む、メンテナンス可能なオイル塗装をおススメする、お届け後も無料メンテナンスの対応をする、など作り手としての責任を果たすことも大切なことだと感じています。</p>
+                  <p>事前の乾燥を人工乾燥を通して含水率を10％まで下げる、最後の磨き込みは#400の細かいサンドペーパーで磨き込む、メンテナンス可能なオイル塗装をおススメする、お届け後も無料メンテナンスの対応をする、など作り手としての責任を果たすことも大切なことだと感じています。</p>
                 </div>
               </div>
               <ul className="list-large_log">
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                   <figure>
                     <Image
                       src="/images/large-log/009.jpg"
-                      alt="Picture of the author"
+                      alt="長く使っていただくヒダコレの工夫「一枚板」の写真"
                       width={1280}
                       height={855}
                     />
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                   <figure>
                     <Image
                       src="/images/large-log/010.jpg"
-                      alt="Picture of the author"
+                      alt="長く使っていただくヒダコレの工夫「人工乾燥」の写真"
                       width={1280}
                       height={855}
                     />
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                   <figure>
                     <Image
                       src="/images/large-log/011.jpg"
-                      alt="Picture of the author"
+                      alt="長く使っていただくヒダコレの工夫「みがき」の写真"
                       width={1280}
                       height={855}
                     />
@@ -150,33 +150,33 @@ const Home: NextPage = () => {
                   <figure>
                     <Image
                       src="/images/large-log/012.jpg"
-                      alt="Picture of the author"
+                      alt="木の個性「節」の写真"
                       width={1280}
                       height={855}
                     />
-                    <figcaption>木の欠点・節</figcaption>
+                    <figcaption>節</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <Image
                       src="/images/large-log/013.jpg"
-                      alt="Picture of the author"
+                      alt="木の個性「入り皮」の写真"
                       width={1280}
                       height={855}
                     />
-                    <figcaption>割れ</figcaption>
+                    <figcaption>入り皮</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <Image
                       src="/images/large-log/014.jpg"
-                      alt="Picture of the author"
+                      alt="木の個性「乾燥割れ」の写真"
                       width={1280}
                       height={855}
                     />
-                    <figcaption>節</figcaption>
+                    <figcaption>乾燥割れ</figcaption>
                   </figure>
                 </li>
               </ul>
@@ -207,7 +207,7 @@ const Home: NextPage = () => {
                   <h2 className="heading-list_make">メンテナンス</h2>
                   <div className="inner-list_make">
                     長年大切に使ってきたテーブルです。「捨てるのは忍びない」という気持ちの方も多いと思います。<br />
-                    ヒダコレでは、ご家庭のお部屋でできる範囲の作業を「メンテナンス」と呼んでおり、工房設立当初から２０年ほど、お部屋へ出張訪問をしてテーブルをきれいにするサービスを継続しています。
+                    ヒダコレでは、お部屋でできる範囲の作業を「メンテナンス」と呼んでおり、工房設立当初から20年ほど、出張訪問をしてテーブルをきれいにするサービスを継続しています。
                   </div>
                   <div className="layout_centering">
                     <div className="layout-button">
@@ -234,13 +234,13 @@ const Home: NextPage = () => {
                   </div>
                   <div className="layout_centering">
                     <div className="layout-button">
-                      <Link href='/ichimaiita/maintenance' scroll={false} legacyBehavior><a className="button target_this_site">買取りを詳しくみる</a></Link>
+                      <Link href='/ichimaiita/maintenance#purchase' scroll={false} legacyBehavior><a className="button target_this_site">買取りを詳しくみる</a></Link>
                     </div>
                   </div>
                 </li>
               </ul>
               <div className="link-to-maintenance">
-                <Link href='/ichimaiita/maintenance#purchase' legacyBehavior><a>テーブルの<br className="sp_only" />メンテナンス・修理・買取りについて<br className="sp_only" />もっと詳しくはこちら</a></Link>
+                <Link href='/ichimaiita/maintenance' legacyBehavior><a>テーブルの<br className="sp_only" />メンテナンス・修理・買取りについて<br className="sp_only" />もっと詳しくはこちら</a></Link>
               </div>
             </div>
           </section>
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
                 <p className="caption">飛騨の森の広葉樹はまとめて伐採され、そのほとんどがチップとして消費されています…</p>
                 <div className="layout_centering">
                   <div className="layout-button">
-                    <Link href='/small-log' legacyBehavior><a className="button target_this_site">小さな丸太を生かす取り組みを詳しくみる</a></Link>
+                    <Link href='/small-log' legacyBehavior><a className="button target_this_site">小さな丸太の取り組みをみる</a></Link>
                   </div>
                 </div>
                 

@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                     height={855}
                   />
                 </div>
-                <div>
+                {/* <div>
                   <Image
                     // loader={myLoader}
                     src="/images/ichimaiita/example/mizumezakura/slide-9.jpg"
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
                     width={1280}
                     height={855}
                   />
-                </div>
+                </div> */}
               </Slider>
 
             </div>

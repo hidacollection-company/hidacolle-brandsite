@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                     <ul>
                         <li>
                             <p className="title">会社名</p>
-                            <p className="line">HIDA・COLLECTION くらしの制作所</p>
+                            <p className="line">HIDA-COLLECTION Company</p>
                         </li>
                         <li>
                             <p className="title">設立</p>
@@ -54,8 +54,12 @@ const Home: NextPage = () => {
                             <p className="line">一枚板テーブル / 一枚板原木 / ダイニングセット / デスク / 一枚板用脚 / 椅子 / 収納家具 / オーダー家具他</p>
                         </li>
                         <li>
-                            <p className="title">URL</p>
+                            <p className="title">ヒダコレ家具 ブランドサイト</p>
                             <p className="line"><a href="http://hidacolle.com/" target="_blank" rel="noopener">http://hidacolle.com/</a></p>
+                        </li>
+                        <li>
+                            <p className="title">ヒダコレ家具 オンラインショップ</p>
+                            <p className="line"><a href="https://www.hida-collection.shop/" target="_blank" rel="noopener">https://www.hida-collection.shop/</a></p>
                         </li>
                         <li>
                             <p className="title">所在地</p>
@@ -63,11 +67,11 @@ const Home: NextPage = () => {
                         </li>
                         <li>
                             <p className="title">電話番号</p>
-                            <p className="line">0577-57-7555</p>
+                            <p className="line">0120-690-315</p>
                         </li>
                         <li>
                             <p className="title">Eメール</p>
-                            <p className="line">info@hida-collection.shop</p>
+                            <p className="line">info@hidacolle.com</p>
                         </li>
                     </ul>
                 </div>

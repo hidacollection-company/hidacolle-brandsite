@@ -72,6 +72,7 @@ const Home: NextPage = () => {
             <div className="inner-heading">
               <p className="catch">Online challenge</p>
               <div className="heading">
+                <div className="badge__onlinechallenge pc_only">Online challenge</div>
                 <h1>飛騨の手仕事</h1>
                 <div className="caption">
                   <div className="layout-button">
