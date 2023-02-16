@@ -47,43 +47,52 @@ const Home: NextPage = () => {
 
                 <h1 className='heading'>ご相談・お問合わせ</h1>
 
-                <div className="introduction">
-                    <h2>人の暮らしは「十人十色」</h2>
-                    <p>みなさんそれぞれの暮らしの形は違っていますので、<br className="pc_only" />既製品の家具では、なかなかピッタリ納まることはないですよね。</p>
-                    <p>お客様の声に耳を傾けながら、既製品では見つからない家具、<br className="pc_only" />みなさんの暮らしにフィットする家具をお作りしたいと思います。</p>
-                </div>
+                <FormProvider {...methods}>
+                    {!isConfirm ? (
+                        <>
+                            <div className="introduction">
+                                <h2>人の暮らしは「十人十色」</h2>
+                                <p>みなさんそれぞれの暮らしの形は違っていますので、<br className="pc_only" />既製品の家具では、なかなかピッタリ納まることはないですよね。</p>
+                                <p>お客様の声に耳を傾けながら、既製品では見つからない家具、<br className="pc_only" />みなさんの暮らしにフィットする家具をお作りしたいと思います。</p>
+                            </div>
 
-                <ul className="list-attempt">
-                    <li>
-                        <Image
-                            src="/images/custom-furniture/index/illust-1.jpg"
-                            alt="「ご縁・相談の場をつくる」のイメージイラスト"
-                            width={1280}
-                            height={855}
-                        />
-                    </li>
-                    <li>
-                        <Image
-                            src="/images/custom-furniture/index/illust-2.jpg"
-                            alt="「一緒に家具を考える時間をつくる」のイメージイラスト"
-                            width={1280}
-                            height={855}
-                        />
-                    </li>
-                    <li>
-                        <Image
-                            src="/images/custom-furniture/index/illust-3.jpg"
-                            alt="「既製品では見つからない家具をつくる」のイメージイラスト"
-                            width={1280}
-                            height={855}
-                        />
-                    </li>
-                </ul>
+                            <ul className="list-attempt">
+                                <li>
+                                    <Image
+                                        src="/images/custom-furniture/index/illust-1.jpg"
+                                        alt="「ご縁・相談の場をつくる」のイメージイラスト"
+                                        width={1280}
+                                        height={855}
+                                    />
+                                </li>
+                                <li>
+                                    <Image
+                                        src="/images/custom-furniture/index/illust-2.jpg"
+                                        alt="「一緒に家具を考える時間をつくる」のイメージイラスト"
+                                        width={1280}
+                                        height={855}
+                                    />
+                                </li>
+                                <li>
+                                    <Image
+                                        src="/images/custom-furniture/index/illust-3.jpg"
+                                        alt="「既製品では見つからない家具をつくる」のイメージイラスト"
+                                        width={1280}
+                                        height={855}
+                                    />
+                                </li>
+                            </ul>
 
-                <div className="caption">
-                    <p>ご相談からお見積もりまでは何度でも無料ですので、みなさん「お試し感覚」でご利用いただいています。</p>
-                    <p>お名前・メールアドレスだけでも構いませんので、まずは以下より、お気軽にお問合せください。</p>
-                </div>
+                            <div id="contact_form" className="caption">
+                                <p>ご相談からお見積もりまでは何度でも無料ですので、みなさん「お試し感覚」でご利用いただいています。</p>
+                                <p>お名前・メールアドレスだけでも構いませんので、まずは以下より、お気軽にお問合せください。</p>
+                            </div>
+                        </>
+                    ) : (
+                        <></>
+                    )}
+
+                </FormProvider>
 
                 <div className="box__contents">
 

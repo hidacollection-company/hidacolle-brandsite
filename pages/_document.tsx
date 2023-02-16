@@ -4,7 +4,7 @@ import React from "react";
 export default class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html lang="ja">
                 <Head>
                     {/* 1: Google Tag Manager ---------------------------- */}
                     <script dangerouslySetInnerHTML={{

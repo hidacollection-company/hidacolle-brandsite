@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               <h1>丸太から家具を<br className='sp_only' />考えるプロジェクト</h1>
             </div>
             <div className="contents-maruta_project">
-              <h3 className="lead-maruta_project">「丸太から家具を<br className='sp_only' />考えるプロジェクト」とは、</h3>
+              <p className="lead-maruta_project">「丸太から家具を<br className='sp_only' />考えるプロジェクト」とは、</p>
               <div className="bold-maruta_project">
                 <p>ヒダコレの家具は、無垢の木で作られています。その無垢の木は元は丸太であり、森で育っていたのです。</p>
                 <p>みなさんに家具づくりを通して、丸太を感じていただき、森を知っていただきたいと思っています。</p>

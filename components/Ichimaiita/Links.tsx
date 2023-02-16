@@ -64,7 +64,7 @@ export const Links = memo((props: Props) => {
               <div className={styles.layout__button_centering}>
                 <div className={styles.layout_button}>
                   <Link href='/ichimaiita/maintenance' legacyBehavior>
-                    <a className="button target_this_site">テーブル修理・再生をもっとみる</a>
+                    <a className="button target_this_site">テーブル修理・再生をみる</a>
                   </Link>
                 </div>
               </div>

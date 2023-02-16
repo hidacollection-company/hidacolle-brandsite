@@ -151,7 +151,7 @@ export const Confirm = memo((props) => {
                   <button type="submit" className="form-submitButton">
                     送信する
                   </button>
-                  <Link href="/contact" legacyBehavior>
+                  <Link href="/contact#contact_form" legacyBehavior>
                     <a className="form-backButton">入力内容を修正する</a>
                   </Link>
                 </div>
