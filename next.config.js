@@ -7,7 +7,15 @@ module.exports = {
     scrollRestoration: true,
   },
   images: {
-    unoptimized: true
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'workspace.hidacolle.com',
+        port: '',
+        pathname: '/img/**',
+      },
+    ],
   },
   trailingSlash: true
 };

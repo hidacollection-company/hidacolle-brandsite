@@ -1,25 +1,55 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head'
 
-import PageHead from 'components/PageHead/PageHead'
+// npm delete please.
+// import useSWR from 'swr'
+// import unfetch from 'isomorphic-unfetch'
+// import apiFetch from '@wordpress/api-fetch';
+// import { wpClient } from "lib/wpapi";
 
+import PageHead from 'components/PageHead/PageHead'
 import { Links } from 'components/Ichimaiita/Links'
 import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
 import { OriginalProductsList } from 'components/OriginalProducts/OriginalProductsList'
 
 import data from 'list-original-prodacts.json'
 
+// Wordpress REST API
+import { fetchData } from 'lib/fetchData';
+
+const pagesUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/pages'
+const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita'
+
 export const getStaticProps = async () => {
+
+  const page_data = await fetchData(pagesUrl);
+
+  // 型を与えたい場合下記で付与可能。
+  // const page_data = await fetchData<Page[]>(pagesUrl);
+  // const ichimaiita_data = await fetchData<Ichimaiita[]>(ichimaiitaUrl);
+
+  console.log(page_data);
+
   return {
-    props: data
-  }
+    props: {
+      page_data
+    }
+  };
+};
+
+type Props = {
+  page_data: any;
+  ichimaiita_data: any;
 }
 
-const Home: NextPage = () => {
+const Home: NextPage<Props> = ({ page_data }) => {
 
     const postLists = data.postLists;
+
+    // const hero_image = page_data.hero_image
+    const hero_image = "/images/index/001.jpg"
 
     return (
 
@@ -33,11 +63,13 @@ const Home: NextPage = () => {
           pageImgHeight = ""
         />
 
+        {/* <p>{JSON.stringify(page_data)}</p> */}
+
         <section className="contents-body body-index">
           <section className="box__main_visual">
             <Image
               // loader={myLoader}
-              src="/images/index/001.jpg"
+              src={hero_image}
               alt="Picture of the author"
               width={1180}
               height={680}

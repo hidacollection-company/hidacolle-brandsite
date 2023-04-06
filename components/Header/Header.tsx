@@ -31,8 +31,8 @@ export const Header = memo(() => {
                   <Image
                     src="/logo.svg"
                     alt="ヒダコレ家具 公式ウェブサイト"
-                    width={355}
-                    height={40}
+                    width={300}
+                    height={54}
                   />
                 </a>
               </Link>

@@ -4996,6 +4996,25 @@ a{
         }
         .layout__IchimaiitaList{
             margin: 200px 0 0;
+            .box_items{
+                margin: 0 auto;
+                width: $wm;
+                .heading{
+                    margin: 0 auto;
+                    width: $wm;
+                    @include fts(ja, lead);
+                }
+                ul.items{
+                    margin: 100px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 75px 20px;
+                    li{
+                        width: $wxxs;
+                    }
+                }
+            }
         }
         .layout__CtaBox{
             margin: 200px 0 0;
@@ -5069,6 +5088,25 @@ a{
         }
         .layout__IchimaiitaList{
             margin: 200px 0 0;
+            .box_items{
+                margin: 0 auto;
+                width: $wm;
+                .heading{
+                    margin: 0 auto;
+                    width: $wm;
+                    @include fts(ja, lead);
+                }
+                ul.items{
+                    margin: 100px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 75px 20px;
+                    li{
+                        width: $wxxs;
+                    }
+                }
+            }
         }
         .layout__Link{
             margin: 200px 0 0;
@@ -5174,6 +5212,25 @@ a{
         }
         .layout__IchimaiitaList{
             margin: 200px 0 0;
+            .box_items{
+                margin: 0 auto;
+                width: $wm;
+                .heading{
+                    margin: 0 auto;
+                    width: $wm;
+                    @include fts(ja, lead);
+                }
+                ul.items{
+                    margin: 100px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 75px 20px;
+                    li{
+                        width: $wxxs;
+                    }
+                }
+            }
         }
         .layout__CtaBox{
             margin: 200px 0 0;

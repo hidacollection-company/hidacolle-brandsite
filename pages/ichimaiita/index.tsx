@@ -8,11 +8,32 @@ import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
 import { BreadList } from 'components/BreadList/BreadList'
 
+// Wordpress REST API
+import { fetchData } from 'lib/fetchData';
+
+const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/?orderby=menu_order&order=asc'
+
+export const getStaticProps = async () => {
+
+  const ichimaiita_data = await fetchData(ichimaiitaUrl);
+
+  // 型を与えたい場合は下記で付与可能（先コメントアウト済み）。
+  // const ichimaiita_data = await fetchData<Ichimaiita[]>(ichimaiitaUrl);
+
+  console.log(ichimaiita_data);
+
+  return {
+    props: {
+      ichimaiita_data
+    }
+  };
+};
+
 type Props = {
-  heading: string ;
+  ichimaiita_data: any[];
 }
 
-const Home: NextPage = () => {
+const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
     const bread_list : { [key: string]: string }[] = [
       {
@@ -34,6 +55,7 @@ const Home: NextPage = () => {
 
         <div className="contents-body body-ichimaiita">
 
+          {/* <p>{JSON.stringify(ichimaiita_data)}</p> */}
 
           <BreadList list={bread_list}></BreadList>
 
@@ -235,7 +257,24 @@ const Home: NextPage = () => {
           </section>
 
           <div className="layout__IchimaiitaList">
-            <IchimaiitaList />
+            <section className="box_items">
+              <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
+              <ul className="items">
+                {ichimaiita_data.map(ichimaiita =>
+                  <li>
+                    <IchimaiitaList
+                      key={ichimaiita.acf.slug}
+                      title={ichimaiita.acf.title}
+                      slug={ichimaiita.acf.slug}
+                      size={ichimaiita.acf.size}
+                      control_number={ichimaiita.acf.control_number}
+                      thumbnail={ichimaiita.acf.thumbnail}
+                      photos={ichimaiita.acf.photos}
+                    />
+                  </li>
+                )}
+              </ul>
+            </section>
           </div>
 
           <div className="layout__CtaBox">

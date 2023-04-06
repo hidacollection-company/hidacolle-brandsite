@@ -11,7 +11,57 @@ import { BreadList } from 'components/BreadList/BreadList'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-const Home: NextPage = () => {
+// Wordpress REST API
+import { fetchData } from 'lib/fetchData';
+
+const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/?orderby=menu_order&order=asc'
+
+export async function getStaticPaths() {
+
+  const data = await fetchData(ichimaiitaUrl);
+
+  const paths = data.map((content)=> `/ichimaiita/${content.acf.slug}`)
+
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps(context) {
+
+  const ichimaiita_data = await fetchData(ichimaiitaUrl);
+
+  console.log(ichimaiita_data[0]);
+
+  const page_data_low = ichimaiita_data.filter((content)=> content.acf.slug == context.params.slug)
+  const page_data = page_data_low[0].acf
+
+  const photos_low = page_data.photos
+  const photos = Object.entries(page_data.photos)
+
+  console.log("page_data =======================");
+  console.log(page_data);
+  console.log("photos =======================");
+  console.log(photos);
+  console.log("=======================");
+
+  return {
+    props: {
+      page_data,
+      ichimaiita_data,
+      photos
+    }
+  };
+}
+
+type Props = {
+  page_data: any;
+  ichimaiita_data: any;
+  photos: any;
+}
+
+const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
 
     const bread_list : { [key: string]: string }[] = [
       {
@@ -19,7 +69,7 @@ const Home: NextPage = () => {
         url: "/ichimaiita"
       },
       {
-        name: "楠の一枚板",
+        name: `${page_data.title}の一枚板`,
         url: ""
       }
     ];
@@ -54,12 +104,11 @@ const Home: NextPage = () => {
       customPaging: function(i) {
         return (
           <a>
-            <img src={`/images/ichimaiita/example/kusu/slide-${i + 1}.jpg`} />
+            <img src={photos[i][1]} />
           </a>
         );
       },
       dots: true,
-      // dotsClass: "slick-dots slick-thumb",
       infinite: true,
       speed: 500,
       fade: true,
@@ -73,12 +122,12 @@ const Home: NextPage = () => {
 
       <>
         <PageHead
-          pageTitle = "楠の一枚板"
-          pageDescription = "楠の一枚板"
-          pagePath = "https://www.hidacolle.com/ichimaiita/kusu"
-          pageImg = ""
-          pageImgWidth = ""
-          pageImgHeight = ""
+            pageTitle = {`${page_data.title}の一枚板`}
+            pageDescription = {`${page_data.title}の一枚板`}
+            pagePath = {`https://www.hidacolle.com/ichimaiita/${page_data.slug}`}
+            pageImg = ""
+            pageImgWidth = ""
+            pageImgHeight = ""
         />
 
         <div className="contents_body body__solidwood_product">
@@ -86,106 +135,25 @@ const Home: NextPage = () => {
           <BreadList list={bread_list}></BreadList>
 
           <div className="box__heading box__layout">
-            <h1>楠の一枚板</h1>
+            <h1>{page_data.title}の一枚板</h1>
           </div>
 
           <section className="solidwood_product">
 
             <div className="item_images">
-
               <Slider {...settings}>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-1.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-2.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-3.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-4.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-5.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-6.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-7.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-8.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                {/* <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-9.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div>
-                <div>
-                  <Image
-                    // loader={myLoader}
-                    src="/images/ichimaiita/example/kusu/slide-10.jpg"
-                    alt="Picture of the author"
-                    width={1280}
-                    height={855}
-                  />
-                </div> */}
+                {photos.map(photo =>
+                  <div>
+                    <Image
+                      key={photo[0]}
+                      src={photo[1]}
+                      alt="Picture of the author"
+                      width={1280}
+                      height={855}
+                    />
+                  </div>
+                )}
               </Slider>
-
             </div>
 
             <div className="item_data">
@@ -201,15 +169,15 @@ const Home: NextPage = () => {
                   </tr> */}
                   <tr className="table-size">
                     <th className="table-title">サイズ</th>
-                    <td className="table-line">1,800 × 800-900 × 60 (mm)</td>
+                    <td className="table-line">{page_data.size}</td>
                   </tr>
                   <tr className="table-numbering">
                     <th className="table-title">管理番号</th>
-                    <td className="table-line">ks-23001</td>
+                    <td className="table-line">{page_data.control_number}</td>
                   </tr>
                 </tbody>
               </table>
-              <div className="price">363,000<span className="yen">円 (税込)</span></div>
+              <div className="price">{page_data.price_tax_included}<span className="yen">円 (税込)</span></div>
               <div className="layout-button">
                 <Link href='/contact' legacyBehavior><a className="button_green">お問い合わせはこちら</a></Link>
               </div>
@@ -218,7 +186,24 @@ const Home: NextPage = () => {
 
           {/* Component */}
           <div className="layout__IchimaiitaList">
-            <IchimaiitaList />
+            <section className="box_items">
+              <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
+              <ul className="items">
+                {ichimaiita_data.map(ichimaiita =>
+                  <li>
+                    <IchimaiitaList
+                      key={ichimaiita.acf.slug}
+                      title={ichimaiita.acf.title}
+                      slug={ichimaiita.acf.slug}
+                      size={ichimaiita.acf.size}
+                      control_number={ichimaiita.acf.control_number}
+                      thumbnail={ichimaiita.acf.thumbnail}
+                      photos={ichimaiita.acf.photos}
+                    />
+                  </li>
+                )}
+              </ul>
+            </section>
           </div>
 
           <div className="layout__CtaBox">
