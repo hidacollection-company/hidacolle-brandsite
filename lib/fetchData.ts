@@ -10,5 +10,15 @@ import fetch from 'node-fetch'
 export const fetchData = async <T>(url: string): Promise<any> => {
     const res = await fetch(url);
     const data = await res.json();
+
+    // console.log("============================");
+    // console.log("res");
+    // console.log("============================");
+    // console.log(res);
+    // console.log("============================");
+    // console.log("data");
+    // console.log("============================");
+    // console.log(data);
+
     return data;
 };

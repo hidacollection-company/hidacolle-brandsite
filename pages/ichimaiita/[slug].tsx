@@ -14,17 +14,16 @@ import "slick-carousel/slick/slick.css";
 // Wordpress REST API
 import { fetchData } from 'lib/fetchData';
 
-const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/'
+// Test
+import { wpClient } from "lib/wpapi";
 
 export async function getStaticPaths() {
 
-  const data = await fetchData(ichimaiitaUrl);
+  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
 
-  console.log("getStaticPaths =======================");
-  console.log("data =======================");
-  console.log(data);
+  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
 
-  const paths = data.map((content) => ({
+  const paths = ichimaiita_data.map((content) => ({
     params: {
       slug: content.acf.slug,
     }
@@ -38,22 +37,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 
-  const ichimaiita_data = await fetchData(ichimaiitaUrl);
+  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
+
+  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
 
   const page_data_low = ichimaiita_data.filter((content)=> content.acf.slug == context.params.slug)
 
-  // console.log(page_data_low[0].acf)
+  console.log(page_data_low)
 
   const page_data = page_data_low[0].acf
 
   const photos_low = page_data.photos
   const photos = Object.entries(page_data.photos)
-
-  // console.log("page_data =======================");
-  // console.log(page_data);
-  // console.log("photos =======================");
-  // console.log(photos);
-  // console.log("=======================");
 
   return {
     props: {
