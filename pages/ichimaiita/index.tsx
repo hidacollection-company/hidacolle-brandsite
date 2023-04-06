@@ -9,18 +9,13 @@ import { Links } from 'components/Ichimaiita/Links'
 import { BreadList } from 'components/BreadList/BreadList'
 
 // Wordpress REST API
-import { fetchData } from 'lib/fetchData';
-
-const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/?orderby=menu_order&order=asc'
+import { wpClient } from "lib/wpapi";
 
 export const getStaticProps = async () => {
 
-  const ichimaiita_data = await fetchData(ichimaiitaUrl);
+  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
 
-  // 型を与えたい場合は下記で付与可能（先コメントアウト済み）。
-  // const ichimaiita_data = await fetchData<Ichimaiita[]>(ichimaiitaUrl);
-
-  console.log(ichimaiita_data);
+  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
 
   return {
     props: {

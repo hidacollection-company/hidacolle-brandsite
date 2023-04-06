@@ -12,9 +12,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 // Wordpress REST API
-import { fetchData } from 'lib/fetchData';
-
-// Test
 import { wpClient } from "lib/wpapi";
 
 export async function getStaticPaths() {

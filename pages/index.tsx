@@ -3,12 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head'
 
-// npm delete please.
-// import useSWR from 'swr'
-// import unfetch from 'isomorphic-unfetch'
-// import apiFetch from '@wordpress/api-fetch';
-// import { wpClient } from "lib/wpapi";
-
 import PageHead from 'components/PageHead/PageHead'
 import { Links } from 'components/Ichimaiita/Links'
 import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
@@ -17,18 +11,11 @@ import { OriginalProductsList } from 'components/OriginalProducts/OriginalProduc
 import data from 'list-original-prodacts.json'
 
 // Wordpress REST API
-import { fetchData } from 'lib/fetchData';
-
-const pagesUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/pages'
-const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita'
+import { wpClient } from "lib/wpapi";
 
 export const getStaticProps = async () => {
 
-  const page_data = await fetchData(pagesUrl);
-
-  // 型を与えたい場合下記で付与可能。
-  // const page_data = await fetchData<Page[]>(pagesUrl);
-  // const ichimaiita_data = await fetchData<Ichimaiita[]>(ichimaiitaUrl);
+  const page_data = await wpClient.pages();
 
   console.log(page_data);
 
@@ -41,7 +28,6 @@ export const getStaticProps = async () => {
 
 type Props = {
   page_data: any;
-  ichimaiita_data: any;
 }
 
 const Home: NextPage<Props> = ({ page_data }) => {
@@ -348,8 +334,9 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 <section className="box-products">
                   <p className='heading-products'>商品の一部をご紹介</p>
                   <div className="layout__lists-products">
-                    {postLists.map(post =>
+                    {postLists.map((post, index) =>
                       <OriginalProductsList
+                        key = {index}
                         id = {post.id}
                         hidacolle_number = {post.hidacolle_number}
                         item_name = {post.item_name}
