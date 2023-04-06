@@ -20,7 +20,15 @@ export async function getStaticPaths() {
 
   const data = await fetchData(ichimaiitaUrl);
 
-  const paths = data.map((content)=> `/ichimaiita/${content.acf.slug}`)
+  console.log("getStaticPaths =======================");
+  console.log("data =======================");
+  console.log(data);
+
+  const paths = data.map((content) => ({
+    params: {
+      slug: content.acf.slug,
+    }
+  }))
 
   return {
     paths,
@@ -34,18 +42,18 @@ export async function getStaticProps(context) {
 
   const page_data_low = ichimaiita_data.filter((content)=> content.acf.slug == context.params.slug)
 
-  console.log(page_data_low[0].acf)
+  // console.log(page_data_low[0].acf)
 
   const page_data = page_data_low[0].acf
 
   const photos_low = page_data.photos
   const photos = Object.entries(page_data.photos)
 
-  console.log("page_data =======================");
-  console.log(page_data);
-  console.log("photos =======================");
-  console.log(photos);
-  console.log("=======================");
+  // console.log("page_data =======================");
+  // console.log(page_data);
+  // console.log("photos =======================");
+  // console.log(photos);
+  // console.log("=======================");
 
   return {
     props: {
