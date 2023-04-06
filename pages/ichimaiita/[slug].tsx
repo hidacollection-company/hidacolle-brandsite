@@ -32,9 +32,10 @@ export async function getStaticProps(context) {
 
   const ichimaiita_data = await fetchData(ichimaiitaUrl);
 
-  console.log(ichimaiita_data[0]);
-
   const page_data_low = ichimaiita_data.filter((content)=> content.acf.slug == context.params.slug)
+
+  console.log(page_data_low[0].acf)
+
   const page_data = page_data_low[0].acf
 
   const photos_low = page_data.photos
@@ -142,10 +143,9 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
 
             <div className="item_images">
               <Slider {...settings}>
-                {photos.map(photo =>
-                  <div>
+                {photos.map((photo, index) =>
+                  <div key={index}>
                     <Image
-                      key={photo[0]}
                       src={photo[1]}
                       alt="Picture of the author"
                       width={1280}
@@ -189,10 +189,10 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
             <section className="box_items">
               <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
               <ul className="items">
-                {ichimaiita_data.map(ichimaiita =>
-                  <li>
+                {ichimaiita_data.map((ichimaiita, index) =>
+                  <li key={index}>
                     <IchimaiitaList
-                      key={ichimaiita.acf.slug}
+                      key={index}
                       title={ichimaiita.acf.title}
                       slug={ichimaiita.acf.slug}
                       size={ichimaiita.acf.size}

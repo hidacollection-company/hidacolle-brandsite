@@ -3,8 +3,7 @@
  */
 module.exports = {
   experimental: {
-    optimizeFonts: true,
-    scrollRestoration: true,
+    scrollRestoration: true
   },
   images: {
     unoptimized: true,
