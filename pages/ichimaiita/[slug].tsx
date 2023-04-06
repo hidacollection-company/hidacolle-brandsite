@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick.css";
 // Wordpress REST API
 import { fetchData } from 'lib/fetchData';
 
-const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/?orderby=menu_order&order=asc'
+const ichimaiitaUrl = 'https://workspace.hidacolle.com/wp-json/wp/v2/ichimaiita/'
 
 export async function getStaticPaths() {
 
