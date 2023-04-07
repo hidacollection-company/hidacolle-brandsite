@@ -48,10 +48,10 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ FTP_SERVER }}
-          username: ${{ FTP_USERNAME }}
-          password: ${{ FTP_PASSWORD }}
-          server-dir: ${{ FTP_SERVER_DIR }}
+          server: ${{ env.FTP_SERVER }}
+          username: ${{ env.FTP_USERNAME }}
+          password: ${{ env.FTP_PASSWORD }}
+          server-dir: ${{ env.FTP_SERVER_DIR }}
           local-dir: ./out/
           protocol: ftps
           exclude: "[**/.**/**, .gitignore,  **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**]"
