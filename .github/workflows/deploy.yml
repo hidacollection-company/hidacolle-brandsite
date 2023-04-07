@@ -18,7 +18,7 @@ jobs:
     if: |
       github.ref_name == 'staging' ||
       github.ref_name == 'main'
-    env: |
+    env:
       FTP_SERVER: ${{github.ref_name == 'main' && secrets.FTP_SERVER || github.ref_name == 'staging' && secrets.FTP_SERVER}}
       FTP_USERNAME: ${{github.ref_name == 'main' && secrets.FTP_USERNAME || github.ref_name == 'staging' && secrets.FTP_USERNAME}}
       FTP_PASSWORD: ${{github.ref_name == 'main' && secrets.FTP_PASSWORD || github.ref_name == 'staging' && secrets.FTP_PASSWORD}}
