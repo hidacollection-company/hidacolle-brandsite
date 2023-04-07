@@ -26,10 +26,10 @@ jobs:
         uses: actions/checkout@v3
       # 「repository_dispatch」のpayloadを参照し、payloadがあれば、再度チェックアウト
       - name: payload settings - Checkout repository
-      - if: github.event.client_payload
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.client_payload.ref }}
+        if: github.event.client_payload
+          uses: actions/checkout@v3
+          with:
+            ref: ${{ github.event.client_payload.ref }}
       - name: show all branches after checkout
         run: git branch -a
       - name: Setup Node.js
