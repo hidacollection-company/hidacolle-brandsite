@@ -1,6 +1,7 @@
 name: Deploy via Github Actions to Production
 on:
   repository_dispatch:
+    # WordpressからStagingへアップ（type名変えて分かりやすくする必要ある。）
     type: after_saving_wordpress
   push:
     branches:
@@ -20,17 +21,27 @@ jobs:
   test:
     name: Deploy to server
     runs-on: ubuntu-latest
+    if: |
+      # github.ref_name == 'develop' ||
+      # github.ref_name == 'staging' ||
+      # github.ref_name == 'main'
+      github.ref_name == 'staging' ||
+      github.ref_name == 'main'
+    env: |
+      FTP_SERVER: ${{github.ref_name == 'main' && secrets.FTP_SERVER || github.ref_name == 'staging' && secrets.FTP_SERVER}}
+      FTP_USERNAME: ${{github.ref_name == 'main' && secrets.FTP_USERNAME || github.ref_name == 'staging' && secrets.FTP_USERNAME}}
+      FTP_PASSWORD: ${{github.ref_name == 'main' && secrets.FTP_PASSWORD || github.ref_name == 'staging' && secrets.FTP_PASSWORD}}
+      FTP_SERVER_DIR: ${{github.ref_name == 'main' && secrets.FTP_SERVER_DIR || github.ref_name == 'staging' && secrets.FTP_SERVER_DIR}}
     steps:
-      # プッシュ元のブランチを一旦チェックアウト
+      # プッシュ元のブランチへチェックアウト
+      # 「repository_dispatch(Wordpress)」から来る場合、必ずmainになるが、下記IFでpayload記述先へ振り分ける。
       - name: Checkout repository
         uses: actions/checkout@v3
-      # 「repository_dispatch」のpayloadを参照し、payloadがあれば、再度チェックアウト
+      # 「repository_dispatch」のpayloadを参照し、payloadがあればpayloadに準じてチェックアウト
       - if: github.event.client_payload
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.client_payload.ref }}
-      - name: show all branches after checkout
-        run: git branch -a
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -43,10 +54,10 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          server: ${{ FTP_SERVER }}
+          username: ${{ FTP_USERNAME }}
+          password: ${{ FTP_PASSWORD }}
+          server-dir: ${{ FTP_SERVER_DIR }}
           local-dir: ./out/
           protocol: ftps
           exclude: "[**/.**/**, .gitignore,  **/.git/**, **/node_modules/**, **/vendor/**, .editorconfig, README.md, .phpcs.xml.dist, **.json, **.lock, postcss.config.js, **/src/**]"
