@@ -22,12 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-
-      # プッシュ元のブランチを一旦チェックアウト
-      - uses: actions/checkout@v3
-
-      # 「repository_dispatch」のpayloadを参照し、payloadがあれば、再度チェックアウト
-      - if: github.event.client_payload
+        # プッシュ元のブランチを一旦チェックアウト
+        uses: actions/checkout@v3
+        # 「repository_dispatch」のpayloadを参照し、payloadがあれば、再度チェックアウト
+        if: github.event.client_payload
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.client_payload.ref }}
