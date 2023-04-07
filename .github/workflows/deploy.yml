@@ -21,24 +21,17 @@ jobs:
     name: Deploy to server
     runs-on: ubuntu-latest
     steps:
-
-    
       # プッシュ元のブランチを一旦チェックアウト
       - name: Checkout repository
         uses: actions/checkout@v3
-        name: 1.show current directory before checkout
-          run: pwd
       # 「repository_dispatch」のpayloadを参照し、payloadがあれば、再度チェックアウト
+      - name: payload settings - Checkout repository
       - if: github.event.client_payload
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.client_payload.ref }}
-        name: 2.show current directory before checkout
-          run: pwd
       - name: show all branches after checkout
         run: git branch -a
-
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
