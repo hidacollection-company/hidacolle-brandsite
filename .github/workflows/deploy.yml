@@ -7,15 +7,9 @@ on:
     branches:
       - staging
     paths-ignore:
-      - '.github/workflows/**'
-    # tags:
-    #   - '[0-9]+.[0-9]+.[0-9]*'
+      # - '.github/workflows/**'
 
 # https://rcmdnk.com/blog/2023/01/24/computer-github/
-# mainブランチだけではなくて、stagingブランチにデプロイすることがあるので、workflowになる。
-# まずはステージングのActionsが発火し（ここの認識あってるか不明）、Stagingへのプッシュを行う。
-# StaginをMainにマージした時に、Mainの方も本番環境へ向けて発火させる必要がある。
-# 近くDev環境が必要になる。
 
 jobs:
   test:
