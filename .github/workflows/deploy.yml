@@ -4,6 +4,7 @@ on:
     # WordpressからStagingへアップ（type名変えて分かりやすくする必要ある。）
     type: after_saving_wordpress
   push:
+    # branchesへ「main」と[develop]の追加
     branches:
       - staging
     paths-ignore:
@@ -19,6 +20,7 @@ jobs:
       github.ref_name == 'staging' ||
       github.ref_name == 'main'
     env:
+      # Wordpressから入ってきた場合「env」が定義されないことになるので、ここの改変が必要になると思う。
       FTP_SERVER: ${{github.ref_name == 'main' && secrets.FTP_SERVER || github.ref_name == 'staging' && secrets.FTP_SERVER}}
       FTP_USERNAME: ${{github.ref_name == 'main' && secrets.FTP_USERNAME || github.ref_name == 'staging' && secrets.FTP_USERNAME}}
       FTP_PASSWORD: ${{github.ref_name == 'main' && secrets.FTP_PASSWORD || github.ref_name == 'staging' && secrets.FTP_PASSWORD}}
