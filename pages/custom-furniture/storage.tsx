@@ -27,6 +27,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "収納のお困りごと解決事例"
           pageDescription = "大量の本や雑誌を、格好よくディスプレイ収納できる棚がほしい、洗濯機の横の狭いスペースにタオルの棚がほしい、リビングのカウンターや子供の机で使えるワゴンって作れる?壁に棚を付けたいけど、一枚だけでも作ってくれるかなあ、などなど。所有物の数を減らさなければいけないご時世だから、うまく「見える収納」を使いながら暮らしのお役に立ちたいですね。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/storage"
           pageImg = ""
           pageImgWidth = ""

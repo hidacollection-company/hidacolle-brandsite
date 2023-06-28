@@ -23,7 +23,7 @@ export const CustomOrderCta = memo((props) => {
             <div className={styles.visual__custom_order_service}>
               <Image
                 src="/images/original-products/illust-1.jpg"
-                alt="Picture of the author"
+                alt=""
                 width={490}
                 height={455}
               />

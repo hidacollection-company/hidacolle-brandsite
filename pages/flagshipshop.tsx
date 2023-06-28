@@ -35,6 +35,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "ヒダコレ 家具ショップ"
           pageDescription = "ヒダコレ 家具ショップを森と暮らしがつながる場所にしたい。飛騨の匠の技を継承する飛騨高山は日本一の家具産地。飛騨の森で育った色々な広葉樹の丸太から、お客様が直接木に触れ、暮らしを考えながら、私たちと一緒に「家具づくり」ができるお店です。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/flagshipshop"
           pageImg = ""
           pageImgWidth = ""
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     src="/images/flagshipshop/slide-1.jpg"
-                    alt="Picture of the author"
+                    alt=""
                     width={1280}
                     height={855}
                   />
@@ -62,7 +63,7 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     src="/images/flagshipshop/slide-2.jpg"
-                    alt="Picture of the author"
+                    alt=""
                     width={1280}
                     height={855}
                   />
@@ -70,7 +71,7 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     src="/images/flagshipshop/slide-3.jpg"
-                    alt="Picture of the author"
+                    alt=""
                     width={1280}
                     height={855}
                   />
@@ -104,7 +105,7 @@ const Home: NextPage = () => {
             <div className="image-floor">
               <Image
                 src="/images/flagshipshop/illust-1.jpg"
-                alt="Picture of the author"
+                alt="ヒダコレ 家具ショップ 『エントランス』のイラスト"
                 width={1280}
                 height={855}
               />
@@ -132,7 +133,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/004_maruta.jpg"
-                    alt="Picture of the author"
+                    alt="『飛騨の丸太』の写真"
                     width={1280}
                     height={855}
                   />
@@ -147,7 +148,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/005_bench.jpg"
-                    alt="Picture of the author"
+                    alt="『森のベンチ』の写真"
                     width={1280}
                     height={855}
                   />
@@ -162,7 +163,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/006_deck.jpg"
-                    alt="Picture of the author"
+                    alt="『無垢の木デッキ』の写真"
                     width={1280}
                     height={855}
                   />
@@ -177,7 +178,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/flagshipshop/007.jpg"
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -185,7 +186,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/flagshipshop/008.jpg"
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -197,7 +198,7 @@ const Home: NextPage = () => {
             <div className="image-floor">
               <Image
                 src="/images/flagshipshop/illust-2.jpg"
-                alt="Picture of the author"
+                alt="ヒダコレ 家具ショップ 『1階』のイラスト"
                 width={1280}
                 height={855}
               />
@@ -224,7 +225,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/009_ichimaiita.jpg"
-                    alt="Picture of the author"
+                    alt="『一枚板を循環させる』の写真"
                     width={1280}
                     height={855}
                   />
@@ -239,7 +240,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/010_library.jpg"
-                    alt="Picture of the author"
+                    alt="『ライブラリー』の写真"
                     width={1280}
                     height={855}
                   />
@@ -254,7 +255,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/011_craft.jpg"
-                    alt="Picture of the author"
+                    alt="『飛騨の手仕事』の写真"
                     width={1280}
                     height={855}
                   />
@@ -269,7 +270,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/flagshipshop/012.jpg"
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -277,7 +278,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/flagshipshop/013.jpg"
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -289,7 +290,7 @@ const Home: NextPage = () => {
             <div className="image-floor">
               <Image
                 src="/images/flagshipshop/illust-3.jpg"
-                alt="Picture of the author"
+                alt="ヒダコレ 家具ショップ 『2階』のイラスト"
                 width={1280}
                 height={855}
               />
@@ -316,7 +317,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/014_table.jpg"
-                    alt="Picture of the author"
+                    alt="『色々なテーブル』の写真"
                     width={1280}
                     height={855}
                   />
@@ -331,7 +332,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/015_sofa.jpg"
-                    alt="Picture of the author"
+                    alt="『オーダーソファ』の写真"
                     width={1280}
                     height={855}
                   />
@@ -346,7 +347,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/016_desk.jpg"
-                    alt="Picture of the author"
+                    alt="『ワークスペース』の写真"
                     width={1280}
                     height={855}
                   />
@@ -361,7 +362,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/017_bed.jpg"
-                    alt="Picture of the author"
+                    alt="『オーダーベッド』の写真"
                     width={1280}
                     height={855}
                   />
@@ -376,7 +377,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/flagshipshop/018_original_products.jpg"
-                    alt="Picture of the author"
+                    alt="『インテリア小物』の写真"
                     width={1280}
                     height={855}
                   />

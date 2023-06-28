@@ -43,6 +43,7 @@ const Home: NextPage<Props> = ({ page_data }) => {
         <PageHead
           pageTitle = ""
           pageDescription = ""
+          pageRobots = ""
           pagePath = ""
           pageImg = ""
           pageImgWidth = ""

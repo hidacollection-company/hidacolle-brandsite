@@ -35,6 +35,7 @@ const Home: NextPage = () => {
             <PageHead
                 pageTitle = "お問合わせ"
                 pageDescription = "お見積もりまでは何度でも無料ですので、みなさん「お試し感覚」でご利用いただいています。お名前・メールアドレスだけでも構いませんので、まずはお気軽にお問合せください。"
+                pageRobots = ""
                 pagePath = "https://www.hidacolle.com/contact"
                 pageImg = ""
                 pageImgWidth = ""

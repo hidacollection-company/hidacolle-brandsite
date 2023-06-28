@@ -46,6 +46,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
         <PageHead
           pageTitle = "乾燥中の一枚板"
           pageDescription = "1m以上の大きな丸太を製材して採れた、製材所の社長もビックリするくらいきれいな栃の一枚板。今天然乾燥を行っているところ。その後人工乾燥を経て、お客様の元に届くのはまだまだ先になりますが、ぜひ写真だけでもご覧ください!"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/ichimaiita/drying"
           pageImg = ""
           pageImgWidth = ""

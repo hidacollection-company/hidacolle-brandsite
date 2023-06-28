@@ -27,6 +27,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "ワークスペースのお困りごと解決事例"
           pageDescription = "パソコンとプリンター、OA機器をまとめて収納できるかなあ?コンセントからコードの流れを整理したい、たくさんの書類関係を収納する場所がない・・・気持ちのいいワークスペースを無垢の木でつくりたい、などなど。部屋で仕事をする時間が多くなっているから、気持ちよく、効率よく仕事を進めることができる家具を作りたい。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/workspace"
           pageImg = ""
           pageImgWidth = ""

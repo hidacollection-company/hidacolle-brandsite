@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "【MARUTA Project】小さな丸太を生かす"
           pageDescription = "チップになる飛騨の広葉樹（小さな丸太）を少しでも救いだし、家具作りに活かしたい"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/small-log"
           pageImg = ""
           pageImgWidth = ""

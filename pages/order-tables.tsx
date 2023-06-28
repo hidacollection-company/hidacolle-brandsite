@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "オーダーテーブルをネットで"
           pageDescription = "ヒダコレのカスタムオーダー家具の中から、まずネットでも簡単にご注文いただけるようにセミオーダーテーブルを考えました。お客様のお部屋に合ったご希望サイズ、暮らし方に合った理想のデザインなど、無垢の木のバリエーションから天板を選んでいただき、そして木や鉄の脚をお選びいただくだけの簡単な工程です基本形のタイプの天板も、ホタテタイプやロの字タイプ、座卓になる兼用脚など定番の脚も、多彩なラインナップが揃っています。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/order-tables"
           pageImg = ""
           pageImgWidth = ""

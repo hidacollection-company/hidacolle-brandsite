@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "ヒダコレのカスタムオーダー家具は、"
           pageDescription = "ヒダコレの家具は、お客様と一緒に“考える・つくる・なおす”家具です。メーカー既製品家具では見つからない、お部屋の中のさまざまな家具をお作りします。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture"
           pageImg = ""
           pageImgWidth = ""

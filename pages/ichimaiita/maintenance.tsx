@@ -25,6 +25,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "テーブル修理・再生"
           pageDescription = "大切な家具を次の世代に使いつなげるために 飛騨の家具づくりの技術と経験を生かして、みなさんの大切な家具を再生させます。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/ichimaiita/maintenance"
           pageImg = ""
           pageImgWidth = ""

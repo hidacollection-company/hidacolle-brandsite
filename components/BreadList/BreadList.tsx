@@ -17,50 +17,63 @@ export const BreadList = memo((props: Props) => {
 
   return (
       <>
-        <ul
-          className={styles.box__breadlist}
-          itemScope
-          itemType="https://schema.org/BreadcrumbList"
-        >
-
-          <li
-            className={styles.active_floor}
-            itemProp="itemListElement"
+        <nav>
+          <ul
+            className={styles.box__breadlist}
             itemScope
-            itemType="https://schema.org/ListItem"
+            itemType="https://schema.org/BreadcrumbList"
           >
-            <Link href={"/"} legacyBehavior>
-              <a className="">ホーム</a>
-            </Link>
-            <meta itemProp="position" content="1" />
-          </li>
 
-          {data.map((floor,index) => (
+            <li
+              className={styles.active_floor}
+              itemProp="itemListElement"
+              itemScope
+              itemType="https://schema.org/ListItem"
+            >
+              <Link href={"/"} legacyBehavior>
+                <a itemProp="item">
+                  <span itemProp="name">ホーム</span>
+                </a>
+              </Link>
+              <meta itemProp="position" content="1" />
+            </li>
 
-            floor.url != "" ?
+            {data.map((floor,index) => (
 
-              <li
-                className={`${styles.active_floor}`}
-                key={index}
-                itemProp="itemListElement"
-                itemScope
-                itemType="https://schema.org/ListItem"
-              >
-                <Link href={floor.url} legacyBehavior>
-                  <a>{floor.name}</a>
-                </Link>
-                <meta itemProp="position" content={`${index+1}`} />
-              </li>
+              floor.url != "" ?
 
-            :
+                <li
+                  className={`${styles.active_floor}`}
+                  key={index}
+                  itemProp="itemListElement"
+                  itemScope
+                  itemType="https://schema.org/ListItem"
+                >
+                  <Link href={floor.url} legacyBehavior>
+                    <a itemProp="item">
+                      <span itemProp="name">{floor.name}</span>
+                    </a>
+                  </Link>
+                  <meta itemProp="position" content={`${index+1}`} />
+                </li>
 
-              <li className={`${styles.now_floor}`} key={index}>
-                  {floor.name}
-              </li>
+              :
 
-          ))}
+                <li
+                  className={`${styles.now_floor}`}
+                  key={index}
+                  itemProp="itemListElement"
+                  itemScope
+                  itemType="https://schema.org/ListItem"
+                >
+                    <span itemProp="name">{floor.name}</span>
+                    <meta itemProp="position" content={`${index+1}`} />
+                </li>
 
-        </ul>
+            ))}
+
+          </ul>
+        </nav>
       </>
   );
 })

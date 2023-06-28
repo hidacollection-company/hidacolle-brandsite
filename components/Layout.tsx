@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
     return (
         <div>
             <Head>
-                <title>MyTemplate</title>
+                {/* <title>MyTemplate</title> */}
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
             </Head>
             

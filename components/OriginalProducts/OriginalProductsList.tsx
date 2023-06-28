@@ -25,7 +25,7 @@ export const OriginalProductsList = memo((props: Props) => {
                   <a className={`${styles.visual} add_corner`}>
                     <Image
                       src={`/images/original-products/puroducts/${props.id}.jpg`}
-                      alt="Picture of the author"
+                      alt={`ヒダコレのオリジナルプロダクト『${props.item_name}』の商品画像`}
                       width={1280}
                       height={855}
                     />
@@ -36,7 +36,7 @@ export const OriginalProductsList = memo((props: Props) => {
                 <div className={styles.visual}>
                   <Image
                     src={`/images/original-products/puroducts/${props.id}.jpg`}
-                    alt="Picture of the author"
+                    alt={`ヒダコレのオリジナルプロダクト『${props.item_name}』の商品画像`}
                     width={1280}
                     height={855}
                   />

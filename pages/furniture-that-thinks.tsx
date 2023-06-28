@@ -20,6 +20,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "考える家具"
           pageDescription = "ヒダコレのお仕事はお客様の家具を作ることです。そして、その家具でお客様が「暮らし」を考えはじめるきっかけになるといいなと思います。だから私たちの家具の名前を『考える家具』と呼んでいます。私たちのものづくりの理念のようなものです。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/furniture-that-thinks"
           pageImg = ""
           pageImgWidth = ""
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/furniture-that-thinks/logo-1.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレ家具のロゴマークの意味 説明画像1"
                     width={1280}
                     height={855}
                   />
@@ -64,7 +65,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/furniture-that-thinks/logo-2.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレ家具のロゴマークの意味 説明画像2"
                     width={1280}
                     height={855}
                   />
@@ -75,7 +76,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/furniture-that-thinks/logo-3.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレ家具のロゴマークの意味 説明画像3"
                     width={1280}
                     height={855}
                   />
@@ -86,7 +87,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/furniture-that-thinks/logo-4.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレ家具のロゴマークの意味 説明画像4"
                     width={1280}
                     height={855}
                   />
@@ -97,7 +98,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/furniture-that-thinks/logo-5.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレ家具のロゴマークの意味 説明画像5"
                     width={1280}
                     height={855}
                   />

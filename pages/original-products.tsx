@@ -32,6 +32,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "こんな家具のある暮らし"
           pageDescription = "お客様と一緒に考え、一緒に家具づくりをしてきたヒダコレ家具だからこそ、使いやすく、生活に馴染む家具が生まれます。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/original-products"
           pageImg = ""
           pageImgWidth = ""

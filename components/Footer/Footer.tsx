@@ -44,20 +44,20 @@ export const Footer = memo(() => {
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}></p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/' legacyBehavior><a className="">トップページ</a></Link></li>
+                  <li className={styles.link}><Link href='/' legacyBehavior><a>トップページ</a></Link></li>
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}></p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/furniture-that-thinks' legacyBehavior><a className="">考える家具</a></Link></li>
+                  <li className={styles.link}><Link href='/furniture-that-thinks' legacyBehavior><a>考える家具</a></Link></li>
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}>MARUTA Project</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/small-log' legacyBehavior><a className="">小さな丸太を生かす</a></Link></li>
-                  <li className={styles.link}><Link href='/large-log' legacyBehavior><a className="">大きな丸太を循環させる</a></Link></li>
+                  <li className={styles.link}><Link href='/small-log' legacyBehavior><a>小さな丸太を生かす</a></Link></li>
+                  <li className={styles.link}><Link href='/large-log' legacyBehavior><a>大きな丸太を循環させる</a></Link></li>
                 </ul>
               </li>
             </ul>
@@ -66,24 +66,24 @@ export const Footer = memo(() => {
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}>Ichimaiita furniture</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/ichimaiita' legacyBehavior><a className="">一枚板の家具</a></Link></li>
-                  <li className={styles.link}><Link href='/ichimaiita/maintenance' legacyBehavior><a className="">テーブル修理・再生</a></Link></li>
-                  <li className={styles.link}><Link href='/ichimaiita/drying' legacyBehavior><a className="">乾燥中の一枚板</a></Link></li>
+                  <li className={styles.link}><Link href='/ichimaiita' legacyBehavior><a>一枚板の家具</a></Link></li>
+                  <li className={styles.link}><Link href='/ichimaiita/maintenance' legacyBehavior><a>テーブル修理・再生</a></Link></li>
+                  <li className={styles.link}><Link href='/ichimaiita/drying' legacyBehavior><a>乾燥中の一枚板</a></Link></li>
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}>Costum furniture</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/custom-furniture' legacyBehavior><a className="">ヒダコレのオーダー家具は、</a></Link></li>
-                  {/* <li className={styles.link}><Link href='/custom-furniture/kitchen' legacyBehavior><a className="">お困りごと解決事例(*6)</a></Link></li> */}
+                  <li className={styles.link}><Link href='/custom-furniture' legacyBehavior><a>ヒダコレのオーダー家具は、</a></Link></li>
+                  {/* <li className={styles.link}><Link href='/custom-furniture/kitchen' legacyBehavior><a>お困りごと解決事例(*6)</a></Link></li> */}
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
                 <p className={styles.title}>Online challenge</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/order-tables' legacyBehavior><a className="">オーダーテーブルをネットで</a></Link></li>
-                  <li className={styles.link}><Link href='/original-products' legacyBehavior><a className="">こんな家具のある暮らし</a></Link></li>
-                  <li className={styles.link}><Link href='/handcrafts-of-hida' legacyBehavior><a className="">飛騨の手仕事</a></Link></li>
+                  <li className={styles.link}><Link href='/order-tables' legacyBehavior><a>オーダーテーブルをネットで</a></Link></li>
+                  <li className={styles.link}><Link href='/original-products' legacyBehavior><a>こんな家具のある暮らし</a></Link></li>
+                  <li className={styles.link}><Link href='/handcrafts-of-hida' legacyBehavior><a>飛騨の手仕事</a></Link></li>
                 </ul>
               </li>
             </ul>
@@ -92,13 +92,13 @@ export const Footer = memo(() => {
               <li className={styles.box_nav_main_list}>
                 {/* <p className={styles.title}></p> */}
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/flagshipshop' legacyBehavior><a className="">ヒダコレ 家具ショップ</a></Link></li>
+                  <li className={styles.link}><Link href='/flagshipshop' legacyBehavior><a>ヒダコレ 家具ショップ</a></Link></li>
                 </ul>
               </li>
               {/* <li className={styles.box_nav_main_list}>
                 <p className={styles.title}></p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/note' legacyBehavior><a className="">ヒダコレノート</a></Link></li>
+                  <li className={styles.link}><Link href='/note' legacyBehavior><a>ヒダコレノート</a></Link></li>
                 </ul>
               </li> */}
             </ul>

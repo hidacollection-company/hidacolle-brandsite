@@ -20,7 +20,7 @@ export const Links = memo((props: Props) => {
             <div className={styles.visual_link}>
               <Image
                 src="/images/ichimaiita/index/001.jpg"
-                alt="Picture of the author"
+                alt="ヒダコレの一枚板へのリンクです。"
                 width={1280}
                 height={855}
               />
@@ -51,7 +51,7 @@ export const Links = memo((props: Props) => {
             <div className={styles.visual_link}>
               <Image
                 src="/images/ichimaiita/maintenace/001.jpg"
-                alt="Picture of the author"
+                alt="テーブル修理・再生へのリンクです。"
                 width={1280}
                 height={855}
               />

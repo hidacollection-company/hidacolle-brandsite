@@ -85,19 +85,19 @@ export const Header = memo(() => {
             <div className={styles.layout__nav}>
               <div className={styles.block__nav}>
                 <Link href='/furniture-that-thinks' legacyBehavior>
-                  <a className="">
+                  <a>
                     考える家具
                     {/* <span className="en__mim">MARUTA Project</span> */}
                   </a>
                 </Link>
                 <Link href='/small-log' legacyBehavior>
-                  <a className="">
+                  <a>
                     小さな丸太を生かす
                     <span className="en__mim">MARUTA Project</span>
                   </a>
                 </Link>
                 <Link href='/large-log' legacyBehavior>
-                  <a className="">
+                  <a>
                     大きな丸太を循環させる
                     <span className="en__mim">MARUTA Project</span>
                   </a>
@@ -106,19 +106,19 @@ export const Header = memo(() => {
 
               <div className={styles.block__nav}>
                 <Link href='/ichimaiita' legacyBehavior>
-                  <a className="">
+                  <a>
                     一枚板の家具
                     <span className="en__mim">Ichimaiita Furniture</span>
                   </a>
                 </Link>
                 <Link href='/ichimaiita/maintenance' legacyBehavior>
-                  <a className="">
+                  <a>
                     テーブル修理・再生
                     <span className="en__mim">Ichimaiita Furniture</span>
                   </a>
                 </Link>
                 <Link href='/custom-furniture' legacyBehavior>
-                  <a className="">
+                  <a>
                     ヒダコレのカスタムオーダー家具は、
                     <span className="en__mim">Costum furniture</span>
                   </a>
@@ -128,19 +128,19 @@ export const Header = memo(() => {
               <div className={styles.heading__online_challnege}><span>Online challenge</span></div>
               <div className={`${styles.block__nav} ${styles.block__online_challnege}`}>
                 <Link href='/order-tables' legacyBehavior>
-                  <a className="">
+                  <a>
                     オーダーテーブルをネットで
                     <span className="en__mim">Order tables. online.</span>
                   </a>
                 </Link>
                 <Link href='/original-products' legacyBehavior>
-                  <a className="">
+                  <a>
                     こんな家具のある暮らし
                     <span className="en__mim">Original products</span>
                   </a>
                 </Link>
                 <Link href='/handcrafts-of-hida' legacyBehavior>
-                  <a className="">
+                  <a>
                     飛騨の手仕事
                     <span className="en__mim">Handcrafts of hida</span>
                   </a>
@@ -149,7 +149,7 @@ export const Header = memo(() => {
 
               <div className={styles.block__nav}>
                 <Link href='/flagshipshop' legacyBehavior>
-                  <a className="">
+                  <a>
                     ヒダコレ 家具ショップ
                     <span className="en__mim">Flagship shop</span>
                   </a>

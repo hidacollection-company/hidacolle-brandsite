@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "【MARUTA Project】大きな丸太を循環させる"
           pageDescription = "世界的にみても大きな価値のある樹齢100年以上の大径木から作られる一枚板を再生・循環させたい"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/large-log"
           pageImg = ""
           pageImgWidth = ""

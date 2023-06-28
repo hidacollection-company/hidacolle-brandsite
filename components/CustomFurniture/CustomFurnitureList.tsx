@@ -23,7 +23,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/kitchen/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 キッチンの事例です。"
                       width={1280}
                       height={855}
                     />
@@ -40,7 +40,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/workspace/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 ワークスペースの事例です。"
                       width={1280}
                       height={855}
                     />
@@ -57,7 +57,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/tvboard/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 テレビボードの事例です。"
                       width={1280}
                       height={855}
                     />
@@ -74,7 +74,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/storage/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 収納の事例です。"
                       width={1280}
                       height={855}
                     />
@@ -91,7 +91,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/sofa/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 ソファの事例です。"
                       width={1280}
                       height={855}
                     />
@@ -108,7 +108,7 @@ export const CustomFurnitureList = memo((props: Props) => {
                     <Image
                       // loader={myLoader}
                       src="/images/custom-furniture/example/bed/001_main.jpg"
-                      alt="Picture of the author"
+                      alt="ヒダコレのカスタムオーダー家具 ベッドの事例です。"
                       width={1280}
                       height={855}
                     />

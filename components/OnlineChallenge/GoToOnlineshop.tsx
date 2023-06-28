@@ -30,7 +30,7 @@ export const GoToOnlineshop = memo((props: Props) => {
               <li>
                 <Image
                   src={`/images/${props.slug}/m001.jpg`}
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -38,7 +38,7 @@ export const GoToOnlineshop = memo((props: Props) => {
               <li>
                 <Image
                   src={`/images/${props.slug}/m002.jpg`}
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />
@@ -46,7 +46,7 @@ export const GoToOnlineshop = memo((props: Props) => {
               <li>
                 <Image
                   src={`/images/${props.slug}/m003.jpg`}
-                  alt="Picture of the author"
+                  alt=""
                   width={1280}
                   height={855}
                 />

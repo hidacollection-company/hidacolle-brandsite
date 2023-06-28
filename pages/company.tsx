@@ -19,6 +19,7 @@ const Home: NextPage = () => {
             <PageHead
                 pageTitle = "会社概要"
                 pageDescription = "会社概要のページです。"
+                pageRobots = ""
                 pagePath = "https://www.hidacolle.com/company"
                 pageImg = ""
                 pageImgWidth = ""

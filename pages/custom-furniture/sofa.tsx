@@ -27,6 +27,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "ソファのお困りごと解決事例"
           pageDescription = "リビングルームでの家族での過ごし方が変わってきてますね。それに伴ってソファはゆっくり座るだけの家具ではなく、「集う」「遊ぶ」「学ぶ」「過ごす」ための場になってきてます。ソファの奥行きなどのサイズ感、クッションの固さ、などなど既製品のソファでは満足できなくなっているから、ヒダコレのカスタムオーダーのソファが必要になってきています。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/sofa"
           pageImg = ""
           pageImgWidth = ""

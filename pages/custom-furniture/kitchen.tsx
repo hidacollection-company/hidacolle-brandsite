@@ -28,6 +28,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "キッチンのお困りごと解決事例"
           pageDescription = "たくさんの食器やカトラリー、布巾などを収納したい、電子レンジやトースター、炊飯器、コーヒーメーカーなどのコードを隠したい、ゴミ箱をどこに置いたらいいの？ダイニング・リビングからの導線をよりよくしたい、などなど。毎日ずっと使う場所だから、もっと楽しくなるような、もっと使いやすい場所であってほしい。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/kitchen"
           pageImg = ""
           pageImgWidth = ""

@@ -14,15 +14,15 @@ import "slick-carousel/slick/slick.css";
 // Wordpress REST API
 import { wpClient } from "lib/wpapi";
 
+import { getIchimaiitaAllPosts } from "lib/wpapi";
+
 export async function getStaticPaths() {
 
-  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
-
-  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
+  const ichimaiita_data = await getIchimaiitaAllPosts();
 
   const paths = ichimaiita_data.map((content) => ({
     params: {
-      slug: content.acf.slug,
+      slug: content.slug,
     }
   }))
 
@@ -34,18 +34,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 
-  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
+  const ichimaiita_data = await getIchimaiitaAllPosts();
 
-  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
+  const page_data_low = ichimaiita_data.filter((content)=> content.slug == context.params.slug)
+  const page_data = page_data_low[0]
 
-  const page_data_low = ichimaiita_data.filter((content)=> content.acf.slug == context.params.slug)
+  console.log("page_data")
+  console.log(page_data)
 
-  console.log(page_data_low)
+  console.log("photos")
+  console.log(page_data.photos)
 
-  const page_data = page_data_low[0].acf
-
-  const photos_low = page_data.photos
-  const photos = Object.entries(page_data.photos)
+  const photos = page_data.photos
 
   return {
     props: {
@@ -105,7 +105,7 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
       customPaging: function(i) {
         return (
           <a>
-            <img src={photos[i][1]} />
+            <img src={photos[i]["sourceUrl"]} />
           </a>
         );
       },
@@ -125,6 +125,7 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
         <PageHead
             pageTitle = {`${page_data.title}の一枚板`}
             pageDescription = {`${page_data.title}の一枚板`}
+            pageRobots = ""
             pagePath = {`https://www.hidacolle.com/ichimaiita/${page_data.slug}`}
             pageImg = ""
             pageImgWidth = ""
@@ -146,8 +147,8 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
                 {photos.map((photo, index) =>
                   <div key={index}>
                     <Image
-                      src={photo[1]}
-                      alt="Picture of the author"
+                      src={photo.sourceUrl}
+                      alt={photo.altText}
                       width={1280}
                       height={855}
                     />
@@ -159,25 +160,17 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
             <div className="item_data">
               <table>
                 <tbody>
-                  {/* <tr className="table-delivery_schedule">
-                    <th className="table-title">納期</th>
-                    <td className="table-line">ご注文後1か月半ほど製作期間を頂きまして、発送日が決定次第ご連絡をさせていただきます。お急ぎの方は、お問合せフォームよりご相談ください。</td>
-                  </tr> */}
-                  {/* <tr className="table-tree_species">
-                    <th className="table-title">樹種</th>
-                    <td className="table-line">ブラックウォールナット</td>
-                  </tr> */}
                   <tr className="table-size">
                     <th className="table-title">サイズ</th>
                     <td className="table-line">{page_data.size}</td>
                   </tr>
                   <tr className="table-numbering">
                     <th className="table-title">管理番号</th>
-                    <td className="table-line">{page_data.control_number}</td>
+                    <td className="table-line">{page_data.controlNumber}</td>
                   </tr>
                 </tbody>
               </table>
-              <div className="price">{page_data.price_tax_included}<span className="yen">円 (税込)</span></div>
+              <div className="price">{page_data.priceTaxIncluded}<span className="yen">円 (税込)</span></div>
               <div className="layout-button">
                 <Link href='/contact' legacyBehavior><a className="button_green">お問い合わせはこちら</a></Link>
               </div>
@@ -193,12 +186,12 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
                   <li key={index}>
                     <IchimaiitaList
                       key={index}
-                      title={ichimaiita.acf.title}
-                      slug={ichimaiita.acf.slug}
-                      size={ichimaiita.acf.size}
-                      control_number={ichimaiita.acf.control_number}
-                      thumbnail={ichimaiita.acf.thumbnail}
-                      photos={ichimaiita.acf.photos}
+                      title={ichimaiita.title}
+                      slug={ichimaiita.slug}
+                      size={ichimaiita.size}
+                      control_number={ichimaiita.controlNumber}
+                      thumbnail={ichimaiita.thumbnail.sourceUrl}
+                      photos={ichimaiita.photos}
                     />
                   </li>
                 )}

@@ -28,6 +28,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "ベッドのお困りごと解決事例"
           pageDescription = "シングルとセミダブルのベッドを並べて置きたい、2台のベッドを並べるけど、ヘッドボードは一体化したい、ケイタイの充電やメガネ、本などの棚がほしい、畳の間というか、ベッド以外のスペースにもしたい、などなど。ベッドは睡眠を取るだけのスペースではないから、「くつろぎ」「癒し」「健康」でいるための過ごし方も考えたいですね。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/bed"
           pageImg = ""
           pageImgWidth = ""

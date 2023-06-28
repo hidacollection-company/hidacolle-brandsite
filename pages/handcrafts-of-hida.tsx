@@ -57,6 +57,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "飛騨の手仕事"
           pageDescription = "木工、陶芸、吹きガラス、張り子など、飛騨のクラフト作家をご紹介。「HIDA・COLLECTION」という名前には、飛騨のいいもの・こだわりのものを全国の人に知っていただきたいという思いがあります。飛騨の匠の歴史から続く工芸・民芸の文化と、飛騨の豊かな自然の中で丁寧につくりあげられた作品には、それぞれの作家さんの唯一無二の個性と温かみがあふれています。思わず手にとってしまうほど心惹かれるクラフト作品と出会えるところ。ヒダコレがそのような場所と機会になれるように、今まで通りに「飛騨のいいもの・こだわり」をご紹介していきたいと思います。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/handcrafts-of-hida"
           pageImg = ""
           pageImgWidth = ""

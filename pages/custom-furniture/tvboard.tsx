@@ -27,6 +27,7 @@ const Home: NextPage = () => {
         <PageHead
           pageTitle = "テレビボードのお困りごと解決事例"
           pageDescription = "テレビが壁掛け式なので、どのようなＴＶボードが合いますか?ブルーレイと合わせて、ゲーム機器を収納したい、コンセントの位置とＴＶボードが重なってしまって・・・収納棚やベンチヌックなど、他の家具と一体化したい、などなど。テレビとインターネットがつながっていく時代だから、単にテレビを置く台ではなく、その壁全体とテレビの関係性を設計する必要があります。"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/custom-furniture/tvboard"
           pageImg = ""
           pageImgWidth = ""
