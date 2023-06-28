@@ -19,7 +19,7 @@ interface postLists {
   ec_url: string;
 }
 
-interface PropType { 
+interface PropType {
   data: postLists[];
 }
 
