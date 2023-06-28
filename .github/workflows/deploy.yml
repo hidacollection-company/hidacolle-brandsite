@@ -43,7 +43,8 @@ jobs:
       - name: Install NPM packages
         run: npm ci
       - name: Export Next.js App
-        run: npm run build
+        # run: npm run build
+        run: APP_ENV=staging npm run build
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
