@@ -42,9 +42,15 @@ jobs:
           cache: npm
       - name: Install NPM packages
         run: npm ci
+      - name: create .env.local file
+        run: |
+            echo "NEXT_PUBLIC_API_BASE_URL=${{ secrets.NEXT_PUBLIC_API_BASE_URL }}" >> .env.local
+            echo "WP_AUTH_SECRET=${{ secrets.WP_AUTH_SECRET }}" >>  .env.local
+            echo "WP_API_URL=${{ secrets.WP_API_URL }}" >>  .env.local
+            echo "WP_GRAPHQL_URL=${{ secrets.WP_GRAPHQL_URL }}" >>  .env.local
       - name: Export Next.js App
-        # run: npm run build
-        run: APP_ENV=staging npm run build
+        run: npm run build
+        # run: APP_ENV=staging npm run build
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
