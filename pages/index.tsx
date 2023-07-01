@@ -55,9 +55,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
         <section className="contents-body body-index">
           <section className="box__main_visual">
             <Image
-              // loader={myLoader}
               src={hero_image}
-              alt="Picture of the author"
+              alt="ヒダコレ家具ショップの店内写真"
               width={1180}
               height={680}
             />
@@ -272,9 +271,9 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 </li>
               </ul>
               <ul className="images-order_tables_online">
-                <li><Image src="/images/order-tables/m001.jpg" alt="Picture of the author" width={1280} height={855} /></li>
-                <li><Image src="/images/order-tables/m002.jpg" alt="Picture of the author" width={1280} height={855} /></li>
-                <li><Image src="/images/order-tables/m003.jpg" alt="Picture of the author" width={1280} height={855} /></li>
+                <li><Image src="/images/order-tables/m001.jpg" alt="オーダーテーブルのイメージ写真 その1" width={1280} height={855} /></li>
+                <li><Image src="/images/order-tables/m002.jpg" alt="オーダーテーブルのイメージ写真 その2" width={1280} height={855} /></li>
+                <li><Image src="/images/order-tables/m003.jpg" alt="オーダーテーブルのイメージ写真 その3" width={1280} height={855} /></li>
               </ul>
               <ul className="buttons">
                 <li>
@@ -304,9 +303,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                   <li>
                     <figure>
                       <Image
-                        // loader={myLoader}
                         src="/images/original-products/001.jpg"
-                        alt="Picture of the author"
+                        alt="ヒダコレのオリジナルプロダクト『衣桁3連』の写真"
                         width={1000}
                         height={213}
                       />
@@ -318,7 +316,7 @@ const Home: NextPage<Props> = ({ page_data }) => {
                       <Image
                         // loader={myLoader}
                         src="/images/original-products/002.jpg"
-                        alt="Picture of the author"
+                        alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
                         width={1000}
                         height={213}
                       />
@@ -384,9 +382,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
               </div>
               <div className="bgimage-handicrafts_of_hida">
                 <Image
-                  // loader={myLoader}
                   src="/images/handcrafts-of-hida/bg_index.png"
-                  alt="Picture of the author"
+                  alt="飛騨の手仕事イメージ写真"
                   width={746}
                   height={906}
                 />
@@ -427,9 +424,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                   <li>
                     <figure>
                       <Image
-                        // loader={myLoader}
                         src="/images/index/flagshipshop_001.jpg"
-                        alt="Picture of the author"
+                        alt="ヒダコレ家具ショップ『一枚板の家具』の写真"
                         width={1000}
                         height={213}
                       />
@@ -442,9 +438,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                   <li>
                     <figure>
                       <Image
-                        // loader={myLoader}
                         src="/images/index/flagshipshop_002.jpg"
-                        alt="Picture of the author"
+                        alt="ヒダコレ家具ショップ『丸太から家具を考えるプロジェクト』の写真"
                         width={1000}
                         height={213}
                       />
@@ -463,9 +458,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 <li>
                   <figure>
                     <Image
-                      // loader={myLoader}
                       src="/images/index/flagshipshop_003.jpg"
-                      alt="Picture of the author"
+                      alt="地元の農家さんから譲っていただいた80年前の稲架棒から什器"
                       width={1280}
                       height={855}
                     />
@@ -475,9 +469,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 <li>
                   <figure>
                     <Image
-                      // loader={myLoader}
                       src="/images/index/flagshipshop_004.jpg"
-                      alt="Picture of the author"
+                      alt="飛騨で活躍するクラフト作家。手仕事による地元の工芸品を紹介。"
                       width={1280}
                       height={855}
                     />
@@ -487,9 +480,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 <li>
                   <figure>
                     <Image
-                      // loader={myLoader}
                       src="/images/index/flagshipshop_005.jpg"
-                      alt="Picture of the author"
+                      alt="考える家具って、お客様と一緒に考えて・一緒につくる家具です。"
                       width={1280}
                       height={855}
                     />
@@ -499,9 +491,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
                 <li>
                   <figure>
                     <Image
-                      // loader={myLoader}
                       src="/images/index/flagshipshop_006.jpg"
-                      alt="Picture of the author"
+                      alt="国道158号線に面したエントランス。白い空間と丸太が目印です。"
                       width={1280}
                       height={855}
                     />
@@ -530,9 +521,8 @@ const Home: NextPage<Props> = ({ page_data }) => {
             </div>
             <div className="bgimage-furniture_studio">
                 <Image
-                  // loader={myLoader}
                   src="/images/furniture-studio/bg_index.png"
-                  alt="Picture of the author"
+                  alt="ヒダコレ 家具工房のイメージ写真"
                   width={597}
                   height={1206}
                 />

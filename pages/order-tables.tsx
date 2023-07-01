@@ -62,19 +62,19 @@ const Home: NextPage = () => {
               <div className="box-heading_images">
                 <Image
                   src="/images/order-tables/001.jpg"
-                  alt="Picture of the author"
+                  alt="オーダーテーブルのイメージ写真 その1"
                   width={1280}
                   height={855}
                 />
                 <Image
                   src="/images/order-tables/002.jpg"
-                  alt="Picture of the author"
+                  alt="オーダーテーブルのイメージ写真 その2"
                   width={1280}
                   height={855}
                 />
                 <Image
                   src="/images/order-tables/003.jpg"
-                  alt="Picture of the author"
+                  alt="オーダーテーブルのイメージ写真 その3"
                   width={1280}
                   height={855}
                 />
@@ -95,13 +95,13 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/006.jpg"
-                    alt="Picture of the author"
+                    alt="オーダーテーブルの流れ 長さ・奥行き・高さを考える"
                     width={1280}
                     height={855}
                   />
                   <figcaption>
                     <p className='title'>長さ・奥行き・高さを考える</p>
-                    <p className='caption'>お部屋の広さからテーブル天板のサイズを考えることができます。4人掛けで、長さ１５００～１６００くらいが目安のサイズかと思います。</p>
+                    <p className='caption'>お部屋の広さからテーブル天板のサイズを考えることができます。4人掛けで、長さ1500mm~1600mmくらいが目安のサイズかと思います。</p>
                   </figcaption>
                 </figure>
                 <Scroll to="contents-1" smooth={true} duration={600} offset={-150}>
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/007a.jpg"
-                    alt="Picture of the author"
+                    alt="オーダーテーブルの流れ 7つの樹種から選ぶ"
                     width={1280}
                     height={855}
                   />
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/008.jpg"
-                    alt="Picture of the author"
+                    alt="オーダーテーブルの流れ 基本形の脚を見る"
                     width={1280}
                     height={855}
                   />
@@ -155,14 +155,14 @@ const Home: NextPage = () => {
                   <h2>はじめにテーブルのご希望サイズ<br />長さ・奥行き・高さを考えてみてください</h2>
                   <div className='caption'>
                     <p>お部屋の広さやご家族の人数、暮らし方などでサイズも変わってきますね。</p>
-                    <p>テーブルの高さについては、 一般的な椅子の座面の高さ(４００～４２０ｍｍ)に合わせると、通常７００ｍｍ設定が多いですね。</p>
+                    <p>テーブルの高さについては、 一般的な椅子の座面の高さ(400mm~420mm)に合わせると、通常700mm設定が多いですね。</p>
                   </div>
                 </div>
               </div>
               <div className="visual">
                 <Image
                   src="/images/order-tables/006.jpg"
-                  alt="Picture of the author"
+                  alt="『長さ・奥行き・高さを考える』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -173,7 +173,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/illust-1.jpg"
-                    alt="Picture of the author"
+                    alt="四角いテーブルの『長さ・奥行き・高さ』対応図"
                     width={1280}
                     height={855}
                   />
@@ -184,7 +184,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/illust-2.jpg"
-                    alt="Picture of the author"
+                    alt="丸いテーブルの『直径・高さ』対応図"
                     width={1280}
                     height={855}
                   />
@@ -208,7 +208,7 @@ const Home: NextPage = () => {
               <div className="visual">
                 <Image
                   src="/images/order-tables/007a.jpg"
-                  alt="Picture of the author"
+                  alt="『7つの樹種から選ぶ』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -220,7 +220,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/009_nire.jpg"
-                    alt="Picture of the author"
+                    alt="材種『ニレ』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -231,7 +231,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/010_tamo.jpg"
-                    alt="Picture of the author"
+                    alt="材種『タモ』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -242,7 +242,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/011_kurumi.jpg"
-                    alt="Picture of the author"
+                    alt="材種『クルミ』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/012_kaba.jpg"
-                    alt="Picture of the author"
+                    alt="材種『カバ』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/013_nara.jpg"
-                    alt="Picture of the author"
+                    alt="材種『ナラ』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -275,7 +275,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/014_cherry.jpg"
-                    alt="Picture of the author"
+                    alt="材種『チェリー』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/order-tables/014_w.jpg"
-                    alt="Picture of the author"
+                    alt="材種『ウォルナット』でテーブルをオーダーした場合のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -311,7 +311,7 @@ const Home: NextPage = () => {
               <div className="visual">
                 <Image
                   src="/images/order-tables/008.jpg"
-                  alt="Picture of the author"
+                  alt="『ヒダコレの基本形の脚』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -322,7 +322,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/015_kihotate.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『ホタテ脚』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -330,7 +330,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/016_kiro.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『ロの字脚』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -338,7 +338,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/017_tetsuhotate.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『ホタテ脚（アイアン）』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -346,7 +346,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/018_tetsuro.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『ロの字脚（アイアン）』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -354,7 +354,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/019_kikennyou.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『兼用脚』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -362,7 +362,7 @@ const Home: NextPage = () => {
               <li>
                 <Image
                   src="/images/order-tables/020_ki4.jpg"
-                  alt="Picture of the author"
+                  alt="選べる脚『4本脚』でテーブルをオーダーした場合のイメージ"
                   width={1280}
                   height={855}
                 />

@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/original-products/001.jpg"
-                    alt="Picture of the author"
+                    alt="『シンプルだから今ある家具に合わせて使える』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/original-products/002.jpg"
-                    alt="Picture of the author"
+                    alt="『使わない時は隙間に収納できるくらい小さく』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/original-products/003.jpg"
-                    alt="Picture of the author"
+                    alt="『桐箱のフタがトレイの形で物が置きやすく』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/original-products/004.jpg"
-                    alt="Picture of the author"
+                    alt="『伝統的な和家具を今の暮らしに合うように』のイメージ"
                     width={1280}
                     height={855}
                   />

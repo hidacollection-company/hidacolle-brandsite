@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           <div className="box-visual">
             <Image
               src="/images/custom-furniture/example/bed/001_main.jpg"
-              alt="Picture of the author"
+              alt="『ベッドのお困りごと解決事例』のイメージ"
               width={1280}
               height={855}
             />
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/bed/002_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『2つのベッドを一体視させる方法は』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/bed/003_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『畳のスペースが見直されている』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/bed/004_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『ソファとベッドの違いは何?』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -137,14 +137,14 @@ const Home: NextPage = () => {
             </p>
             <Image
               src="/images/custom-furniture/index/images-1.jpg"
-              alt="Picture of the author"
+              alt="お客様と家具で暮らしを形づくる楽しい時間"
               width={1180}
               height={400}
             />
           </div>
 
           <OrderFlow />
-          
+
         </div>
       </>
     );

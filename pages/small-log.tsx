@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             <div className="visual-heading">
               <Image
                 src="/images/small-log/001.jpg"
-                alt="Picture of the author"
+                alt="MARUTA Project『小さな丸太を生かす』のイメージ写真"
                 width={1280}
                 height={855}
               />
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
             <Image
               src="/images/small-log/002.jpg"
-              alt="Picture of the author"
+              alt="飛騨高山の街並み"
               width={1280}
               height={855}
               className="ws"
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
 
             <Image
               src="/images/small-log/illust-1.jpg"
-              alt="Picture of the author"
+              alt="森林への取り組み / 100年後の姿のイラスト"
               width={1280}
               height={855}
               className="ws"
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
               <figure>
                 <Image
                   src="/images/small-log/004.jpg"
-                  alt="Picture of the author"
+                  alt="『丸太に触れる 森を感じる』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
               <figure>
                 <Image
                   src="/images/small-log/005.jpg"
-                  alt="Picture of the author"
+                  alt="『丸太から直接家具をつくる』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/small-log/001.jpg"
-                    alt="Picture of the author"
+                    alt="『小さな丸太を生かす取り組み』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -213,7 +213,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/large-log/001.jpg"
-                    alt="Picture of the author"
+                    alt="『大きな丸太を循環させる取り組み』のイメージ"
                     width={1280}
                     height={855}
                   />

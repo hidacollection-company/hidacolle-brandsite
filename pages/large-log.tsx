@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             <div className="visual-heading">
               <Image
                 src="/images/large-log/001.jpg"
-                alt="Picture of the author"
+                alt="MARUTA Project『大きな丸太を循環させる』のイメージ写真"
                 width={1280}
                 height={855}
               />
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
 
             <Image
               src="/images/large-log/solid-woods.jpg"
-              alt="Picture of the author"
+              alt="ヒダコレ家具で扱われている一枚板"
               width={1280}
               height={855}
               className="wl"
@@ -256,7 +256,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/small-log/001.jpg"
-                    alt="Picture of the author"
+                    alt="『小さな丸太を生かす取り組み』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -274,7 +274,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/large-log/001.jpg"
-                    alt="Picture of the author"
+                    alt="『大きな丸太を循環させる取り組み』のイメージ"
                     width={1280}
                     height={855}
                   />

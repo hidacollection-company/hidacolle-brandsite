@@ -85,7 +85,7 @@ const Home: NextPage = () => {
             <div className="visual-heading">
               <Image
                 src="/images/handcrafts-of-hida/001.jpg"
-                alt="Picture of the author"
+                alt="『飛騨の手仕事』のイメージ写真"
                 width={1280}
                 height={855}
               />

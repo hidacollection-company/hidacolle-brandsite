@@ -67,7 +67,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="visual-heading">
               <Image
                 src="/images/ichimaiita/drying/001.jpg"
-                alt="Picture of the author"
+                alt="『乾燥中の一枚板』のイメージ"
                 width={1280}
                 height={855}
               />
@@ -81,16 +81,16 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="block-contents">
               <div className="inner-contents">
                 <p>いろいろな理由から伐採されることになり、昨年ご縁があってヒダコレの元にやってきたのです。</p>
-                <p>100年以上育った大きな栃の木は直径が1ｍ以上の大木となり、そのまま山に放置される可能性もありました・・・</p>
+                <p>100年以上育った大きな栃の木は直径が1m以上の大木となり、そのまま山に放置される可能性もありました・・・</p>
                 <p>このような100年大樹は、やはり私たちも100年以上長く使いつなげることのできる家具を作らなければいけません。</p>
-                <p>1ｍ以上の大きな丸太を製材して採れた、製材所の社長もビックリするくらいきれいな栃の一枚板。</p>
+                <p>1m以上の大きな丸太を製材して採れた、製材所の社長もビックリするくらいきれいな栃の一枚板。</p>
                 <p>今天然乾燥を行っているところ。</p>
                 <p>その後人工乾燥を経て、お客様の元に届くのはまだまだ先になりますが、ぜひ写真だけでもご覧ください!</p>
               </div>
               <div className="visaul-contents">
                 <Image
                   src="/images/ichimaiita/drying/002.jpg"
-                  alt="Picture of the author"
+                  alt="山積みの一枚板を運ぶ"
                   width={1280}
                   height={855}
                 />
@@ -105,7 +105,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-1.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の一番板』"
                     width={1280}
                     height={855}
                   />
@@ -116,88 +116,88 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-2.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の二番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>二番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-3.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の三番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>三番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-4.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の四番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>四番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-5.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の五番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>五番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-6.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の六番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>六番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-7.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の七番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>七番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-8.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の八番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>八番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi01-9.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『真っ白栃の九番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>九番板</figcaption>
                 </figure>
               </li>
             </ul>
@@ -212,7 +212,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi02-1.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『白栃(赤太少々)の一番板』"
                     width={1280}
                     height={855}
                   />
@@ -223,33 +223,33 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi02-2.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『白栃(赤太少々)の二番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>二番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi02-3.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『白栃(赤太少々)の三番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>三番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi02-4.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『白栃(赤太少々)の四番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>四番板</figcaption>
                 </figure>
               </li>
             </ul>
@@ -264,7 +264,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-1.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の一番板』"
                     width={1280}
                     height={855}
                   />
@@ -275,99 +275,99 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-2.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の二番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>二番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-3.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の三番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>三番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-4.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の四番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>四番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-5.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の五番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>五番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-6.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の六番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>六番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-7.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の七番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>七番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-8.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の八番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>八番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-9.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の九番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>九番板</figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
                   <Image
                     src="/images/ichimaiita/drying/tochi03-10.jpg"
-                    alt="Picture of the author"
+                    alt="ヒダコレで乾燥中の一枚板『赤美の栃の十番板』"
                     width={1280}
                     height={855}
                   />
-                  <figcaption>一番板</figcaption>
+                  <figcaption>十番板</figcaption>
                 </figure>
               </li>
             </ul>

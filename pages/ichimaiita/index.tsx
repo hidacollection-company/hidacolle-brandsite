@@ -64,7 +64,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="visual-heading">
               <Image
                 src="/images/ichimaiita/index/001.jpg"
-                alt="Picture of the author"
+                alt="『一枚板の家具』のイメージ"
                 width={1280}
                 height={855}
               />
@@ -86,7 +86,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="visaul-contents">
                 <Image
                   src="/images/ichimaiita/index/002.jpg"
-                  alt="Picture of the author"
+                  alt="『山に木が増えすぎると』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -103,7 +103,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="visaul-contents">
                 <Image
                   src="/images/ichimaiita/index/003.jpg"
-                  alt="Picture of the author"
+                  alt="『木の二酸化炭素排出』のイメージ"
                   width={1280}
                   height={855}
                 />
@@ -128,7 +128,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/004.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その1"
                   width={1280}
                   height={855}
                 />
@@ -136,7 +136,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/005.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その2"
                   width={1280}
                   height={855}
                 />
@@ -144,7 +144,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/006.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その3"
                   width={1280}
                   height={855}
                 />
@@ -162,7 +162,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/007.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その4"
                   width={1280}
                   height={855}
                 />
@@ -170,7 +170,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/008.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その5"
                   width={1280}
                   height={855}
                 />
@@ -178,7 +178,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <li>
                 <Image
                   src="/images/ichimaiita/index/009.jpg"
-                  alt="Picture of the author"
+                  alt="大きいな栃の木が一枚板になるまで その6"
                   width={1280}
                   height={855}
                 />
@@ -202,7 +202,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="visual-drying">
                 <Image
                   src="/images/ichimaiita/index/10-11.png"
-                  alt="Picture of the author"
+                  alt="『乾燥中の一枚板』のイメージ"
                   width={490}
                   height={431}
                 />
@@ -225,7 +225,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="visaul-contents">
                 <Image
                   src="/images/ichimaiita/index/012.jpg"
-                  alt="Picture of the author"
+                  alt="ヒダコレの一枚板の基本は天日干し。中からも質の高い一枚板を目指して。"
                   width={1280}
                   height={855}
                 />
@@ -233,16 +233,16 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             </div>
             <div className="block-contents reverse">
               <div className="inner-contents">
-                <p className="title">含水率10％以下を目指して</p>
+                <p className="title">含水率10%以下を目指して</p>
                 <div className="bold">
                   <p>ヒダコレでは「含水率」という木に含まれている水分量で乾燥状態を管理しております。</p>
-                  <p>一般的に流通している「人工乾燥材」と言われているものは含水率１８％くらいのものも多いのですが、ヒダコレの一枚板は含水率１０％以下を目指して、「安心の一枚板」をお客様にお届けしたいと思っています。</p>
+                  <p>一般的に流通している「人工乾燥材」と言われているものは含水率18%くらいのものも多いのですが、ヒダコレの一枚板は含水率10%以下を目指して、「安心の一枚板」をお客様にお届けしたいと思っています。</p>
                 </div>
               </div>
               <div className="visaul-contents">
                 <Image
                   src="/images/ichimaiita/index/013.jpg"
-                  alt="Picture of the author"
+                  alt="含水率をチェック。長く使う一枚板なので入念にチェックします。"
                   width={1280}
                   height={855}
                 />

@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           <div className="box-visual">
             <Image
               src="/images/custom-furniture/example/kitchen/001_main.jpg"
-              alt="Picture of the author"
+              alt="『キッチンのお困りごと解決事例』のイメージ"
               width={1280}
               height={855}
             />
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/kitchen/002_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『組み合わせ自由なキッチンへ』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/kitchen/003_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『ガラスも選べる食器棚』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/kitchen/004_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『炊飯器の収まりも考えます』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -133,14 +133,14 @@ const Home: NextPage = () => {
             </p>
             <Image
               src="/images/custom-furniture/index/images-1.jpg"
-              alt="Picture of the author"
+              alt="お客様と家具で暮らしを形づくる楽しい時間"
               width={1180}
               height={400}
             />
           </div>
 
           <OrderFlow />
-          
+
         </div>
       </>
     );

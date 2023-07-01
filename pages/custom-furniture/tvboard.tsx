@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           <div className="box-visual">
             <Image
               src="/images/custom-furniture/example/tvboard/001_main.jpg"
-              alt="Picture of the author"
+              alt="『テレビボードのお困りごと解決事例』のイメージ"
               width={1280}
               height={855}
             />
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/tvboard/002_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『ルンバの基地も作れます』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/tvboard/003_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『棚が横向きなら、きれいな木目が見える』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 <figure>
                   <Image
                     src="/images/custom-furniture/example/tvboard/004_sub.jpg"
-                    alt="Picture of the author"
+                    alt="『テレビやビデオのコードは太い』のイメージ"
                     width={1280}
                     height={855}
                   />
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
             </p>
             <Image
               src="/images/custom-furniture/index/images-1.jpg"
-              alt="Picture of the author"
+              alt="お客様と家具で暮らしを形づくる楽しい時間"
               width={1180}
               height={400}
             />

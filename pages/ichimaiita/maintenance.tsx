@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             <div className="visual-heading">
               <Image
                 src="/images/ichimaiita/maintenace/001.jpg"
-                alt="Picture of the author"
+                alt="『テーブル修理・再生』のイメージ"
                 width={1280}
                 height={855}
               />
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
             <div className="visual-introduction">
               <Image
                 src="/images/ichimaiita/maintenace/002.jpg"
-                alt="Picture of the author"
+                alt="ご家族揃って大切な一枚板にオイルを施している様子"
                 width={1280}
                 height={855}
               />
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                   <figure className="before">
                     <Image
                       src="/images/ichimaiita/maintenace/003_before.jpg"
-                      alt="Picture of the author"
+                      alt="一枚板テーブルのビフォーの写真"
                       width={1280}
                       height={855}
                     />
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
                   <figure className="after">
                     <Image
                       src="/images/ichimaiita/maintenace/004_after.jpg"
-                      alt="Picture of the author"
+                      alt="一枚板テーブルのアフターの写真"
                       width={1280}
                       height={855}
                     />
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
                   <figure className="before">
                     <Image
                       src="/images/ichimaiita/maintenace/005_before.jpg"
-                      alt="Picture of the author"
+                      alt="修理・再生の事例その1 ビフォーの写真"
                       width={1280}
                       height={855}
                     />
@@ -181,7 +181,7 @@ const Home: NextPage = () => {
                   <figure className="after">
                     <Image
                       src="/images/ichimaiita/maintenace/006_after.jpg"
-                      alt="Picture of the author"
+                      alt="修理・再生の事例その1 アフターの写真"
                       width={1280}
                       height={855}
                     />
@@ -192,7 +192,7 @@ const Home: NextPage = () => {
                   <figure className="before">
                     <Image
                       src="/images/ichimaiita/maintenace/007_before.jpg"
-                      alt="Picture of the author"
+                      alt="修理・再生の事例その2 ビフォーの写真"
                       width={1280}
                       height={855}
                     />
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
                   <figure className="after">
                     <Image
                       src="/images/ichimaiita/maintenace/008_after.jpg"
-                      alt="Picture of the author"
+                      alt="修理・再生の事例その2 アフターの写真"
                       width={1280}
                       height={855}
                     />
@@ -233,7 +233,7 @@ const Home: NextPage = () => {
                   <figure className="before">
                     <Image
                       src="/test.jpg"
-                      alt="Picture of the author"
+                      alt=""
                       width={1280}
                       height={855}
                     />
@@ -243,7 +243,7 @@ const Home: NextPage = () => {
                   <figure className="after">
                     <Image
                       src="/test.jpg"
-                      alt="Picture of the author"
+                      alt=""
                       width={1280}
                       height={855}
                     />
@@ -254,7 +254,7 @@ const Home: NextPage = () => {
                   <figure className="before">
                     <Image
                       src="/test.jpg"
-                      alt="Picture of the author"
+                      alt=""
                       width={1280}
                       height={855}
                     />
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
                   <figure className="after">
                     <Image
                       src="/test.jpg"
-                      alt="Picture of the author"
+                      alt=""
                       width={1280}
                       height={855}
                     />
@@ -326,7 +326,7 @@ const Home: NextPage = () => {
                         <div className="block__example_image">
                           <Image
                               src="/images/ichimaiita/maintenace/009.jpg"
-                              alt="Picture of the author"
+                              alt="お問い合わせ時にお送りいただきたい写真例その1 テーブル天板のシミがよく分かる写真"
                               width={1280}
                               height={855}
                             />
@@ -334,7 +334,7 @@ const Home: NextPage = () => {
                         <div className="block__example_image">
                           <Image
                               src="/images/ichimaiita/maintenace/010.jpg"
-                              alt="Picture of the author"
+                              alt="お問い合わせ時にお送りいただきたい写真例その2 木材に入った亀裂がよく分かる写真"
                               width={1280}
                               height={855}
                             />

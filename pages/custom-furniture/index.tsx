@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             <div className="visual-heading">
               <Image
                 src="/images/custom-furniture/index/001.jpg"
-                alt="Picture of the author"
+                alt="『ヒダコレの<br />カスタムオーダー家具は、』のイメージ"
                 width={1280}
                 height={855}
               />
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
               <div className="main_image">
                 <Image
                   src="/images/custom-furniture/index/002.jpg"
-                  alt="Picture of the author"
+                  alt="お客様と相談しながら家具を考える"
                   width={1280}
                   height={855}
                 />
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
               <div className="sub_image_1">
                 <Image
                   src="/images/custom-furniture/index/003.jpg"
-                  alt="Picture of the author"
+                  alt="図面を見ながら何度でも何度もお話しします"
                   width={1280}
                   height={855}
                 />
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               <div className="sub_image_2">
                 <Image
                   src="/images/custom-furniture/index/004.jpg"
-                  alt="Picture of the author"
+                  alt="お客様と相談しながら作った書斎"
                   width={1280}
                   height={855}
                 />
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
             </p>
             <Image
               src="/images/custom-furniture/index/images-1.jpg"
-              alt="Picture of the author"
+              alt="お客様と家具で暮らしを形づくる楽しい時間"
               width={1180}
               height={400}
             />
