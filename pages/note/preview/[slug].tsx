@@ -10,7 +10,7 @@ import { parseISO, format } from 'date-fns'
 import ja from 'date-fns/locale/ja'
 
 // Wordpress graphql
-import { getPreviewPostById } from "lib/wpapi";
+import { getPreviewPostBySlug } from "lib/wpapi";
 import { getPreviewAllPosts } from "lib/wpapi";
 
 // date-fns
@@ -21,11 +21,14 @@ function Date({ dateString }) {
 export async function getStaticPaths() {
 
   const allPosts = await getPreviewAllPosts();
-  console.log(allPosts[0].id);
+
+  console.log("=================================");
+
+  console.log(allPosts[0].slug);
 
   const paths = allPosts.map((content) => ({
     params: {
-      slug: String(content.id),
+      slug: String(content.slug),
     }
   }))
 
@@ -37,22 +40,22 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
 
-  const post = await getPreviewPostById(context.params['slug']);
-  
+  const post = await getPreviewPostBySlug(context.params['slug']);
+
   console.log("[[[ POST ]]]");
-  console.log(post);
+  console.log(post[0]);
   console.log("[[[]]]");
   console.log("[[[]]]");
   console.log("[[[]]]");
 
-  const title = post.title.rendered;
-  const slug = post.slug;
-  const publishDate = post.date;
-  const content = post.content.rendered;
-  const eyecatch_url = post['_embedded']['wp:featuredmedia'][0]['source_url'];
-  const eyecatch_altText = post['_embedded']['wp:featuredmedia'][0]['alt_text'];
-  const eyecatch_height = post['_embedded']['wp:featuredmedia'][0]['media_details']['width'];
-  const eyecatch_width = post['_embedded']['wp:featuredmedia'][0]['media_details']['height'];
+  const title = post[0].title.rendered;
+  const slug = post[0].slug;
+  const publishDate = post[0].date;
+  const content = post[0].content.rendered;
+  const eyecatch_url = post[0]['_embedded']['wp:featuredmedia'][0]['source_url'];
+  const eyecatch_altText = post[0]['_embedded']['wp:featuredmedia'][0]['alt_text'];
+  const eyecatch_height = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['width'];
+  const eyecatch_width = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['height'];
 
   console.log("[[[title]]]");
   console.log(title);
@@ -72,7 +75,7 @@ export async function getStaticProps(context) {
   console.log(eyecatch_width);
 
   // Yoast SEO
-  const yoast_description = post.yoast_head_json.description;
+  const yoast_description = post[0].yoast_head_json.description;
 
   console.log("[[[yoast_description]]]");
   console.log(yoast_description);
