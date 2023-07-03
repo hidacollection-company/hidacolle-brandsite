@@ -172,21 +172,22 @@
                 border-radius: 8px;
             }
         }
-        
         .content{
             display: flex;
             flex-direction: column;
             gap: 75px 0;
+            h4{
+                @include fts(ja, title);
+                text-align: center;
+                text-decoration: underline;
+            }
             .description_block{
+                @include fts(ja, bold);
+                line-height: 200%;
                 display: flex;
                 flex-direction: column;
                 gap: 30px 0;
-                p{
-                    @include fts(ja, bold);
-                    line-height: 200%;
-                }
             }
-            
             img{
                 width: 100%;
                 height: auto;
