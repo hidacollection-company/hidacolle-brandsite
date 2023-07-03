@@ -6,6 +6,7 @@ on:
   push:
     # branchesへ「main」と[develop]の追加
     branches:
+      - main
       - staging
     paths-ignore:
       # - '.github/workflows/**'
