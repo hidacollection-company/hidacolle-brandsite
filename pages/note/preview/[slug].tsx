@@ -47,15 +47,25 @@ export async function getStaticProps(context) {
   console.log("[[[]]]");
   console.log("[[[]]]");
   console.log("[[[]]]");
+  console.log("[[[]]]");
+  console.log("[[[]]]");
+  console.log("[[[_embedded]]]");
+  console.log(post[0]['_embedded']);
 
   const title = post[0].title.rendered;
   const slug = post[0].slug;
   const publishDate = post[0].date;
   const content = post[0].content.rendered;
-  const eyecatch_url = post[0]['_embedded']['wp:featuredmedia'][0]['source_url'];
-  const eyecatch_altText = post[0]['_embedded']['wp:featuredmedia'][0]['alt_text'];
-  const eyecatch_height = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['width'];
-  const eyecatch_width = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['height'];
+
+  const eyecatch_url = (post[0]['_embedded']['wp:featuredmedia'] !== undefined) ? post[0]['_embedded']['wp:featuredmedia'][0]['source_url'] : "";
+  const eyecatch_altText = (post[0]['_embedded']['wp:featuredmedia'] !== undefined) ? post[0]['_embedded']['wp:featuredmedia'][0]['alt_text'] : "";
+  const eyecatch_height = (post[0]['_embedded']['wp:featuredmedia'] !== undefined) ? post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['width'] : "660";
+  const eyecatch_width = (post[0]['_embedded']['wp:featuredmedia'] !== undefined) ? post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['height'] : "660";
+
+  // const eyecatch_url = post[0]['_embedded']['wp:featuredmedia'][0]['source_url'];
+  // const eyecatch_altText = post[0]['_embedded']['wp:featuredmedia'][0]['alt_text'];
+  // const eyecatch_height = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['width'];
+  // const eyecatch_width = post[0]['_embedded']['wp:featuredmedia'][0]['media_details']['height'];
 
   console.log("[[[title]]]");
   console.log(title);
@@ -86,10 +96,10 @@ export async function getStaticProps(context) {
       slug,
       publishDate,
       content,
-      eyecatch_url,
-      eyecatch_altText,
-      eyecatch_width,
-      eyecatch_height,
+      eyecatch_url: eyecatch_url ?? "",
+      eyecatch_altText: eyecatch_altText ?? "",
+      eyecatch_width: eyecatch_width ?? "",
+      eyecatch_height: eyecatch_height ?? "",
       yoast_description: yoast_description ?? ""
     }
   };
@@ -165,14 +175,16 @@ const Home: NextPage<Props> = ({post,title,slug,publishDate,content,eyecatch_url
 
         <div className="note-item-contentents">
 
-            <div className="thunmnail">
-              <Image
-                src={eyecatch_url}
-                width={eyecatch_width}
-                height={eyecatch_height}
-                alt={eyecatch_altText}
-              />
-            </div>
+            {eyecatch_url && (
+              <div className="thunmnail">
+                <Image
+                  src={eyecatch_url}
+                  width={eyecatch_width}
+                  height={eyecatch_height}
+                  alt={eyecatch_altText}
+                />
+              </div>
+            )}
 
             <div className="content" dangerouslySetInnerHTML={{ __html: content }}>
 
