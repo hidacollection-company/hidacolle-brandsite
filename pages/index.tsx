@@ -10,31 +10,29 @@ import { OriginalProductsList } from 'components/OriginalProducts/OriginalProduc
 
 import data from 'list-original-prodacts.json'
 
-// Wordpress REST API
-import { wpClient } from "lib/wpapi";
+
 
 export const getStaticProps = async () => {
 
-  const page_data = await wpClient.pages();
+  // const page_data = await wpClient.pages();
 
-  console.log(page_data);
+  // console.log(page_data);
 
   return {
     props: {
-      page_data
+      // page_data
     }
   };
 };
 
 type Props = {
-  page_data: any;
+  // page_data: any;
 }
 
-const Home: NextPage<Props> = ({ page_data }) => {
+const Home: NextPage<Props> = () => {
 
     const postLists = data.postLists;
 
-    // const hero_image = page_data.hero_image
     const hero_image = "/images/index/001.jpg"
 
     return (
@@ -49,8 +47,6 @@ const Home: NextPage<Props> = ({ page_data }) => {
           pageImgWidth = ""
           pageImgHeight = ""
         />
-
-        {/* <p>{JSON.stringify(page_data)}</p> */}
 
         <section className="contents-body body-index">
           <section className="box__main_visual">

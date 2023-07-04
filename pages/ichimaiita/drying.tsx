@@ -8,10 +8,13 @@ import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
 import { BreadList } from 'components/BreadList/BreadList'
 
+// Wordpress REST API
+import { wpClient } from "lib/wpapi";
+
 export const getStaticProps = async () => {
 
   wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
-  
+
   const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
 
   return {
