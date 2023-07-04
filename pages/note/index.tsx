@@ -135,9 +135,8 @@ const Home: NextPage<Props> = ({allPosts}) => {
             <div className="heading-slider">
               <Slider {...settings}>
                 {allPosts.map((item, index) =>
-                  <div>
+                  <div key={index}>
                     <Link
-                      key={index}
                       href={`/note/${item.slug}`}
                       legacyBehavior
                     >
