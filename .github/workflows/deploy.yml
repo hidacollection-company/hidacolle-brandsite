@@ -22,10 +22,10 @@ jobs:
       github.ref_name == 'main'
     env:
       # Wordpressから入ってきた場合「env」が定義されないことになるので、ここの改変が必要になると思う。
-      FTP_SERVER: ${{github.ref_name == 'main' && secrets.FTP_SERVER || github.ref_name == 'staging' && secrets.FTP_SERVER}}
-      FTP_USERNAME: ${{github.ref_name == 'main' && secrets.FTP_USERNAME || github.ref_name == 'staging' && secrets.FTP_USERNAME}}
-      FTP_PASSWORD: ${{github.ref_name == 'main' && secrets.FTP_PASSWORD || github.ref_name == 'staging' && secrets.FTP_PASSWORD}}
-      FTP_SERVER_DIR: ${{github.ref_name == 'main' && secrets.FTP_SERVER_DIR || github.ref_name == 'staging' && secrets.FTP_SERVER_DIR}}
+      FTP_SERVER: ${{github.ref_name == 'main' && secrets.FTP_SERVER_PRODUCTION || github.ref_name == 'staging' && secrets.FTP_SERVER}}
+      FTP_USERNAME: ${{github.ref_name == 'main' && secrets.FTP_USERNAME_PRODUCTION || github.ref_name == 'staging' && secrets.FTP_USERNAME}}
+      FTP_PASSWORD: ${{github.ref_name == 'main' && secrets.FTP_PASSWORD_PRODUCTION || github.ref_name == 'staging' && secrets.FTP_PASSWORD}}
+      FTP_SERVER_DIR: ${{github.ref_name == 'main' && secrets.FTP_SERVER_DIR_PRODUCTION || github.ref_name == 'staging' && secrets.FTP_SERVER_DIR}}
     steps:
       # プッシュ元のブランチへチェックアウト
       # 「repository_dispatch(Wordpress)」から来る場合、必ずmainになるが、下記IFでpayload記述先へ振り分ける。
@@ -43,7 +43,7 @@ jobs:
           cache: npm
       - name: Install NPM packages
         run: npm ci
-      - name: create .env.local file
+      - name: create file => .env.local
         run: |
             echo "NEXT_PUBLIC_API_BASE_URL=${{ secrets.NEXT_PUBLIC_API_BASE_URL }}" >> .env
             echo "WP_AUTH_SECRET=${{ secrets.WP_AUTH_SECRET }}" >>  .env

@@ -175,16 +175,18 @@ const Home: NextPage<Props> = ({post,title,slug,publishDate,content,eyecatch_url
 
         <div className="note-item-contentents">
 
-            {eyecatch_url && (
-              <div className="thunmnail">
-                <Image
-                  src={eyecatch_url}
-                  width={eyecatch_width}
-                  height={eyecatch_height}
-                  alt={eyecatch_altText}
-                />
-              </div>
-            )}
+          {eyecatch_url ? (
+            <div className="thunmnail">
+              <Image
+                src={eyecatch_url}
+                width={eyecatch_width}
+                height={eyecatch_height}
+                alt={eyecatch_altText}
+              />
+            </div>
+          ) : (
+            <div className="thunmnail_none">サムネイル（アイキャッチ画像）の指定がありません<br />必ず指定してください</div>
+          )}
 
             <div className="content" dangerouslySetInnerHTML={{ __html: content }}>
 

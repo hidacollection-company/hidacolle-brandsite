@@ -172,6 +172,15 @@
                 border-radius: 8px;
             }
         }
+        .thunmnail_none{
+            margin: 50px 0;
+            padding: 20px;
+            @include fts(ja, bold);
+            line-height: 200%;
+            text-align: center;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+        }
         .content{
             @include fts(ja, bold);
             line-height: 200%;
