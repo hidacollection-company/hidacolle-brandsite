@@ -43,7 +43,7 @@ jobs:
           cache: npm
       - name: Install NPM packages
         run: npm ci
-      - name: create file => .env.local
+      - name: create .env.local file
         run: |
             echo "NEXT_PUBLIC_API_BASE_URL=${{ secrets.NEXT_PUBLIC_API_BASE_URL }}" >> .env
             echo "WP_AUTH_SECRET=${{ secrets.WP_AUTH_SECRET }}" >>  .env

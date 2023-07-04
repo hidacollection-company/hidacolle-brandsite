@@ -22,8 +22,7 @@ export async function getStaticPaths() {
 
   const allPosts = await getPreviewAllPosts();
 
-  console.log("=================================");
-
+  console.log("===========SLUG==========");
   console.log(allPosts[0].slug);
 
   const paths = allPosts.map((content) => ({
@@ -49,8 +48,6 @@ export async function getStaticProps(context) {
   console.log("[[[]]]");
   console.log("[[[]]]");
   console.log("[[[]]]");
-  console.log("[[[_embedded]]]");
-  console.log(post[0]['_embedded']);
 
   const title = post[0].title.rendered;
   const slug = post[0].slug;
