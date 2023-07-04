@@ -11,9 +11,6 @@ import { BreadList } from 'components/BreadList/BreadList'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-// Wordpress REST API
-import { wpClient } from "lib/wpapi";
-
 import { getIchimaiitaAllPosts } from "lib/wpapi";
 
 export async function getStaticPaths() {
