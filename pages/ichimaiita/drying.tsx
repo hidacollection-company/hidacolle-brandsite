@@ -9,13 +9,11 @@ import { Links } from 'components/Ichimaiita/Links'
 import { BreadList } from 'components/BreadList/BreadList'
 
 // Wordpress REST API
-import { wpClient } from "lib/wpapi";
+import { getIchimaiitaAllPosts } from "lib/wpapi";
 
 export const getStaticProps = async () => {
 
-  wpClient.myPostType = wpClient.registerRoute('wp/v2', '/ichimaiita/(?P<id>[0-9]+)');
-
-  const ichimaiita_data = await wpClient.myPostType().orderby('menu_order').order('asc');
+  const ichimaiita_data = await getIchimaiitaAllPosts();
 
   return {
     props: {
@@ -385,16 +383,16 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <section className="box_items">
               <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
               <ul className="items">
-                {ichimaiita_data.map(ichimaiita =>
-                  <li>
+                {ichimaiita_data.map((ichimaiita, index) =>
+                  <li key={index}>
                     <IchimaiitaList
-                      key={ichimaiita.acf.slug}
-                      title={ichimaiita.acf.title}
-                      slug={ichimaiita.acf.slug}
-                      size={ichimaiita.acf.size}
-                      control_number={ichimaiita.acf.control_number}
-                      thumbnail={ichimaiita.acf.thumbnail}
-                      photos={ichimaiita.acf.photos}
+                      key={ichimaiita.slug}
+                      title={ichimaiita.title}
+                      slug={ichimaiita.slug}
+                      size={ichimaiita.size}
+                      control_number={ichimaiita.controlNumber}
+                      thumbnail={ichimaiita.thumbnail.sourceUrl}
+                      photos={ichimaiita.photos}
                     />
                   </li>
                 )}
