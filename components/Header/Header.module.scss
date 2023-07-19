@@ -136,6 +136,16 @@
             z-index: 1;
           }
         }
+        .block__banner{
+          margin: 75px auto 0;
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
         .layout__Inquiry{
           margin: 75px 0 0;
         }
@@ -262,6 +272,12 @@
             left: 0;
             z-index: 1;
           }
+        }
+        .block__banner{
+          margin: 0 auto 50px;
+          width: 660px;
+          border-radius: 8px;
+          overflow: hidden;
         }
       }
     }

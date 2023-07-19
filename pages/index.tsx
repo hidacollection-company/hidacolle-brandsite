@@ -10,26 +10,28 @@ import { OriginalProductsList } from 'components/OriginalProducts/OriginalProduc
 
 import data from 'list-original-prodacts.json'
 
+// Wordpress graphql
+import { getAllPosts } from "lib/wpapi";
 
+export async function getStaticProps(context) {
 
-export const getStaticProps = async () => {
+  const allPosts = await getAllPosts();
 
-  // const page_data = await wpClient.pages();
-
-  // console.log(page_data);
+  console.log("==============INDEX==============");
+  console.log(allPosts);
 
   return {
     props: {
-      // page_data
+      allPosts
     }
   };
-};
-
-type Props = {
-  // page_data: any;
 }
 
-const Home: NextPage<Props> = () => {
+type Props = {
+  allPosts: any;
+}
+
+const Home: NextPage<Props> = ({allPosts}) => {
 
     const postLists = data.postLists;
 
@@ -557,6 +559,62 @@ const Home: NextPage<Props> = () => {
                 <Link href='/contact' legacyBehavior><a className="button target_this_site">こちらからご連絡ください</a></Link>
               </div>
             </section>
+          </section>
+          <section className="box-hidacolle_note">
+            <div className="layout-hidacolle_note">
+              <div className="heading-hidacolle_note">
+                <div className="heading-title-inner">
+                  <div className="logos">
+                    <div className="box__logomark">
+                      <div className="logomark">
+                        <Image
+                          src="/mark-note.svg"
+                          alt="森から暮らしまで ヒダコレスタッフの家具にまつわる書きもの"
+                          width={64}
+                          height={34}
+                        />
+                      </div>
+                      <div className="line">ヒダコレノート</div>
+                    </div>
+                    <div className="logotype">HIDACOLLE <br className="pc_only" />NOTE</div>
+                  </div>
+                  <div className="caption">森から暮らしまで<br />ヒダコレスタッフの家具にまつわる書きもの</div>
+                </div>
+                <div className="layout-button">
+                  <Link href='/note' legacyBehavior><a className="button target_this_site">ヒダコレノートをよむ</a></Link>
+                </div>
+              </div>
+              <div className="contents">
+                <div className="notes-items">
+                  {allPosts.map((item) =>
+                    <Link
+                      key={item.slug}
+                      href={`/note/${item.slug}`}
+                      legacyBehavior
+                    >
+                      <a className="item">
+                        <div className="thumbnail add_corner">
+                          {item.eyecatch ? (
+                            <Image
+                              src={item.eyecatch.url}
+                              width={item.eyecatch.width}
+                              height={item.eyecatch.height}
+                              alt={item.eyecatch.altText}
+                            />
+                          ) : (
+                            // 代替のコンテンツを表示する場合
+                            // ヒダコレノートの基本サムネイル画像を設定しておく。
+                            <div>Alternative Content</div>
+                          )}
+                        </div>
+                        <h3 className="title">{item.title}</h3>
+                      </a>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+
           </section>
         </section>
       </>

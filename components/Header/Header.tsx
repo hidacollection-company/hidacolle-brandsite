@@ -156,6 +156,19 @@ export const Header = memo(() => {
                 </Link>
               </div>
 
+              <div className={styles.block__banner}>
+                <Link href='/note' legacyBehavior>
+                  <a>
+                    <Image
+                      src="/images/note/top_banner.jpg"
+                      alt="ヒダコレノートへのリンクバナー"
+                      width={660}
+                      height={160}
+                    />
+                  </a>
+                </Link>
+              </div>
+
               <div className={styles.layout__Inquiry}>
                 <Inquiry />
               </div>

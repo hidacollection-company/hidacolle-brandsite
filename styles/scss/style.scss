@@ -827,6 +827,83 @@ a{
                 }
             }
         }
+        .box-hidacolle_note{
+            margin: 100px 0 0;
+            padding: 100px 0;
+            width: 100%;
+            background-color: c(nc,g2);
+            box-sizing: border-box;
+            .layout-hidacolle_note{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .heading-hidacolle_note{
+                    margin: 0;
+                    width: 100%;
+                    .heading-title-inner{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .logos{
+                            .box__logomark{
+                                text-align: center;
+                                .logomark{
+                                    img{}
+                                }
+                                .line{
+                                    margin: 10px 0 0;
+                                    color: c(nc,b2);
+                                    @include fts(ja, bold);
+                                }
+                            }
+                            .logotype{
+                                margin: 20px 0 0;
+                                color: c(nc,b2);
+                                @include fts(ja, lead);
+                                font-family: 'Poppins';
+                                line-height: 125%;
+                                letter-spacing: 0.08em;
+                                text-align: center;
+                            }
+                        }
+                        .caption{
+                            margin: 20px 0 0;
+                            color: c(nc,b2);
+                            @include fts(ja, text);
+                            text-align: center;
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 50px auto 0;
+                    width: 90%;
+                }
+                .contents{
+                    margin: 50px 0 0;
+                    .notes-items{
+                        margin: 0 auto;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        .item{
+                            width: 100%;
+                            .thumbnail{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 8px;
+                                }
+                            }
+                            .title{
+                                margin: 20px 0 0;
+                                @include fts(ja, bold);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .body-furniture_that_thinks{
         margin: 0 auto;
@@ -4088,7 +4165,7 @@ a{
                 }
             }
             .recruit-box-member{
-                margin: 100px auto;
+                margin: 100px auto 0;
                 padding: 50px 50px;
                 width: $ws;
                 border: 3px solid c(nc, b1);
@@ -4106,8 +4183,88 @@ a{
                 }
             }
         }
+        .box-hidacolle_note{
+            margin: 150px 0 0;
+            padding: 150px 0;
+            width: 100%;
+            background-color: c(nc,g2);
+            box-sizing: border-box;
+            .layout-hidacolle_note{
+                margin: 0 auto 0;
+                width: 1000px;
+                display: flex;
+                gap: 0 20px;
+                .heading-hidacolle_note{
+                    margin: 0;
+                    width: 320px;
+                    position: relative;
+                    top: 6px;
+                    left: -35px;
+                    .heading-title-inner{
+                        width: 320px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .logos{
+                            .box__logomark{
+                                text-align: center;
+                                .logomark{
+                                    img{}
+                                }
+                                .line{
+                                    margin: 10px 0 0;
+                                    color: c(nc,b2);
+                                    @include fts(ja, bold);
+                                }
+                            }
+                            .logotype{
+                                margin: 20px 0 0;
+                                color: c(nc,b2);
+                                @include fts(ja, lead);
+                                font-family: 'Poppins';
+                                line-height: 125%;
+                                letter-spacing: 0.08em;
+                                text-align: center;
+                            }
+                        }
+                        .caption{
+                            margin: 20px 0 0;
+                            color: c(nc,b2);
+                            @include fts(ja, text);
+                            text-align: center;
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 75px auto 0;
+                    width: 280px;
+                }
+                .contents{
+                    .notes-items{
+                        margin: 0 auto;
+                        width: 660px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 50px 20px;
+                        .item{
+                            width: 320px;
+                            .thumbnail{
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 8px;
+                                }
+                            }
+                            .title{
+                                margin: 20px 0 0;
+                                @include fts(ja, bold);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    
     .body-furniture_that_thinks{
         margin: 0 auto;
         width: $wl;
