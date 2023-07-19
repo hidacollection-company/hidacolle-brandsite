@@ -46,10 +46,15 @@ export async function getStaticProps(context) {
   const slug = post.slug;
   const publishDate = post.publishDate;
   const content = post.content;
+  const categories = post.categories[0].slug;
   const eyecatch_url = post.eyecatch.url;
   const eyecatch_altText = post.eyecatch.altText;
   const eyecatch_height = post.eyecatch.height;
   const eyecatch_width = post.eyecatch.width;
+
+  const note_person_introduction = post.note_person_introduction;
+
+  console.log(categories);
 
   return {
     props: {
@@ -57,10 +62,12 @@ export async function getStaticProps(context) {
       slug,
       publishDate,
       content,
+      categories,
       eyecatch_url,
       eyecatch_altText,
       eyecatch_width,
-      eyecatch_height
+      eyecatch_height,
+      note_person_introduction
     }
   };
 }
@@ -70,13 +77,15 @@ type Props = {
   slug: string;
   publishDate: string;
   content: string;
+  categories: string;
   eyecatch_url: string;
   eyecatch_altText: string;
   eyecatch_width: number;
   eyecatch_height: number;
+  note_person_introduction: string;
 }
 
-const Home: NextPage<Props> = ({title,slug,publishDate,content,eyecatch_url,eyecatch_altText,eyecatch_width,eyecatch_height}) => {
+const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecatch_url,eyecatch_altText,eyecatch_width,eyecatch_height,note_person_introduction}) => {
 
   return (
     <>
@@ -116,7 +125,7 @@ const Home: NextPage<Props> = ({title,slug,publishDate,content,eyecatch_url,eyec
         <div className="note-item-heading">
           <div className="item-data">
             <div className="item-date"><Date dateString={publishDate} /></div>
-            <div className="item-title">{title}</div>
+            <h2 className="item-title">{title}</h2>
           </div>
           <div className="back">
             <Link href='/note' legacyBehavior>
@@ -139,11 +148,27 @@ const Home: NextPage<Props> = ({title,slug,publishDate,content,eyecatch_url,eyec
             />
           </div>
 
-          <div className="content" dangerouslySetInnerHTML={{ __html: content }}>
+          {/* カテゴリー『飛騨の手仕事』のみに表示されるボックス */}
+          {categories === "handcrafts-of-hida" && (
+            <div className="category__handcrafts-of-hida">
+              <div className="heading">
+                飛騨の手仕事について
+              </div>
+              <div className="body">
+                <p>岐阜県北部に位置する飛騨高山は、匠の歴史から続く工芸・民芸の文化と、豊かな自然があふれるところ。</p>
+                <p>その中で一つ一つ丁寧に作られた作品を、私たちは『飛騨の手仕事』と呼んでいます。</p>
+                <p>手仕事から生まれる暮らしに寄り添う器や道具には唯一無二の個性があり、日々の暮らしと心を豊かにしてくれます。</p>
+                <p>優しい風合いと温かさ、そして作り手の思いを感じる飛騨のクラフト作品。その魅力を発信し、出会いの場を作りたいとヒダコレ（HIDA・COLLECTION）は考えています。</p>
+              </div>
+            </div>
+          )}
+
+            <div className="content" dangerouslySetInnerHTML={{ __html: content }}></div>
 
           </div>
 
-        </div>
+          <div className="note_person_introduction" dangerouslySetInnerHTML={{ __html: note_person_introduction }}></div>
+
       </div>
     </>
   );

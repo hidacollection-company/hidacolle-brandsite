@@ -120,18 +120,24 @@ const Home: NextPage<Props> = ({allPosts}) => {
             <div className="heading-title">
               <div className="heading-title-inner">
                 <div className="logos">
-                  <Image
-                    src="/mark-note.svg"
-                    alt="森から暮らしまで ヒダコレスタッフの家具にまつわる書きもの"
-                    width={64}
-                    height={34}
-                  />
+                  <div className="box__logomark">
+                    <div className="logomark">
+                      <Image
+                        src="/mark-note.svg"
+                        alt="森から暮らしまで ヒダコレスタッフの家具にまつわる書きもの"
+                        width={64}
+                        height={34}
+                      />
+                    </div>
+                    <div className="line">ヒダコレノート</div>
+                  </div>
+                  <div className="logotype">HIDACOLLE <br className="pc_only" />NOTE</div>
                 </div>
-                <div className="line">ヒダコレノート</div>
-                <div className="title">HIDACOLLE<br />NOTE</div>
                 <div className="caption">森から暮らしまで<br />ヒダコレスタッフの家具にまつわる書きもの</div>
               </div>
             </div>
+
+
             <div className="heading-slider">
               <Slider {...settings}>
                 {allPosts.map((item, index) =>
