@@ -85,7 +85,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
         <PageHead
           pageTitle = "ヒダコレ ノート"
           pageDescription = ""
-          pageRobots = "none"
+          pageRobots = ""
           pagePath = "https://www.hidacolle.com/note"
           pageImg = ""
           pageImgWidth = ""
@@ -132,7 +132,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                   </div>
                   <div className="logotype">HIDACOLLE <br className="pc_only" />NOTE</div>
                 </div>
-                <div className="caption">森から暮らしまで<br />ヒダコレスタッフの家具にまつわる書きもの</div>
+                <div className="caption">森から、家具づくり、そして暮らしまで<br />ヒダコレにまつわるお話</div>
               </div>
             </div>
 

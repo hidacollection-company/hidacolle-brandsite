@@ -14,7 +14,7 @@ import { getPostBySlug } from "lib/wpapi";
 
 // date-fns
 function Date({ dateString }) {
-  return <time dateTime={dateString}>{format(parseISO(dateString), 'yyyy.MM.dd (EEEE)', {locale:ja} )} に書きました</time>
+  return <time dateTime={dateString}>{format(parseISO(dateString), 'yyyy.MM.dd (EEEE)', {locale:ja} )}</time>
 };
 
 export async function getStaticPaths() {
@@ -54,6 +54,8 @@ export async function getStaticProps(context) {
 
   const note_person_introduction = post.note_person_introduction;
 
+  const description = post.description;
+
   console.log(categories);
 
   return {
@@ -67,7 +69,8 @@ export async function getStaticProps(context) {
       eyecatch_altText,
       eyecatch_width,
       eyecatch_height,
-      note_person_introduction
+      note_person_introduction,
+      description
     }
   };
 }
@@ -83,15 +86,16 @@ type Props = {
   eyecatch_width: number;
   eyecatch_height: number;
   note_person_introduction: string;
+  description: string;
 }
 
-const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecatch_url,eyecatch_altText,eyecatch_width,eyecatch_height,note_person_introduction}) => {
+const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecatch_url,eyecatch_altText,eyecatch_width,eyecatch_height,note_person_introduction,description}) => {
 
   return (
     <>
       <PageHead
         pageTitle = {`${title} | ヒダコレ ノート`}
-        pageDescription = ""
+        pageDescription = {description}
         pageRobots = ""
         pagePath = {`https://www.hidacolle.com/note/${slug}`}
         pageImg = {eyecatch_url}
@@ -109,7 +113,7 @@ const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecat
               <a>
                 <Image
                   src="/logo-note.svg"
-                  alt="森から暮らしまで ヒダコレスタッフの家具にまつわる書きもの"
+                  alt="ヒダコレノートロゴマーク"
                   width={180}
                   height={20}
                 />
@@ -124,7 +128,7 @@ const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecat
 
         <div className="note-item-heading">
           <div className="item-data">
-            <div className="item-date"><Date dateString={publishDate} /></div>
+            <div className="item-date"><Date dateString={publishDate} />に書きました</div>
             <h2 className="item-title">{title}</h2>
           </div>
           <div className="back">

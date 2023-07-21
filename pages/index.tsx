@@ -569,7 +569,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                       <div className="logomark">
                         <Image
                           src="/mark-note.svg"
-                          alt="森から暮らしまで ヒダコレスタッフの家具にまつわる書きもの"
+                          alt="ヒダコレノートロゴマーク"
                           width={64}
                           height={34}
                         />
@@ -578,7 +578,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                     </div>
                     <div className="logotype">HIDACOLLE <br className="pc_only" />NOTE</div>
                   </div>
-                  <div className="caption">森から暮らしまで<br />ヒダコレスタッフの家具にまつわる書きもの</div>
+                  <div className="caption">森から、家具づくり、そして暮らしまで<br />ヒダコレにまつわるお話</div>
                 </div>
                 <div className="layout-button">
                   <Link href='/note' legacyBehavior><a className="button target_this_site">ヒダコレノートをよむ</a></Link>
