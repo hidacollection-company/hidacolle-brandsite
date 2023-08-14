@@ -444,7 +444,6 @@
                     color: c(green,m);
                     @include fts(ja, bold);
                 }
-    
             }
             .notes-items{
                 margin: 100px auto 0;
@@ -464,6 +463,8 @@
                     .title{
                         margin: 20px 0 0;
                         @include fts(ja, title);
+                        font-feature-settings: "palt";
+                        letter-spacing: 0.2rem;
                     }
                 }
             }
@@ -481,8 +482,10 @@
                 }
                 h2.item-title{
                     margin: 20px 0 0;
-                    width: 490px;
+                    width: 660px;
                     @include fts(ja, lead);
+                    font-feature-settings: "palt";
+                    letter-spacing: 0.5rem;
                     position: relative;
                     left: -7px;
                 }

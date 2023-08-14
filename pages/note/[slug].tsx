@@ -129,7 +129,7 @@ const Home: NextPage<Props> = ({title,slug,publishDate,content,categories,eyecat
         <div className="note-item-heading">
           <div className="item-data">
             <div className="item-date"><Date dateString={publishDate} />に書きました</div>
-            <h2 className="item-title">{title}</h2>
+            <h2 className="item-title" dangerouslySetInnerHTML={{__html: title}}></h2>
           </div>
           <div className="back">
             <Link href='/note' legacyBehavior>

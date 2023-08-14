@@ -184,7 +184,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                         <div>Alternative Content</div>
                       )}
                     </div>
-                    <h3 className="title">{item.title}</h3>
+                    <h3 className="title" dangerouslySetInnerHTML={{__html: item.title}}></h3>
                   </a>
                 </Link>
               )}
