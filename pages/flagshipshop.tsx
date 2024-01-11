@@ -89,7 +89,7 @@ const Home: NextPage = () => {
             </div>
             <div className="information">
               <p className='title'>営業情報</p>
-              <p className='caption'>営業時間 : 9:30-17:30 （水曜日 定休）<br />駐車場有り</p>
+              <p className='caption'>営業時間 : 9:30-17:30（水・木 定休）<br />駐車場有り</p>
               <p className='title'>店舗お問合せ先（来店ご予約など）</p>
               <p className='caption'>
                 電話番号 : 0577-57-7555<br />

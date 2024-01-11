@@ -110,7 +110,7 @@ export const Footer = memo(() => {
                       <div className={styles.shop_information}>
                           <p className={styles.title}>ヒダコレ家具</p>
                           <p className={styles.line}>〒506-0055 岐阜県高山市上岡本町3-362</p>
-                          <p className={styles.line}>営業時間 : 9:30-17:30 （水曜日 定休）</p>
+                          <p className={styles.line}>営業時間 : 9:30-17:30（水・木 定休）</p>
                           <p className={styles.line}>電話番号 : 0120-690-315<span className="pc_only"> / </span><br className="sp_only" />メール : info@hidacolle.com</p>
                       </div>
                       <div className={styles.googlemap}>
