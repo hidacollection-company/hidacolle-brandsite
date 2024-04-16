@@ -365,5 +365,19 @@
                 transition: all 0.2s ease;
             }
         }
+        &.target_note{
+            &::before {
+                content: "";
+                margin: 0;
+                width: 22px;
+                height: 12px;
+                background-image: url("/mark-note.svg");
+                background-size: cover;
+                display: inline-block;
+                position: relative;
+                top: 8px;
+                left: 4px;
+            }
+        }
     }
 }

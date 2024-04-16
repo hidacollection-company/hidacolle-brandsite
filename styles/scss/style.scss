@@ -1610,7 +1610,12 @@ a{
             }
         }
     }
-    
+    .body-maintenance_project{
+        .box-introduction{
+            margin: 0 auto;
+            width: 1000px;
+        }
+    }
     .body-ichimaiita{
         .box-contents{
             margin: 100px auto 0;
@@ -5033,7 +5038,1327 @@ a{
             }
         }
     }
-    
+    .body-maintenance_project{
+        .body-heading{
+            width: 100%;
+            height: 685px;
+            background-color: c(yellow, d2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &::before{
+                content: "";
+                display: inline-block;
+                background: url(/images/maintenance-project/hero.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 400px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .inner-heading{
+                position: relative;
+                z-index: 2;
+                .catch{
+                    color: c(nc,w1);
+                    font-family: "Poppins";
+                    font-size: rem(28);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.5rem;
+                    text-align: center;
+                }
+                .heading{
+                    margin: 30px 0 60px;
+                    color: c(nc,w1);
+                    font-family: "Noto Sans JP";
+                    font-size: rem(84);
+                    font-weight: bold;
+                    line-height: 125%;
+                    letter-spacing: 0.4px;
+                    text-align: center;
+                }
+            }
+        }
+        .box-introduction{
+            margin: 150px auto 0;
+            width: 100%;
+            .section-heading{
+                margin: 0 auto;
+                width: 1000px;
+                &>.heading{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(64);
+                    font-weight: bold;
+                    line-height: 125%;
+                    letter-spacing: 0.4px;
+                    text-align: center;
+                }
+                &>.catch{
+                    margin: 50px 0 0;
+                    font-family: "Poppins";
+                    font-size: rem(21);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.2rem;
+                    text-align: center;
+                }
+            }
+        }
+        .block-maitanance-at-home{
+            margin: 100px auto 0;
+            width: 100%;
+            position: relative;
+            .inner-contents{
+                margin: 0 auto;
+                width: 660px;
+                position: relative;
+                .title{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(32);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                }
+                .bold{
+                    margin: 70px 0 0;
+                    width: 360px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(18);
+                    font-weight: 400;
+                    line-height: 175%;
+                    letter-spacing: 0.4px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px 0;
+                }
+                .layout-button{
+                    width: 300px;
+                    position: absolute;
+                    bottom: 50px;
+                    right: -100px;
+                }
+            }
+            .bg-visauls{
+                img.visaul{
+                    position: absolute;
+                    &.visaul-1{
+                        width: 358px;
+                        height: auto;
+                        border-radius: 0 8px 8px 0;
+                        top: -490px;
+                        left: 0;
+                    }
+                    &.visaul-2{
+                        width: 380px;
+                        height: auto;
+                        border-radius: 8px 0 0 8px;
+                        top: 40px;
+                        right: 0;
+                    }
+                    &.visaul-3{
+                        width: 275px;
+                        height: auto;
+                        border-radius: 0 8px 8px 0;
+                        bottom: -140px;
+                        left: 0;
+                    }
+                }
+            }
+
+        }
+        .block-recommended{
+            margin: 200px 0 0;
+            .block-heading{
+                &>.catch{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+                &>.heading{
+                    margin: 20px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(28);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+            }
+            .inner-contents{
+                margin: 100px auto 0;
+                width: 1000px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px 0;
+                a{
+                    width: 1000px;
+                    height: 100px;
+                    border: 4px solid c(nc, b1);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        background: #000000;
+                        height: calc(tan(60deg) * 12px / 2);
+                        width: 8px;
+                        clip-path: polygon(0 0, 100% 50%, 0 100%);
+                    }
+                    .badge-howto{
+                        width: 80px;
+                        height: 30px;
+                        color: c(nc, w1);
+                        font-family: "Noto Sans JP";
+                        font-size: rem(12);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        background-color: c(yellow, m);
+                        border-radius: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: calc(50px - 17px);
+                        left: -40px;
+                    }
+                    .numbering{
+                        width: 170px;
+                        display: flex;
+                        align-items: center;
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(36);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                        }
+                    }
+                    .title{
+                        width: 660px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+        .box-table_trouble{
+            margin: 150px 0 0;
+            padding: 150px 0 200px;
+            width: 100%;
+            background-color: c(nc, g1);
+            .section-heading{
+                margin: 0 auto;
+                width: 1180px;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(31);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .block-stains_scratches_debris{
+                margin: 150px 0 0;
+                .heading{
+                    text-align: center;
+                    position: relative;
+                    h3{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(36);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        z-index: 11;
+                        &.yellow_line{
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 20px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -5px;
+                                left: 0;
+                                z-index: -10;
+                            }
+                        }
+                    }
+                }
+                .inner-contents{
+                    margin: 100px auto 0;
+                    width: 1000px;
+                    .contents-trouble-layout{
+                        display: flex;
+                        justify-content: space-between;
+                        .item-trouble{
+                            width: 320px;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 8px;
+                            }
+                            .item-heading{
+                                margin: 50px 0 0;
+                                text-align: center;
+                                .catch{
+                                    color: c(red, d1);
+                                    font-family: "Poppins";
+                                    font-size: rem(14);
+                                    font-weight: bold;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    text-transform: uppercase;
+                                }
+                                .heading{
+                                    margin: 20px 0 0;
+                                    h4{
+                                        font-family: "Noto Sans JP";
+                                        font-size: rem(21);
+                                        font-weight: bold;
+                                        line-height: 100%;
+                                        letter-spacing: 1.5px;
+                                    }
+                                }
+                                span{
+                                    margin: 20px 0 0;
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(14);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    display: inline-block;
+                                }
+                            }
+                            .read{
+                                margin: 45px 0 0;
+                                padding: 45px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(14);
+                                font-weight: normal;
+                                line-height: 150%;
+                                letter-spacing: 1.5px;
+                                border-top: solid 2px c(red, d1);
+                                display: inline-block;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    background: c(red, d1);
+                                    height: calc(tan(60deg) * 8px / 2);
+                                    width: 12px;
+                                    clip-path: polygon(0 0, 100% 0, 50% 100%);
+                                    position: absolute;
+                                    top: -1px;
+                                    left: calc(50% - (12px / 2));
+                                }
+                            }
+                        }
+                    }
+                    .layout-button{
+                        margin: 100px auto 0;
+                        width: 300px;
+                    }
+                }
+            }
+            .block-characteristics_of_paint{
+                margin: 200px 0 0;
+                .heading{
+                    text-align: center;
+                    position: relative;
+                    h3{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(36);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        z-index: 11;
+                        &.yellow_line{
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 20px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -5px;
+                                left: 0;
+                                z-index: -10;
+                            }
+                        }
+                    }
+                }
+                .sub_heading{
+                    margin: 100px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(28);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    .add_underline{
+                        text-decoration: underline;
+                    }
+                }
+                .inner-contents{
+                    margin: 100px 0 0;
+                    .contents-permeability_and_paintability{
+                        margin: 0 auto;
+                        width: 1000px;
+                        display: flex;
+                        justify-content: space-between;
+                        &>.item{
+                            width: 490px;
+                            .item-title{
+                                text-align: center;
+                                &::after{
+                                    content: "";
+                                    margin: 30px 0 0;
+                                    width: 43px;
+                                    height: 44px;
+                                    background-image: url("/images/maintenance-project/arrow.svg");
+                                    background-size: cover;
+                                    display: inline-block;
+                                    position: relative;
+                                    top: 8px;
+                                    left: 4px;
+                                }
+                                span{
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(16);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    text-decoration: underline;
+                                }
+                                h4{
+                                    margin: 30px auto 0;
+                                    width: 150px;
+                                    height: 150px;
+                                    color: c(nc, w1);
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(36);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    background-color: c(green, m);
+                                    border-radius: 8px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                            .item-body{
+                                margin: 15px 0 0;
+                                p{
+                                    padding: 30px 0;
+                                    border-top: 2px solid c(nc, b1);
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(16);
+                                    font-weight: normal;
+                                    line-height: 175%;
+                                    letter-spacing: 1.5px;
+                                    text-align: center;
+                                    display: block;
+                                    span.add_underline{
+                                        text-decoration: underline;
+                                    }
+                                    span.add_bold{
+                                        font-size: rem(21);
+                                        font-weight: bold;
+                                    }
+                                    &:first-child{
+                                        border-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-permeability_reccomended{
+                    margin: 100px auto 0;
+                    width: 1000px;
+                    height: 385px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: relative;
+                    &::before{
+                        content: "RECOMMEND";
+                        width: 125px;
+                        height: 125px;
+                        color: c(nc, w1);
+                        font-family: "Poppins";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        background-color: c(yellow, m);
+                        border-radius: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform:rotate(-15deg); 
+                        position: absolute;
+                        top: -30px;
+                        left: -30px;
+                    }
+                    .title{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(28);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: block;
+                        .add_underline{
+                            text-decoration: underline;
+                        }
+                        .add_bold{
+                            font-size: rem(36);
+                        }
+                    }
+                    .caption{
+                        margin: 50px 0 0;
+                        text-align: center;
+                        span{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            &.front{
+                                position: relative;
+                                z-index: 11;
+                            }
+                            &.yellow_line{
+                                margin: 0 0 20px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background-color: c(yellow, d2);
+                                    display: inline-block;
+                                    position: absolute;
+                                    bottom: -8px;
+                                    left: 0;
+                                    z-index: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-permeability_caption{
+                    margin: 100px auto;
+                    padding: 30px 0;
+                    width: 490px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: normal;
+                    line-height: 250%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    border-top: 2px solid c(nc, b1);
+                    border-bottom: 2px solid c(nc, b1);
+                    .add_underline{
+                        text-decoration: underline;
+                    }
+                    .add_bold{
+                        font-size: rem(21);
+                        font-weight: bold;
+                    }
+                }
+                .box-oil_or_glass_permeability{
+                    margin: 100px auto;
+                    width: 660px;
+                    display: flex;
+                    justify-content: space-between;
+                    .item{
+                        width: 320px;
+                        .caption{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(16);
+                            font-weight: normal;
+                            line-height: 200%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            .add_underline{
+                                text-decoration: underline;
+                            }
+                            .add_bold{
+                                font-size: rem(21);
+                                font-weight: bold;
+                            }
+                        }
+                        .kinds{
+                            margin: 30px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(16);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        .title{
+                            margin: 10px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(32);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .box-oil_or_glass_caption{
+                    margin: 100px auto 0;
+                    width: 660px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                }
+                .box-oil_or_glass_notice{
+                    margin: 100px auto 0;
+                    width: 660px;
+                    height: 65px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .box-note_caption{
+                    margin: 100px auto 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                }
+                .layout-button{
+                    margin: 50px auto 0;
+                    width: 300px;
+                }
+            }
+        }
+        .box-no_wiping{
+            margin: 200px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: 1180px;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(31);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .layout-no_wiping{
+                margin: 150px auto;
+                width: 1000px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .layout-left{
+                    width: 490px;
+                    .title-no_wiping{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                    }
+                    .read-no_wiping{
+                        margin: 30px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: medium;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                    }
+                    .layout-button{
+                        margin: 50px 0 0;
+                        width: 300px;
+                    }
+                }
+                .layout-left{
+                    width: 415px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .nhk-block{
+                margin: 200px auto 0;
+                width: 1000px;
+                height: 165px;
+                color: c(nc, w1);
+                background-color: c(yellow, m);
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                p{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: normal;
+                    line-height: 225%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+                .circle{
+                    width: 225px;
+                    height: 225px;
+                    color: c(nc, w1);
+                    background-color: c(yellow, m);
+                    border-radius: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px 0;
+                    position: absolute;
+                    top: -30px;
+                    left: -100px;
+                    p{
+                        &:nth-child(1){
+                            font-family: "Poppins";
+                            font-size: rem(14);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        &:nth-child(2){
+                            font-family: "Poppins";
+                            font-size: rem(32);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        &:nth-child(3){
+                            font-family: "Noto Sans JP";
+                            font-size: rem(14);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .box-how_to{
+            margin: 200px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: 1180px;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(31);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .contents-howto{
+                .howto-title-block{
+                    margin: 100px auto 0;
+                    width: 1000px;
+                    .howto-title{
+                        span{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(36);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            &.front{
+                                position: relative;
+                                z-index: 11;
+                            }
+                            &.yellow_line{
+                                margin: 0 0 20px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background-color: c(yellow, d2);
+                                    display: inline-block;
+                                    position: absolute;
+                                    bottom: -8px;
+                                    left: 0;
+                                    z-index: 5;
+                                }
+                            }
+                        }
+                    }
+                    .howto-caption{
+                        margin: 30px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: normal;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                    }
+                }
+                .howto-prepare-block{
+                    margin: 100px auto 0;
+                    width: 1180px;
+                    height: 600px;
+                    border: solid 5px c(nc, g1);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .prepare-heading{
+                        text-align: center;
+                        .title-prepare{
+                            color: c(yellow, m);
+                            font-family: "Poppins";
+                            font-size: rem(14);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-transform: uppercase
+                        }
+                        .caption-prepare{
+                            margin: 30px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(28);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .prepare-items{
+                        margin: 70px auto 0;
+                        width: 1000px;
+                        display: flex;
+                        justify-content: space-between;
+                        .item{
+                            .item-images{
+                                width: 200px;
+                                height: 200px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 100px;
+                                }
+                            }
+                            .item-title-en{
+                                margin: 30px 0 0;
+                                color: c(yellow, m);
+                                font-family: "Poppins";
+                                font-size: rem(14);
+                                font-weight: normal;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                text-transform: uppercase
+                            }
+                            .item-title-ja{
+                                margin: 15px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(16);
+                                font-weight: normal;
+                                line-height: 100%;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+                    }
+                }
+                .howto-flow-block{
+                    .flow-items{
+                        margin: 100px auto 0;
+                        width: 1000px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        .item{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .item-title{
+                                width: 170px;
+                                font-family: "Poppins";
+                                font-size: rem(48);
+                                font-weight: bold;
+                                line-height: 100%;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    margin: 0 0 10px;
+                                    content: "POINT";
+                                    width: 92px;
+                                    height: 31px;
+                                    color: c(nc, w1);
+                                    font-family: "Poppins";
+                                    font-size: rem(13);
+                                    font-weight: bold;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    letter-spacing: 2px;
+                                    background-color: c(nc, b1);
+                                    border-radius: 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                            .item-read{
+                                margin: 0 60px 0 0;
+                                width: 300px;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(16);
+                                font-weight: normal;
+                                line-height: 175%;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                                text-align: left;
+                            }
+                            .item-image{
+                                width: 490px;
+                                position: relative;
+                                img{
+                                    border-radius: 8px;
+                                }
+                                .badge-notice{
+                                    width: 150px;
+                                    height: 150px;
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(21);
+                                    font-weight: bold;
+                                    line-height: 125%;
+                                    text-align: center;
+                                    letter-spacing: 1.5px;
+                                    background-color: c(nc, w1);
+                                    border: 5px solid c(nc, b1);
+                                    border-radius: 100px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: 90px;
+                                    right: -90px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 100px auto 0;
+                    width: 300px;
+                }
+                .howto-youtube-block{
+                    margin: 200px 0 0;
+                    text-align: center;
+                    .title-youtube{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(36);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        .front{
+                            position: relative;
+                            z-index: 11;
+                        }
+                        .yellow_line{
+                            margin: 0 0 20px;
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 15px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                z-index: 5;
+                            }
+                        }
+                    }
+                    .read-youtube{
+                        margin: 100px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                    }
+                    .image-youtube{
+                        margin: 100px auto 0;
+                        width: 660px;
+                        position: relative;
+                        &::before{
+                            content: "CHECK IT!!";
+                            width: 150px;
+                            height: 30px;
+                            color: c(nc, w1);
+                            font-family: "Poppins";
+                            font-size: rem(16);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            background-color: c(red, d1);
+                            border-radius: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -15px;
+                            left: -75px;
+                        }
+                        img{
+                            border-radius: 8px;
+                            
+                        }
+                    }
+                    .layout-button{
+                        margin: 100px auto 0;
+                        width: 235px;
+                    }
+                }
+            }
+        }
+        .box-recommendation{
+            margin: 200px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: 1180px;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(31);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(64);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .contents-recommendation{
+                text-align: center;
+                .caption-recommendation{
+                    margin: 100px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(36);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    display: inline-block;
+                    position: relative;
+                    .front{
+                        position: relative;
+                        z-index: 11;
+                    }
+                    .yellow_line{
+                        margin: 0 0 20px;
+                        &::after{
+                            content: "";
+                            width: 100%;
+                            height: 15px;
+                            background-color: c(yellow, d2);
+                            display: inline-block;
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            z-index: 5;
+                        }
+                    }
+                }
+                .items-recommendation{
+                    margin: 100px auto 0;
+                    width: 1000px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px 0;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        margin: 0;
+                        width: 307px;
+                        height: 1217px;
+                        background-image: url("/images/maintenance-project/circle.svg");
+                        background-size: cover;
+                        display: inline-block;
+                        position: absolute;
+                        top: -65px;
+                        left: calc(50% - (307px / 2));
+                        z-index: -1;
+                    }
+                    .item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &.reverse{
+                            flex-direction: row-reverse;
+                        }
+                        .item-heading{
+                            width: 260px;
+                            .item-number{
+                                margin: 0 auto;
+                                padding: 0 0 10px;
+                                width: 150px;
+                                font-family: "Poppins";
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                border-bottom: double 10px #000;
+                                display: block;
+
+                            }
+                            .item-title{
+                                margin: 25px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(28);
+                                font-weight: bold;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                display: block;
+                            }
+                            .item-read{
+                                margin: 25px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(16);
+                                font-weight: normal;
+                                line-height: 150%;
+                                letter-spacing: 1.5px;
+                                text-align: left;
+                                display: block;
+                            }
+
+                        }
+                        .item-images{
+                            display: flex;
+                            gap: 0 20px;
+                            img{
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 100px auto 0;
+                    width: 300px;
+                }
+                .block-table_partner_shop{
+                    margin: 150px auto 0;
+                    width: 1000px;
+                    height: 320px;
+                    background-color: c(yellow, d2);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .block-heading{
+                        .caption{
+                            font-family: "Poppins";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 4px;
+                        }
+                        .title{
+                            margin: 15px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(14);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .read{
+                        margin: 50px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(13);
+                        font-weight: normal;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+
+        }
+    }
     .body-ichimaiita{
         .box-heading{
             // _utilities
