@@ -5942,8 +5942,8 @@ a{
                 }
                 .howto-prepare-block{
                     margin: 100px auto 0;
-                    width: 1180px;
-                    height: 600px;
+                    padding: 100px 0;
+                    width: 1000px;
                     border: solid 5px c(nc, g1);
                     display: flex;
                     flex-direction: column;
@@ -5970,9 +5970,11 @@ a{
                     }
                     .prepare-items{
                         margin: 70px auto 0;
-                        width: 1000px;
+                        width: 660px;
                         display: flex;
                         justify-content: space-between;
+                        gap: 75px 20px;
+                        flex-wrap: wrap;
                         .item{
                             .item-images{
                                 width: 200px;
@@ -6246,7 +6248,7 @@ a{
                     width: 1000px;
                     display: flex;
                     flex-direction: column;
-                    gap: 50px 0;
+                    gap: 145px 0;
                     position: relative;
                     &::after{
                         content: "";

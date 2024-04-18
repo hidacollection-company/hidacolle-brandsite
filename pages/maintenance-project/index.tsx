@@ -8,25 +8,9 @@ import { IchimaiitaList } from 'components/Ichimaiita/IchimaiitaList'
 import { Links } from 'components/Ichimaiita/Links'
 import { BreadList } from 'components/BreadList/BreadList'
 
-// Wordpress REST API
-import { getIchimaiitaAllPosts } from "lib/wpapi";
+import {Link as Scroll} from "react-scroll"
 
-export const getStaticProps = async () => {
-
-  const ichimaiita_data = await getIchimaiitaAllPosts();
-
-  return {
-    props: {
-      ichimaiita_data
-    }
-  };
-};
-
-type Props = {
-  ichimaiita_data: any[];
-}
-
-const Home: NextPage<Props> = ({ichimaiita_data}) => {
+const Home: NextPage<Props> = () => {
 
     const bread_list : { [key: string]: string }[] = [
       {
@@ -64,7 +48,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
           </div>
 
 
-          <section className='box-introduction'>
+          <section id="introduction" className='box-introduction'>
 
 
             <div className="section-heading">
@@ -76,9 +60,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="inner-contents">
                 <p className="title">大切な家具を、<br />もっと大切にする</p>
                 <div className="bold">
-                  <p>生活シーンが移り変わっても、シーンに合わせてお手入れすることで、大切な家具を、まだまだ大切にできます。</p>
-                  <p>生活シーンが移り変わっても、シーンに合わせてお手入れすることで、大切な家具を、まだまだ大切にできます。</p>
-                  <p>生活シーンが移り変わっても、シーンに合わせてお手入れすることで、大切な家具を、まだまだ大切にできます。</p>
+                  <p>愛着を持って長くテーブルを使っているとシミや傷、汚れが付きます。</p>
+                  <p>それは、お子さんが赤ちゃんの時に噛んでできた傷や、初めて書いた落書きなど、よくみると思い出がたくさん詰まったテーブルになっています。</p>
+                  <p>そういった傷や汚れを"愛着"として残すことで、思い出の積み重ねが良い風合いとなって、より素敵なテーブルにしてくれると思っています。</p>
                 </div>
                 <div className="layout-button">
                   <Link href='/note/ouchi-de-maintenance-1/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
@@ -118,40 +102,40 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               </div>
 
               <div className="inner-contents">
-                <a href="#">
+                <Scroll to="table_trouble" smooth={true} duration={600} offset={-105}>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">1</span>
                   </div>
                   <span className="title">よくあるテーブルのお困りごと</span>
-                </a>
-                <a href="#">
+                </Scroll>
+                <Scroll to="no_wiping" smooth={true} duration={600} offset={-105}>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">2</span>
                   </div>
                   <span className="title">テーブルは「水拭き」してはいけない！</span>
-                </a>
-                <a href="#">
+                </Scroll>
+                <Scroll to="how_to" smooth={true} duration={600} offset={-105}>
                   <div className="badge-howto">ハウツー</div>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">3</span>
                   </div>
                   <span className="title">実際にやってみよう！テーブルのメンテナンス方法は。</span>
-                </a>
-                <a href="#">
+                </Scroll>
+                <Scroll to="recommendation" smooth={true} duration={600} offset={-105}>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">4</span>
                   </div>
                   <span className="title">簡単にできる「おうちでメンテナンス」のススメ</span>
-                </a>
+                </Scroll>
               </div>
             </div>
           </section>
 
-          <section className="box-table_trouble">
+          <section id="table_trouble" className="box-table_trouble">
 
             <div className="section-heading">
               <div className="inner-heading">
@@ -352,7 +336,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             </div>
           </section>
 
-          <section className="box-no_wiping">
+          <section id="no_wiping" className="box-no_wiping">
 
             <div className="section-heading">
               <div className="inner-heading">
@@ -403,7 +387,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
           </section>
 
-          <section className="box-how_to">
+          <section id="how_to" className="box-how_to">
 
             <div className="section-heading">
               <div className="inner-heading">
@@ -480,6 +464,30 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     <div className="item-title-en">HOUSE CLOTH</div>
                     <div className="item-title-ja">ふきん 2枚</div>
                   </div>
+                  <div className="item">
+                    <div className="item-images">
+                      <Image
+                        src="/images/maintenance-project/3-prepare_4.jpg"
+                        alt="テーブルは水拭き厳禁?!"
+                        width={1280}
+                        height={855}
+                      />
+                    </div>
+                    <div className="item-title-en">OIL</div>
+                    <div className="item-title-ja">オイル</div>
+                  </div>
+                  <div className="item">
+                    <div className="item-images">
+                      <Image
+                        src="/images/maintenance-project/3-prepare_4.jpg"
+                        alt="テーブルは水拭き厳禁?!"
+                        width={1280}
+                        height={855}
+                      />
+                    </div>
+                    <div className="item-title-en">SAND PAPER</div>
+                    <div className="item-title-ja">サンドペーパー</div>
+                  </div>
                 </div>
               </div>
               <div className="howto-flow-block">
@@ -487,15 +495,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">1</div>
                     <div className="item-read">
-                      ボウルに水いっぱいを入れて、<br />
-                      ネットで泡を立てる。<br />
-                      泡が大切なので、<br />
-                      たくさん泡を作ってください。
+                      泡で洗う
                     </div>
                     <div className="item-image">
                       <Image
                         src="/images/maintenance-project/3-1.jpg"
-                        alt="テーブルメンテナンス方法のイメージ"
+                        alt="テーブルメンテナンスの流れ 泡で洗う"
                         width={490}
                         height={330}
                       />
@@ -504,15 +509,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">2</div>
                     <div className="item-read">
-                      水を含ませたスポンジに泡を乗せます。<br />
-                      泡で汚れを浮かせるイメージでテーブルを洗います。<br />
-                      テーブル全体を一気に洗うのではなく、40cm四方を洗ったら拭き上げるようにしてください。<br />
-                      段階的に全体を洗ってください。
+                      やすりがけ
                     </div>
                     <div className="item-image">
                       <Image
                         src="/images/maintenance-project/3-2.jpg"
-                        alt="テーブルメンテナンス方法のイメージ"
+                        alt="テーブルメンテナンスの流れ ヤスリがけ"
                         width={490}
                         height={330}
                       />
@@ -521,14 +523,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">3</div>
                     <div className="item-read">
-                      泡で洗った箇所を拭きあげます。<br />
-                      表面の汚れを拭き取った後、再度乾拭きをして終わりです。
+                      オイル塗布
                     </div>
                     <div className="item-image">
-                      <div className="badge-notice">ナゼ!?<br />水拭き厳禁</div>
                       <Image
                         src="/images/maintenance-project/3-3.jpg"
-                        alt="テーブルメンテナンス方法のイメージ"
+                        alt="テーブルメンテナンスの流れ オイルを塗る"
                         width={490}
                         height={330}
                       />
@@ -537,15 +537,13 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">4</div>
                     <div className="item-read">
-                      水を含ませたスポンジに泡を乗せます。<br />
-                      泡で汚れを浮かせるイメージでテーブルを洗います。<br />
-                      テーブル全体を一気に洗うのではなく、40cm四方を洗ったら拭き上げるようにしてください。<br />
-                      段階的に全体を洗ってください。
+                      拭き取り
                     </div>
                     <div className="item-image">
+                      <div className="badge-notice">ナゼ!?<br />水拭き厳禁</div>
                       <Image
                         src="/images/maintenance-project/3-4.jpg"
-                        alt="テーブルメンテナンス方法のイメージ"
+                        alt="テーブルメンテナンスの流れ 余分なオイルを拭き取る"
                         width={490}
                         height={330}
                       />
@@ -584,7 +582,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             </div>
           </section>
 
-          <section className="box-recommendation">
+          <section id="recommendation" className="box-recommendation">
 
             <div className="section-heading">
               <div className="inner-heading">
@@ -639,13 +637,13 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   </div>
                   <div className="item-images">
                     <Image
-                      src="/images/maintenance-project/4-2_1.jpg"
+                      src="/images/maintenance-project/4-2_1.png"
                       alt="輪をつなぐ イメージ1"
                       width={320}
                       height={209}
                     />
                     <Image
-                      src="/images/maintenance-project/4-2_2.jpg"
+                      src="/images/maintenance-project/4-2_2.png"
                       alt="輪をつなぐ イメージ2"
                       width={320}
                       height={209}
