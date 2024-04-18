@@ -513,7 +513,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">1</div>
                     <div className="item-read">
-                      泡で洗う
+                      テーブルの上は目に見えない汚れも溜まっています。<br />
+                      実はテーブルも石けんでゴシゴシ洗うことができます。
                     </div>
                     <div className="item-image">
                       <Image
@@ -527,7 +528,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">2</div>
                     <div className="item-read">
-                      やすりがけ
+                      無垢の木は目が立ってきて少しザラザラしてきます。<br />
+                      メンテナンスオイルの前に、サンドペーパーで素地調整をします。
                     </div>
                     <div className="item-image">
                       <Image
@@ -541,7 +543,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">3</div>
                     <div className="item-read">
-                      オイル塗布
+                      植物由来のナチュラルオイルを塗っていきましょう。<br />
+                      天板に刷り込みように、少したっぷり目に塗るのがコツです。
                     </div>
                     <div className="item-image">
                       <Image
@@ -555,7 +558,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item item-flow">
                     <div className="item-title">4</div>
                     <div className="item-read">
-                      拭き取り
+                      乾いたウエスでオイルを拭き取っていきます。<br />
+                      オイルを伸ばすのではなく、しっかりと拭き取ってください。
                     </div>
                     <div className="item-image">
                       <div className="badge-notice">ナゼ!?<br />水拭き厳禁</div>

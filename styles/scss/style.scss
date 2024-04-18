@@ -3462,13 +3462,15 @@ a{
         }
         .box-thinking_furniture{
             margin: 250px auto 0;
-            width: $ws;
+            width: $wm;
+            position: relative;
             h1.heading-thinking_furniture{
                 @include fts(ja, heading);
-                text-align: center;
+                text-align: left;
             }
             .title-thinking_furniture{
-                margin: 100px 0 0;
+                margin: 75px 0 0;
+                width: 430px;
                 p{
                     margin: 0 0 20px;
                     @include fts(ja, title);
@@ -3476,10 +3478,28 @@ a{
                 }
             }
             .layout-button{
-                margin: 100px 0 0;
+                margin: 75px 0 0;
                 // width: ;
                 display: inline-block;
-    
+            }
+            .bg__illust{
+                width: 800px;
+                position: absolute;
+                top: -70px;
+                right: -190px;
+                z-index: -1;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .box-hidacolle_items{
+            margin: 200px auto 0;
+            width: $wl;
+            .layout-hidacolle_items{
+                display: flex;
+                justify-content: center;
             }
         }
         .box-maruta_project{

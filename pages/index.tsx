@@ -59,11 +59,13 @@ const Home: NextPage<Props> = ({allPosts}) => {
               height={680}
             />
           </section>
+
           <section className="box-home_about">
             <h1 className="heading-home_about">丸太から<br />一枚板と<br className='sp_only' />カスタムオーダー家具</h1>
             <p className="title-home_about">なぜ「丸太から」？</p>
             <p className="text-home_about">SDGsの中に「つくる責任 つかう責任」という目標があります。<br />単なる資材としての木材から家具を作るのではなく、木材はもともと丸太であって、森で木として生きていたことを考えながら家具づくりをすることで、自然・社会・地域に少しでも「つくる責任」を果たせるように努めたいと考えています。</p>
           </section>
+
           <section className="box-thinking_furniture">
             <h1 className="heading-thinking_furniture">考える家具</h1>
             <div className="title-thinking_furniture">
@@ -77,8 +79,131 @@ const Home: NextPage<Props> = ({allPosts}) => {
                 <Link href='/furniture-that-thinks' legacyBehavior><a className="button target_this_site">考える家具とは</a></Link>
               </div>
             </div>
+            <div className="bg__illust">
+              <Image src="/images/index/maruta_project.jpg" alt="丸太プロジェクトのイラスト" width={595} height={842} />
+            </div>
           </section>
-          <section className="box-maruta_project">
+
+          <section className="box-hidacolle_items">
+            <div className="layout-hidacolle_items">
+              <div className="layout-left">
+                <div className="item">
+                  <div className="item-heading">
+                    <div className="catch">Furniture studio</div>
+                    <div className="title">工房</div>
+                  </div>
+                  <div className="item-body single">
+                    <div className="item-images single">
+                      <Image
+                        src="/images/index/furniture-studio.svg"
+                        alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                        width={456}
+                        height={362}
+                      />
+                    </div>
+                  </div>
+                  <div className="button">ヒダコレ 家具工房</div>
+                </div>
+                <div className="item">
+                  <div className="item-heading">
+                    <div className="catch">Furniture</div>
+                    <div className="title">作っている家具</div>
+                  </div>
+                  <div className="item-body furniture-body">
+                    <div className="body-layout">
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={281}
+                          height={188}
+                        />
+                        <div className="button">カスタムオーダー</div>
+                      </div>
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={281}
+                          height={188}
+                        />
+                        <div className="button">一枚板の家具</div>
+                      </div>
+                    </div>
+                    <div className="body-layout">
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={281}
+                          height={188}
+                        />
+                        <div className="button">コントラクトファニチャー</div>
+                      </div>
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={281}
+                          height={188}
+                        />
+                        <div className="button">オリジナルプロダクト</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="layout-right">
+                <div className="item">
+                  <div className="item-heading">
+                    <div className="catch">FLAGSHIP SHOP</div>
+                    <div className="title">ショップ</div>
+                  </div>
+                  <div className="item-body single">
+                    <div className="item-images single">
+                      <Image
+                        src="/images/index/flagshipshop.svg"
+                        alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                        width={422}
+                        height={582}
+                      />
+                    </div>
+                  </div>
+                  <div className="button">ヒダコレ 家具ショップ</div>
+                </div>
+                <div className="item">
+                  <div className="item-heading">
+                    <div className="catch">PROJECT</div>
+                    <div className="title">取り組んでいること</div>
+                  </div>
+                  <div className="item-body project-body">
+                    <div className="body-layout">
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={1000}
+                          height={213}
+                        />
+                        <div className="button">丸太から家具を考える</div>
+                      </div>
+                      <div className="item-image">
+                        <Image
+                          src="/images/original-products/002.jpg"
+                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          width={1000}
+                          height={213}
+                        />
+                        <div className="button">おうちでメンテナンス</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* <section className="box-maruta_project">
             <div className="catch-maruta_project">
               <p>MARUTA <br className='pc_only' />Project</p>
               <h1>丸太から家具を<br className='sp_only' />考えるプロジェクト</h1>
@@ -137,7 +262,9 @@ const Home: NextPage<Props> = ({allPosts}) => {
             <div className="bg__illust">
               <Image src="/images/index/maruta_project.jpg" alt="丸太プロジェクトのイラスト" width={595} height={842} />
             </div>
-          </section>
+          </section> */}
+
+
           <section className="box-ichimaiita_furiniture">
             <div className="box-heading box-layout">
               <div className="heading_en">
