@@ -637,13 +637,13 @@ const Home: NextPage<Props> = () => {
                   </div>
                   <div className="item-images">
                     <Image
-                      src="/images/maintenance-project/4-2_1.png"
+                      src="/images/maintenance-project/4-2_1.jpg"
                       alt="輪をつなぐ イメージ1"
                       width={320}
                       height={209}
                     />
                     <Image
-                      src="/images/maintenance-project/4-2_2.png"
+                      src="/images/maintenance-project/4-2_2.jpg"
                       alt="輪をつなぐ イメージ2"
                       width={320}
                       height={209}
