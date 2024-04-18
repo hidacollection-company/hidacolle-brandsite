@@ -10,7 +10,25 @@ import { BreadList } from 'components/BreadList/BreadList'
 
 import {Link as Scroll} from "react-scroll"
 
-const Home: NextPage<> = () => {
+// Wordpress REST API
+import { getIchimaiitaAllPosts } from "lib/wpapi";
+
+export const getStaticProps = async () => {
+
+  const ichimaiita_data = await getIchimaiitaAllPosts();
+
+  return {
+    props: {
+      ichimaiita_data
+    }
+  };
+};
+
+type Props = {
+  ichimaiita_data: any[];
+}
+
+const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
     const bread_list : { [key: string]: string }[] = [
       {
