@@ -51,10 +51,6 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
         <div className="contents-body body-maintenance_project">
 
-          {/* <p>{JSON.stringify(ichimaiita_data)}</p> */}
-
-          {/* <BreadList list={bread_list}></BreadList> */}
-
           {/* Component */}
           <div className="body-heading">
             <div className="inner-heading">
@@ -64,7 +60,6 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               </div>
             </div>
           </div>
-
 
           <section id="introduction" className='box-introduction'>
 
@@ -125,14 +120,14 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     <span className="type">No.</span>
                     <span className="number">1</span>
                   </div>
-                  <span className="title">よくあるテーブルのお困りごと</span>
+                  <span className="title">よくあるテーブルの<br className='sp_only' />お困りごと</span>
                 </Scroll>
                 <Scroll to="no_wiping" smooth={true} duration={600} offset={-105}>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">2</span>
                   </div>
-                  <span className="title">テーブルは「水拭き」してはいけない！</span>
+                  <span className="title">テーブルは<br className='sp_only' />「水拭き」してはいけない！</span>
                 </Scroll>
                 <Scroll to="how_to" smooth={true} duration={600} offset={-105}>
                   <div className="badge-howto">ハウツー</div>
@@ -140,18 +135,19 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     <span className="type">No.</span>
                     <span className="number">3</span>
                   </div>
-                  <span className="title">実際にやってみよう！テーブルのメンテナンス方法は。</span>
+                  <span className="title">実際にやってみよう！<br className='sp_only' />テーブルのメンテナンス方法は。</span>
                 </Scroll>
                 <Scroll to="recommendation" smooth={true} duration={600} offset={-105}>
                   <div className="numbering">
                     <span className="type">No.</span>
                     <span className="number">4</span>
                   </div>
-                  <span className="title">簡単にできる「おうちでメンテナンス」のススメ</span>
+                  <span className="title">簡単にできる<br className='sp_only' />「おうちでメンテナンス」<br className='sp_only' />のススメ</span>
                 </Scroll>
               </div>
             </div>
           </section>
+
 
           <section id="table_trouble" className="box-table_trouble">
 
@@ -253,8 +249,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       <h4>浸透性</h4>
                     </div>
                     <div className="item-body">
-                      <p>浸透性塗料で代表的なのが<span className="add_underline add_bold">オイル塗料</span>です。</p>
-                      <p>オイル塗料は、<span className="add_underline add_bold">体に優しい植物由来</span></p>
+                      <p>浸透性塗料で代表的なのが<br className='sp_only' /><span className="add_underline add_bold">オイル塗料</span>です。</p>
+                      <p>オイル塗料は、<br className='sp_only' /><span className="add_underline add_bold">体に優しい植物由来</span></p>
                       <p>
                         浸透性の塗料は<span className="add_underline add_bold">シミが付きやすい</span><br />
                         （）
@@ -266,8 +262,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       <p>
                         <span className="add_underline">シミや傷がついても…</span><br />
                         <br />
-                        おうちで<span className="add_underline add_bold">簡単にメンテナンスができる</span><br />
-                        自宅でメンテナンスできるのが浸透性の良いところです。
+                        おうちで<br className='sp_only' /><span className="add_underline add_bold">簡単にメンテナンスができる</span><br />
+                        自宅でメンテナンスできるのが<br className='sp_only' />浸透性の良いところです。
                       </p>
                     </div>
                   </div>
@@ -278,8 +274,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       <h4>塗膜性</h4>
                     </div>
                     <div className="item-body">
-                      <p>塗膜性塗料で代表的なのが<span className="add_underline add_bold">ウレタン塗装</span>です。</p>
-                      <p>科学的な<span className="add_underline add_bold">ホルムアルデヒドが気になる</span></p>
+                      <p>塗膜性塗料で代表的なのが<br className='sp_only' /><span className="add_underline add_bold">ウレタン塗装</span>です。</p>
+                      <p>科学的な<br className='sp_only' /><span className="add_underline add_bold">ホルムアルデヒドが気になる</span></p>
                       <p>
                         塗膜性の塗料は<span className="add_underline add_bold">シミが付きにくい</span><br />
                         （塗料の劣化と共にシミも付くようになります）
@@ -310,9 +306,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <div className="box-permeability_caption">
                   <p>
                     浸透性でもオイル塗料は、<br />
-                    <span className="add_underline add_bold">シミができるので困る…</span>という方にオススメなのが<br />
+                    <span className="add_underline add_bold">シミができるので困る…</span><br className='sp_only' />という方にオススメなのが<br />
                     同じ浸透性の<span className="add_underline add_bold">ガラス塗料</span>です。<br />
-                    浸透性でもガラス塗料は<span className="add_underline add_bold">シミが付きにくい</span>のです。
+                    浸透性でもガラス塗料は<br className='sp_only' /><span className="add_underline add_bold">シミが付きにくい</span>のです。
                   </p>
                 </div>
 
@@ -331,14 +327,14 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
 
                 <div className="box-oil_or_glass_caption">
-                  ヒダコレではおうちで簡単にメンテナンスができる<br />
+                  ヒダコレではおうちで<br className='sp_only' />簡単にメンテナンスができる<br />
                   浸透性の塗料をオススメしています<br />
                   浸透性の中であればどちらがお好みでしょうか<br />
                   ぜひ好みの塗料をお聞かせください
                 </div>
 
                 <div className="box-oil_or_glass_notice">
-                  ヒダコレではお使いのテーブルを無料でメンテナンスできます
+                  ヒダコレではお使いのテーブルを<br className='sp_only' />無料でメンテナンスできます
                 </div>
 
                 {/* <div className="box-note_caption">
@@ -363,7 +359,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <span className="number">2</span>
                 </div>
                 <div className="heading">
-                  <h2>テーブルは<br />「水拭き」してはいけない！</h2>
+                  <h2>テーブルは<br className="pc_only" />「水拭き」<br className="sp_only" />してはいけない！</h2>
                 </div>
                 <p className="catch">Be careful in daily use</p>
               </div>
@@ -371,7 +367,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
             <div className="layout-no_wiping">
               <div className="layout-left">
-                <p className="title-no_wiping">テーブルのヨゴレの原因は、油ヨゴレとふきんの水?</p>
+                <p className="title-no_wiping">テーブルのヨゴレの原因は、<br className="sp_only" />油ヨゴレとふきんの水?</p>
                 <p className="read-no_wiping">
                   綺麗にお手入れと思ってしていた水拭きが、逆にテーブルを汚していることだって知っていましたか?<br />
                   ヒダコレがおすすめしているのは、テーブルの「から拭き」なんです。<br />
@@ -390,7 +386,6 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 />
               </div>
             </div>
-            
             <div className="nhk-block">
               <p>
                 水拭きしてはいけない!は「NHK あしたが変わるトリセショー」でも紹介された方法です<br />
@@ -402,7 +397,6 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <p>でも紹介された方法です</p>
               </div>
             </div>
-
           </section>
 
           <section id="how_to" className="box-how_to">
@@ -414,7 +408,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <span className="number">3</span>
                 </div>
                 <div className="heading">
-                  <h2>実際にやってみよう！<br />テーブルのメンテナンス方法は。</h2>
+                  <h2>実際にやってみよう！<br />テーブルの<br className="sp_only" />メンテナンス方法は。</h2>
                 </div>
                 <p className="catch">How to make your furniture last longer</p>
               </div>
@@ -423,10 +417,10 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="contents-howto">
               <div className="howto-title-block">
                 <div className="howto-title">
-                  <span className="yellow_line"><span className="front">多少テーブルがヨゴレても、これで安心です。</span></span><br />
-                  <span className="yellow_line"><span className="front">自分でできるテーブルのメンテナンス方法。</span></span>
+                  <span className="yellow_line"><span className="front">多少テーブルがヨゴレても、<br className="sp_only" />これで安心です。</span></span><br />
+                  <span className="yellow_line"><span className="front">自分でできる<br className="sp_only" />テーブルのメンテナンス方法。</span></span>
                 </div>
-                <p className="howto-caption">日頃から”おうちでできる”簡単なお手入れをご紹介します。</p>
+                <p className="howto-caption">日頃から”おうちでできる<br className="sp_only" />”簡単なお手入れをご紹介します。</p>
               </div>
               <div className="howto-prepare-block">
                 <div className="prepare-heading">
@@ -456,7 +450,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       />
                     </div>
                     <div className="item-title-en">SOAP</div>
-                    <div className="item-title-ja">石鹸(食器用洗剤でもOK)</div>
+                    <div className="item-title-ja">石鹸<br className="sp_only" />(食器用洗剤でもOK)</div>
                   </div>
                   <div className="item">
                     <div className="item-images">
@@ -511,10 +505,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               <div className="howto-flow-block">
                 <div className="flow-items">
                   <div className="item item-flow">
-                    <div className="item-title">1</div>
-                    <div className="item-read">
-                      テーブルの上は目に見えない汚れも溜まっています。<br />
-                      実はテーブルも石けんでゴシゴシ洗うことができます。
+                    <div className="item-caption">
+                      <div className="item-title">1</div>
+                      <div className="item-read">
+                        テーブルの上は目に見えない汚れも溜まっています。<br />
+                        実はテーブルも石けんでゴシゴシ洗うことができます。
+                      </div>
                     </div>
                     <div className="item-image">
                       <Image
@@ -526,10 +522,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     </div>
                   </div>
                   <div className="item item-flow">
-                    <div className="item-title">2</div>
-                    <div className="item-read">
-                      無垢の木は目が立ってきて少しザラザラしてきます。<br />
-                      メンテナンスオイルの前に、サンドペーパーで素地調整をします。
+                    <div className="item-caption">
+                      <div className="item-title">2</div>
+                      <div className="item-read">
+                        無垢の木は目が立ってきて少しザラザラしてきます。<br />
+                        メンテナンスオイルの前に、サンドペーパーで素地調整をします。
+                      </div>
                     </div>
                     <div className="item-image">
                       <Image
@@ -541,10 +539,12 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     </div>
                   </div>
                   <div className="item item-flow">
-                    <div className="item-title">3</div>
-                    <div className="item-read">
-                      植物由来のナチュラルオイルを塗っていきましょう。<br />
-                      天板に刷り込みように、少したっぷり目に塗るのがコツです。
+                    <div className="item-caption">
+                      <div className="item-title">3</div>
+                      <div className="item-read">
+                        植物由来のナチュラルオイルを塗っていきましょう。<br />
+                        天板に刷り込みように、少したっぷり目に塗るのがコツです。
+                      </div>
                     </div>
                     <div className="item-image">
                       <Image
@@ -556,13 +556,15 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                     </div>
                   </div>
                   <div className="item item-flow">
-                    <div className="item-title">4</div>
-                    <div className="item-read">
-                      乾いたウエスでオイルを拭き取っていきます。<br />
-                      オイルを伸ばすのではなく、しっかりと拭き取ってください。
+                    <div className="item-caption">
+                      <div className="item-title">4</div>
+                      <div className="item-read">
+                        乾いたウエスでオイルを拭き取っていきます。<br />
+                        オイルを伸ばすのではなく、しっかりと拭き取ってください。
+                      </div>
                     </div>
                     <div className="item-image">
-                      <div className="badge-notice">ナゼ!?<br />水拭き厳禁</div>
+                      <div className="badge-notice">ナゼ!?<br className="pc_only" />水拭き厳禁</div>
                       <Image
                         src="/images/maintenance-project/3-4.jpg"
                         alt="テーブルメンテナンスの流れ 余分なオイルを拭き取る"
@@ -581,13 +583,13 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
               <div className="howto-youtube-block">
                 <h3 className="title-youtube">
-                  <span className="yellow_line"><span className="front">動画でわかる！「おうちでテーブルメンテナンス」</span></span>
+                  <span className="yellow_line"><span className="front">動画でわかる！<br className="sp_only" />「おうちでテーブルメンテナンス」</span></span>
                 </h3>
                 <div className="read-youtube">
-                  ヒダコレがおすすめするテーブルメンテナンスの方法を<br />
-                  分かりやすくお伝えする為にYoutubeにメンテナンス動画を公開しております<br />
-                  準備するものも簡単で、おうちでも楽しくテーブルのメンテナンスができます<br />
-                  大切な家具をずっと長く使うために、ぜひチャレンジしてみてくださいね
+                  ヒダコレがおすすめする<br className="sp_only" />テーブルメンテナンスの方法を<br />
+                  分かりやすくお伝えする為に<br className="sp_only" />Youtubeにメンテナンス動画を<br className="sp_only" />公開しております<br />
+                  準備するものも簡単で、<br className="sp_only" />おうちでも楽しく<br className="sp_only" />テーブルのメンテナンスができます<br />
+                  大切な家具をずっと長く使うために、<br className="sp_only" />ぜひチャレンジしてみてくださいね
                 </div>
                 <div className="image-youtube">
                   <Image
@@ -603,7 +605,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               </div>
             </div>
           </section>
-
+          
           <section id="recommendation" className="box-recommendation">
 
             <div className="section-heading">
@@ -615,14 +617,14 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <div className="heading">
                   <h2>簡単にできる<br />「おうちでメンテナンス」のススメ</h2>
                 </div>
-                <p className="catch">Recommendation for easy "OUCHI DE maintenance".</p>
+                <p className="catch">Recommendation for easy<br className="sp_only" />"OUCHI DE maintenance".</p>
               </div>
             </div>
 
             <div className="contents-recommendation">
 
               <div className="caption-recommendation">
-                <span className="yellow_line"><span className="front">ヒダコレのメンテナンスは”使い繋げる”メンテナンス</span></span>
+                <span className="yellow_line"><span className="front">ヒダコレのメンテナンスは<br className="sp_only" />”使い繋げる”メンテナンス</span></span>
               </div>
 
               <div className="items-recommendation">

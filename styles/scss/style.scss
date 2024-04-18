@@ -89,6 +89,7 @@ a{
         .box-thinking_furniture{
             margin: 100px auto 0;
             width: $mainWidth_sp;
+            position: relative;
             h1.heading-thinking_furniture{
                 @include fts(ja, lead);
                 text-align: center;
@@ -103,94 +104,247 @@ a{
                 }
             }
             .layout__centering{
-                margin: 50px 0 0;
+                margin: 220px 0 0;
                 display: flex;
                 justify-content: center;
                 .layout-button{
                     display: inline-block;
                 }
             }
+            .bg__illust{
+                width: 90%;
+                z-index: -1;
+                position: absolute;
+                bottom: 33px;
+                right: 10px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
-        .box-maruta_project{
-            margin: 150px auto 0;
-            width: $mainWidth_sp;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            .catch-maruta_project{
-                order: -2;
-                p{
-                    @include fts(ja, lead);
+        .box-hidacolle_items{
+            margin: 100px auto 0;
+            width: 100%;
+            .heading-hidacolle_items{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                text-align: center;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    background: url(/mark-map.svg);
+                    background-size: cover;
+                    width: 27px;
+                    height: 30px;
+                }
+                .title{
+                    margin: 20px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(28);
+                    font-weight: bold;
                     line-height: 100%;
+                    letter-spacing: 0.4px;
                 }
-                h1{
-                    margin: 10px 0 0;
-                    @include fts(ja, bold);
-                }
-            }
-            .contents-maruta_project{
-                margin: 30px auto 0;
-                p.lead-maruta_project{
-                    margin: 0 auto;
-                    width: $baseTextWidth_sp;
-                    @include fts(ja, title);
-                }
-                .bold-maruta_project{
-                    margin: 20px auto 0;
-                    width: $baseTextWidth_sp;
-                    p{
-                        margin: 0 0 10px;
-                        @include fts(ja, text);
-                    }
+                .caption{
+                    margin: 3% 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.4px;
                 }
             }
-            .list-maruta_project{
-                margin: 50px auto 0;
-                width: 100%;
+            .layout-hidacolle_items{
+                margin: 50px 0 0;
                 display: flex;
                 flex-direction: column;
                 gap: 50px 0;
-                .section-maruta_project{
-                    width: 100%;
-                    .visual-maruta_project{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            height: auto;
-                            border-radius: 8px;
-                        }
+                .layout-left{
+                    margin: 0;
+                    position: relative;
+                    &::after{
+                        // content: "";
+                        // width: 1024px;
+                        // height: 506px;
+                        // background-image: url("/images/index/bg-left.svg");
+                        // background-size: cover;
+                        // display: inline-block;
+                        // transform: rotate(-123deg);
+                        // position: absolute;
+                        // top: 355px;
+                        // left: -315px;
+                        // z-index: -1;
                     }
-                    .inner-maruta_project{
-                        h2{
-                            margin: 30px 0 0;
-                            @include fts(ja, bold);
-                            text-align: center;
+                    .item{
+                        &:nth-child(1){
+                            .item-body{
+                                margin: -80px 0 0;
+                                .item-images{
+                                    margin: 0 auto;
+                                    width: $mainWidth_sp;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
                         }
-                        p{
-                            margin: 15px auto 0;
-                            width: $baseTextWidth_sp;
-                            @include fts(ja, text);
-                        }
-                        .layout_layout_centering{
-                            margin: 25px 0 0;
-                            display: flex;
-                            justify-content: center;
-                            .layout-button{
-                                display: inline-block;
+                        &:nth-child(2){
+                            margin: 0 0 0;
+                            .item-heading{
+                            }
+                            .item-body{
+                                margin: 30px 0 0;
+                                .body-layout{
+                                    &:nth-child(1){
+                                    }
+                                    &:nth-child(2){
+                                    }
+                                    .item-image{
+                                        margin: 0 auto;
+                                        width: $mainWidth_sp;
+                                        img{
+                                            width: 100%;
+                                            height: auto;
+                                            border-radius: 8px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
-            .bg__illust{
-                margin: -20px 0 0;
-                width: 100%;
-                order: -1;
-                position: relative;
-                z-index: -1;
-                img{
-                    width: 100%;
-                    height: auto;
+                .layout-right{
+                    position: relative;
+                    &::after{
+                        // content: "";
+                        // width: 654px;
+                        // height: 378px;
+                        // background-image: url("/images/index/bg-right.svg");
+                        // background-size: cover;
+                        // display: inline-block;
+                        // transform: rotate(-84deg);
+                        // position: absolute;
+                        // top: 470px;
+                        // left: 70px;
+                        // z-index: -1;
+                    }
+                    .item{
+                        &:nth-child(1){
+                            .item-heading{
+                                position: relative;
+                                // top: 300px;
+                                // left: -30px;
+                            }
+                            .item-body{
+                                margin: -120px 0 0;
+                                .item-images{
+                                    margin: 0 auto;
+                                    width: $mainWidth_sp;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            .item-heading{
+                            }
+                            .item-body{
+                                margin: 30px 0 0;
+                            }
+                        }
+                    }
+                }
+                .item{
+                    text-align: center;
+                    position: relative;
+                    .item-heading{
+                        margin: 0 auto;
+                        width: $mainWidth_sp;
+                        text-align: left;
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            background: url(/mark-map.svg);
+                            background-size: cover;
+                            width: 27px;
+                            height: 30px;
+                        }
+                        .catch{
+                            margin: 10px 0 0;
+                            font-family: "Poppins";
+                            font-size: rem(12);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                        }
+                        .title{
+                            margin: 10px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 0.4px;
+                        }
+                    }
+                    .item-body{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 20px 0;
+                        .body-layout{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            gap: 20px 0;
+                            &.project-layout{
+                                .item-image{
+                                    img{
+                                        border-radius: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button-hidacolle_items{
+                        padding: 10px 20px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 0.4px;
+                        filter: drop-shadow(2px 2px 0 rgb(0, 0, 0));
+                        background-color: c(nc, w1);
+                        border: 3px solid #000;
+                        border-radius: 50px;
+                        display: inline-block;
+                        &.absolute_1{
+                            position: absolute;
+                            bottom: 50px;
+                            right: 20px;
+                        }
+                        &.absolute_2{
+                            position: absolute;
+                            bottom: 50px;
+                            right: 20px;
+                        }
+                        &.relative{
+                            position: relative;
+                            top: -15px;
+                        }
+                        &::after{
+                            content: "";
+                            margin: 0 0 2px 3px;
+                            background: #000000;
+                            height: calc(tan(60deg) * 6px / 2);
+                            width: 6px;
+                            clip-path: polygon(0 0, 100% 0, 50% 100%);
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }
@@ -763,6 +917,197 @@ a{
                     width: 100%;
                     height: auto;
                 }
+            }
+        }
+        .box-maruta_project{
+            margin: 75px auto 0;
+            padding: 50px 20px;
+            width: $mainWidth_sp;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            box-sizing: border-box;
+            position: relative;
+            .catch-maruta_project{
+                margin: 0 auto 0;
+                width: 100%;
+                position: relative;
+                p{
+                    margin: 20px 0 0;
+                    font-family: "Poppins";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                h1{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(26);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+            }
+            .contents-maruta_project{
+                margin: 50px auto 0;
+                width: 100%;
+                p.lead-maruta_project{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                .bold-maruta_project{
+                    margin: 30px 0 0;
+                    width: 100%;
+                    p{
+                        margin: 0 0 10px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                }
+            }
+            .list-maruta_project{
+                margin: 30px auto 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 75px 0;
+                .section-maruta_project{
+                    width: 100%;
+                    .visual-maruta_project{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                        }
+                    }
+                    .inner-maruta_project{
+                        h2{
+                            margin: 20px 0 0;
+                            @include fts(ja, title);
+                            text-align: center;
+                        }
+                        p{
+                            margin: 20px 0 0;
+                            @include fts(ja, bold);
+                        }
+                        .layout_layout_centering{
+                            margin: 30px 0 0;
+                            display: flex;
+                            justify-content: center;
+                            .layout-button{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-maintenance_project{
+            margin: 30px auto 0;
+            padding: 50px 20px;
+            width: $mainWidth_sp;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            box-sizing: border-box;
+            position: relative;
+            .catch-maintenance_project{
+                margin: 0 auto 0;
+                width: 100%;
+                position: relative;
+                p{
+                    margin: 20px 0 0;
+                    font-family: "Poppins";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                h1{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(26);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+            }
+            .images{
+                margin: 50px auto 0;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .contents-maintenance_project{
+                margin: 50px auto 0;
+                width: 100%;
+                p.lead-maintenance_project{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(21);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                .bold-maintenance_project{
+                    margin: 30px 0 0;
+                    width: 100%;
+                    p{
+                        margin: 0 0 10px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                }
+            }
+            .block-index{
+                margin: 50px auto 0;
+                padding: 50px 0;
+                width: 100%;
+                border-top: 2px solid c(nc, b1);
+                border-bottom: 2px solid c(nc, b1);
+                .head-index{
+                    font-family: "Poppins";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                }
+                .list-index{
+                    margin: 25px 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px 0;
+                    a{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 0.4px;
+                        text-decoration: underline;
+                        display: block;
+                    }
+
+                }
+            }
+            .layout-button{
+                margin: 50px 0 0;
+                width: 100%;
             }
         }
         .box-member{
@@ -1611,9 +1956,1352 @@ a{
         }
     }
     .body-maintenance_project{
+        // padding: 60px 0 0;
+        .body-heading{
+            width: 100%;
+            height: 250px;
+            background-color: c(yellow, d2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &::before{
+                content: "";
+                display: inline-block;
+                background: url(/images/maintenance-project/hero.jpg);
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: 150px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .inner-heading{
+                position: relative;
+                z-index: 2;
+                .catch{
+                    color: c(nc,w1);
+                    font-family: "Poppins";
+                    font-size: rem(13);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.2rem;
+                    text-align: center;
+                }
+                .heading{
+                    margin: 10px 0 0;
+                    color: c(nc,w1);
+                    font-family: "Noto Sans JP";
+                    font-size: rem(31);
+                    font-weight: bold;
+                    line-height: 125%;
+                    letter-spacing: 0.4px;
+                    text-align: center;
+                }
+            }
+        }
         .box-introduction{
-            margin: 0 auto;
-            width: 1000px;
+            margin: 100px auto 0;
+            width: $mainWidth_sp;
+            .section-heading{
+                margin: 0 auto;
+                width: 100%;
+                &>.heading{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(24);
+                    font-weight: bold;
+                    line-height: 125%;
+                    letter-spacing: 0.4px;
+                    text-align: center;
+                }
+                &>.catch{
+                    margin: 15px 0 0;
+                    font-family: "Poppins";
+                    font-size: rem(13);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.2rem;
+                    text-align: center;
+                }
+            }
+        }
+        .block-maitanance-at-home{
+            margin: 90px auto 0;
+            width: 100%;
+            position: relative;
+            .inner-contents{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                position: relative;
+                .title{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.4px;
+                }
+                .bold{
+                    margin: 30px 0 0;
+                    width: 100%;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: 400;
+                    line-height: 175%;
+                    letter-spacing: 0.4px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px 0;
+                }
+                .layout-button{
+                    margin: 50px auto 0;
+                    width: 300px;
+                }
+            }
+            .bg-visauls{
+                img.visaul{
+                    position: absolute;
+                    &.visaul-1{
+                        width: 130px;
+                        height: auto;
+                        border-radius: 0 8px 8px 0;
+                        top: -290px;
+                        left: -4%;
+                    }
+                    &.visaul-2{
+                        width: 130px;
+                        height: auto;
+                        border-radius: 8px 0 0 8px;
+                        top: -35px;
+                        right: -4%;
+                    }
+                    &.visaul-3{
+                        width: 135px;
+                        height: auto;
+                        border-radius: 0 8px 8px 0;
+                        bottom: -165px;
+                        left: -4%;
+                        z-index: -1;
+                    }
+                }
+            }
+
+        }
+        .block-recommended{
+            margin: 220px 0 0;
+            .block-heading{
+                &>.catch{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(13);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+                &>.heading{
+                    margin: 20px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+            }
+            .inner-contents{
+                margin: 50px auto 0;
+                // width: 1000px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px 0;
+                a{
+                    padding: 0 5%;
+                    width: 100%;
+                    height: 100px;
+                    border: 4px solid c(nc, b1);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        background: #000000;
+                        height: calc(tan(60deg) * 12px / 2);
+                        width: 8px;
+                        clip-path: polygon(0 0, 100% 50%, 0 100%);
+                    }
+                    .badge-howto{
+                        width: 80px;
+                        height: 30px;
+                        color: c(nc, w1);
+                        font-family: "Noto Sans JP";
+                        font-size: rem(12);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        background-color: c(yellow, m);
+                        border-radius: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -11px;
+                        left: -11px;
+                    }
+                    .numbering{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(12);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                        }
+                        .number{
+                            margin: 0 0 0 2px;
+                            font-family: "Poppins";
+                            font-size: rem(28);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                        }
+                    }
+                    .title{
+                        width: 76%;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+        .box-table_trouble{
+            margin: 100px 0 0;
+            padding: 100px 0 100px;
+            width: 100%;
+            background-color: c(nc, g1);
+            .section-heading{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(18);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(28);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(11);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .block-stains_scratches_debris{
+                margin: 100px 0 0;
+                .heading{
+                    text-align: center;
+                    position: relative;
+                    h3{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        z-index: 11;
+                        &.yellow_line{
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 20px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                z-index: -10;
+                            }
+                        }
+                    }
+                }
+                .inner-contents{
+                    margin: 50px auto 0;
+                    width: $mainWidth_sp;
+                    .contents-trouble-layout{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        .item-trouble{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 8px;
+                            }
+                            .item-heading{
+                                margin: 30px 0 0;
+                                text-align: center;
+                                .catch{
+                                    color: c(red, d1);
+                                    font-family: "Poppins";
+                                    font-size: rem(14);
+                                    font-weight: bold;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    text-transform: uppercase;
+                                }
+                                .heading{
+                                    margin: 15px 0 0;
+                                    h4{
+                                        font-family: "Noto Sans JP";
+                                        font-size: rem(21);
+                                        font-weight: bold;
+                                        line-height: 100%;
+                                        letter-spacing: 1.5px;
+                                    }
+                                }
+                                span{
+                                    margin: 15px 0 0;
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(14);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    display: inline-block;
+                                }
+                            }
+                            .read{
+                                margin: 40px 0 0;
+                                padding: 45px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(14);
+                                font-weight: normal;
+                                line-height: 150%;
+                                letter-spacing: 1.5px;
+                                border-top: solid 2px c(red, d1);
+                                display: inline-block;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    background: c(red, d1);
+                                    height: calc(tan(60deg) * 8px / 2);
+                                    width: 12px;
+                                    clip-path: polygon(0 0, 100% 0, 50% 100%);
+                                    position: absolute;
+                                    top: -1px;
+                                    left: calc(50% - (12px / 2));
+                                }
+                            }
+                        }
+                    }
+                    .layout-button{
+                        margin: 75px auto 0;
+                        width: 300px;
+                    }
+                }
+            }
+            .block-characteristics_of_paint{
+                margin: 100px auto 0;
+                width: $mainWidth_sp;
+                .heading{
+                    text-align: center;
+                    position: relative;
+                    h3{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 125%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        z-index: 11;
+                        &.yellow_line{
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 20px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                z-index: -10;
+                            }
+                        }
+                    }
+                }
+                .sub_heading{
+                    margin: 20px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    .add_underline{
+                        text-decoration: underline;
+                    }
+                }
+                .inner-contents{
+                    margin: 75px 0 0;
+                    .contents-permeability_and_paintability{
+                        margin: 0 auto;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        &>.item{
+                            width: 100%;
+                            .item-title{
+                                text-align: center;
+                                &::after{
+                                    content: "";
+                                    margin: 30px 0 0;
+                                    width: 43px;
+                                    height: 44px;
+                                    background-image: url("/images/maintenance-project/arrow.svg");
+                                    background-size: cover;
+                                    display: inline-block;
+                                    position: relative;
+                                    top: 8px;
+                                    left: 4px;
+                                }
+                                span{
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(16);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    text-decoration: underline;
+                                }
+                                h4{
+                                    margin: 30px auto 0;
+                                    width: 150px;
+                                    height: 150px;
+                                    color: c(nc, w1);
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(36);
+                                    font-weight: normal;
+                                    line-height: 100%;
+                                    letter-spacing: 1.5px;
+                                    background-color: c(green, m);
+                                    border-radius: 8px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                            .item-body{
+                                margin: 15px 0 0;
+                                p{
+                                    padding: 30px 0;
+                                    border-top: 2px solid c(nc, b1);
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(16);
+                                    font-weight: normal;
+                                    line-height: 175%;
+                                    letter-spacing: 1.5px;
+                                    text-align: center;
+                                    display: block;
+                                    span.add_underline{
+                                        text-decoration: underline;
+                                    }
+                                    span.add_bold{
+                                        font-size: rem(21);
+                                        font-weight: bold;
+                                    }
+                                    &:first-child{
+                                        border-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-permeability_reccomended{
+                    margin: 75px auto 0;
+                    padding: 80px 20px 40px;
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: relative;
+                    &::before{
+                        content: "RECOMMEND";
+                        width: 100px;
+                        height: 100px;
+                        color: c(nc, w1);
+                        font-family: "Poppins";
+                        font-size: rem(11);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        background-color: c(yellow, m);
+                        border-radius: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform:rotate(-15deg); 
+                        position: absolute;
+                        top: -60px;
+                        left: -7px;
+                    }
+                    .title{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(18);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: block;
+                        .add_underline{
+                            text-decoration: underline;
+                        }
+                        .add_bold{
+                            font-size: rem(21);
+                        }
+                    }
+                    .caption{
+                        margin: 30px 0 0;
+                        text-align: center;
+                        span{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(14);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            &.front{
+                                position: relative;
+                                z-index: 11;
+                            }
+                            &.yellow_line{
+                                margin: 0 0 20px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background-color: c(yellow, d2);
+                                    display: inline-block;
+                                    position: absolute;
+                                    bottom: -8px;
+                                    left: 0;
+                                    z-index: 5;
+                                }
+                            }
+                        }
+                    }
+                }
+                .box-permeability_caption{
+                    margin: 50px auto;
+                    padding: 30px 0;
+                    width: 100%;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: normal;
+                    line-height: 250%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    border-top: 2px solid c(nc, b1);
+                    border-bottom: 2px solid c(nc, b1);
+                    .add_underline{
+                        text-decoration: underline;
+                    }
+                    .add_bold{
+                        font-size: rem(18);
+                        font-weight: bold;
+                    }
+                }
+                .box-oil_or_glass_permeability{
+                    margin: 100px auto;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 75px 0;
+                    .item{
+                        width: 100%;
+                        .caption{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(16);
+                            font-weight: normal;
+                            line-height: 200%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            .add_underline{
+                                text-decoration: underline;
+                            }
+                            .add_bold{
+                                font-size: rem(21);
+                                font-weight: bold;
+                            }
+                        }
+                        .kinds{
+                            margin: 30px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(16);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        .title{
+                            margin: 10px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(32);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .box-oil_or_glass_caption{
+                    margin: 50px auto 0;
+                    width: 100%;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                }
+                .box-oil_or_glass_notice{
+                    margin: 50px auto 0;
+                    width: 100%;
+                    height: 65px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .box-note_caption{
+                    margin: 50px auto 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                }
+                .layout-button{
+                    margin: 50px auto 0;
+                    width: 300px;
+                }
+            }
+        }
+        .box-no_wiping{
+            margin: 100px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(18);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(28);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(11);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .layout-no_wiping{
+                margin: 0 auto 0;
+                width: $mainWidth_sp;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column-reverse;
+                .layout-left{
+                    margin: 50px auto 0;
+                    width: 100%;
+                    .title-no_wiping{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 1.5px;
+                    }
+                    .read-no_wiping{
+                        margin: 40px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: medium;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                    }
+                    .layout-button{
+                        margin: 50px 0 0;
+                        width: 300px;
+                    }
+                }
+                .layout-left{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .nhk-block{
+                margin: 150px auto 0;
+                padding: 95px 0 50px;
+                width: $mainWidth_sp;
+                color: c(nc, w1);
+                background-color: c(yellow, m);
+                border-radius: 8px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                p{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: normal;
+                    line-height: 225%;
+                    letter-spacing: 1.5px;
+                    text-align: center;
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+                .circle{
+                    width: 200px;
+                    height: 200px;
+                    color: c(nc, w1);
+                    background-color: c(yellow, m);
+                    border-radius: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px 0;
+                    position: absolute;
+                    top: -100px;
+                    left: calc(50% - 100px);
+                    p{
+                        &:nth-child(1){
+                            font-family: "Poppins";
+                            font-size: rem(14);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        &:nth-child(2){
+                            font-family: "Poppins";
+                            font-size: rem(28);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                        &:nth-child(3){
+                            font-family: "Noto Sans JP";
+                            font-size: rem(14);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .box-how_to{
+            margin: 100px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(18);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(28);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(11);
+                        font-weight: bold;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .contents-howto{
+                .howto-title-block{
+                    margin: 50px auto 0;
+                    width: $mainWidth_sp;
+                    .howto-title{
+                        text-align: center;
+                        span{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(16);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            &.front{
+                                position: relative;
+                                z-index: 11;
+                            }
+                            &.yellow_line{
+                                margin: 0 0 20px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background-color: c(yellow, d2);
+                                    display: inline-block;
+                                    position: absolute;
+                                    bottom: -8px;
+                                    left: 0;
+                                    z-index: 5;
+                                }
+                            }
+                        }
+                    }
+                    .howto-caption{
+                        margin: 30px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: normal;
+                        line-height: 150%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                    }
+                }
+                .howto-prepare-block{
+                    margin: 50px auto 0;
+                    padding: 50px 0;
+                    width: $mainWidth_sp;
+                    border: solid 5px c(nc, g1);
+                    border-radius: 20px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .prepare-heading{
+                        text-align: center;
+                        .title-prepare{
+                            color: c(yellow, m);
+                            font-family: "Poppins";
+                            font-size: rem(14);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-transform: uppercase
+                        }
+                        .caption-prepare{
+                            margin: 15px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(28);
+                            font-weight: normal;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .prepare-items{
+                        margin: 50px auto 0;
+                        // width: 45vw;
+                        display: flex;
+                        justify-content: center;
+                        gap: 30px 20px;
+                        flex-wrap: wrap;
+                        .item{
+                            .item-images{
+                                width: 35vw;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 100px;
+                                }
+                            }
+                            .item-title-en{
+                                margin: 10px 0 0;
+                                color: c(yellow, m);
+                                font-family: "Poppins";
+                                font-size: rem(12);
+                                font-weight: normal;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                text-transform: uppercase
+                            }
+                            .item-title-ja{
+                                margin: 10px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(13);
+                                font-weight: normal;
+                                line-height: 125%;
+                                text-align: center;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+                    }
+                }
+                .howto-flow-block{
+                    .flow-items{
+                        margin: 50px auto 0;
+                        width: $mainWidth_sp;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        .item{
+                            display: flex;
+                            flex-direction: column-reverse;
+                            .item-caption{
+                                margin: 20px 0 0;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .item-title{
+                                    width: 170px;
+                                    font-family: "Poppins";
+                                    font-size: rem(21);
+                                    font-weight: bold;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    letter-spacing: 1.5px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    &::before{
+                                        margin: 0 0 10px;
+                                        content: "POINT";
+                                        width: 92px;
+                                        height: 31px;
+                                        color: c(nc, w1);
+                                        font-family: "Poppins";
+                                        font-size: rem(11);
+                                        font-weight: bold;
+                                        line-height: 100%;
+                                        text-align: center;
+                                        letter-spacing: 2px;
+                                        background-color: c(nc, b1);
+                                        border-radius: 50px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                                .item-read{
+                                    margin: 0 0 0 20px;
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(14);
+                                    font-weight: normal;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    letter-spacing: 1.5px;
+                                    text-align: left;
+                                }
+                            }
+                            .item-image{
+                                width: 100%;
+                                position: relative;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    border-radius: 8px;
+                                }
+                                .badge-notice{
+                                    width: 200px;
+                                    height: 35px;
+                                    font-family: "Noto Sans JP";
+                                    font-size: rem(13);
+                                    font-weight: bold;
+                                    line-height: 125%;
+                                    text-align: center;
+                                    letter-spacing: 1.5px;
+                                    background-color: c(nc, w1);
+                                    border: 5px solid c(nc, b1);
+                                    border-radius: 100px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: -15px;
+                                    left: calc(50% - 100px);
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 50px auto 0;
+                    width: 300px;
+                }
+                .howto-youtube-block{
+                    margin: 100px 0 0;
+                    text-align: center;
+                    .title-youtube{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        .front{
+                            position: relative;
+                            z-index: 11;
+                        }
+                        .yellow_line{
+                            margin: 0 0 20px;
+                            &::after{
+                                content: "";
+                                width: 100%;
+                                height: 15px;
+                                background-color: c(yellow, d2);
+                                display: inline-block;
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                z-index: 5;
+                            }
+                        }
+                    }
+                    .read-youtube{
+                        margin: 50px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                        text-align: center;
+                    }
+                    .image-youtube{
+                        margin: 50px auto 0;
+                        width: $mainWidth_sp;
+                        position: relative;
+                        &::before{
+                            content: "CHECK IT!!";
+                            width: 150px;
+                            height: 30px;
+                            color: c(nc, w1);
+                            font-family: "Poppins";
+                            font-size: rem(11);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                            text-align: center;
+                            background-color: c(red, d1);
+                            border-radius: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -15px;
+                            left: calc(50% - 75px);
+                        }
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                        }
+                    }
+                    .layout-button{
+                        margin: 50px auto 0;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        .box-recommendation{
+            margin: 100px 0 0;
+            .section-heading{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .inner-heading{
+                    .numbering{
+                        .type{
+                            font-family: "Poppins";
+                            font-size: rem(18);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                        .number{
+                            margin: 0 0 0 5px;
+                            font-family: "Poppins";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                        }
+                    }
+                    .heading{
+                        margin: 15px 0 0;
+                        h2{
+                            font-family: "Noto Sans JP";
+                            font-size: rem(26);
+                            font-weight: bold;
+                            line-height: 125%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .catch{
+                        margin: 30px 0 0;
+                        font-family: "Poppins";
+                        font-size: rem(11);
+                        font-weight: bold;
+                        line-height: 150%;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .contents-recommendation{
+                text-align: center;
+                .caption-recommendation{
+                    margin: 50px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 1.5px;
+                    display: inline-block;
+                    position: relative;
+                    .front{
+                        position: relative;
+                        z-index: 11;
+                    }
+                    .yellow_line{
+                        margin: 0 0 20px;
+                        &::after{
+                            content: "";
+                            width: 100%;
+                            height: 15px;
+                            background-color: c(yellow, d2);
+                            display: inline-block;
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            z-index: 5;
+                        }
+                    }
+                }
+                .items-recommendation{
+                    margin: 75px auto 0;
+                    width: $mainWidth_sp;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 85px 0;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        margin: 0;
+                        width: 307px;
+                        height: 1217px;
+                        background-image: url("/images/maintenance-project/circle.svg");
+                        background-size: cover;
+                        display: inline-block;
+                        position: absolute;
+                        top: -15px;
+                        left: calc(50% - (307px / 2));
+                        z-index: -1;
+                    }
+                    .item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column-reverse;
+                        gap: 30px 0;
+                        .item-heading{
+                            .item-number{
+                                margin: 0 auto;
+                                padding: 0 0 10px;
+                                width: 150px;
+                                font-family: "Poppins";
+                                font-size: rem(21);
+                                font-weight: bold;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                border-bottom: double 10px #000;
+                                display: block;
+
+                            }
+                            .item-title{
+                                margin: 25px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 100%;
+                                letter-spacing: 1.5px;
+                                text-align: center;
+                                display: block;
+                            }
+                            .item-read{
+                                margin: 30px 0 0;
+                                font-family: "Noto Sans JP";
+                                font-size: rem(14);
+                                font-weight: normal;
+                                line-height: 150%;
+                                letter-spacing: 1.5px;
+                                text-align: left;
+                                background-color: #fff;
+                                display: block;
+                            }
+
+                        }
+                        .item-images{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            img{
+                                width: 48%;
+                                height: auto;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+                .layout-button{
+                    margin: 100px auto 0;
+                    width: 300px;
+                }
+                .block-table_partner_shop{
+                    margin: 150px auto 0;
+                    width: 1000px;
+                    height: 320px;
+                    background-color: c(yellow, d2);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .block-heading{
+                        .caption{
+                            font-family: "Poppins";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 4px;
+                        }
+                        .title{
+                            margin: 15px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(14);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    .read{
+                        margin: 50px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(13);
+                        font-weight: normal;
+                        line-height: 175%;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+
         }
     }
     .body-ichimaiita{
@@ -3486,7 +5174,7 @@ a{
                 width: 800px;
                 position: absolute;
                 top: -70px;
-                right: -190px;
+                right: -240px;
                 z-index: -1;
                 img{
                     width: 100%;
@@ -3496,84 +5184,206 @@ a{
         }
         .box-hidacolle_items{
             margin: 200px auto 0;
-            width: $wl;
+            width: $wm;
+            .heading-hidacolle_items{
+                text-align: center;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    background: url(/mark-map.svg);
+                    background-size: cover;
+                    width: 27px;
+                    height: 30px;
+                }
+                .title{
+                    margin: 30px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(42);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                }
+                .caption{
+                    margin: 3% 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.4px;
+                }
+            }
             .layout-hidacolle_items{
-                display: flex;
-                justify-content: center;
-            }
-        }
-        .box-maruta_project{
-            margin: 250px auto 0;
-            width: $wl;
-            position: relative;
-            .catch-maruta_project{
-                p{
-                    @include fts(en, catch);
-                }
-                h1{
-                    margin: 50px 0 0;
-                    @include fts(ja, title);
-                }
-            }
-            .contents-maruta_project{
-                margin: 500px 0 0;
-                p.lead-maruta_project{
-                    @include fts(ja, lead);
-                }
-                .bold-maruta_project{
-                    margin: 50px 0 0 90px;
-                    width: $wxs;
-                    p{
-                        margin: 0 0 10px;
-                        @include fts(ja, bold);
-                    }
-                }
-            }
-            .list-maruta_project{
-                margin: 100px auto 0;
-                width: $wm;
+                margin: 0 0 0;
                 display: flex;
                 justify-content: space-between;
-                .section-maruta_project{
-                    width: $wxs;
-                    .visual-maruta_project{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            height: auto;
-                            border-radius: 8px;
-                        }
+                .layout-left{
+                    margin: 290px 0 0;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        width: 1024px;
+                        height: 506px;
+                        background-image: url("/images/index/bg-left.svg");
+                        background-size: cover;
+                        display: inline-block;
+                        transform: rotate(-123deg);
+                        position: absolute;
+                        top: 355px;
+                        left: -315px;
+                        z-index: -1;
                     }
-                    .inner-maruta_project{
-                        h2{
-                            margin: 30px 0 0;
-                            @include fts(ja, title);
-                            text-align: center;
+                    .item{
+                        &:nth-child(1){
+                            .item-body{
+                                margin: -30px 0 0;
+                            }
                         }
-                        p{
+                        &:nth-child(2){
                             margin: 30px 0 0;
-                            @include fts(ja, bold);
-                        }
-                        .layout_layout_centering{
-                            margin: 30px 0 0;
-                            display: flex;
-                            justify-content: center;
-                            .layout-button{
-                                display: inline-block;
+                            .item-heading{
+                                position: relative;
+                                left: -90px;
+                            }
+                            .item-body{
+                                margin: 50px 0 0;
+                                .body-layout{
+                                    &:nth-child(1){
+                                        position: relative;
+                                        left: -90px;
+                                    }
+                                    &:nth-child(2){
+                                        margin: 50px 0 0;
+
+                                        // コントラクトを入れる場合下記を消す。
+                                        width: 281px;
+                                    }
+                                    .item-image{
+                                        img{
+                                            border-radius: 8px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
-            .bg__illust{
-                width: 929px;
-                position: absolute;
-                top: -200px;
-                right: -100px;
-                z-index: -1;
-                img{
-                    width: 100%;
-                    height: auto;
+                .layout-right{
+                    position: relative;
+                    top: -80px;
+                    &::after{
+                        content: "";
+                        width: 654px;
+                        height: 378px;
+                        background-image: url("/images/index/bg-right.svg");
+                        background-size: cover;
+                        display: inline-block;
+                        transform: rotate(-84deg);
+                        position: absolute;
+                        top: 470px;
+                        left: 70px;
+                        z-index: -1;
+                    }
+                    .item{
+                        &:nth-child(1){
+                            .item-heading{
+                                position: relative;
+                                top: 300px;
+                                left: -30px;
+                            }
+                        }
+                        &:nth-child(2){
+                            margin: 50px 0 0;
+                            .item-heading{
+                                margin: 0 0 0 300px;
+                            }
+                            .item-body{
+                                margin: 50px 0 0 100px;
+                            }
+                        }
+                    }
+                }
+                .item{
+                    text-align: center;
+                    position: relative;
+                    .item-heading{
+                        text-align: left;
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            background: url(/mark-map.svg);
+                            background-size: cover;
+                            width: 27px;
+                            height: 30px;
+                        }
+                        .catch{
+                            margin: 10px 0 0;
+                            font-family: "Poppins";
+                            font-size: rem(12);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 2px;
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                        }
+                        .title{
+                            margin: 10px 0 0;
+                            font-family: "Noto Sans JP";
+                            font-size: rem(24);
+                            font-weight: bold;
+                            line-height: 100%;
+                            letter-spacing: 0.4px;
+                        }
+                    }
+                    .item-body{
+                        .body-layout{
+                            display: flex;
+                            justify-content: center;
+                            gap: 0 20px;
+                            &.project-layout{
+                                .item-image{
+                                    img{
+                                        border-radius: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button-hidacolle_items{
+                        padding: 10px 20px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        font-weight: bold;
+                        line-height: 100%;
+                        letter-spacing: 0.4px;
+                        filter: drop-shadow(2px 2px 0 rgb(0, 0, 0));
+                        background-color: c(nc, w1);
+                        border: 3px solid #000;
+                        border-radius: 50px;
+                        display: inline-block;
+                        &.absolute_1{
+                            position: absolute;
+                            bottom: 50px;
+                            right: 20px;
+                        }
+                        &.absolute_2{
+                            position: absolute;
+                            bottom: 190px;
+                            right: -60px;
+                        }
+                        &.relative{
+                            position: relative;
+                            top: -15px;
+                        }
+                        &::after{
+                            content: "";
+                            margin: 0 0 2px 3px;
+                            background: #000000;
+                            height: calc(tan(60deg) * 6px / 2);
+                            width: 6px;
+                            clip-path: polygon(0 0, 100% 0, 50% 100%);
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }
@@ -4116,7 +5926,7 @@ a{
             }
         }
         .box-furniture_studio{
-            margin: 400px auto 0;
+            margin: 250px auto 0;
             padding: 0 0 700px 0;
             width: 100%;
             position: relative;
@@ -4149,6 +5959,190 @@ a{
                 position: absolute;
                 top: -100px;
                 left: 0;
+            }
+        }
+        .box-maruta_project{
+            margin: 250px auto 0;
+            padding: 100px 0;
+            width: $wl;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            position: relative;
+            .catch-maruta_project{
+                margin: 0 auto 0;
+                width: $wm;
+                position: relative;
+                p{
+                    font-family: "Poppins";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                h1{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(36);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+            }
+            .contents-maruta_project{
+                margin: 100px auto 0;
+                width: $wm;
+                p.lead-maruta_project{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(21);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                .bold-maruta_project{
+                    margin: 50px 0 0;
+                    width: $wxs;
+                    p{
+                        margin: 0 0 10px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                }
+            }
+            .list-maruta_project{
+                margin: 100px auto 0;
+                width: $wm;
+                display: flex;
+                justify-content: space-between;
+                .section-maruta_project{
+                    width: $wxs;
+                    .visual-maruta_project{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                        }
+                    }
+                    .inner-maruta_project{
+                        h2{
+                            margin: 30px 0 0;
+                            @include fts(ja, title);
+                            text-align: center;
+                        }
+                        p{
+                            margin: 30px 0 0;
+                            @include fts(ja, bold);
+                        }
+                        .layout_layout_centering{
+                            margin: 30px 0 0;
+                            display: flex;
+                            justify-content: center;
+                            .layout-button{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-maintenance_project{
+            margin: 100px auto 0;
+            padding: 100px 0;
+            width: $wl;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            position: relative;
+            .catch-maintenance_project{
+                margin: 0 auto 0;
+                width: $wm;
+                position: relative;
+                p{
+                    font-family: "Poppins";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                h1{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(36);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+            }
+            .images{
+                width: 484px;
+                position: absolute;
+                top: 310px;
+                right: 90px;
+            }
+            .contents-maintenance_project{
+                margin: 100px auto 0;
+                width: $wm;
+                p.lead-maintenance_project{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(21);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                .bold-maintenance_project{
+                    margin: 50px 0 0;
+                    width: 370px;
+                    p{
+                        margin: 0 0 10px;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                }
+            }
+            .block-index{
+                margin: 150px auto 0;
+                width: $wm;
+                .head-index{
+                    font-family: "Poppins";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 100%;
+                    letter-spacing: 0.4px;
+                }
+                .list-index{
+                    margin: 25px 0 0;
+                    a{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 200%;
+                        letter-spacing: 0.4px;
+                        text-decoration: underline;
+                        display: block;
+                    }
+
+                }
+            }
+            .layout-button{
+                margin: 75px 0 0 90px;
+                width: 420px;
             }
         }
         .box-member{

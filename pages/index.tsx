@@ -8,6 +8,8 @@ import { Links } from 'components/Ichimaiita/Links'
 import { CustomFurnitureList } from 'components/CustomFurniture/CustomFurnitureList'
 import { OriginalProductsList } from 'components/OriginalProducts/OriginalProductsList'
 
+import {Link as Scroll} from "react-scroll"
+
 import data from 'list-original-prodacts.json'
 
 // Wordpress graphql
@@ -85,6 +87,16 @@ const Home: NextPage<Props> = ({allPosts}) => {
           </section>
 
           <section className="box-hidacolle_items">
+
+            <div className="heading-hidacolle_items">
+                <div className="title">ヒダコレの商品一覧</div>
+                <div className="caption">
+                  工房、ショップから<br />
+                  ヒダコレの作っている家具、取り組んでいること<br />
+                  気になる商品をクリックしてみてください
+                </div>
+            </div>
+
             <div className="layout-hidacolle_items">
               <div className="layout-left">
                 <div className="item">
@@ -92,62 +104,70 @@ const Home: NextPage<Props> = ({allPosts}) => {
                     <div className="catch">Furniture studio</div>
                     <div className="title">工房</div>
                   </div>
-                  <div className="item-body single">
+                  <div className="item-body">
                     <div className="item-images single">
                       <Image
                         src="/images/index/furniture-studio.svg"
-                        alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                        alt="ヒダコレ 家具工房"
                         width={456}
                         height={362}
                       />
                     </div>
                   </div>
-                  <div className="button">ヒダコレ 家具工房</div>
+                  <Scroll className="absolute_1 button-hidacolle_items" to="furniture_studio" smooth={true} duration={600} offset={-165}>
+                    ヒダコレ 家具工房
+                  </Scroll>
                 </div>
                 <div className="item">
                   <div className="item-heading">
                     <div className="catch">Furniture</div>
                     <div className="title">作っている家具</div>
                   </div>
-                  <div className="item-body furniture-body">
-                    <div className="body-layout">
+                  <div className="item-body">
+                    <div className="body-layout furniture-layout">
                       <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          src="/images/index/map-1.jpg"
+                          alt="カスタムオーダー"
                           width={281}
                           height={188}
                         />
-                        <div className="button">カスタムオーダー</div>
+                        <Scroll className="relative button-hidacolle_items" to="costum_furniture" smooth={true} duration={600} offset={-105}>
+                          カスタムオーダー
+                        </Scroll>
                       </div>
                       <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          src="/images/index/map-2.jpg"
+                          alt="一枚板の家具"
                           width={281}
                           height={188}
                         />
-                        <div className="button">一枚板の家具</div>
+                        <Scroll className="relative button-hidacolle_items" to="ichimaiita_furiniture" smooth={true} duration={600} offset={-105}>
+                          一枚板の家具
+                        </Scroll>
                       </div>
                     </div>
-                    <div className="body-layout">
-                      <div className="item-image">
+                    <div className="body-layout furniture-layout">
+                      {/* <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          src="/images/index/map-3.jpg"
+                          alt="コントラクトファニチャー"
                           width={281}
                           height={188}
                         />
-                        <div className="button">コントラクトファニチャー</div>
-                      </div>
+                        <a className="relative button-hidacolle_items">コントラクトファニチャー</a>
+                      </div> */}
                       <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                          src="/images/index/map-4.jpg"
+                          alt="オリジナルプロダクト"
                           width={281}
                           height={188}
                         />
-                        <div className="button">オリジナルプロダクト</div>
+                        <Scroll className="relative button-hidacolle_items" to="original_products" smooth={true} duration={600} offset={-165}>
+                          オリジナルプロダクト
+                        </Scroll>
                       </div>
                     </div>
                   </div>
@@ -159,42 +179,48 @@ const Home: NextPage<Props> = ({allPosts}) => {
                     <div className="catch">FLAGSHIP SHOP</div>
                     <div className="title">ショップ</div>
                   </div>
-                  <div className="item-body single">
-                    <div className="item-images single">
+                  <div className="item-body">
+                    <div className="item-images">
                       <Image
                         src="/images/index/flagshipshop.svg"
-                        alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
+                        alt="ヒダコレ 家具ショップ"
                         width={422}
                         height={582}
                       />
                     </div>
                   </div>
-                  <div className="button">ヒダコレ 家具ショップ</div>
+                  <Scroll className="absolute_2 button-hidacolle_items" to="flagship_shop" smooth={true} duration={600} offset={-165}>
+                    ヒダコレ 家具ショップ
+                  </Scroll>
                 </div>
                 <div className="item">
                   <div className="item-heading">
                     <div className="catch">PROJECT</div>
                     <div className="title">取り組んでいること</div>
                   </div>
-                  <div className="item-body project-body">
-                    <div className="body-layout">
+                  <div className="item-body">
+                    <div className="body-layout project-layout">
                       <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
-                          width={1000}
-                          height={213}
+                          src="/images/index/map-5.jpg"
+                          alt="丸太から家具を考える"
+                          width={200}
+                          height={200}
                         />
-                        <div className="button">丸太から家具を考える</div>
+                        <Scroll className="relative button-hidacolle_items" to="maruta_project" smooth={true} duration={600} offset={-165}>
+                          丸太から家具を考える
+                        </Scroll>
                       </div>
                       <div className="item-image">
                         <Image
-                          src="/images/original-products/002.jpg"
-                          alt="ヒダコレのオリジナルプロダクト『Xハンガーラック』の写真"
-                          width={1000}
-                          height={213}
+                          src="/images/index/map-6.jpg"
+                          alt="おうちでメンテナンス"
+                          width={200}
+                          height={200}
                         />
-                        <div className="button">おうちでメンテナンス</div>
+                        <Scroll className="relative button-hidacolle_items" to="maintenance_project" smooth={true} duration={600} offset={-165}>
+                          おうちでメンテナンス
+                        </Scroll>
                       </div>
                     </div>
                   </div>
@@ -203,69 +229,12 @@ const Home: NextPage<Props> = ({allPosts}) => {
             </div>
           </section>
 
-          {/* <section className="box-maruta_project">
-            <div className="catch-maruta_project">
-              <p>MARUTA <br className='pc_only' />Project</p>
-              <h1>丸太から家具を<br className='sp_only' />考えるプロジェクト</h1>
-            </div>
-            <div className="contents-maruta_project">
-              <p className="lead-maruta_project">「丸太から家具を<br className='sp_only' />考えるプロジェクト」とは、</p>
-              <div className="bold-maruta_project">
-                <p>ヒダコレの家具は、無垢の木で作られています。その無垢の木は元は丸太であり、森で育っていたのです。</p>
-                <p>みなさんに家具づくりを通して、丸太を感じていただき、森を知っていただきたいと思っています。</p>
-                <p>それと同時に、その森を守っていく必要性も感じています。</p>
-                <p>私たちは、森を守るための一つの方法として「丸太」というものをベースにして、川上の「森」と川下の「暮らし」をつなげていきたいと考えています。</p>
-              </div>
-              <div className="list-maruta_project">
-                <section className="section-maruta_project">
-                  <div className="visual-maruta_project">
-                    <Image
-                      // loader={myLoader}
-                      src="/images/small-log/001.jpg"
-                      alt="大きな丸太を循環のイメージ写真"
-                      width={1280}
-                      height={855}
-                    />
-                  </div>
-                  <div className="inner-maruta_project">
-                    <h2>小さな丸太を生かす</h2>
-                    <p>飛騨の森の広葉樹はまとめて伐採され、そのほとんどがチップとして消費されています…</p>
-                    <div className="layout_layout_centering">
-                      <div className="layout-button">
-                        <Link href='/small-log' legacyBehavior><a className="button target_this_site">小さな丸太を生かすとは</a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="section-maruta_project">
-                  <div className="visual-maruta_project">
-                    <Image
-                      // loader={myLoader}
-                      src="/images/large-log/001.jpg"
-                      alt="大きな丸太を循環させるのイメージ写真"
-                      width={1280}
-                      height={855}
-                    />
-                  </div>
-                  <div className="inner-maruta_project">
-                    <h2>大きな丸太を循環させる</h2>
-                    <p>もう日本の山々には、テーブル用の一枚板が取れるような大きな木は残されていません…</p>
-                    <div className="layout_layout_centering">
-                      <div className="layout-button">
-                        <Link href='/large-log' legacyBehavior><a className="button target_this_site">大きな丸太を循環させるとは</a></Link>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div className="bg__illust">
-              <Image src="/images/index/maruta_project.jpg" alt="丸太プロジェクトのイラスト" width={595} height={842} />
-            </div>
-          </section> */}
+          <div className="map_title">
+              <div className="catch">Furniture</div>
+              <div className="title">作っている家具</div>
+          </div>
 
-
-          <section className="box-ichimaiita_furiniture">
+          <section id="ichimaiita_furiniture" className="box-ichimaiita_furiniture">
             <div className="box-heading box-layout">
               <div className="heading_en">
                 <p>Ichimaiita<br />furniture</p>
@@ -290,7 +259,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
 
           </section>
 
-          <section className="box-costum_furniture">
+          <section id="costum_furniture" className="box-costum_furniture">
             <div className="box-heading box-layout">
               <div className="heading_en">
                 <p>Costum<br />furniture</p>
@@ -350,7 +319,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
 
           </section>
 
-          <section className="box-online_challnege">
+          <section id="online_challnege" className="box-online_challnege">
             <div className="heading-online_challnege">
               <p className="text">オンラインチャレンジ</p>
               <p className="heading">Online<br />challenge</p>
@@ -414,7 +383,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </ul>
             </section>
 
-            <section className="box-original_products">
+            <section id="original_products" className="box-original_products">
               <div className="heading-original_products">
                 <div className="box-layout_left">
                   <h2>こんな家具の<br />ある暮らし</h2>
@@ -515,7 +484,13 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </div>
             </section>
           </section>
-          <section className="box-flagship_shop">
+
+          <div className="map_title">
+              <div className="catch">Flagship shop</div>
+              <div className="title">ショップ</div>
+          </div>
+
+          <section id="flagship_shop" className="box-flagship_shop">
             <div className="box-layout">
               <div className="box-layout_left">
                 <div className="heading-flagship_shop">
@@ -632,7 +607,13 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </div>
             </div>
           </section>
-          <section className="box-furniture_studio">
+
+          <div className="map_title">
+              <div className="catch">Furniture studio</div>
+              <div className="title">工房</div>
+          </div>
+
+          <section id="furniture_studio" className="box-furniture_studio">
             <div className="layout-furniture_studio">
               <p className="heading-furniture_studio">Furniture studio</p>
               <p className="small-furniture_studio">「家具づくり」を暮らしへ</p>
@@ -653,6 +634,106 @@ const Home: NextPage<Props> = ({allPosts}) => {
                 />
               </div>
           </section>
+
+          <div className="map_title">
+              <div className="catch">Project</div>
+              <div className="title">取り組んでいること</div>
+          </div>
+
+          <section id="maruta_project" className="box-maruta_project">
+            <div className="catch-maruta_project">
+              <h1>丸太から家具を考える<br />プロジェクト</h1>
+              <p>MARUTA Project</p>
+            </div>
+            <div className="contents-maruta_project">
+              <p className="lead-maruta_project">「丸太から家具を<br className='sp_only' />考えるプロジェクト」とは、</p>
+              <div className="bold-maruta_project">
+                <p>ヒダコレの家具は、無垢の木で作られています。その無垢の木は元は丸太であり、森で育っていたのです。</p>
+                <p>みなさんに家具づくりを通して、丸太を感じていただき、森を知っていただきたいと思っています。</p>
+                <p>それと同時に、その森を守っていく必要性も感じています。</p>
+                <p>私たちは、森を守るための一つの方法として「丸太」というものをベースにして、川上の「森」と川下の「暮らし」をつなげていきたいと考えています。</p>
+              </div>
+              <div className="list-maruta_project">
+                <section className="section-maruta_project">
+                  <div className="visual-maruta_project">
+                    <Image
+                      // loader={myLoader}
+                      src="/images/small-log/001.jpg"
+                      alt="大きな丸太を循環のイメージ写真"
+                      width={1280}
+                      height={855}
+                    />
+                  </div>
+                  <div className="inner-maruta_project">
+                    <h2>小さな丸太を生かす</h2>
+                    <p>飛騨の森の広葉樹はまとめて伐採され、そのほとんどがチップとして消費されています…</p>
+                    <div className="layout_layout_centering">
+                      <div className="layout-button">
+                        <Link href='/small-log' legacyBehavior><a className="button target_this_site">小さな丸太を生かすとは</a></Link>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section className="section-maruta_project">
+                  <div className="visual-maruta_project">
+                    <Image
+                      // loader={myLoader}
+                      src="/images/large-log/001.jpg"
+                      alt="大きな丸太を循環させるのイメージ写真"
+                      width={1280}
+                      height={855}
+                    />
+                  </div>
+                  <div className="inner-maruta_project">
+                    <h2>大きな丸太を循環させる</h2>
+                    <p>もう日本の山々には、テーブル用の一枚板が取れるような大きな木は残されていません…</p>
+                    <div className="layout_layout_centering">
+                      <div className="layout-button">
+                        <Link href='/large-log' legacyBehavior><a className="button target_this_site">大きな丸太を循環させるとは</a></Link>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <section id="maintenance_project" className="box-maintenance_project">
+            <div className="catch-maintenance_project">
+              <h1>おうちでメンテナンス<br />プロジェクト</h1>
+              <p>OUCHI DE MAINTENANCE Project</p>
+            </div>
+            <div className="images">
+              <Image
+                src="/images/index/maintenance-project.jpg"
+                alt="大きな丸太を循環させるのイメージ写真"
+                width={484}
+                height={652}
+              />
+            </div>
+            <div className="contents-maintenance_project">
+              <p className="lead-maintenance_project">大切な家具を、<br />もっと大切にする</p>
+              <div className="bold-maintenance_project">
+                <p>愛着を持って長くテーブルを使っているとシミや傷、汚れが付きます。</p>
+                <p>それは、お子さんが赤ちゃんの時に噛んでできた傷や、初めて書いた落書きなど、よくみると思い出がたくさん詰まったテーブルになっています。</p>
+                <p>そういった傷や汚れを"愛着"として残すことで、思い出の積み重ねが良い風合いとなって、より素敵なテーブルにしてくれると思っています。</p>
+              </div>
+            </div>
+            <div className="block-index">
+              <div className="head-index">INDEX</div>
+              <div className="list-index">
+                <Link href='/maintenance-project/#introduction' legacyBehavior>メンテナンスする暮らし</Link>
+                <Link href='/maintenance-project/#table_trouble' legacyBehavior>よくあるテーブルのお困りごと</Link>
+                <Link href='/maintenance-project/#no_wiping' legacyBehavior>テーブルは「水拭き」してはいけない！</Link>
+                <Link href='/maintenance-project/#how_to' legacyBehavior>実際にやってみよう！テーブルのメンテナンス方法は。</Link>
+                <Link href='/maintenance-project/#recommendation' legacyBehavior>簡単にできる「おうちでメンテナンス」のススメ</Link>
+              </div>
+            </div>
+            <div className="layout-button">
+              <Link href='/maintenance-project/' legacyBehavior><a className="button target_this_site"><span className='pc_only'>おうちで</span>メンテナンスプロジェクト<span className='pc_only'>をみる</span></a></Link>
+            </div>
+          </section>
+
           <section className="box-member">
             <div className="heading-box-member">
               <div className="box-layout_left">
