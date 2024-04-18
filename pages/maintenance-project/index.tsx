@@ -10,7 +10,7 @@ import { BreadList } from 'components/BreadList/BreadList'
 
 import {Link as Scroll} from "react-scroll"
 
-const Home: NextPage<Props> = () => {
+const Home: NextPage<> = () => {
 
     const bread_list : { [key: string]: string }[] = [
       {
