@@ -159,7 +159,7 @@ export const Header = memo(() => {
                     <span className="en__mim">MARUTA Project</span>
                   </a>
                 </Link>
-                <Link href='/large-log' legacyBehavior>
+                <Link href='/maintenance-project' legacyBehavior>
                   <a>
                     おうちでメンテナンスプロジェクト
                     <span className="en__mim">OUCHI DE MAINTENANCE Project</span>
