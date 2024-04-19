@@ -297,9 +297,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 <div className="box-permeability_reccomended">
                   <p className="title">やっぱり<span className="add_underline add_bold">浸透性</span>が嬉しい!!</p>
                   <div className="caption">
-                    <span className="yellow_line"><span className="front">浸透性も塗膜性もシミや傷が付くもの。</span></span><br />
-                    <span className="yellow_line"><span className="front">浸透性は汚れが付くけど、おうちで簡単にメンテナンスできるなら、</span></span><br />
-                    <span className="yellow_line"><span className="front">浸透性の塗料が嬉しいと思いませんか?</span></span>
+                    <span className="yellow_line">浸透性も塗膜性もシミや傷が付くもの。</span><br />
+                    <span className="yellow_line">浸透性は汚れが付くけど、<br className='sp_only' />おうちで簡単にメンテナンスできるなら、</span><br />
+                    <span className="yellow_line">浸透性の塗料が嬉しいと思いませんか?</span>
                   </div>
                 </div>
 
@@ -417,8 +417,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="contents-howto">
               <div className="howto-title-block">
                 <div className="howto-title">
-                  <span className="yellow_line"><span className="front">多少テーブルがヨゴレても、<br className="sp_only" />これで安心です。</span></span><br />
-                  <span className="yellow_line"><span className="front">自分でできる<br className="sp_only" />テーブルのメンテナンス方法。</span></span>
+                  <span className="yellow_line">多少テーブルがヨゴレても、<br className="sp_only" />これで安心です。</span><br />
+                  <span className="yellow_line">自分でできる<br className="sp_only" />テーブルのメンテナンス方法。</span>
                 </div>
                 <p className="howto-caption">日頃から”おうちでできる<br className="sp_only" />”簡単なお手入れをご紹介します。</p>
               </div>
@@ -479,7 +479,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item">
                     <div className="item-images">
                       <Image
-                        src="/images/maintenance-project/3-prepare_4.jpg"
+                        src="/images/maintenance-project/3-prepare_5.jpg"
                         alt="テーブルは水拭き厳禁?!"
                         width={1280}
                         height={855}
@@ -491,7 +491,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <div className="item">
                     <div className="item-images">
                       <Image
-                        src="/images/maintenance-project/3-prepare_4.jpg"
+                        src="/images/maintenance-project/3-prepare_6.jpg"
                         alt="テーブルは水拭き厳禁?!"
                         width={1280}
                         height={855}
@@ -578,12 +578,11 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 {/* <div className="layout-button">
                   <Link href='/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
                 </div> */}
-                
               </div>
 
               <div className="howto-youtube-block">
                 <h3 className="title-youtube">
-                  <span className="yellow_line"><span className="front">動画でわかる！<br className="sp_only" />「おうちでテーブルメンテナンス」</span></span>
+                  <span className="yellow_line">動画でわかる！<br className="sp_only" />「おうちでテーブルメンテナンス」</span>
                 </h3>
                 <div className="read-youtube">
                   ヒダコレがおすすめする<br className="sp_only" />テーブルメンテナンスの方法を<br />
@@ -624,7 +623,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             <div className="contents-recommendation">
 
               <div className="caption-recommendation">
-                <span className="yellow_line"><span className="front">ヒダコレのメンテナンスは<br className="sp_only" />”使い繋げる”メンテナンス</span></span>
+                <span className="yellow_line">ヒダコレのメンテナンスは<br className="sp_only" />”使い繋げる”メンテナンス</span>
               </div>
 
               <div className="items-recommendation">
@@ -661,14 +660,14 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   </div>
                   <div className="item-images">
                     <Image
-                      src="/images/maintenance-project/4-2_1.jpg"
-                      alt="輪をつなぐ イメージ1"
+                      src="/images/maintenance-project/4-2_2.jpg"
+                      alt="輪をつなぐ イメージ2"
                       width={320}
                       height={209}
                     />
                     <Image
-                      src="/images/maintenance-project/4-2_2.jpg"
-                      alt="輪をつなぐ イメージ2"
+                      src="/images/maintenance-project/4-2_1.jpg"
+                      alt="輪をつなぐ イメージ1"
                       width={320}
                       height={209}
                     />

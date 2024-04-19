@@ -90,18 +90,7 @@ export const Header = memo(() => {
                     {/* <span className="en__mim">MARUTA Project</span> */}
                   </a>
                 </Link>
-                <Link href='/small-log' legacyBehavior>
-                  <a>
-                    小さな丸太を生かす
-                    <span className="en__mim">MARUTA Project</span>
-                  </a>
-                </Link>
-                <Link href='/large-log' legacyBehavior>
-                  <a>
-                    大きな丸太を循環させる
-                    <span className="en__mim">MARUTA Project</span>
-                  </a>
-                </Link>
+                
               </div>
 
               <div className={styles.block__nav}>
@@ -148,10 +137,32 @@ export const Header = memo(() => {
               </div>
 
               <div className={styles.block__nav}>
-                <Link href='/flagshipshop' legacyBehavior>
+              <Link href='/flagshipshop' legacyBehavior>
                   <a>
                     ヒダコレ 家具ショップ
                     <span className="en__mim">Flagship shop</span>
+                  </a>
+                </Link>
+              </div>
+
+              <div className={styles.heading__online_challnege}><span>Project</span></div>
+              <div className={`${styles.block__nav} ${styles.block__online_challnege}`}>
+                <Link href='/small-log' legacyBehavior>
+                  <a>
+                    小さな丸太を生かす
+                    <span className="en__mim">MARUTA Project</span>
+                  </a>
+                </Link>
+                <Link href='/large-log' legacyBehavior>
+                  <a>
+                    大きな丸太を循環させる
+                    <span className="en__mim">MARUTA Project</span>
+                  </a>
+                </Link>
+                <Link href='/large-log' legacyBehavior>
+                  <a>
+                    おうちでメンテナンスプロジェクト
+                    <span className="en__mim">OUCHI DE MAINTENANCE Project</span>
                   </a>
                 </Link>
               </div>

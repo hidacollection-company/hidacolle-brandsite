@@ -89,7 +89,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
           <section className="box-hidacolle_items">
 
             <div className="heading-hidacolle_items">
-                <div className="title">ヒダコレの商品一覧</div>
+                <div className="title">ヒダコレの家具一覧</div>
                 <div className="caption">
                   工房、ショップから<br />
                   ヒダコレの作っている家具、取り組んでいること<br />

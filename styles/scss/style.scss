@@ -2243,17 +2243,7 @@ a{
                         position: relative;
                         z-index: 11;
                         &.yellow_line{
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 20px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -8px;
-                                left: 0;
-                                z-index: -10;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                 }
@@ -2350,17 +2340,7 @@ a{
                         position: relative;
                         z-index: 11;
                         &.yellow_line{
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 20px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -8px;
-                                left: 0;
-                                z-index: -10;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                 }
@@ -2510,25 +2490,9 @@ a{
                             line-height: 100%;
                             letter-spacing: 1.5px;
                             text-align: center;
-                            display: inline-block;
-                            position: relative;
-                            &.front{
-                                position: relative;
-                                z-index: 11;
-                            }
+                            display: inline;
                             &.yellow_line{
-                                margin: 0 0 20px;
-                                &::after{
-                                    content: "";
-                                    width: 100%;
-                                    height: 15px;
-                                    background-color: c(yellow, d2);
-                                    display: inline-block;
-                                    position: absolute;
-                                    bottom: -8px;
-                                    left: 0;
-                                    z-index: 5;
-                                }
+                                background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                             }
                         }
                     }
@@ -2841,25 +2805,10 @@ a{
                             line-height: 100%;
                             letter-spacing: 1.5px;
                             text-align: center;
-                            display: inline-block;
+                            display: inline;
                             position: relative;
-                            &.front{
-                                position: relative;
-                                z-index: 11;
-                            }
                             &.yellow_line{
-                                margin: 0 0 20px;
-                                &::after{
-                                    content: "";
-                                    width: 100%;
-                                    height: 15px;
-                                    background-color: c(yellow, d2);
-                                    display: inline-block;
-                                    position: absolute;
-                                    bottom: -8px;
-                                    left: 0;
-                                    z-index: 5;
-                                }
+                                background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                             }
                         }
                     }
@@ -3045,25 +2994,10 @@ a{
                         line-height: 150%;
                         letter-spacing: 1.5px;
                         text-align: center;
-                        display: inline-block;
+                        display: inline;
                         position: relative;
-                        .front{
-                            position: relative;
-                            z-index: 11;
-                        }
                         .yellow_line{
-                            margin: 0 0 20px;
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 15px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -8px;
-                                left: 0;
-                                z-index: 5;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                     .read-youtube{
@@ -3155,33 +3089,18 @@ a{
                 }
             }
             .contents-recommendation{
+                margin: 50px 0 0;
                 text-align: center;
                 .caption-recommendation{
-                    margin: 50px 0 0;
                     font-family: "Noto Sans JP";
                     font-size: rem(16);
                     font-weight: bold;
                     line-height: 150%;
                     letter-spacing: 1.5px;
-                    display: inline-block;
+                    display: inline;
                     position: relative;
-                    .front{
-                        position: relative;
-                        z-index: 11;
-                    }
                     .yellow_line{
-                        margin: 0 0 20px;
-                        &::after{
-                            content: "";
-                            width: 100%;
-                            height: 15px;
-                            background-color: c(yellow, d2);
-                            display: inline-block;
-                            position: absolute;
-                            bottom: -8px;
-                            left: 0;
-                            z-index: 5;
-                        }
+                        background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                     }
                 }
                 .items-recommendation{
@@ -5171,10 +5090,10 @@ a{
                 display: inline-block;
             }
             .bg__illust{
-                width: 800px;
+                width: 600px;
                 position: absolute;
-                top: -70px;
-                right: -240px;
+                top: 10px;
+                right: -70px;
                 z-index: -1;
                 img{
                     width: 100%;
@@ -7337,17 +7256,7 @@ a{
                         position: relative;
                         z-index: 11;
                         &.yellow_line{
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 20px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -5px;
-                                left: 0;
-                                z-index: -10;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                 }
@@ -7442,17 +7351,7 @@ a{
                         position: relative;
                         z-index: 11;
                         &.yellow_line{
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 20px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -5px;
-                                left: 0;
-                                z-index: -10;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                 }
@@ -7596,28 +7495,13 @@ a{
                             font-family: "Noto Sans JP";
                             font-size: rem(21);
                             font-weight: bold;
-                            line-height: 100%;
+                            line-height: 200%;
                             letter-spacing: 1.5px;
                             text-align: center;
                             display: inline-block;
                             position: relative;
-                            &.front{
-                                position: relative;
-                                z-index: 11;
-                            }
                             &.yellow_line{
-                                margin: 0 0 20px;
-                                &::after{
-                                    content: "";
-                                    width: 100%;
-                                    height: 15px;
-                                    background-color: c(yellow, d2);
-                                    display: inline-block;
-                                    position: absolute;
-                                    bottom: -8px;
-                                    left: 0;
-                                    z-index: 5;
-                                }
+                                background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                             }
                         }
                     }
@@ -7920,28 +7804,13 @@ a{
                             font-family: "Noto Sans JP";
                             font-size: rem(36);
                             font-weight: bold;
-                            line-height: 100%;
+                            line-height: 175%;
                             letter-spacing: 1.5px;
                             text-align: center;
                             display: inline-block;
                             position: relative;
-                            &.front{
-                                position: relative;
-                                z-index: 11;
-                            }
                             &.yellow_line{
-                                margin: 0 0 20px;
-                                &::after{
-                                    content: "";
-                                    width: 100%;
-                                    height: 15px;
-                                    background-color: c(yellow, d2);
-                                    display: inline-block;
-                                    position: absolute;
-                                    bottom: -8px;
-                                    left: 0;
-                                    z-index: 5;
-                                }
+                                background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                             }
                         }
                     }
@@ -8126,23 +7995,8 @@ a{
                         text-align: center;
                         display: inline-block;
                         position: relative;
-                        .front{
-                            position: relative;
-                            z-index: 11;
-                        }
                         .yellow_line{
-                            margin: 0 0 20px;
-                            &::after{
-                                content: "";
-                                width: 100%;
-                                height: 15px;
-                                background-color: c(yellow, d2);
-                                display: inline-block;
-                                position: absolute;
-                                bottom: -8px;
-                                left: 0;
-                                z-index: 5;
-                            }
+                            background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                         }
                     }
                     .read-youtube{
@@ -8243,23 +8097,8 @@ a{
                     letter-spacing: 1.5px;
                     display: inline-block;
                     position: relative;
-                    .front{
-                        position: relative;
-                        z-index: 11;
-                    }
                     .yellow_line{
-                        margin: 0 0 20px;
-                        &::after{
-                            content: "";
-                            width: 100%;
-                            height: 15px;
-                            background-color: c(yellow, d2);
-                            display: inline-block;
-                            position: absolute;
-                            bottom: -8px;
-                            left: 0;
-                            z-index: 5;
-                        }
+                        background: linear-gradient(transparent 70%, c(yellow, d2) 0%);
                     }
                 }
                 .items-recommendation{
