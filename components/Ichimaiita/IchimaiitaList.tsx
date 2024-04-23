@@ -8,6 +8,7 @@ type IchimaiitaListProps = {
   title: string;
   slug: string;
   size: string;
+  soldout: boolean;
   control_number: string;
   thumbnail: string;
   photos: {
@@ -28,6 +29,9 @@ export const IchimaiitaList = memo((props: IchimaiitaListProps) => {
       <>
         <Link href={`/ichimaiita/${props.slug}`}>
           <div className={`${styles.visual_item} add_corner `}>
+            {props.soldout && (
+              <p className={styles.soldout}>SOLDOUT</p>
+            )}
             <Image
               // loader={myLoader}
               src={props.thumbnail}

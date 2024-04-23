@@ -167,7 +167,11 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
                   </tr>
                 </tbody>
               </table>
-              <div className="price">{page_data.priceTaxIncluded}<span className="yen">円 (税込)</span></div>
+              {page_data.soldout ? (
+                <p className="soldout">売約済み</p>
+              ) : (
+                <div className="price">{page_data.priceTaxIncluded}<span className="yen">円 (税込)</span></div>
+              )}
               <div className="layout-button">
                 <Link href='/contact' legacyBehavior><a className="button_green">お問い合わせはこちら</a></Link>
               </div>
@@ -186,6 +190,7 @@ const Home: NextPage<Props> = ({page_data, ichimaiita_data, photos}) => {
                       title={ichimaiita.title}
                       slug={ichimaiita.slug}
                       size={ichimaiita.size}
+                      soldout={ichimaiita.soldout}
                       control_number={ichimaiita.controlNumber}
                       thumbnail={ichimaiita.thumbnail.sourceUrl}
                       photos={ichimaiita.photos}

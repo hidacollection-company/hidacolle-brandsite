@@ -390,6 +390,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       title={ichimaiita.title}
                       slug={ichimaiita.slug}
                       size={ichimaiita.size}
+                      soldout={ichimaiita.soldout}
                       control_number={ichimaiita.controlNumber}
                       thumbnail={ichimaiita.thumbnail.sourceUrl}
                       photos={ichimaiita.photos}

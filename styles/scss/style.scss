@@ -3346,7 +3346,30 @@ a{
             }
         }
         .layout__IchimaiitaList{
-            margin: 75px 0 0;
+            margin: 100px auto 0;
+            width: $mainWidth_sp;
+            .box_items{
+                margin: 0 auto;
+                width: 100%;
+                .heading{
+                    margin: 0 auto;
+                    width: 100%;
+                    @include fts(ja, title);
+                    text-align: center;
+                }
+                ul.items{
+                    margin: 50px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 50px 0;
+                    li{
+                        width: 100%;
+                        // component/IchimaiitaList.module.css
+                    }
+                }
+            }
         }
         .layout__CtaBox{
             margin: 75px 0 0;
@@ -3424,7 +3447,30 @@ a{
             margin: 75px 0 0;
         }
         .layout__IchimaiitaList{
-            margin: 75px 0 0;
+            margin: 100px auto 0;
+            width: $mainWidth_sp;
+            .box_items{
+                margin: 0 auto;
+                width: 100%;
+                .heading{
+                    margin: 0 auto;
+                    width: 100%;
+                    @include fts(ja, title);
+                    text-align: center;
+                }
+                ul.items{
+                    margin: 50px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 50px 0;
+                    li{
+                        width: 100%;
+                        // component/IchimaiitaList.module.css
+                    }
+                }
+            }
         }
         .layout__Link{
             margin: 75px 0 0;
@@ -3515,6 +3561,12 @@ a{
                         }
                     }
                 }
+                .soldout{
+                    margin: 8px 0 0;
+                    color: c(red, m);
+                    @include fts(ja, "28");
+                }
+                
                 .price{
                     margin: 8px 0 0;
                     @include fts(ja, "28");
@@ -3529,7 +3581,30 @@ a{
             }
         }
         .layout__IchimaiitaList{
-            margin: 75px 0 0;
+            margin: 100px auto 0;
+            width: $mainWidth_sp;
+            .box_items{
+                margin: 0 auto;
+                width: 100%;
+                .heading{
+                    margin: 0 auto;
+                    width: 100%;
+                    @include fts(ja, title);
+                    text-align: center;
+                }
+                ul.items{
+                    margin: 50px 0 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 50px 0;
+                    li{
+                        width: 100%;
+                        // component/IchimaiitaList.module.css
+                    }
+                }
+            }
         }
         .layout__CtaBox{
             margin: 75px 0 0;
@@ -8539,6 +8614,11 @@ a{
                             }
                         }
                     }
+                }
+                .soldout{
+                    margin: 25px 0 0;
+                    color: c(red, m);
+                    @include fts(ja, "28");
                 }
                 .price{
                     margin: 25px 0 0;

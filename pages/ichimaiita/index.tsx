@@ -49,8 +49,6 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
         <div className="contents-body body-ichimaiita">
 
-          {/* <p>{JSON.stringify(ichimaiita_data)}</p> */}
-
           <BreadList list={bread_list}></BreadList>
 
           {/* Component */}
@@ -250,6 +248,8 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
             </div>
           </section>
 
+          {/* <p>{JSON.stringify(ichimaiita_data)}</p> */}
+
           <div className="layout__IchimaiitaList">
             <section className="box_items">
               <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
@@ -261,6 +261,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                       title={ichimaiita.title}
                       slug={ichimaiita.slug}
                       size={ichimaiita.size}
+                      soldout={ichimaiita.soldout}
                       control_number={ichimaiita.controlNumber}
                       thumbnail={ichimaiita.thumbnail.sourceUrl}
                       photos={ichimaiita.photos}
