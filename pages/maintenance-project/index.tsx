@@ -78,7 +78,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   <p>そういった傷や汚れを"愛着"として残すことで、思い出の積み重ねが良い風合いとなって、より素敵なテーブルにしてくれると思っています。</p>
                 </div>
                 <div className="layout-button">
-                  <Link href='/note/ouchi-de-maintenance-1/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+                  <Link href='/note/ouchi-de-maintenance-introduction' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 </div>
 
                 <div className="layout-button">
-                  <Link href='/note/ouchi-de-maintenance-2/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+                  <Link href='/note/ouchi-de-maintenance-1/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
                 </div>
 
               </div>
@@ -337,13 +337,13 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   ヒダコレではお使いのテーブルを<br className='sp_only' />無料でメンテナンスできます
                 </div>
 
-                {/* <div className="box-note_caption">
+                <div className="box-note_caption">
                   3つの塗料について、より詳しくはヒダコレノートで説明しています
                 </div>
 
                 <div className="layout-button">
-                  <Link href='/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-                </div> */}
+                  <Link href='/note/ouchi-de-maintenance-1-2' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+                </div>
 
               </div>
 
@@ -373,9 +373,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   ヒダコレがおすすめしているのは、テーブルの「から拭き」なんです。<br />
                   毎日使っているテーブルなら油汚れも多く残ります。水拭きはそんな油ヨゴレを「拭き取る」のではなく、「伸ばしている」ってことになってしまいます。
                 </p>
-                {/* <div className="layout-button">
-                  <Link href='/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-                </div> */}
+                <div className="layout-button">
+                  <Link href='/note/ouchi-de-maintenance-2' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+                </div>
               </div>
               <div className="layout-left">
                 <Image
@@ -575,9 +575,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   </div>
                 </div>
 
-                {/* <div className="layout-button">
-                  <Link href='/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-                </div> */}
+                <div className="layout-button">
+                  <Link href='/note/ouchi-de-maintenance-3' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+                </div>
               </div>
 
               <div className="howto-youtube-block">
@@ -698,9 +698,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 </div>
               </div>
 
-              {/* <div className="layout-button">
-                <Link href='/' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-              </div> */}
+              <div className="layout-button">
+                <Link href='/note/ouchi-de-maintenance-4' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
+              </div>
 
               {/* <div className="block-table_partner_shop">
                 <div className="block-heading">
