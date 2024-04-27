@@ -575,9 +575,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                   </div>
                 </div>
 
-                <div className="layout-button">
+                {/* <div className="layout-button">
                   <Link href='/note/ouchi-de-maintenance-3' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-                </div>
+                </div> */}
               </div>
 
               <div className="howto-youtube-block">
@@ -604,7 +604,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
               </div>
             </div>
           </section>
-          
+
           <section id="recommendation" className="box-recommendation">
 
             <div className="section-heading">
@@ -698,9 +698,9 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 </div>
               </div>
 
-              <div className="layout-button">
+              {/* <div className="layout-button">
                 <Link href='/note/ouchi-de-maintenance-4' legacyBehavior><a className="button target_note target_this_site">ヒダコレノートで読む</a></Link>
-              </div>
+              </div> */}
 
               {/* <div className="block-table_partner_shop">
                 <div className="block-heading">
