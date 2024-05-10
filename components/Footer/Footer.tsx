@@ -54,10 +54,9 @@ export const Footer = memo(() => {
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
-                <p className={styles.title}>MARUTA Project</p>
+                <p className={styles.title}></p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/small-log' legacyBehavior><a>小さな丸太を生かす</a></Link></li>
-                  <li className={styles.link}><Link href='/large-log' legacyBehavior><a>大きな丸太を循環させる</a></Link></li>
+                  <li className={styles.link}><Link href='/flagshipshop' legacyBehavior><a>ヒダコレ 家具ショップ</a></Link></li>
                 </ul>
               </li>
             </ul>
@@ -90,17 +89,18 @@ export const Footer = memo(() => {
 
             <ul className={styles.box_nav_main_layout}>
               <li className={styles.box_nav_main_list}>
-                {/* <p className={styles.title}></p> */}
+              <p className={styles.title}>MARUTA Project</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/flagshipshop' legacyBehavior><a>ヒダコレ 家具ショップ</a></Link></li>
+                  <li className={styles.link}><Link href='/small-log' legacyBehavior><a>小さな丸太を生かす</a></Link></li>
+                  <li className={styles.link}><Link href='/large-log' legacyBehavior><a>大きな丸太を循環させる</a></Link></li>
                 </ul>
               </li>
-              {/* <li className={styles.box_nav_main_list}>
-                <p className={styles.title}></p>
+              <li className={styles.box_nav_main_list}>
+                <p className={styles.title}>OUCHI DE MAINTENANCE Project</p>
                 <ul className={styles.list_links}>
-                  <li className={styles.link}><Link href='/note' legacyBehavior><a>ヒダコレノート</a></Link></li>
+                  <li className={styles.link}><Link href='/maintenance-project' legacyBehavior><a>おうちでメンテナンス</a></Link></li>
                 </ul>
-              </li> */}
+              </li>
             </ul>
           </section>
 

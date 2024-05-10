@@ -434,7 +434,7 @@ const Home: NextPage = () => {
                   </tr>
                   <tr>
                     <th>定休日</th>
-                    <td>水曜日</td>
+                    <td>水曜日・木曜日</td>
                   </tr>
                   <tr>
                     <th>駐車場</th>
