@@ -548,7 +548,6 @@
                 }
             }
         }
-
         .note-item-heading{
             margin: 50px auto 0;
             width: 1000px;
@@ -616,6 +615,10 @@
                     text-align: center;
                     text-decoration: underline;
                 }
+                a.minimum{
+                    @include fts(ja, minimum);
+                    text-decoration: underline;
+                }
                 .description_block{
                     display: flex;
                     flex-direction: column;
@@ -625,6 +628,9 @@
                     width: 100%;
                     height: auto;
                     border-radius: 8px;
+                }
+                img+img{
+                    margin: 40px 0 0;
                 }
             }
         }
