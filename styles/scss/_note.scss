@@ -227,6 +227,54 @@
                 }
             }
         }
+        .block-tow-images{
+            display: flex;
+            flex-direction: row;
+            gap: 0 20px;
+            .tow-images-item{
+                width: 50%;
+            }
+        }
+        figure{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            figcaption{
+                margin: 10px 0 0;
+                font-family: "Noto Sans JP";
+                font-size: rem(12);
+                text-align: center;
+                line-height: 150%;
+            }
+        }
+        .block-information{
+            padding: 30px 30px 30px;
+            width: 100%;
+            border: 2px solid c(nc, b1);
+            box-sizing: border-box;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+            .information-item{
+                display: flex;
+                flex-direction: column;
+                gap: 10px 0;
+                .item-title{
+                    width: 200px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(11);
+                    font-weight: bold;
+                    line-height: 175%;
+                }
+                .item-body{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(13);
+                    line-height: 175%;
+                }
+            }
+        }
         // サムネイルが未設定の場合に表示されるブロックのスタイル
         .note-notice-block{
             width: 100%;
@@ -686,7 +734,52 @@
                 }
             }
         }
-
+        .block-tow-images{
+            display: flex;
+            flex-direction: row;
+            gap: 0 50px;
+            .tow-images-item{
+                width: 50%;
+            }
+        }
+        figure{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            figcaption{
+                margin: 10px 0 0;
+                font-family: "Noto Sans JP";
+                font-size: rem(12);
+                text-align: center;
+                line-height: 150%;
+            }
+        }
+        .block-information{
+            padding: 30px 50px 30px;
+            width: 100%;
+            border: 2px solid c(nc, b1);
+            box-sizing: border-box;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px 0;
+            .information-item{
+                display: flex;
+                .item-title{
+                    width: 200px;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(13);
+                    font-weight: bold;
+                    line-height: 175%;
+                }
+                .item-body{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(13);
+                    line-height: 175%;
+                }
+            }
+        }
         .block-same_series{
             margin: 100px 0 0;
             padding: 75px 50px 50px;
