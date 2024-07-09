@@ -18,6 +18,14 @@
         },
         {
             "id": 3,
+            "slug": "tenpei_azuchi",
+            "profession": "吹き硝子",
+            "name": "安土  天平",
+            "caption": "<p>岐阜県高山市出身。</p><p>幼少期よりガラス作家の父、安土忠久氏の下で宙吹き硝子を学ぶ。</p><p>2007年富山ガラス造形研究所造形科で学ぶ。</p><p>現在独立して制作活動中。</p><p>ガラスの硬質さと対比するようなゆらぎのあるやわらかなフォルムと制作に真摯に向き合う天平さんの手仕事の確かさを感じられる吹き硝子作品です。</p>",
+            "ec_url": "https://hida-collection.shop/view/category/ct116"
+        },
+        {
+            "id": 4,
             "slug": "kohei_okizawa",
             "profession": "吹き硝子",
             "name": "沖澤 康平",
@@ -25,7 +33,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/okizawa-kohei"
         },
         {
-            "id": 4,
+            "id": 5,
             "slug": "makiko_okizawa",
             "profession": "陶器",
             "name": "沖澤 真紀子",
@@ -33,7 +41,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/okizawa-makiko"
         },
         {
-            "id": 5,
+            "id": 6,
             "slug": "tadahiro_nakanishi",
             "profession": "陶器",
             "name": "中西 忠博",
@@ -41,7 +49,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/nakanishi-tadahiro"
         },
         {
-            "id": 6,
+            "id": 7,
             "slug": "ken_nagakura",
             "profession": "陶器",
             "name": "長倉 研",
@@ -49,7 +57,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/ken-nagakura"
         },
         {
-            "id": 7,
+            "id": 8,
             "slug": "akira_hirano",
             "profession": "張り子",
             "name": "平野 明",
@@ -57,7 +65,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/hirano-akira"
         },
         {
-            "id": 8,
+            "id": 9,
             "slug": "kazutoshi_azuma",
             "profession": "木工",
             "name": "東 和俊",
@@ -65,7 +73,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/azuma-kazutoshi"
         },
         {
-            "id": 9,
+            "id": 10,
             "slug": "masanari_sakamoto",
             "profession": "木工",
             "name": "坂本 正成",
@@ -73,7 +81,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/sakamoto-masanori"
         },
         {
-            "id": 10,
+            "id": 11,
             "slug": "osamu_suzuki",
             "profession": "木工",
             "name": "鈴木 修",
@@ -81,7 +89,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/suzuki-osamu"
         },
         {
-            "id": 11,
+            "id": 12,
             "slug": "kaoru_maruyama",
             "profession": "木工",
             "name": "丸山 薫",
@@ -89,7 +97,7 @@
             "ec_url": "https://www.hida-collection.shop/view/category/maruyama-kaoru"
         },
         {
-            "id": 12,
+            "id": 13,
             "slug": "shinkougei",
             "profession": "木版手染",
             "name": "真工藝",

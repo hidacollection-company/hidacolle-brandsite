@@ -100,20 +100,22 @@ const Home: NextPage<Props> = ({allPosts}) => {
             <div className="layout-hidacolle_items">
               <div className="layout-left">
                 <div className="item">
-                  <div className="item-heading">
-                    <div className="catch">Furniture studio</div>
-                    <div className="title">工房</div>
-                  </div>
-                  <div className="item-body">
-                    <div className="item-images single">
-                      <Image
-                        src="/images/index/furniture-studio.svg"
-                        alt="ヒダコレ 家具工房"
-                        width={456}
-                        height={362}
-                      />
+                  <Scroll to="furniture_studio" smooth={true} duration={600} offset={-165}>
+                    <div className="item-heading">
+                      <div className="catch">Furniture studio</div>
+                      <div className="title">工房</div>
                     </div>
-                  </div>
+                    <div className="item-body">
+                        <div className="item-images single">
+                          <Image
+                            src="/images/index/furniture-studio.svg"
+                            alt="ヒダコレ 家具工房"
+                            width={456}
+                            height={362}
+                          />
+                        </div>
+                    </div>
+                  </Scroll>
                   <Scroll className="absolute_1 button-hidacolle_items" to="furniture_studio" smooth={true} duration={600} offset={-165}>
                     ヒダコレ 家具工房
                   </Scroll>
@@ -126,23 +128,27 @@ const Home: NextPage<Props> = ({allPosts}) => {
                   <div className="item-body">
                     <div className="body-layout furniture-layout">
                       <div className="item-image">
-                        <Image
-                          src="/images/index/map-1.jpg"
-                          alt="カスタムオーダー"
-                          width={281}
-                          height={188}
-                        />
+                        <Scroll to="costum_furniture" smooth={true} duration={600} offset={-105}>
+                          <Image
+                            src="/images/index/map-1.jpg"
+                            alt="カスタムオーダー"
+                            width={281}
+                            height={188}
+                          />
+                        </Scroll>
                         <Scroll className="relative button-hidacolle_items" to="costum_furniture" smooth={true} duration={600} offset={-105}>
                           カスタムオーダー
                         </Scroll>
                       </div>
                       <div className="item-image">
-                        <Image
-                          src="/images/index/map-2.jpg"
-                          alt="一枚板の家具"
-                          width={281}
-                          height={188}
-                        />
+                        <Scroll to="ichimaiita_furiniture" smooth={true} duration={600} offset={-105}>
+                          <Image
+                            src="/images/index/map-2.jpg"
+                            alt="一枚板の家具"
+                            width={281}
+                            height={188}
+                          />
+                        </Scroll>
                         <Scroll className="relative button-hidacolle_items" to="ichimaiita_furiniture" smooth={true} duration={600} offset={-105}>
                           一枚板の家具
                         </Scroll>
@@ -159,12 +165,14 @@ const Home: NextPage<Props> = ({allPosts}) => {
                         <a className="relative button-hidacolle_items">コントラクトファニチャー</a>
                       </div> */}
                       <div className="item-image">
-                        <Image
-                          src="/images/index/map-4.jpg"
-                          alt="オリジナルプロダクト"
-                          width={281}
-                          height={188}
-                        />
+                        <Scroll to="original_products" smooth={true} duration={600} offset={-165}>
+                          <Image
+                            src="/images/index/map-4.jpg"
+                            alt="オリジナルプロダクト"
+                            width={281}
+                            height={188}
+                          />
+                        </Scroll>
                         <Scroll className="relative button-hidacolle_items" to="original_products" smooth={true} duration={600} offset={-165}>
                           オリジナルプロダクト
                         </Scroll>
@@ -175,20 +183,22 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </div>
               <div className="layout-right">
                 <div className="item">
-                  <div className="item-heading">
-                    <div className="catch">FLAGSHIP SHOP</div>
-                    <div className="title">ショップ</div>
-                  </div>
-                  <div className="item-body">
-                    <div className="item-images">
-                      <Image
-                        src="/images/index/flagshipshop.svg"
-                        alt="ヒダコレ 家具ショップ"
-                        width={422}
-                        height={582}
-                      />
+                  <Scroll to="flagship_shop" smooth={true} duration={600} offset={-165}>
+                    <div className="item-heading">
+                      <div className="catch">FLAGSHIP SHOP</div>
+                      <div className="title">ショップ</div>
                     </div>
-                  </div>
+                    <div className="item-body">
+                      <div className="item-images">
+                        <Image
+                          src="/images/index/flagshipshop.svg"
+                          alt="ヒダコレ 家具ショップ"
+                          width={422}
+                          height={582}
+                        />
+                      </div>
+                    </div>
+                  </Scroll>
                   <Scroll className="absolute_2 button-hidacolle_items" to="flagship_shop" smooth={true} duration={600} offset={-165}>
                     ヒダコレ 家具ショップ
                   </Scroll>
@@ -201,23 +211,27 @@ const Home: NextPage<Props> = ({allPosts}) => {
                   <div className="item-body">
                     <div className="body-layout project-layout">
                       <div className="item-image">
-                        <Image
-                          src="/images/index/map-5.jpg"
-                          alt="丸太から家具を考える"
-                          width={200}
-                          height={200}
-                        />
+                        <Scroll to="maruta_project" smooth={true} duration={600} offset={-165}>
+                          <Image
+                            src="/images/index/map-5.jpg"
+                            alt="丸太から家具を考える"
+                            width={200}
+                            height={200}
+                          />
+                        </Scroll>
                         <Scroll className="relative button-hidacolle_items" to="maruta_project" smooth={true} duration={600} offset={-165}>
                           丸太から家具を考える
                         </Scroll>
                       </div>
                       <div className="item-image">
-                        <Image
-                          src="/images/index/map-6.jpg"
-                          alt="おうちでメンテナンス"
-                          width={200}
-                          height={200}
-                        />
+                        <Scroll to="maintenance_project" smooth={true} duration={600} offset={-165}>
+                          <Image
+                            src="/images/index/map-6.jpg"
+                            alt="おうちでメンテナンス"
+                            width={200}
+                            height={200}
+                          />
+                        </Scroll>
                         <Scroll className="relative button-hidacolle_items" to="maintenance_project" smooth={true} duration={600} offset={-165}>
                           おうちでメンテナンス
                         </Scroll>
