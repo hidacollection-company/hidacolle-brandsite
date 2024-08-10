@@ -250,7 +250,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
           {/* <p>{JSON.stringify(ichimaiita_data)}</p> */}
 
-          <div className="layout__IchimaiitaList">
+          {/* <div className="layout__IchimaiitaList">
             <section className="box_items">
               <p className="heading">今すぐ買える、使える一枚板は、<br />こちらからお選びいただけます!!</p>
               <ul className="items">
@@ -270,7 +270,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
                 )}
               </ul>
             </section>
-          </div>
+          </div> */}
 
           <div className="layout__CtaBox">
             <CtaBox
