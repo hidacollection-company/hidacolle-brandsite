@@ -373,7 +373,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
           <div className="layout__CtaBox">
             <CtaBox
-              heading = "お気に入りの栃一枚板がありましたら、<br />お気軽にお問合せ下さい。"
+              heading = "多くの一枚板から、<br />まず写真などでご案内いたします。<br />ぜひご希望などお聞かせください。"
               caption = ""
               button_caption = "お問い合わせはこちら"
             />

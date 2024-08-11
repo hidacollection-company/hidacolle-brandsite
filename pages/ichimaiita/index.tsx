@@ -274,7 +274,7 @@ const Home: NextPage<Props> = ({ichimaiita_data}) => {
 
           <div className="layout__CtaBox">
             <CtaBox
-              heading = "より多くの一枚板から選びたい方は<br />ぜひ一度お問合せください。"
+              heading = "多くの一枚板から、<br />まず写真などでご案内いたします。<br />ぜひご希望などお聞かせください。"
               caption = ""
               button_caption = "お問い合わせはこちら"
             />
