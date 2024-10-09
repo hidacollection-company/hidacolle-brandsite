@@ -35,7 +35,7 @@ body{
         padding: 65px 0 0;
     }
     .pc_only{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -44,7 +44,7 @@ body{
         padding: 105px 0 0;
     }
     .sp_only{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -3880,6 +3880,1052 @@ a{
             .layout-button{
                 margin: 20px auto 0;
                 width: 100%;
+            }
+        }
+    }
+
+    .body-maintenance{
+        margin: 50px 0 0;
+        .box--heading{
+            .heading--head{
+                .title{
+                    margin: 0 auto;
+                    width: 70%;
+                    h1{
+                        font-size: rem(36);
+                        font-weight: bold;
+                        line-height: 150%;
+                        position: relative;
+                        left: -10px;
+                    }
+                    p{  
+                        margin: 10px 0 0;
+                        font-size: rem(10);
+                        font-weight: bold;
+                        font-family: "Poppins";
+                        text-transform: uppercase;
+                    }
+                }
+                .images{
+                    margin: 50px auto 0;
+                    width: 70%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .heading--body{
+                margin: -100px auto 0;
+                padding: 150px 0 50px;
+                width: 100%;
+                background-color: c(yellow, d2);
+                box-sizing: border-box;
+                .introduction--head{
+                    margin: 0 auto;
+                    width: $mainWidth_sp;
+                    span.en{
+                        font-size: rem(10);
+                        font-weight: bold;
+                        font-family: "Poppins";
+                        text-transform: uppercase;
+                        letter-spacing: 0.04em;
+                    }
+                    h2{
+                        margin: 0 0 0;
+                        font-size: rem(28);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    p.caption{
+                        margin: 10px 0 0;
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .introduction--body{
+                    margin: 50px 0 0;
+                    &>p{
+                        margin: 0 auto;
+                        width: 70%;
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.04em;
+                    }
+                    .thought--items{
+                        margin: 50px auto 50px;
+                        width: $mainWidth_sp;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px 0;
+                        .item{
+                            padding: 50px 50px;
+                            background-color: #fff;
+                            border-radius: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 30px 0;
+                            box-sizing: border-box;
+                            .badge{
+                                span{
+                                    color: c(yellow, d2);
+                                    font-weight: bold;
+                                    font-family: "Poppins";
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    display: block;
+                                    &:nth-child(1){
+                                        font-size: rem(12);
+                                        font-weight: bold;
+                                        line-height: 125%;
+                                    }
+                                    &:nth-child(2){
+                                        margin: 5px 0 0;
+                                        font-size: rem(36);
+                                        font-weight: bold;
+                                        line-height: 100%;
+                                        
+                                    }
+                                }
+                            }
+                            p{
+                                font-size: rem(18);
+                                font-weight: bold;
+                                line-height: 150%;
+                                letter-spacing: 0.04em;
+                            }
+                        }
+    
+                    }
+                }
+            }   
+        }
+        .box--table-of-contents{
+            margin: 100px 0 0;
+            .contents--head{
+                text-align: center;
+                h2{
+                    font-size: rem(21);
+                    font-weight: bold;
+                    letter-spacing: 0.04em;
+                }
+                &::before{
+                    content: "";
+                    margin: 0 auto 10px;
+                    width: 200px;
+                    aspect-ratio: 1 / 0.087;
+                    background-image: url(/images/ichimaiita/maintenace/002/table-of-contents--title.svg);
+                    background-size: cover;
+                    background-position: center center;
+                    display: block;
+                }
+            }
+            .items{
+                margin: 50px auto 0;
+                width: $mainWidth_sp;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 50px 0;
+                .item{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+                    .item--head{
+                        margin: 30px 0 0;
+                        text-align: center;
+                        span{
+                            color: c(red, d2);
+                            font-size: rem(11);
+                            font-family: "Poppins";
+                            font-weight: bold;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                        }
+                        p{
+                            margin: 5px 0 0;
+                            font-size: rem(21);
+                            font-weight: bold;
+                            letter-spacing: 0.04em;
+
+                        }
+                    }
+                    .item--caption{
+                        margin: 30px 0 0;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        text-align: justify;
+                        letter-spacing: 0.04em;
+                    }
+                    .layout-button{
+                        margin: 30px 0 0;
+                        // width: 320px;
+                    }
+                }
+
+            }
+        }
+        .box--contents__furniture-repair-and-refurbishment{
+            margin: 75px 0 0;
+            padding: 75px 0 0;
+            border-top: 2px solid c(nc,b1);
+            .contents--head{
+                margin: 0 auto;
+                width: 100%;
+                .head--title{
+                    text-align: center;
+                    span{
+                        font-size: rem(10);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        margin: 10px 0 0;
+                        font-size: rem(32);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .head--caption{
+                    margin: 30px auto 0;
+                    width: $mainWidth_sp;
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                }
+                .head--bg-image{
+                    margin: 50px auto 0;
+                    width: 70%;
+                    height: auto;
+                    border-radius: 20px;
+                    display: block;
+                }
+            }
+            .contents--body{
+                margin: 100px 0 0;
+                position: relative;
+                .body--item-1{
+                    margin: 100px 0 0;
+                    .item-1--head{
+                        margin: 0 auto;
+                        width: 100%;
+                        .title{
+                            font-size: rem(21);
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    .item-1--body{
+                        margin: 50px 0 0;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 50px 0;
+                        .bg{
+                            margin: 0 auto 0;
+                            width: 90%;
+                            z-index: -1;
+                            position: relative;
+                        }
+                        .caption_pos{
+                            margin: 0 auto 0;
+                            width: 70%;
+                            .caption{
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 175%;
+                            }
+                        }
+                        
+                    }
+                }
+                .body--item-2{
+                    margin: 100px 0 0;
+                    .item-2--head{
+                        margin: 0 auto;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        .title{
+                            font-size: rem(21);
+                            font-weight: bold;
+                        }
+                        .caption{
+                            font-size: rem(14);
+                            font-weight: bold;
+                        }
+                    }
+                    .item-2--body{
+                        margin: 50px auto 0;
+                        width: 90%;
+                        .bg{
+                            width: 100%;
+                        }
+                    }
+                }
+                .body--item-3{
+                    margin: 100px 0 0;
+                    position: relative;
+                    .item-3--head{
+                        margin: 0 auto;
+                        padding: 0 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 310px 0;
+                        .title{
+                            font-size: rem(21);
+                            font-weight: bold;
+                        }
+                        .caption{
+                            margin: 0 0 0 0;
+                            width: 70%;
+                            font-size: rem(16);
+                            font-weight: bold;
+                            line-height: 175%;
+                        }
+                    }
+                    .item-3--body{
+                        margin: 100px auto 0;
+                        .contact_flow{
+                            h4{
+                                margin: 0 auto 0;
+                                width: $mainWidth_sp;
+                                font-size: rem(21);
+                                font-weight: bold;
+                                text-align: center;
+                            }
+                            .body-flow{
+                                margin: 50px auto 0;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                .icons{
+                                    margin: 0 auto 0;
+                                    width: 50%;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .items-flow{
+                                    margin: 50px auto 0;
+                                    width: $mainWidth_sp;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 75px 0;
+                                    .item{
+                                        display: flex;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        gap: 10px 0;
+                                        position: relative;
+                                        &::after{
+                                            content: '';
+                                            margin: auto;
+                                            width:0;
+                                            height:0;
+                                            border-style:solid;
+                                            border-width: 7px 6.5px 0 6.5px;
+                                            border-color: c(nc, b1) transparent transparent transparent;
+                                            position: absolute;
+                                            left: calc(50% - 6.5px);
+                                            bottom: -40px;
+                                        }
+                                        &:last-child{
+                                            &::after{
+                                                content: '';
+                                                border-width: 0;
+                                            }   
+                                        }
+                                        .num-layout{
+                                            span.caption{
+                                                width: 90px;
+                                                height: 30px;
+                                                color: c(nc, w1);
+                                                font-size: rem(14);
+                                                font-family: "Poppins";
+                                                letter-spacing: 0.1em;
+                                                border-radius: 100px;
+                                                background-color: c(nc, b1);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                text-transform: uppercase;
+    
+                                            }
+                                            span.number{
+                                                margin: 0 0 0;
+                                                font-size: rem(36);
+                                                font-family: "Poppins";
+                                                text-align: center;
+                                                display: block;
+                                            }
+                                        }
+                                        .body-item{
+                                            margin: 0 0 0;
+                                            width: 90%;
+                                            display: flex;
+                                            align-items: center;
+                                            flex-direction: column;
+                                            gap: 10px 0;
+                                            .item-head{
+                                                font-size: rem(16);
+                                                font-weight: bold;
+    
+                                            }
+                                            .item-caption{
+                                                font-size: rem(14);
+                                                line-height: 175%;
+                                            }
+                                            .item-button{
+                                                .CtaBox_button_layout{
+                                                    a{
+                                                        width: 320px;
+                                                        height: 50px;
+                                                        color: #FFFFFF;
+                                                        font-size: 1rem;
+                                                        font-weight: bold;
+                                                        line-height: 175%;
+                                                        letter-spacing: 0.4px;
+                                                        background-color: #97A547;
+                                                        border-radius: 3px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                }
+                            }
+                        }                        
+                    }
+                    &::before{
+                        content: "";
+                        width: 45%;
+                        aspect-ratio: 1 / 1.442;
+                        background-image: url("/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-4-1.png");
+                        background-size: cover;
+                        display: block;
+                        position: absolute;
+                        top: 33px;
+                        left: 0;
+                        z-index: -1;
+
+                    }
+                    &::after{
+                        content: "";
+                        width: 40%;
+                        aspect-ratio: 1 / 1.67;
+                        background-image: url("/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-4-2.png");
+                        background-size: cover;
+                        display: block;
+                        position: absolute;
+                        top: 70px;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+                .content--furniture-studio{
+                    margin: 75px 0 0;
+                    padding: 75px 0;
+                    width: 100%;
+                    background-color: c(nc, g1);
+                    box-sizing: border-box;
+                    .layout-furniture-studio{
+                        margin: 0 auto;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0 50px;
+                        .head-furniture-studio{
+                            width: 100%;
+                            text-align: center;
+                            h3{
+                                font-size: rem(21);
+                                font-weight: bold;
+    
+                            }
+                            .caption{
+                                margin: 30px 0 0;
+                                font-size: rem(14);
+                                font-weight: bold;
+                                line-height: 175%;
+                            }
+                        }
+                        .body-furniture-studio{
+                            margin: 50px auto 0;
+                            width: 90%;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }   
+                    }
+                }
+            }
+            .cta{
+                margin: 100px 0 0;
+                .before-cta-block{
+                    margin: 0 auto 50px;
+                    width: 100%;
+                    font-size: rem(14);
+                    font-weight: bold;
+                    line-height: 175%;
+                    text-align: center;
+                }
+                .after-cta-block{
+                    margin: 50px 0 0;
+                    a{
+                        margin: 0 auto;
+                        width: 70%;
+                        height: 130px;
+                        font-size: rem(18);
+                        font-weight: bold;
+                        line-height: 175%;
+                        text-align: center;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            margin: auto;
+                            width:0;
+                            height:0;
+                            border-style:solid;
+                            border-width: 7px 6.5px 0 6.5px;
+                            border-color: c(nc, b1) transparent transparent transparent;
+                            position: absolute;
+                            left: calc(50% - 6.5px);
+                            bottom: 17px;
+                        }
+                    }
+                }
+                .cta-block{
+                    margin: 0 auto;
+                    width: $mainWidth_sp;
+                    .caption-cta{
+                        width: 100%;
+                        height: 50px;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        background-color: #E6FF55;
+                        border: 1px solid c(nc, b1);
+                        border-bottom: 0;
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .body-cta{
+                        padding: 30px 30px;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 0 0 10px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 30px 0;
+                        p{
+                            font-size: rem(21);
+                            font-weight: bold;
+                        }
+                        .CtaBox_button_layout{
+                            a{
+                                width: 320px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 175%;
+                                letter-spacing: 0.4px;
+                                background-color: #97A547;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .box--contents__ouchi-de-maintanance-project{
+            margin: 155px 0 0;
+            padding: 75px 0 100px;
+            width: 100%;
+            background-color: c(nc, g1);
+            position: relative;
+            &::after{
+                content: "";
+                width: 35%;
+                aspect-ratio: 1 / 2.335;
+                background-image: url(/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-top.png);
+                background-size: cover;
+                display: block;
+                position: absolute;
+                top: -80px;
+                right: 10px;
+            }
+            .contents--head{
+                .head--title{
+                    h2{
+                        margin: 0 auto;
+                        width: $mainWidth_sp;
+                        font-size: rem(32);
+                        font-weight: bold;
+                        // text-align: center;
+                    }
+                }
+            }
+            .contents--body{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                .maintanance-at-home{
+                    margin: 75px 0 0;
+                    span.title-en{
+                        font-size: rem(12);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+
+                    }
+                    p.title{
+                        margin: 10px 0 0 -4px;
+                        font-size: rem(21);
+                        font-weight: bold;
+                    }
+                    p.caption{
+                        margin: 20px 0 0;
+                        width: 70%;
+                        font-size: rem(14);
+                        font-weight: bold;
+
+                    }
+                }
+                .lead{
+                    margin: 50px 0 0;
+                    .title-lead{
+                        font-size: rem(21);
+                        font-weight: bold;
+
+                    }
+                    .caption-lead{
+                        margin: 20px 0 0;
+                        width: 70%;
+                        font-size: rem(14);
+                        font-weight: bold;
+
+                    }
+                }
+                .caption-project{
+                    margin: 50px auto 0;
+                    padding: 50px 0 150px;
+                    width: 100%;
+                    background-color: c(nc, w1);
+                    border: 4px solid c(yellow, d1);
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px 0;
+                    span{
+                        width: 80%;
+                        color: c(yellow, d1);
+                        font-family: "Poppins";
+                        font-size: rem(24);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        width: 80%;
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+
+                    }
+                }
+                ul.items{
+                    margin: -100px auto 0;
+                    width: 90%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 75px 0;
+                    counter-reset: mp-number 0;
+                    .item{
+                        width: 100%;
+                        position: relative;
+                        img{
+                            border-radius: 8px;
+                            width: 100%;
+                            height: auto;
+                        }
+                        h3{
+                            margin: 30px 0 0;
+                            font-size: rem(16);
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                        .layout-button{
+                            margin: 30px auto 0;
+                            width: 220px;
+                        }
+                        &::before{
+                            counter-increment: mp-number 1;
+                            content: "No." counter(mp-number);
+                            width: 100px;
+                            height: 50px;
+                            font-family: "Poppins";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            letter-spacing: 0.04em;
+                            background-color: c(nc, w1);
+                            border-radius: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -25px;
+                            left: calc(50% - 50px);
+                        }
+                    }
+                }
+            }
+            .banners{
+                margin: 100px 0 0;
+                p.caption{
+                    font-size: rem(14);
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .banner-box{
+                    margin: 30px 0 0;
+                    padding: 40px 0;
+                    width: 100%;
+                    background-image: url(/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-bg.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .title-en{
+                        color: #fff;
+                        font-size: rem(11);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    .title{
+                        color: #fff;
+                        margin: 5px 0 0;
+                        font-size: rem(18);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    .layout-button{
+                        margin: 20px auto 0;
+                    }
+                }
+            }
+        }
+        .box--contents__appraisal-and-purchase{
+            .contents--head{
+                margin: 100px auto 0;
+                width: 100%;
+                .head--title{
+                    text-align: center;
+                    span{
+                        font-size: rem(10);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        margin: 10px 0 0;
+                        font-size: rem(32);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                        line-height: 125%;
+                    }
+                }
+                .head--caption{
+                    margin: 30px auto 0;
+                    width: $mainWidth_sp;
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                }
+                .head--bg-image{
+                    margin: 50px auto 0;
+                    width: 70%;
+                    height: auto;
+                    border-radius: 20px;
+                    display: block;
+                }
+            }
+            .body{
+                margin: 100px 0 0;
+                .why-appraisal-and-purchase{
+                    h3{
+                        margin: 0 auto 0;
+                        width: 100%;
+                        font-size: rem(21);
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .items--why-appraisal-and-purchase{
+                        margin: 50px auto 0;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px 0;
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 25px 0;
+                            p{
+                                width: 70%;
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 175%;
+                                span{
+                                    background-color: c(yellow, d2);
+                                }
+                                br{
+                                    display: block;
+                                    content: "";
+                                    height: 20px;
+                                }
+                            }
+                            img{
+                                width: $mainWidth_sp;
+                                height: auto;
+
+                            }
+                        }
+                    }
+
+                }
+                .contact_flow{
+                    margin: 100px 0 0;
+                    h4{
+                        margin: 0 auto 0;
+                        width: $mainWidth_sp;
+                        font-size: rem(21);
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .body-flow{
+                        margin: 50px auto 0;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        .icons{
+                            margin: 0 auto 0;
+                            width: 50%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .items-flow{
+                            margin: 50px auto 0;
+                            width: $mainWidth_sp;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 75px 0;
+                            .item{
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                gap: 10px 0;
+                                position: relative;
+                                &::after{
+                                    content: '';
+                                    margin: auto;
+                                    width:0;
+                                    height:0;
+                                    border-style:solid;
+                                    border-width: 7px 6.5px 0 6.5px;
+                                    border-color: c(nc, b1) transparent transparent transparent;
+                                    position: absolute;
+                                    left: calc(50% - 6.5px);
+                                    bottom: -40px;
+                                }
+                                &:last-child{
+                                    &::after{
+                                        content: '';
+                                        border-width: 0;
+                                    }   
+                                }
+                                .num-layout{
+                                    span.caption{
+                                        width: 90px;
+                                        height: 30px;
+                                        color: c(nc, w1);
+                                        font-size: rem(14);
+                                        font-family: "Poppins";
+                                        letter-spacing: 0.1em;
+                                        border-radius: 100px;
+                                        background-color: c(nc, b1);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        text-transform: uppercase;
+
+                                    }
+                                    span.number{
+                                        margin: 0 0 0;
+                                        font-size: rem(36);
+                                        font-family: "Poppins";
+                                        text-align: center;
+                                        display: block;
+                                    }
+                                }
+                                .body-item{
+                                    margin: 0 0 0;
+                                    width: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    gap: 10px 0;
+                                    .item-head{
+                                        font-size: rem(16);
+                                        font-weight: bold;
+
+                                    }
+                                    .item-caption{
+                                        font-size: rem(14);
+                                        line-height: 175%;
+                                    }
+                                    .item-button{
+                                        .CtaBox_button_layout{
+                                            a{
+                                                width: 320px;
+                                                height: 50px;
+                                                color: #FFFFFF;
+                                                font-size: 1rem;
+                                                font-weight: bold;
+                                                line-height: 175%;
+                                                letter-spacing: 0.4px;
+                                                background-color: #97A547;
+                                                border-radius: 3px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }  
+                .things_you_can_buy{
+                    margin: 100px 0 0;
+                    .head-things_you_can_buy{
+                        font-size: rem(21);
+                        font-weight: bold;
+                        text-align: center;
+                        &::before{
+                            content: "";
+                            margin: 0 auto 10px;
+                            width: 105px;
+                            aspect-ratio: 1 / 0.175;
+                            background-image: url(/images/ichimaiita/maintenace/002/things_you_can_buy-title.jpg);
+                            background-size: cover;
+                            background-position: center center;
+                            display: block;
+                        }
+                    }
+                    .body-things_you_can_buy{
+                        margin: 50px auto 0;
+                        width: 90%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+                }
+                .cta{
+                    margin: 50px auto;
+                    width: $mainWidth_sp;
+                    .caption-cta{
+                        width: 100%;
+                        height: 50px;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        background-color: #E6FF55;
+                        border: 1px solid c(nc, b1);
+                        border-bottom: 0;
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .body-cta{
+                        padding: 30px 30px;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 0 0 10px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 30px 0;
+                        p{
+                            font-size: rem(21);
+                            font-weight: bold;
+                        }
+                        .CtaBox_button_layout{
+                            a{
+                                width: 320px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 175%;
+                                letter-spacing: 0.4px;
+                                background-color: #97A547;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                        }
+                    }
+                }
             }
         }
     }
@@ -8664,263 +9710,1009 @@ a{
     }
     
     .body-maintenance{
-        .box-introduction{
-            margin: 200px auto 0;
-            width: $wm;
-            .heading-introduction{
-                @include fts(ja, lead);
-            }
-            .bold-introduction{
-                margin: 50px 0 0;
-                @include fts(ja, bold);
-            }
-            .visual-introduction{
-                margin: 100px auto 0;
-                width: $ws;
-                img{
-                    width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                }
-            }
-        }
-        .box-cando{
-            margin: 200px auto 0;
-            width: $wm;
-            h2{
-                @include fts(ja, lead);
-            }
-            ul.lists-cando{
-                margin: 100px 0 0;
-                display: flex;
-                justify-content: space-between;
-                li{
-                    width: $wxxs;
-                    .layout-body{
-                        h3.heading-cando{
-                            @include fts(ja, title);
-                            text-align: center;
-                            &:after{
-                                content:"";
-                                margin: 20px auto 0;
-                                width: 200px;
-                                height: 3px;
-                                background-color: #000;
-                                display: block;
-                            }
-                        }
-                        .inner-cando{
-                            margin: 50px 0 0;
-                            height: 280px;
-                            @include fts(ja, text);
-                            p{
-                                margin: 0 0 20px;
-                            }
-                        }
-                    }
-                    a{
-                        margin: 30px 0 0;
-                        width: 100%;
-                        height: 100px;
-                        @include fts(ja, text);
-                        border-top: 2px solid c(nc, b1);
-                        border-bottom: 2px solid c(nc, b1);
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-content: center;
-                        flex-direction: column;
+        margin: 100px 0 0;
+        .box--heading{
+            .heading--head{
+                margin: 0 auto;
+                width: 1180px;
+                position: relative;
+                .title{
+                    h1{
+                        font-size: rem(64);
+                        font-weight: bold;
+                        line-height: 175%;
                         position: relative;
-                        &::after{
-                            content: "";
-                            margin: 10px auto 0;
-                            display: block;
-                            width: 10px;
-                            height: 10px;
-                            border-top: solid 2px c(nc, b1);
-                            border-right: solid 2px c(nc, b1);
-                            position: relative;
-                            top: 0;
-                            -webkit-transform: rotate(135deg);
-                            transform: rotate(135deg);
-                            transition: all 0.2s ease;
-                        }
-                        &:hover{
-                            &::after{
-                                top: 5px;
-                            }
-                        }
+                        left: -10px;
+                    }
+                    p{  
+                        margin: 50px 0 0;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        font-family: "Poppins";
+                        text-transform: uppercase;
+                    }
+                }
+                .images{
+                    width: 606px;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    img{
+                        width: 100%;
+                        height: auto;
                     }
                 }
             }
-            ul.buttons{
-                margin: 100px auto 0;
-                display: flex;
-                justify-content: center;
-                gap: 0 50px;
-            }
+            .heading--body{
+                margin: 150px auto 0;
+                padding: 75px;
+                width: 1000px;
+                background-color: c(yellow, d2);
+                border-radius: 60px;
+                box-sizing: border-box;
+                .introduction--head{
+                    span.en{
+                        font-size: rem(14);
+                        font-weight: bold;
+                        font-family: "Poppins";
+                        text-transform: uppercase;
+                        letter-spacing: 0.04em;
+                    }
+                    h2{
+                        margin: 50px 0 0;
+                        font-size: rem(36);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    p.caption{
+                        margin: 30px 0 0;
+                        font-size: rem(21);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .introduction--body{
+                    margin: 100px 0 0;
+                    &>p{
+                        margin: 0 auto;
+                        width: 660px;
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.04em;
+                    }
+                    .thought--items{
+                        margin: 50px auto 50px;
+                        width: 800px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px 0;
+                        .item{
+                            padding: 0 50px;
+                            height: 170px;
+                            background-color: #fff;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            gap: 0 20px;
+                            box-sizing: border-box;
+                            .badge{
+                                span{
+                                    color: c(yellow, d2);
+                                    font-weight: bold;
+                                    font-family: "Poppins";
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    display: block;
+                                    &:nth-child(1){
+                                        font-size: rem(12);
+                                        font-weight: bold;
+                                        line-height: 125%;
+                                    }
+                                    &:nth-child(2){
+                                        margin: 5px 0 0;
+                                        font-size: rem(36);
+                                        font-weight: bold;
+                                        line-height: 100%;
+                                        
+                                    }
+                                }
+                            }
+                            p{
+                                font-size: rem(18);
+                                font-weight: bold;
+                                line-height: 150%;
+                                letter-spacing: 0.04em;
+                            }
+                        }
+    
+                    }
+                }
+            }   
         }
-        .block-contetns{
-            margin: 50px auto 0;
-            padding: 150px 0 0;
-            width: $wm;
-            h2{
-                @include fts(ja, lead);
-                span{
-                    @include fts(ja, text);
+        .box--table-of-contents{
+            margin: 200px 0 0;
+            .contents--head{
+                text-align: center;
+                p{
+                    font-size: rem(21);
+                    font-weight: bold;
+                    letter-spacing: 0.04em;
+                }
+                h2{
+                    font-size: rem(36);
+                    font-weight: bold;
+                    letter-spacing: 0.04em;
+                }
+                &::before{
+                    content: "";
+                    margin: 0 auto 20px;
+                    width: 357px;
+                    height: 31px;
+                    background-image: url(/images/ichimaiita/maintenace/002/table-of-contents--title.svg);
+                    background-size: cover;
+                    background-position: center center;
                     display: block;
                 }
             }
-            .bold{
-                margin: 50px 0 0;
-                width: $wxxs;
-                p{
-                    margin: 0 0 20px;
-                    @include fts(ja, bold);
+            .items{
+                margin: 100px auto 0;
+                width: 1080px;
+                display: flex;
+                justify-content: space-between;
+                .item{
+                    width: 320px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+                    .item--head{
+                        margin: 30px 0 0;
+                        text-align: center;
+                        span{
+                            color: c(red, d2);
+                            font-size: rem(11);
+                            font-family: "Poppins";
+                            font-weight: bold;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                        }
+                        p{
+                            margin: 5px 0 0;
+                            font-size: rem(21);
+                            font-weight: bold;
+                            letter-spacing: 0.04em;
+
+                        }
+                    }
+                    .item--caption{
+                        margin: 30px 0 0;
+                        height: 200px;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        text-align: justify;
+                        letter-spacing: 0.04em;
+                    }
+                    .layout-button{
+                        // margin: 50px 0 0;
+                        // width: 320px;
+                    }
+                }
+
+            }
+        }
+        .box--contents__furniture-repair-and-refurbishment{
+            margin: 0 0 0;
+            padding: 200px 0 0;
+            .contents--head{
+                margin: 0 auto;
+                width: 1000px;
+                position: relative;
+                .head--title{
+                    padding: 100px 0 0;
+                    span{
+                        font-size: rem(21);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        margin: 10px 0 0;
+                        font-size: rem(64);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .head--caption{
+                    margin: 50px 0 0;
+                    width: 380px;
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                }
+                .head--bg-image{
+                    width: 832px;
+                    height: auto;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: -1;
                 }
             }
-            .layout-button{
-                margin: 50px 0 0;
-                width: $wxxs;
-            }
-            .box-before_after{
-                margin: 150px 0 0;
-                h3{
-                    @include fts(ja, title);
-                    text-align: center;
+            .contents--body{
+                margin: 300px 0 0;
+                position: relative;
+                .body--item-1{
+                    margin: 200px 0 0;
+                    .item-1--head{
+                        margin: 0 auto;
+                        width: 1000px;
+                        .title{
+                            font-size: rem(36);
+                            font-weight: bold;
+                        }
+                    }
+                    .item-1--body{
+                        .bg{
+                            width: 100%;
+                            z-index: -1;
+                            position: relative;
+                        }
+                        .caption_pos{
+                            margin: max(-20%, -300px) auto 0;
+                            width: 1100px;
+                            position: relative;
+                            // bottom: 100px;
+                            .caption{
+                                width: 340px;
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 175%;
+                            }
+                        }
+                        
+                    }
                 }
-                ul{
-                    li{
-                        margin: 100px 0 0;
+                .body--item-2{
+                    margin: 200px 0 0;
+                    .item-2--head{
+                        margin: 0 auto;
+                        width: 1000px;
                         display: flex;
-                        justify-content: space-between;
                         align-items: center;
-                        figure{
-                            width: $wxs;
+                        gap: 100px;
+                        .title{
+                            font-size: rem(36);
+                            font-weight: bold;
+                        }
+                        .caption{
+                            font-size: rem(16);
+                            font-weight: bold;
+                        }
+                    }
+                    .item-2--body{
+                        margin: 100px 0 0 auto;
+                        width: 90%;
+                        .bg{
+                            width: 100%;
+                        }
+                    }
+                }
+                .body--item-3{
+                    margin: 200px 0 0;
+                    position: relative;
+                    .item-3--head{
+                        margin: 0 auto;
+                        padding: 20% 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 30px;
+                        .title{
+                            font-size: rem(36);
+                            font-weight: bold;
+                        }
+                        .caption{
+                            width: 515px;
+                            font-size: rem(16);
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    .item-3--body{
+                        margin: 30% auto 0;
+                        .contact_flow{
+                            h4{
+                                margin: 0 auto 0;
+                                width: 1000px;
+                                font-size: rem(36);
+                                font-weight: bold;
+                            }
+                            .body-flow{
+                                margin: 150px auto 0;
+                                width: 1000px;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                .icons{
+                                    width: 300px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .items-flow{
+                                    width: 600px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 75px 0;
+                                    .item{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0 30px;
+                                        .num-layout{
+                                            span.caption{
+                                                width: 90px;
+                                                height: 30px;
+                                                color: c(nc, w1);
+                                                font-size: rem(14);
+                                                font-family: "Poppins";
+                                                letter-spacing: 0.1em;
+                                                border-radius: 100px;
+                                                background-color: c(nc, b1);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                text-transform: uppercase;
+    
+                                            }
+                                            span.number{
+                                                margin: 10px 0 0;
+                                                font-size: rem(36);
+                                                font-family: "Poppins";
+                                                text-align: center;
+                                                display: block;
+                                            }
+                                        }
+                                        .body-item{
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 30px 0;
+                                            .item-head{
+                                                font-size: rem(21);
+                                                font-weight: bold;
+    
+                                            }
+                                            .item-caption{
+                                                font-size: rem(16);
+                                                line-height: 175%;
+                                            }
+                                            .item-button{
+                                                .CtaBox_button_layout{
+                                                    a{
+                                                        width: 320px;
+                                                        height: 50px;
+                                                        color: #FFFFFF;
+                                                        font-size: 1rem;
+                                                        font-weight: bold;
+                                                        line-height: 175%;
+                                                        letter-spacing: 0.4px;
+                                                        background-color: #97A547;
+                                                        border-radius: 3px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                }
+                                                .CtaBox_button_layout{
+                                                    a{
+                                                        width: 320px;
+                                                        height: 50px;
+                                                        color: #FFFFFF;
+                                                        font-size: 1rem;
+                                                        font-weight: bold;
+                                                        line-height: 175%;
+                                                        letter-spacing: 0.4px;
+                                                        background-color: #97A547;
+                                                        border-radius: 3px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                }
+                            }
+                        }                        
+                    }
+                    &::before{
+                        content: "";
+                        width: 35.7%;
+                        aspect-ratio: 1 / 1.442;
+                        background-image: url("/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-4-1.png");
+                        background-size: cover;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+
+                    }
+                    &::after{
+                        content: "";
+                        width: 32.2%;
+                        aspect-ratio: 1 / 1.67;
+                        background-image: url("/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-4-2.png");
+                        background-size: cover;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+                .content--furniture-studio{
+                    margin: 200px 0 0;
+                    padding: 100px 0;
+                    width: 100%;
+                    background-color: c(nc, g1);
+                    box-sizing: border-box;
+                    .layout-furniture-studio{
+                        margin: 0 auto;
+                        width: 1000px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0 50px;
+                        .head-furniture-studio{
+                            width: 450px;
+                            text-align: center;
+                            h3{
+                                font-size: rem(36);
+                                font-weight: bold;
+    
+                            }
+                            .caption{
+                                margin: 30px 0 0;
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 175%;
+                            }
+                        }
+                        .body-furniture-studio{
+                            width: 500px;
                             img{
                                 width: 100%;
                                 height: auto;
-                                border-radius: 8px;
                             }
-                            figcaption{
-                                margin: 30px 0 0;
-                                @include fts(ja, title);
-                                text-align: center;
-                            }
-                        }
-                        .arrow{
-                            content: '';
-                            width: 10px;
-                            height: 10px;
-                            border-top: solid 2px c(nc, b1);
-                            border-right: solid 2px c(nc, b1);
-                            -webkit-transform: rotate(45deg);
-                            transform: rotate(45deg);
-                            position: relative;
-                            top: -25px;
-                            left: -2px;
-                        }
+                        }   
                     }
                 }
             }
-            .box-attention{
-                margin: 75px auto 0;
-                padding: 30px 50px;
-                width: $ws;
-                @include fts(ja, small);
-                border: 3px solid c(green, m);
-                box-sizing: border-box;
-    
-            }
-        }
-        .box-order_flow{
-            margin: 200px auto 0;
-            width: $wm;
-            h2{
-                @include fts(ja, lead);
-            }
-            ul.contents-order_flow{
-                margin: 50px 0 0;
-                li{
-                    margin: 40px auto 0;
-                    padding: 0 0 40px;
-                    width: $ws;
-                    border-bottom: 3px solid c(nc, b1);
-                    position: relative;
-                    &:last-child{
+            .cta{
+                margin: 200px 0 0;
+                .before-cta-block{
+                    margin: 0 auto 100px;
+                    width: 1000px;
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 175%;
+                    text-align: center;
+                }
+                .after-cta-block{
+                    margin: 100px 0 0;
+                    a{
+                        margin: 0 auto;
+                        width: 465px;
+                        height: 85px;
+                        font-size: rem(18);
+                        font-weight: bold;
+                        line-height: 175%;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            margin: auto;
+                            width:0;
+                            height:0;
+                            border-style:solid;
+                            border-width: 7px 6.5px 0 6.5px;
+                            border-color: c(nc, b1) transparent transparent transparent;
+                            position: absolute;
+                            left: calc(50% - 6.5px);
+                            bottom: 17px;
+                        }
+                    }
+                }
+                .cta-block{
+                    margin: 0 auto;
+                    width: 1000px;
+                    .caption-cta{
+                        width: 350px;
+                        height: 50px;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        background-color: #E6FF55;
+                        border: 1px solid c(nc, b1);
                         border-bottom: 0;
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
-                    &::after{
-                        content: '';
-                        width: 0;
-                        height: 0;
-                        border-right: 10px solid transparent;
-                        border-left: 10px solid transparent;
-                        border-top: 13px solid c(nc, b1);
-                        position: absolute;
-                        bottom: -13px;
-                        left: calc(50% - 5px);
-                    }
-                    &:last-child::after{
-                        border: 0;
-                    }
-                    .layout__header{
+                    .body-cta{
+                        padding: 0 55px;
+                        height: 150px;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 0 10px 10px 10px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        .heading{
-                            width: 40%;
-                            text-align: center;
-                            .number{
-                                @include fts(en, numberling);
-                                &::after{
-                                    content: '';
-                                    margin: 2px auto 0;
-                                    width: 60px;
-                                    height: 4px;
-                                    background-color: c(nc, b1);
-                                    display: block;
-                                }
-                            }
-                            h3{
-                                margin: 20px 0 0;
-                                @include fts(ja, title);
-                            }
+                        p{
+                            font-size: rem(31);
+                            font-weight: bold;
                         }
-                        .caption{
-                            width: 60%;
-                            p{
-                                @include fts(ja, text);
+                        .CtaBox_button_layout{
+                            a{
+                                width: 320px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 175%;
+                                letter-spacing: 0.4px;
+                                background-color: #97A547;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
-                        }
-                    }
-                    .layout__example_images{
-                        margin: 50px 0 0;
-                        .box__example_images{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            .block__example_image{
-                                width: $wxxs;
-                                img{
-                                    width: 100%;
-                                    height: auto;
-                                    border-radius: 8px;
-                                }
-                            }
-                        }
-                        p.exampleline{
-                            margin: 30px 0 0;
-                            @include fts(ja, text);
-                            text-align: center;
+                            
                         }
                     }
                 }
-    
             }
-            .layout-button{
-                margin: 50px auto 0;
-                width: $wxxs;
+        }
+        .box--contents__ouchi-de-maintanance-project{
+            margin: 350px 0 0;
+            padding: 150px 0 150px;
+            width: 100%;
+            background-color: c(nc, g1);
+            position: relative;
+            &::after{
+                content: "";
+                width: 421px;
+                height: 983px;
+                background-image: url(/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-top.png);
+                background-size: cover;
+                display: block;
+                position: absolute;
+                top: -100px;
+                left: calc(50% + 200px);
+            }
+            .contents--head{
+                .head--title{
+                    h2{
+                        margin: 0 auto;
+                        width: 1000px;
+                        font-size: rem(64);
+                        font-weight: bold;
+                    }
+                }
+            }
+            .contents--body{
+                margin: 0 auto;
+                width: 1000px;
+                .maintanance-at-home{
+                    margin: 100px 0 0;
+                    span.title-en{
+                        font-size: rem(18);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+
+                    }
+                    p.title{
+                        margin: 10px 0 0 -4px;
+                        font-size: rem(36);
+                        font-weight: bold;
+                    }
+                    p.caption{
+                        margin: 30px 0 0;
+                        width: 380px;
+                        font-size: rem(16);
+                        font-weight: bold;
+
+                    }
+                }
+                .lead{
+                    margin: 50px 0 0;
+                    .title-lead{
+                        font-size: rem(36);
+                        font-weight: bold;
+
+                    }
+                    .caption-lead{
+                        margin: 30px 0 0;
+                        width: 380px;
+                        font-size: rem(16);
+                        font-weight: bold;
+
+                    }
+                }
+                .caption-project{
+                    margin: 150px auto 0;
+                    padding: 75px 0 0;
+                    width: 1000px;
+                    height: 420px;
+                    // background-color: c(yellow, d1);
+                    background-color: c(nc, w1);
+                    border: 4px solid c(yellow, d1);
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px 0;
+                    span{
+                        width: 870px;
+                        color: c(yellow, d1);
+                        font-family: "Poppins";
+                        font-size: rem(24);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        width: 870px;
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 175%;
+
+                    }
+                }
+                ul.items{
+                    margin: -110px auto 0;
+                    width: 870px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 100px 30px;
+                    counter-reset: mp-number 0;
+                    .item{
+                        width: 420px;
+                        position: relative;
+                        img{
+                            border-radius: 8px;
+                            width: 100%;
+                            height: auto;
+                        }
+                        h3{
+                            margin: 20px 0 0;
+                            font-size: rem(16);
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                        .layout-button{
+                            margin: 40px auto 0;
+                            width: 220px;
+                        }
+                        &::before{
+                            counter-increment: mp-number 1;
+                            content: "No." counter(mp-number);
+                            width: 100px;
+                            height: 50px;
+                            font-family: "Poppins";
+                            font-size: rem(21);
+                            font-weight: bold;
+                            letter-spacing: 0.04em;
+                            background-color: c(nc, w1);
+                            border-radius: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -25px;
+                            left: calc(50% - 50px);
+                        }
+                    }
+                }
+            }
+            .banners{
+                margin: 150px 0 0;
+                p.caption{
+                    font-size: rem(16);
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .banner-box{
+                    margin: 50px 0 0;
+                    width: 1000px;
+                    height: 400px;
+                    background-image: url(/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-bg.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .title-en{
+                        color: #fff;
+                        font-size: rem(18);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    .title{
+                        color: #fff;
+                        margin: 10px 0 0;
+                        font-size: rem(36);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                    .layout-button{
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+        .box--contents__appraisal-and-purchase{
+            .contents--head{
+                margin: 0 auto 0;
+                padding: 250px 0 0;
+                width: 1000px;
+                position: relative;
+                .head--title{
+                    span{
+                        font-size: rem(21);
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        margin: 10px 0 0;
+                        font-size: rem(64);
+                        font-weight: bold;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .head--caption{
+                    margin: 50px 0 0;
+                    width: 450px;
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                }
+                .head--bg-image{
+                    width: 832px;
+                    height: auto;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 185px;
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+            .body{
+                margin: 200px 0 0;
+                .why-appraisal-and-purchase{
+                    h3{
+                        margin: 0 auto 0;
+                        width: 1000px;
+                        font-size: rem(36);
+                        font-weight: bold;
+                    }
+                    .items--why-appraisal-and-purchase{
+                        margin: 100px auto 0;
+                        width: 1000px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px 0;
+                        .item{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &.reverse{
+                                flex-direction: row-reverse;
+                            }
+                            p{
+                                width: 500px;
+                                font-size: rem(16);
+                                font-weight: bold;
+                                line-height: 175%;
+                                span{
+                                    background-color: c(yellow, d2);
+                                }
+                                br{
+                                    display: block;
+                                    content: "";
+                                    height: 20px;
+                                }
+                            }
+                            img{
+                                width: 420px;
+                                height: auto;
+
+                            }
+                        }
+                    }
+
+                }
+                .contact_flow{
+                    margin: 200px 0 0;
+                    h4{
+                        margin: 0 auto 0;
+                        width: 1000px;
+                        font-size: rem(36);
+                        font-weight: bold;
+                    }
+                    .body-flow{
+                        margin: 150px auto 0;
+                        width: 1000px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        .icons{
+                            width: 300px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .items-flow{
+                            width: 600px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 75px 0;
+                            .item{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 30px;
+                                .num-layout{
+                                    span.caption{
+                                        width: 90px;
+                                        height: 30px;
+                                        color: c(nc, w1);
+                                        font-size: rem(14);
+                                        font-family: "Poppins";
+                                        letter-spacing: 0.1em;
+                                        border-radius: 100px;
+                                        background-color: c(nc, b1);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        text-transform: uppercase;
+
+                                    }
+                                    span.number{
+                                        margin: 10px 0 0;
+                                        font-size: rem(36);
+                                        font-family: "Poppins";
+                                        text-align: center;
+                                        display: block;
+                                    }
+                                }
+                                .body-item{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px 0;
+                                    .item-head{
+                                        font-size: rem(21);
+                                        font-weight: bold;
+
+                                    }
+                                    .item-caption{
+                                        font-size: rem(16);
+                                        line-height: 175%;
+                                    }
+                                    .item-button{
+                                        .CtaBox_button_layout{
+                                            a{
+                                                width: 320px;
+                                                height: 50px;
+                                                color: #FFFFFF;
+                                                font-size: 1rem;
+                                                font-weight: bold;
+                                                line-height: 175%;
+                                                letter-spacing: 0.4px;
+                                                background-color: #97A547;
+                                                border-radius: 3px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    } 
+                }
+                .things_you_can_buy{
+                    margin: 200px 0 0;
+                    .head-things_you_can_buy{
+                        font-size: rem(36);
+                        font-weight: bold;
+                        text-align: center;
+                        &::before{
+                            content: "";
+                            margin: 0 auto 20px;
+                            width: 177px;
+                            height: 31px;
+                            background-image: url(/images/ichimaiita/maintenace/002/things_you_can_buy-title.jpg);
+                            background-size: cover;
+                            background-position: center center;
+                            display: block;
+                        }
+                    }
+                    .body-things_you_can_buy{
+                        margin: 100px auto 0;
+                        width: 700px;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+                }
+                .cta{
+                    margin: 200px auto 0;
+                    width: 1000px;
+                    .caption-cta{
+                        width: 350px;
+                        height: 50px;
+                        font-size: rem(14);
+                        font-weight: bold;
+                        background-color: #E6FF55;
+                        border: 1px solid c(nc, b1);
+                        border-bottom: 0;
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .body-cta{
+                        padding: 0 55px;
+                        height: 150px;
+                        border: 1px solid c(nc, b1);
+                        border-radius: 0 10px 10px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p{
+                            font-size: rem(31);
+                            font-weight: bold;
+                        }
+                        .CtaBox_button_layout{
+                            a{
+                                width: 320px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                line-height: 175%;
+                                letter-spacing: 0.4px;
+                                background-color: #97A547;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

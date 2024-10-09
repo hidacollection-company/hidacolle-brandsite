@@ -34,359 +34,509 @@ const Home: NextPage = () => {
 
         <div className="contents-body body-maintenance">
 
-          <BreadList list={bread_list}></BreadList>
-
-          {/* Component */}
-          <div className="box-heading">
-            <div className="inner-heading">
-              <p className="catch">Ichimaiita<br className='pc_only' />funiture</p>
-              <div className="heading">
-              <h1>テーブル修理・再生</h1>
+          <section className="box--heading">
+            <div className="heading--head">
+              <div className="title">
+                <h1>
+                  家具を<br />
+                  メンテナンスや<br />
+                  修理して使う
+                </h1>
+                <p>maintenance and repair</p>
+              </div>
+              <div className="images">
+                <img className='bg' src="/images/ichimaiita/maintenace/002/top.png" alt="" />
               </div>
             </div>
-            <div className="visual-heading">
-              <Image
-                src="/images/ichimaiita/maintenace/001.jpg"
-                alt="『テーブル修理・再生』のイメージ"
-                width={1280}
-                height={855}
-              />
-            </div>
-          </div>
-
-          <section className='box-introduction'>
-            <p className="heading-introduction">大切な家具を<br className='pc_only' />次の世代に<br className='sp_only' />使いつなげるために</p>
-            <p className='bold-introduction'>飛騨の家具づくりの技術と経験を生かして、みなさんの大切な家具を再生させます。</p>
-            <div className="visual-introduction">
-              <Image
-                src="/images/ichimaiita/maintenace/002.jpg"
-                alt="ご家族揃って大切な一枚板にオイルを施している様子"
-                width={1280}
-                height={855}
-              />
+            <div className="heading--body">
+              <div className="introduction--head">
+                <span className="en">Regeneration furniture</span>
+                <h2>再生家具</h2>
+                <p className="caption">まだ使える家具なので、<br />できれば捨てずに、<br />次の世代につかい、つなげたい。</p>
+              </div>
+              <div className="introduction--body">
+                <p>やっぱりもう「物」を大量に生産して、大量に消費することができなくなりそうです。だから、私たちもこれからは暮らしや地域、自然のことを、もっと一生懸命に考えて家具を作っていこうと思います。</p>
+                <div className="thought--items">
+                  <div className="item">
+                    <div className="badge">
+                      <span>HIDACOLLE<br />thought</span>
+                      <span>1</span>
+                    </div>
+                    <p>「森」と「木」から「家具づくり」、そしてお客様の「暮らし」はつながっています。限られた「森」だから、「暮らし」から「捨てる」を少しづつ減らしていきたい。</p>
+                  </div>
+                  <div className="item">
+                    <div className="badge">
+                      <span>HIDACOLLE<br />thought</span>
+                      <span>2</span>
+                    </div>
+                    <p>「もったいない」という優しい気持ちは、どこから生まれるのだろう？家族と過ごした時間や思い出を大切にする気持ちが、「愛着」になって生まれるような気がしています。</p>
+                  </div>
+                </div>
+                <p>今まで使ってきた家具はメンテナンスや修理をすることで、まだまだ長く使える可能性があります。</p>
+              </div>
             </div>
           </section>
 
-          <section className='box-cando'>
-            <h2>テーブル再生に向けて<br />ヒダコレができる3つのこと</h2>
-            <ul className="lists-cando">
-              <li>
-                <div className="layout-body">
-                  <h3 className="heading-cando">メンテナンス</h3>
-                  <div className="inner-cando">
-                    <p>長年大切に使ってきたテーブルです。「捨てるのは忍びない」という気持ちの方も多いと思います。</p>
-                    <p>ヒダコレでは、ご家庭のお部屋でできる範囲の作業を「メンテナンス」と呼んでおり、工房設立当初から２０年ほど、お部屋へ出張訪問をしてテーブルをきれいにするサービスを継続しています。</p>
-                  </div>
+          <section className="box--table-of-contents">
+
+            <div className="contents--head">
+              <h2>ヒダコレの考える再生家具</h2>
+            </div>
+
+            <ul className="items">
+              <li className="item">
+                <img src="/images/ichimaiita/maintenace/002/intro-1.jpg" alt="" />
+                <div className="item--head">
+                  <span>Furniture repair and refurbishment</span>
+                  <p>家具の修理・再生</p>
                 </div>
-                <Scroll to="maintenance" smooth={true} duration={600} offset={0}>
-                  <div>詳しくみる</div>
-                </Scroll>
+                <div className="item--caption">
+                  長年大切に使ってきた家具です。「捨てるのは忍びない」という気持ちの方も多いはず。<br />
+                  実は無垢の木で作られた家具は、きれいに修復して復活させることができます。またそれぞれの部材を生かして他の家具に修理再生させることもできるのです。
+                </div>
+                <div className="layout-button">
+                  <Link href='#furniture-repair-and-refurbishment' legacyBehavior><a className="button target_this_site">家具の修理・再生をみる</a></Link>
+                </div>
               </li>
-              <li>
-                <div className="layout-body">
-                  <h3 className="heading-cando">修理</h3>
-                  <div className="inner-cando">
-                    <p>「思い出のテーブル」「愛着のあるテーブル」だけど、訳あって手放さなければいけないってこともあります。実は無垢の木で作られたテーブルは、それぞれの部材を生かして他の家具に再生させることができます。</p>
-                    <p>新たな家具としてスタートをさせることで、お客様の「愛着の継続」がされると嬉しいです。</p>
-                  </div>
+              <li className="item">
+                <img src="/images/ichimaiita/maintenace/002/intro-2.jpg" alt="" />
+                <div className="item--head">
+                  <span>OUCHI DE MAINTENCE PROJECT</span>
+                  <p>家具のメンテナンス</p>
+                </div> 
+                <div className="item--caption">
+                  実はテーブルのシミや汚れなどは、お部屋でできる簡単なメンテナンス作業できれいにすることができます。プロの特別な技術や道具が必要なわけではありません。お客様自身でもできる簡単な作業で生き生きと復活させることができます。
                 </div>
-                <Scroll to="repair" smooth={true} duration={600} offset={0}>
-                  <div>詳しくみる</div>
-                </Scroll>
+                <div className="layout-button">
+                  <Link href='#ouchi-de-maintanance-project' legacyBehavior><a className="button target_this_site">家具のメンテナンスをみる</a></Link>
+                </div>
               </li>
-              <li>
-                <div className="layout-body">
-                  <h3 className="heading-cando">買取り</h3>
-                  <div className="inner-cando">
-                    <p>それでもどうしてもテーブルを手放さなければいけない時もあります。ヒダコレでは全国の廃棄されそうな無垢の木のテーブルを救いたくって、テーブルの買い取り事業をはじました。飛騨の家具づくりの技術・経験を生かして、次の世代に使いつなげていただけるように再生事業に取り組みます。</p>
-                  </div>
+              <li className="item">
+                <img src="/images/ichimaiita/maintenace/002/intro-3.jpg" alt="" />
+                <div className="item--head">
+                  <span>Appraisal and purchase</span>
+                  <p>一枚板の査定・買取り</p>
                 </div>
-                <Scroll to="purchase" smooth={true} duration={600} offset={0}>
-                  <div>詳しくみる</div>
-                </Scroll>
+                <div className="item--caption">
+                  ヒダコレは「森と木と暮らし」をつなげることをテーマに、「森から木が切り出され」「家具に加工され」「お客様に届く」という山からの流れだけではなく、「お客様(暮らし)」から「ヒダコレ家具」へ、そしてまた「お客様」への一枚板の循環を作る取り組みをはじめました。
+                </div>
+                <div className="layout-button">
+                  <Link href='#appraisal-and-purchase' legacyBehavior><a className="button target_this_site">一枚板の査定・買取りをみる</a></Link>
+                </div>
               </li>
             </ul>
           </section>
 
-          <section id="maintenance" className="box-maintenance block-contetns">
-            <h2><span>テーブルの</span>メンテナンス</h2>
-            <div className="bold">
-              <p>ヒダコレでは、ご家庭のお部屋でできる範囲の作業を「メンテナンス」と呼んでおります。</p>
-              <p>植物由来のオイル塗装で仕上げたテーブルは、基本的にはずっとメンテナンスが可能です。使っているとシミが付いたり、キズが付いたりすることがありますが、それが簡単なメンテナンスの工程で使い込んだ風合いにすることもでき、潤いや光沢がもどります。</p>
-              <p>ヒダコレでは、他社さんのテーブルでもメンテナンスさせていただきますので、ぜひお気軽にお問合せください。</p>
+          <section id="furniture-repair-and-refurbishment" className="box--contents__furniture-repair-and-refurbishment">
+
+            <div className="contents--head">
+              <div className="head--title">
+                <span>Furniture repair and refurbishment</span>
+                <h2>家具の修理・再生</h2>
+              </div>
+              <p className="head--caption">
+                「思い出の家具」「愛着のあるテーブル」だけど、訳あって手放さなければいけないって時に・・・<br />
+                実はその家具は修理・再生をすることができるかもしれません！<br />
+                きれいに復活した家具や新たに生まれ変わった家具として、お客様の「愛着」があらたに継続されると嬉しいです。
+              </p>
+              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top.jpg" alt="" />
+              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top-sp.jpg" alt="" />
             </div>
 
-            <div className="layout-button">
-              <Scroll to="order_flow" smooth={true} duration={600} offset={-150}>
-                <div className="button_to_form">ご相談からメンテナンスの流れをみる</div>
-              </Scroll>
-            </div>
+            <div className="contents--body">
 
-            <div className="box-before_after">
-              <h3>メンテナンスの<br className='sp_only' />ビフォー・アフター</h3>
-              <ul>
-                <li>
-                  <figure className="before">
-                    <Image
-                      src="/images/ichimaiita/maintenace/003_before.jpg"
-                      alt="一枚板テーブルのビフォーの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>ビフォー</figcaption>
-                  </figure>
-                  <div className="arrow"></div>
-                  <figure className="after">
-                    <Image
-                      src="/images/ichimaiita/maintenace/004_after.jpg"
-                      alt="一枚板テーブルのアフターの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>アフター</figcaption>
-                  </figure>
-                </li>
-              </ul>
+              <div className="body--item-1">
+                <div className="item-1--head">
+                  <h3 className="title">特に限りある一枚板は救いたい</h3>
+                </div>
+                <div className="item-1--body">
+                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2.png" alt="" />
+                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2-sp.png" alt="" />
+                  <div className="caption_pos">
+                    <p className="caption">
+                      もう日本の森に大きな木は、数に限りがあります。<br />
+                      ダイニングテーブルにできるような大きな一枚板は、もう新しく世の中に出てこなくなってきているということです。<br />
+                      今ご家庭で使わなくなった座卓や衝立など、実は希少価値が高いものかもしれません。<br />
+                      そのような一枚板をきれいに復活させること、また新たな家具に生まれ変わらせること、ヒダコレでは新たな「一枚板の循環」を作りたいと思っています。
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div className="body--item-2">
+                <div className="item-2--head">
+                  <h3 className="title">一枚板など天板の修理の流れ</h3>
+                  <span className="caption">
+                    お客様は梱包や運搬の煩わしい作業は、<br />何もする必要はありません。
+                  </span>
+                </div>
+                <div className="item-2--body">
+                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3.png" alt="" />
+                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3-sp.png" alt="" />
+
+                </div>
+              </div>
+
+              <div className="body--item-3">
+                <div className="item-3--head">
+                  <h3 className="title">テーブルやイス、家具の修理</h3>
+                  <span className="caption">
+                    長い間テーブルを使っていると、天板が傷ついたり汚れたりして、表面が変色したり、少しべたついたりしていませんか。<br />
+                    またイスの脚がグラグラしたり、座面が破れていたり・・・<br />
+                    愛着がある家具だけど、使用上の問題があるとちょっと心配ですよね。<br />
+                    テーブルをきれいに修理・復活させる、グラグラを補強して使用上の問題を解決するなど、家具の修理のご対応をさせていただきます。
+                  </span>
+                </div>
+                <div className="item-3--body">
+                  <div className="contact_flow">
+                    <h4>お問い合わせからお届けまでの流れ</h4>
+                    <div className="body-flow">
+                      <div className="icons"><img src="/images/ichimaiita/maintenace/002/icon-flow.svg" alt="お問い合わせをするお客様のイメージ" /></div>
+                      <div className="items-flow">
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">1</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">まずはお気軽にお問い合わせください。</p>
+                            <p className="item-caption">
+                              「このテーブル捨てるのもったいないなあ」「きれいにしたいなあ」などのお困りごとはありませんか。お試し感覚で大丈夫です。下記フォームよりお問合せください。
+                            </p>
+                            <div className="item-button">
+                              <div className="CtaBox_button_layout">
+                                <a href="/contact">お問い合わせフォームはこちら</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">2</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">家具の状態の確認やお見積り</p>
+                            <p className="item-caption">
+                              お客様のテーブルや家具のお写真を送っていただきます。またご希望の修理やメンテナンスの内容をお聞きして、お見積り金額をご案内させていただきます。
+                            </p>
+                            {/* <div className="item-button"></div> */}
+                          </div>
+                        </div>
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">3</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">家具の引き取りについて</p>
+                            <p className="item-caption">
+                              金額や内容がＯＫでしたら、お客様のご希望日に合わせて家具の引き取りに伺います。
+                            　梱包や運搬などの煩わしい作業は何もする必要はありません。
+                            </p>
+                            {/* <div className="item-button"></div> */}
+                          </div>
+                        </div>
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">4</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">修理・加工について</p>
+                            <p className="item-caption">
+                              お聞きした内容のメンテナンスや修理・加工の作業をさせていただきます。
+                            　必要な日数などもご連絡させていただきます。
+                            </p>
+                            {/* <div className="item-button"></div> */}
+                          </div>
+                        </div>
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">5</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">お支払方法について</p>
+                            <p className="item-caption">
+                              修理・加工が出来上がりましたら写真など完了のお知らせをさせていただきます。
+                              この時点で金額のお振込みをお願いしております。
+                            </p>
+                            {/* <div className="item-button"></div> */}
+                          </div>
+                        </div>
+                        <div className="item">
+                          <div className="num-layout">
+                            <span className="caption">Flow</span>
+                            <span className="number">6</span>
+                          </div>
+                          <div className="body-item">
+                            <p className="item-head">家具のお届け</p>
+                            <p className="item-caption">
+                              修理・加工が仕上がったテーブルなどは、お客様のお届けのご希望日をお聞きして納品・　設置までさせていただきます。
+                            </p>
+                            {/* <div className="item-button"></div> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="content--furniture-studio">
+                <div className="layout-furniture-studio">
+                  <div className="head-furniture-studio">
+                    <h3>ヒダコレの家具づくり</h3>
+                    <p className="caption">
+                      私たちの自社工房は、<br />
+                      日本一の家具産地と言われる飛騨高山にあります。<br />
+                      飛騨の匠の流れをくむ「ものづくり」の伝統と歴史、<br />
+                      そんな飛騨高山には全国から<br />
+                      家具職人を目指して移住する人が毎年たくさんいます。<br />
+                      ヒダコレ家具工房の製作メンバーも、<br />
+                      いろいろ県から飛騨高山に集まり、<br />
+                      日々切磋琢磨し、この地で家具づくりに精進しています。
+                    </p>
+                  </div>
+                  <div className="body-furniture-studio">
+                    <img src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="cta">
+                <div className='before-cta-block'>
+                  <p>
+                    ヒダコレでは、<br className='sp_only' />お客様のお困りごとを<br className='sp_only' />お聞きするところからはじめます。<br />
+                    「これきれいにできる？」「直せる？」<br className='sp_only' />というだけで大丈夫です。<br />
+                    お気軽に、お試し感覚でどうぞ！
+                  </p>
+                </div>
+                <div className="cta-block">
+                  <div className="caption-cta">一枚板の修理・再生のお問い合わせ</div>
+                  <div className="body-cta">
+                    <p>まずはこちらのメールから<br />ご相談ください。</p>
+                    <div className="CtaBox_button_layout">
+                      <a href="/contact">お問い合わせはこちら</a>
+                    </div>
+                  </div>
+                </div>
+                <div className='after-cta-block'>
+                  <a href="#appraisal-and-purchase">一枚板の査定・買取りも<br className='sp_only' />ご検討ください</a>
+                </div>
+              </div>
             </div>
           </section>
 
-          <section id="repair" className="box-repair block-contetns">
-            <h2><span>テーブルの</span>修理・再生</h2>
-            <div className="bold">
-              <p>お部屋で簡単にメンテナンスができないような状態の場合は、テーブルを工房に持ち帰ってきれいにすることもできます。</p>
-              <p>ヒダコレでは、メンテナンスと区別する意味で「テーブルの修理」と呼んでいます。</p>
-              <p>オイル仕上げのテーブルでも汚れがひどい場合、その他そもそもメンテナンスができないウレタン塗装がはがれてしまった状態など、一度すべての塗装を削り取ってしまってから再度仕上げの塗装をする工程となります。</p>
+          <section id="ouchi-de-maintanance-project" className="box--contents__ouchi-de-maintanance-project">
+
+            <div className="contents--head">
+              <div className="head--title">
+                <h2>家具の<br className='sp_only' />メンテナンス</h2>
+              </div>
             </div>
 
-            <div className="layout-button">
-              <Scroll to="order_flow" smooth={true} duration={600} offset={-150}>
-              <div className="button_to_form">ご相談から修理の流れをみる</div>
-              </Scroll>
-            </div>
-
-            <div className="box-before_after">
-              <h3>修理・再生の<br className='sp_only' />ビフォー・アフター</h3>
-              <ul>
-                <li>
-                  <figure className="before">
-                    <Image
-                      src="/images/ichimaiita/maintenace/005_before.jpg"
-                      alt="修理・再生の事例その1 ビフォーの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>ビフォー</figcaption>
-                  </figure>
-                  <div className="arrow"></div>
-                  <figure className="after">
-                    <Image
-                      src="/images/ichimaiita/maintenace/006_after.jpg"
-                      alt="修理・再生の事例その1 アフターの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>アフター</figcaption>
-                  </figure>
+            <div className="contents--body">
+              <div className="maintanance-at-home">
+                <span className="title-en">MAINTENACE AT HOME</span>
+                <p className="title">メンテナンスする暮らし</p>
+                <p className="caption">家具を大切にする。って「たくさん使うことだ」と私たちは思っています。たくさんドシドシ使っていると、当然汚れるし傷みも出てきます。でもまったく難しくない簡単にできるメンテナンス作業だけで、シミや汚れが改善されて、さらに大切な存在に変わっていってくれます。</p>
+              </div>
+              <div className="lead">
+                <p className="title-lead">大切な家具を、<br />もっと大切にする</p>
+                <p className="caption-lead">
+                  愛着を持って長くテーブルを使っているとシミや傷、汚れが付きます。<br />
+                  それは、お子さんが赤ちゃんの時に噛んでできた傷や、初めて書いた落書きなど、よくみると思い出がたくさん詰まったテーブルになっています。<br />
+                  そういった傷や汚れを"愛着"として残すことで、思い出の積み重ねが良い風合いとなって、より素敵なテーブルにしてくれると思っています。
+                </p>
+              </div>
+              <div className="caption-project">
+                <span>
+                  OUCHI DE MAINTENANCE PROJECT</span>
+                <p>
+                  ヒダコレでは、テーブルのメンテナンスについて「読みもの」としてまとめてみました。<br />
+                  シミやキズなどの傷みについて、ヨゴレの原因について、そしてメンテナンスの方法、<br />
+                  さらにメンテナンスしながら豊かに暮らすことについて書いています。<br />
+                  No.1からNo.4まで。ぜひ一度読んでみてください。
+                </p>
+              </div>
+              <ul className="items">
+                <li className="item">
+                  <img src="/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-1.jpg" alt="よくあるテーブルのお困りごと" />
+                  <h3>よくあるテーブルのお困りごと</h3>
+                  <div className="layout-button">
+                    <Link href='/maintenance-project/#table_trouble' legacyBehavior><a className="button target_this_site">くわしくみる</a></Link>
+                  </div>
                 </li>
-                <li>
-                  <figure className="before">
-                    <Image
-                      src="/images/ichimaiita/maintenace/007_before.jpg"
-                      alt="修理・再生の事例その2 ビフォーの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>ビフォー</figcaption>
-                  </figure>
-                  <div className="arrow"></div>
-                  <figure className="after">
-                    <Image
-                      src="/images/ichimaiita/maintenace/008_after.jpg"
-                      alt="修理・再生の事例その2 アフターの写真"
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>アフター</figcaption>
-                  </figure>
+                <li className="item">
+                  <img src="/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-2.jpg" alt="テーブルは「水拭き」してはいけない！" />
+                  <h3>テーブルは「水拭き」してはいけない！</h3>
+                  <div className="layout-button">
+                    <Link href='/maintenance-project/#no_wiping' legacyBehavior><a className="button target_this_site">くわしくみる</a></Link>
+                  </div>
+                </li>
+                <li className="item">
+                  <img src="/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-3.jpg" alt="テーブルのメンテナンス方法は" />
+                  <h3>テーブルのメンテナンス方法は</h3>
+                  <div className="layout-button">
+                    <Link href='/maintenance-project/#how_to' legacyBehavior><a className="button target_this_site">くわしくみる</a></Link>
+                  </div>
+                </li>
+                <li className="item">
+                  <img src="/images/ichimaiita/maintenace/002/ouchi-de-maintanance-project-4.jpg" alt="「おうちでメンテナンス」のススメ" />
+                  <h3>「おうちでメンテナンス」のススメ</h3>
+                  <div className="layout-button">
+                    <Link href='/maintenance-project/#recommendation' legacyBehavior><a className="button target_this_site">くわしくみる</a></Link>
+                  </div>
                 </li>
               </ul>
+              <div className="banners">
+                <p className="caption">
+                  実はテーブルのメンテナンスって簡単な作業です。<br />
+                  特別な道具も必要ありませんし、<br />
+                  時間も30分程で済みます。<br />
+                  HOWto動画も用意しております。<br />
+                  ぜひ「おうちでメンテナンスプロジェクト」をご覧ください。
+                </p>
+                <div className="banner-box">
+                  <span className="title-en">OUCHI DE MAINTENCE PROJECT</span>
+                  <p className="title">おうちでメンテナンスプロジェクト</p>
+                  <div className="layout-button">
+                    <Link href='/maintenance-project' legacyBehavior><a className="button target_this_site">くわしくみる</a></Link>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </section>
 
-          {/* <section className="box-reborn block-contetns">
-            <h2><span>テーブルの</span>再生</h2>
-            <div className="bold">
-              <p>お部屋で簡単にメンテナンスができないような状態の場合は、テーブルを工房に持ち帰ってきれいにすることもできます。</p>
-              <p>ヒダコレでは、メンテナンスと区別する意味で「テーブルの修理」と呼んでいます。</p>
-              <p>オイル仕上げのテーブルでも汚れがひどい場合、その他そもそもメンテナンスができないウレタン塗装がはがれてしまった状態など、一度すべての塗装を削り取ってしまってから再度仕上げの塗装をする工程となります。</p>
-            </div>
-            <div className="layout-button">
-              <Link href='/' legacyBehavior>
-                <a>ご相談から再生の流れをみる</a>
-              </Link>
-            </div>
-
-            <div className="box-before_after">
-              <h3>再生のビフォー・アフター</h3>
-              <ul>
-                <li>
-                  <figure className="before">
-                    <Image
-                      src="/test.jpg"
-                      alt=""
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>ビフォー</figcaption>
-                  </figure>
-                  <div className="arrow"></div>
-                  <figure className="after">
-                    <Image
-                      src="/test.jpg"
-                      alt=""
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>アフター</figcaption>
-                  </figure>
-                </li>
-                <li>
-                  <figure className="before">
-                    <Image
-                      src="/test.jpg"
-                      alt=""
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>ビフォー</figcaption>
-                  </figure>
-                  <div className="arrow"></div>
-                  <figure className="after">
-                    <Image
-                      src="/test.jpg"
-                      alt=""
-                      width={1280}
-                      height={855}
-                    />
-                    <figcaption>アフター</figcaption>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-          </section> */}
-
-          <section id="purchase" className="box-purchase block-contetns">
-            <h2><span>テーブルの</span>買取り</h2>
-            <div className="bold">
-              <p>どうしても手放さざるを得なくなった無垢のテーブルについては、買取りもさせていただいております。</p>
-              <p>すべてのものではありませんが、ヒダコレの方で修理・再生が可能と判断させていただいたものについては、お見積り金額を出させていただきます。</p>
+          <section id="appraisal-and-purchase" className="box--contents__appraisal-and-purchase">
+            <div className="contents--head">
+              <div className="head--title">
+                <span>Appraisal and purchase</span>
+                <h2>必要なくなった<br className='sp_only' />一枚板の<br />査定・買取</h2>
+              </div>
+              <p className="head--caption">
+                長年使ってきた一枚板テーブルや座卓、倉庫に眠っている木材など、使わなくなった家具や使わなかった木材などの買取りもさせていただいております。<br />
+                簡単なお写真を撮っていただいて送るだけ。<br />
+                私たちがしっかり査定をして、お見積り金額のご案内をさせていただきます。
+              </p>
+              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top.jpg" alt="" />
+              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top-sp.jpg" alt="" />
             </div>
 
-            <div className="layout-button">
-              <Scroll to="order_flow" smooth={true} duration={600} offset={-150}>
-              <div className="button_to_form">ご相談から買取の流れをみる</div>
-              </Scroll>
-            </div>
+            <div className="body">
+              <div className="why-appraisal-and-purchase">
+                <h3>なぜ一枚板の査定・買取をするの?</h3>
+                <div className="items--why-appraisal-and-purchase">
+                  <div className="item">
+                    <p>
+                      一枚板。<br />
+                      みなさんがテーブルなどにされる大きな木の天板です。<br />
+                      百年以上という長い年月をかけて育った大木も珍しくありませんでしたが、いまの日本の森には、<span>一枚板テーブルにできるような大きな木がほとんど残されていません</span>。本当に限りが見えてきた資源といえると思います。
+                    </p>
+                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-2.jpg" alt="" />
+                  </div>
+                  <div className="item reverse">
+                    <p>
+                      森からなくなりつつある一枚板ですが、実は暮らしの中に寝むっている一枚板もあることに気づきました。<span>何十年も使って継承できなくなった一枚板</span>、<span>事情があって必要なくなった一枚板</span>、<span>倉庫に眠っている一枚板の原木</span>など。<br />
+                      ヒダコレでは、このような町の中にある一枚板、暮らしの中にある一枚板を、<span>もう一度循環できるようにしたい</span>と考えております。
+                    </p>
+                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-3.jpg" alt="" />
+                  </div>
 
-            <div className="box-attention">
-              こちらからのお引取りについては、ヤマト家財引越し便を使ってご指定の日時に引き取りに伺います。特に梱包などの作業も必要ありませんので、お待ちいただくだけで大丈夫です。
-            </div>
-          </section>
-
-          <section id="order_flow" className="box-order_flow">
-            <h2>ご相談から<br className='sp_only' />メンテナンス・修理・買取<br className='sp_only' />までの流れ</h2>
-            <ul className="contents-order_flow">
-                <li>
-                  <div className="layout__header">
-                    <div className="heading">
+                </div>
+              </div>
+              <div className="contact_flow">
+                <h4>お問合せから引き取り、<br />お支払いまでの流れ</h4>
+                <div className="body-flow">
+                  <div className="icons"><img src="/images/ichimaiita/maintenace/002/icon-flow.svg" alt="お問い合わせをするお客様のイメージ" /></div>
+                  <div className="items-flow">
+                    <div className="item">
+                      <div className="num-layout">
+                        <span className="caption">Flow</span>
                         <span className="number">1</span>
-                        <h3>お問い合わせ</h3>
-                    </div>
-                    <div className="caption">
-                        <p>
-                          下記の「お問合わせフォーム」にお名前・ご住所・メールアドレスなどの必要事項をご記入の上、ご送信ください。
+                      </div>
+                      <div className="body-item">
+                        <p className="item-head">まずはお気軽にお問い合わせください</p>
+                        <p className="item-caption">
+                          「この一枚板捨てるのもったいないなあ」「倉庫の木材どうしよう？」などのお困りごと　ありませんか。お試し感覚で大丈夫です。下記フォームよりお問合せください。
                         </p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                    <div className="layout__header">
-                      <div className="heading">
-                          <span className="number">2</span>
-                          <h3>写真</h3>
-                      </div>
-                      <div className="caption">
-                          <p>
-                            一度こちらからご返信させていただき、今のテーブルの状態のお写真などを送っていただきます。
-                          </p>
-                      </div>
-                    </div>
-                    <div className="layout__example_images">
-                      <div className="box__example_images">
-                        <div className="block__example_image">
-                          <Image
-                              src="/images/ichimaiita/maintenace/009.jpg"
-                              alt="お問い合わせ時にお送りいただきたい写真例その1 テーブル天板のシミがよく分かる写真"
-                              width={1280}
-                              height={855}
-                            />
-                        </div>
-                        <div className="block__example_image">
-                          <Image
-                              src="/images/ichimaiita/maintenace/010.jpg"
-                              alt="お問い合わせ時にお送りいただきたい写真例その2 木材に入った亀裂がよく分かる写真"
-                              width={1280}
-                              height={855}
-                            />
+                        <div className="item-button">
+                          <div className="CtaBox_button_layout">
+                            <a href="/contact">お問い合わせフォームはこちら</a>
+                          </div>
                         </div>
                       </div>
-                      <p className="exampleline">お送りいただきたいテーブルの写真例</p>
                     </div>
-                </li>
-                <li>
-                  <div className="layout__header">
-                    <div className="heading">
+                    <div className="item">
+                      <div className="num-layout">
+                        <span className="caption">Flow</span>
+                        <span className="number">2</span>
+                      </div>
+                      <div className="body-item">
+                        <p className="item-head">一枚板の状態の確認やお見積り</p>
+                        <p className="item-caption">
+                          必要なくなった一枚板のお写真を送っていただきます。天板のサイズや状態を確認をして、買取り金額・配送料をご案内させていただきます。
+                        </p>
+                        {/* <div className="item-button"></div> */}
+                      </div>
+                    </div>
+                    <div className="item">
+                      <div className="num-layout">
+                        <span className="caption">Flow</span>
                         <span className="number">3</span>
-                        <h3>ヒアリング</h3>
-                    </div>
-                    <div className="caption">
-                        <p>
-                          更に詳しくいろいろと聞き取りもさせていただきます。
+                      </div>
+                      <div className="body-item">
+                        <p className="item-head">一枚板の引き取りについて</p>
+                        <p className="item-caption">
+                          引き取り配送料を含めた金額がＯＫでしたら、お客様のご希望日に合わせて一枚板の引き　取りに伺います。
+                          梱包や運搬などの煩わしい作業は何もする必要はありません。
                         </p>
+                        {/* <div className="item-button"></div> */}
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="layout__header">
-                    <div className="heading">
+                    <div className="item">
+                      <div className="num-layout">
+                        <span className="caption">Flow</span>
                         <span className="number">4</span>
-                        <h3>費用のご案内</h3>
-                    </div>
-                    <div className="caption">
-                        <p>
-                          必要経費・買取利金額などのご案内もさせていただいた後に、お客様のご意向をお聞きします。
+                      </div>
+                      <div className="body-item">
+                        <p className="item-head">お支払方法について</p>
+                        <p className="item-caption">
+                          一枚板がこちらに届きましたら、ご請求書をいただいてお振込みをさせていただきます。
                         </p>
+                        {/* <div className="item-button"></div> */}
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div className="layout__header">
-                    <div className="heading">
-                        <span className="number">5</span>
-                        <h3>ご判断</h3>
-                    </div>
-                    <div className="caption">
-                        <p>
-                          初めのお問合せから金額のご案内まで無料対応させていただいております。お客様は最後にご判断いただければ大丈夫です。
-                        </p>
-                    </div>
+                </div>
+              </div>
+              <div className="things_you_can_buy">
+                <div className="head-things_you_can_buy">
+                  <div className="title">一枚板として査定・買取できます</div>
+                </div>
+                <div className="body-things_you_can_buy">
+                  <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-1.png" alt="ヒダコレ家具が査定・買取できるもの" />
+                </div>
+              </div>
+              <div className="cta">
+                <div className="caption-cta">一枚板の修理・再生のお問い合わせ</div>
+                <div className="body-cta">
+                  <p>まずはお気軽にご相談ください。</p>
+                  <div className="CtaBox_button_layout">
+                    <a href="/contact">お問い合わせはこちら</a>
                   </div>
-                </li>
-            </ul>
-            <div className="layout-button">
-              <Link href='/contact' legacyBehavior><a className="button_to_form">まずは何でもお気軽にお問合せください</a></Link>
+                </div>
+              </div>
             </div>
           </section>
+
+
+
+          
         </div>
       </>
     );
