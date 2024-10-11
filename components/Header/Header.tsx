@@ -100,16 +100,16 @@ export const Header = memo(() => {
                     <span className="en__mim">Ichimaiita Furniture</span>
                   </a>
                 </Link>
-                <Link href='/ichimaiita/maintenance' legacyBehavior>
-                  <a>
-                    テーブル修理・再生
-                    <span className="en__mim">Ichimaiita Furniture</span>
-                  </a>
-                </Link>
                 <Link href='/custom-furniture' legacyBehavior>
                   <a>
                     ヒダコレのカスタムオーダー家具は、
                     <span className="en__mim">Costum furniture</span>
+                  </a>
+                </Link>
+                <Link href='/ichimaiita/maintenance' legacyBehavior>
+                  <a>
+                    家具をメンテナンスや修理して使う
+                    <span className="en__mim">Maintenance and repair</span>
                   </a>
                 </Link>
               </div>
@@ -163,6 +163,14 @@ export const Header = memo(() => {
                   <a>
                     おうちでメンテナンスプロジェクト
                     <span className="en__mim">OUCHI DE MAINTENANCE Project</span>
+                  </a>
+                </Link>
+              </div>
+              <div className={styles.block__nav}>
+              <Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior>
+                  <a>
+                    必要なくなった一枚板の査定・買取
+                    <span className="en__mim">Appraisal and purchase</span>
                   </a>
                 </Link>
               </div>

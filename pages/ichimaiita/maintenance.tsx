@@ -9,22 +9,22 @@ import {Link as Scroll} from "react-scroll"
 
 const Home: NextPage = () => {
 
-    const bread_list : { [key: string]: string }[] = [
-      {
-        name: "一枚板の家具",
-        url: "/ichimaiita"
-      },
-      {
-        name: "テーブル修理・再生",
-        url: ""
-      }
-    ];
+    // const bread_list : { [key: string]: string }[] = [
+    //   {
+    //     name: "一枚板の家具",
+    //     url: "/ichimaiita"
+    //   },
+    //   {
+    //     name: "家具をメンテナンスや修理して使う",
+    //     url: ""
+    //   }
+    // ];
 
     return (
       <>
         <PageHead
-          pageTitle = "テーブル修理・再生"
-          pageDescription = "大切な家具を次の世代に使いつなげるために 飛騨の家具づくりの技術と経験を生かして、みなさんの大切な家具を再生させます。"
+          pageTitle = "家具をメンテナンスや修理して使う"
+          pageDescription = "まだ使える家具なので、できれば捨てずに、次の世代につかい、つなげたい。"
           pageRobots = ""
           pagePath = "https://www.hidacolle.com/ichimaiita/maintenance"
           pageImg = ""

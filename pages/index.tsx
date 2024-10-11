@@ -155,15 +155,19 @@ const Home: NextPage<Props> = ({allPosts}) => {
                       </div>
                     </div>
                     <div className="body-layout furniture-layout">
-                      {/* <div className="item-image">
-                        <Image
-                          src="/images/index/map-3.jpg"
-                          alt="コントラクトファニチャー"
-                          width={281}
-                          height={188}
-                        />
-                        <a className="relative button-hidacolle_items">コントラクトファニチャー</a>
-                      </div> */}
+                      <div className="item-image">
+                        <Scroll to="maintenance_and_repair" smooth={true} duration={600} offset={-165}>
+                          <Image
+                            src="/images/index/map-3.jpg"
+                            alt="家具のメンテナンスや修理"
+                            width={281}
+                            height={188}
+                          />
+                        </Scroll>
+                        <Scroll className="relative button-hidacolle_items" to="maintenance_and_repair" smooth={true} duration={600} offset={-165}>
+                          家具のメンテナンスや修理
+                        </Scroll>
+                      </div>
                       <div className="item-image">
                         <Scroll to="original_products" smooth={true} duration={600} offset={-165}>
                           <Image
@@ -236,6 +240,19 @@ const Home: NextPage<Props> = ({allPosts}) => {
                           おうちでメンテナンス
                         </Scroll>
                       </div>
+                      <div className="item-image">
+                        <Scroll to="ichimaiita_appraisal_and_purchase" smooth={true} duration={600} offset={-165}>
+                          <Image
+                            src="/images/index/map-6.jpg"
+                            alt="一枚板の査定・買取"
+                            width={200}
+                            height={200}
+                          />
+                        </Scroll>
+                        <Scroll className="relative button-hidacolle_items" to="ichimaiita_appraisal_and_purchase" smooth={true} duration={600} offset={-165}>
+                          一枚板の査定・買取
+                        </Scroll>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -262,15 +279,15 @@ const Home: NextPage<Props> = ({allPosts}) => {
                 </div>
               </div>
             </div>
-
-            <div className="layout__Link">
-              <Links
-                index_contents = {true}
-                this_page_ichimaiita_index = {false}
-                this_page_ichimaiita_other = {false}
-              />
+            <div className="box-body">
+              <div className="body-head">
+                <h2>一枚板の家具</h2>
+                <p>ヒダコレ工房では、お好みの一枚板からテーブルやカウンター、デスクやテレビボードなど、お客様のご希望に応じて色々な一枚板家具をお作りできます。</p>
+                <div className="layout-button">
+                  <Link href='/ichimaiita' legacyBehavior><a className="button target_this_site">一枚板の家具をみる</a></Link>
+                </div>
+              </div>
             </div>
-
           </section>
 
           <section id="costum_furniture" className="box-costum_furniture">
@@ -331,6 +348,44 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </li>
             </ul>
 
+          </section>
+
+          <section id="maintenance_and_repair" className="box-maintenance_and_repair">
+            <div className="box-heading box-layout">
+              <div className="heading_en">
+                <p>
+                  Maintenance<br className="pc_only" /> and repair
+                </p>
+              </div>
+              <div className="heading_ja">
+                <h1>
+                  家具を<br />
+                  メンテナンスや<br />
+                  修理して使う
+                </h1>
+              </div>
+            </div>
+            <div className="box-body">
+              <div className="heading--head">
+                <div className="images">
+                  <img className='bg' src="/images/ichimaiita/maintenace/002/top.png" alt="" />
+                </div>
+              </div>
+              <div className="heading--body">
+                <div className="introduction--head">
+                  <span className="en">Regeneration furniture</span>
+                  <h2>再生家具</h2>
+                  <p className="caption">まだ使える家具なので、<br />できれば捨てずに、<br />次の世代につかい、つなげたい。</p>
+                </div>
+                <div className="introduction--body">
+                  <p>やっぱりもう「物」を大量に生産して、大量に消費することができなくなりそうです。だから、私たちもこれからは暮らしや地域、自然のことを、もっと一生懸命に考えて家具を作っていこうと思います。</p>
+                  <p>今まで使ってきた家具はメンテナンスや修理をすることで、まだまだ長く使える可能性があります。</p>
+                </div>
+                <div className="layout-button">
+                  <Link href='/ichimaiita/maintenance/' legacyBehavior><a className="button target_this_site">家具のメンテナンスや修理をみる</a></Link>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section id="online_challnege" className="box-online_challnege">
@@ -745,6 +800,31 @@ const Home: NextPage<Props> = ({allPosts}) => {
             </div>
             <div className="layout-button">
               <Link href='/maintenance-project/' legacyBehavior><a className="button target_this_site"><span className='pc_only'>おうちで</span>メンテナンスプロジェクト<span className='pc_only'>をみる</span></a></Link>
+            </div>
+          </section>
+
+          <section id="ichimaiita_appraisal_and_purchase" className="box-ichimaiita_appraisal_and_purchase">
+            <div className="catch-maintenance_project">
+              <h1>一枚板の査定・買取</h1>
+              <p>appraisal and purchase</p>
+            </div>
+            <div className="body">
+              <p>
+                長年大切に使ってきたテーブルです。「捨てるのは忍びない」という気持ちの方も多いと思います。<br />
+                ヒダコレでは、ご家庭のお部屋でできる範囲の作業を「メンテナンス」と呼んでおり、工房設立当初から２０年ほど、お部屋へ出張訪問をしてテーブルをきれいにするサービスを継続しています。
+              </p>
+              <div className="things_you_can_buy">
+                <div className="head-things_you_can_buy">
+                  <div className="title">一枚板として査定・買取できます</div>
+                </div>
+                <div className="body-things_you_can_buy">
+                  <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-1.png" alt="ヒダコレ家具が査定・買取できるもの" />
+                </div>
+              </div>
+            </div>
+            
+            <div className="layout-button">
+              <Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior><a className="button target_this_site">一枚板の査定・買取をみる</a></Link>
             </div>
           </section>
 
