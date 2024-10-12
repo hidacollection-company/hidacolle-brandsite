@@ -158,7 +158,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                       <div className="item-image">
                         <Scroll to="maintenance_and_repair" smooth={true} duration={600} offset={-165}>
                           <Image
-                            src="/images/index/map-3.jpg"
+                            src="/images/index/map-7.jpg"
                             alt="家具のメンテナンスや修理"
                             width={281}
                             height={188}
@@ -243,7 +243,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                       <div className="item-image">
                         <Scroll to="ichimaiita_appraisal_and_purchase" smooth={true} duration={600} offset={-165}>
                           <Image
-                            src="/images/index/map-6.jpg"
+                            src="/images/index/map-8.jpg"
                             alt="一枚板の査定・買取"
                             width={200}
                             height={200}
