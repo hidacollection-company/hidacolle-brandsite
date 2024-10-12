@@ -323,9 +323,9 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className='after-cta-block'>
+                {/* <div className='after-cta-block'>
                   <a href="#appraisal-and-purchase">一枚板の査定・買取りも<br className='sp_only' />ご検討ください</a>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
@@ -506,7 +506,7 @@ const Home: NextPage = () => {
                       <div className="body-item">
                         <p className="item-head">お支払方法について</p>
                         <p className="item-caption">
-                          一枚板がこちらに届きましたら、ご請求書をいただいてお振込みをさせていただきます。
+                          一枚板がこちらに届きましたら、ご指定の口座にお振込みをさせていただきます。
                         </p>
                         {/* <div className="item-button"></div> */}
                       </div>
@@ -523,13 +523,25 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="cta">
-                <div className="caption-cta">一枚板の修理・再生のお問い合わせ</div>
-                <div className="body-cta">
-                  <p>まずはお気軽にご相談ください。</p>
-                  <div className="CtaBox_button_layout">
-                    <a href="/contact">お問い合わせはこちら</a>
+                <div className='before-cta-block'>
+                  <p>
+                    使わなくなった天板や一枚板、<br className='sp_only' />倉庫に眠っている木材などありませんか?<br />
+                    梱包などの発送準備も必要ありません。<br />
+                    ぜひお試し感覚でどうぞ！
+                  </p>
+                </div>
+                <div className="cta-block">
+                  <div className="caption-cta">一枚板の査定・買取のお問い合わせ</div>
+                  <div className="body-cta">
+                    <p>まずはこちらのメールから<br />ご相談ください。</p>
+                    <div className="CtaBox_button_layout">
+                      <a href="/contact">お問い合わせはこちら</a>
+                    </div>
                   </div>
                 </div>
+                {/* <div className='after-cta-block'>
+                  <a href="#appraisal-and-purchase">一枚板の査定・買取りも<br className='sp_only' />ご検討ください</a>
+                </div> */}
               </div>
             </div>
           </section>
