@@ -66,7 +66,7 @@ export const Footer = memo(() => {
                 <p className={styles.title}>Ichimaiita furniture</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/ichimaiita' legacyBehavior><a>一枚板の家具</a></Link></li>
-                  <li className={styles.link}><Link href='/ichimaiita/maintenance' legacyBehavior><a>テーブル修理・再生</a></Link></li>
+                  <li className={styles.link}><Link href='/ichimaiita/maintenance' legacyBehavior><a>家具をメンテナンスや修理して使う</a></Link></li>
                   <li className={styles.link}><Link href='/ichimaiita/drying' legacyBehavior><a>乾燥中の一枚板</a></Link></li>
                 </ul>
               </li>
@@ -99,6 +99,12 @@ export const Footer = memo(() => {
                 <p className={styles.title}>OUCHI DE MAINTENANCE Project</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/maintenance-project' legacyBehavior><a>おうちでメンテナンス</a></Link></li>
+                </ul>
+              </li>
+              <li className={styles.box_nav_main_list}>
+                <p className={styles.title}>Appraisal and purchase</p>
+                <ul className={styles.list_links}>
+                  <li className={styles.link}><Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior><a>必要なくなった一枚板の査定・買取</a></Link></li>
                 </ul>
               </li>
             </ul>

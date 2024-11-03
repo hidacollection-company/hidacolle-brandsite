@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 <p>maintenance and repair</p>
               </div>
               <div className="images">
-                <img className='bg' src="/images/ichimaiita/maintenace/002/top.png" alt="" />
+                <img className='bg' src="/images/ichimaiita/maintenace/002/top.png" alt="「家具をメンテナンスや修理して使う」のイメージ画像" />
               </div>
             </div>
             <div className="heading--body">
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
 
             <ul className="items">
               <li className="item">
-                <img src="/images/ichimaiita/maintenace/002/intro-1.jpg" alt="" />
+                <img src="/images/ichimaiita/maintenace/002/intro-1.jpg" alt="「家具の修理・再生」のイメージ画像" />
                 <div className="item--head">
                   <span>Furniture repair and refurbishment</span>
                   <p>家具の修理・再生</p>
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
                 </div>
               </li>
               <li className="item">
-                <img src="/images/ichimaiita/maintenace/002/intro-2.jpg" alt="" />
+                <img src="/images/ichimaiita/maintenace/002/intro-2.jpg" alt="「家具のメンテナンス」のイメージ画像" />
                 <div className="item--head">
                   <span>OUCHI DE MAINTENCE PROJECT</span>
                   <p>家具のメンテナンス</p>
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
                 </div>
               </li>
               <li className="item">
-                <img src="/images/ichimaiita/maintenace/002/intro-3.jpg" alt="" />
+                <img src="/images/ichimaiita/maintenace/002/intro-3.jpg" alt="「一枚板の査定・買取り」のイメージ画像" />
                 <div className="item--head">
                   <span>Appraisal and purchase</span>
                   <p>一枚板の査定・買取り</p>
@@ -139,8 +139,8 @@ const Home: NextPage = () => {
                 実はその家具は修理・再生をすることができるかもしれません！<br />
                 きれいに復活した家具や新たに生まれ変わった家具として、お客様の「愛着」があらたに継続されると嬉しいです。
               </p>
-              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top.jpg" alt="" />
-              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top-sp.jpg" alt="" />
+              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top.jpg" alt="「家具の修理・再生」のイメージ画像" />
+              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-top-sp.jpg" alt="「家具の修理・再生」のイメージ画像" />
             </div>
 
             <div className="contents--body">
@@ -150,8 +150,8 @@ const Home: NextPage = () => {
                   <h3 className="title">特に限りある一枚板は救いたい</h3>
                 </div>
                 <div className="item-1--body">
-                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2.png" alt="" />
-                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2-sp.png" alt="" />
+                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2.png" alt="「特に限りある一枚板は救いたい」の流れ図" />
+                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-2-sp.png" alt="「特に限りある一枚板は救いたい」の流れ図" />
                   <div className="caption_pos">
                     <p className="caption">
                       もう日本の森に大きな木は、数に限りがあります。<br />
@@ -172,8 +172,8 @@ const Home: NextPage = () => {
                   </span>
                 </div>
                 <div className="item-2--body">
-                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3.png" alt="" />
-                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3-sp.png" alt="" />
+                  <img className='bg pc_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3.png" alt="「一枚板など天板の修理の流れ」の流れ図" />
+                  <img className='bg sp_only' src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-3-sp.png" alt="「一枚板など天板の修理の流れ」の流れ図" />
 
                 </div>
               </div>
@@ -182,10 +182,13 @@ const Home: NextPage = () => {
                 <div className="item-3--head">
                   <h3 className="title">テーブルやイス、家具の修理</h3>
                   <span className="caption">
-                    長い間テーブルを使っていると、天板が傷ついたり汚れたりして、表面が変色したり、少しべたついたりしていませんか。<br />
+                    長い間テーブルを使っていると、天板が傷ついたり汚れたりして、<br />
+                    表面が変色したり、少しべたついたりしていませんか。<br />
                     またイスの脚がグラグラしたり、座面が破れていたり・・・<br />
-                    愛着がある家具だけど、使用上の問題があるとちょっと心配ですよね。<br />
-                    テーブルをきれいに修理・復活させる、グラグラを補強して使用上の問題を解決するなど、家具の修理のご対応をさせていただきます。
+                    愛着ある家具だけど、使用上の問題があると少し心配ですよね。<br />
+                    テーブルをきれいに修理・復活させる、グラグラを補強して<br />
+                    使用上の問題を解決するなど、<br />
+                    家具の修理のご対応をさせていただきます。
                   </span>
                 </div>
                 <div className="item-3--body">
@@ -301,7 +304,7 @@ const Home: NextPage = () => {
                     </p>
                   </div>
                   <div className="body-furniture-studio">
-                    <img src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-5.png" alt="" />
+                    <img src="/images/ichimaiita/maintenace/002/furniture-repair-and-refurbishment-5.png" alt="ヒダコレ家具工房のイメージ画像" />
                   </div>
                 </div>
               </div>
@@ -423,8 +426,8 @@ const Home: NextPage = () => {
                 簡単なお写真を撮っていただいて送るだけ。<br />
                 私たちがしっかり査定をして、お見積り金額のご案内をさせていただきます。
               </p>
-              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top.jpg" alt="" />
-              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top-sp.jpg" alt="" />
+              <img className="head--bg-image pc_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top.jpg" alt="「一枚板の査定・買取」のイメージ画像" />
+              <img className="head--bg-image sp_only" src="/images/ichimaiita/maintenace/002/things_you_can_buy-top-sp.jpg" alt="「一枚板の査定・買取」のイメージ画像" />
             </div>
 
             <div className="body">
@@ -437,14 +440,14 @@ const Home: NextPage = () => {
                       みなさんがテーブルなどにされる大きな木の天板です。<br />
                       百年以上という長い年月をかけて育った大木も珍しくありませんでしたが、いまの日本の森には、<span>一枚板テーブルにできるような大きな木がほとんど残されていません</span>。本当に限りが見えてきた資源といえると思います。
                     </p>
-                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-2.jpg" alt="" />
+                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-2.jpg" alt="大切な資源である大木の写真" />
                   </div>
                   <div className="item reverse">
                     <p>
                       森からなくなりつつある一枚板ですが、実は暮らしの中に寝むっている一枚板もあることに気づきました。<span>何十年も使って継承できなくなった一枚板</span>、<span>事情があって必要なくなった一枚板</span>、<span>倉庫に眠っている一枚板の原木</span>など。<br />
                       ヒダコレでは、このような町の中にある一枚板、暮らしの中にある一枚板を、<span>もう一度循環できるようにしたい</span>と考えております。
                     </p>
-                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-3.jpg" alt="" />
+                    <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-3.jpg" alt="一枚板を丁寧に研磨するヒダコレ家具工房のスタッフ" />
                   </div>
 
                 </div>
@@ -519,7 +522,7 @@ const Home: NextPage = () => {
                   <div className="title">一枚板として査定・買取できます</div>
                 </div>
                 <div className="body-things_you_can_buy">
-                  <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-1.png" alt="ヒダコレ家具が査定・買取できるもの" />
+                  <img src="/images/ichimaiita/maintenace/002/things_you_can_buy-1.png" alt="「ヒダコレ家具が査定・買取できるもの」イメージ画像" />
                 </div>
               </div>
               <div className="cta">
