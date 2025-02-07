@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                 <h1 className='heading'>プライバシーポリシー</h1>
 
                 <div className="caption">
-                    <p>HIDA・COLLECTION くらしの制作所（以下、当店）は、個人情報を保護することが社会的責務であることを十分認識し、以下の通り個人情報の適正な取扱いに努めます。</p>
+                    <p>ヒダコレ家具（HIDA-COLLECTION company）（以下、当店）は、個人情報を保護することが社会的責務であることを十分認識し、以下の通り個人情報の適正な取扱いに努めます。</p>
                 </div>
 
                 <div className="box__contents">
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                                 <br />
                                 「個人情報の保護に関する法律」に基づく公表事項<br />
                                 <br />
-                                1.個人情報取扱事業者の氏名又は名称 名称：HIDA・COLLECTION くらしの制作所 代表：浦西 正幸<br />
+                                1.個人情報取扱事業者の氏名又は名称 名称：ヒダコレ家具（HIDA-COLLECTION company） 代表：浦西 正幸<br />
                                 2.個人データの利用目的 受注管理 / 商品配送 / 入金管理 / 商品・サービス等のご案内<br />
                                 3.お問い合わせ窓口 TEL : 0577-57-7555 / E-mail : info@hida-collection.shop
                             </p>
