@@ -108,6 +108,26 @@ export const Footer = memo(() => {
                 </ul>
               </li>
             </ul>
+            <ul className={styles.box_nav_main_layout}>
+              <li className={styles.box_nav_main_list}>
+              {/* <p className={styles.title}>MARUTA Project</p> */}
+                <ul className={styles.list_links}>
+                  <li className={styles.link}><Link href='/initiatives-for-work-styles' legacyBehavior><a>働き方への取り組み</a></Link></li>
+                </ul>
+              </li>
+              {/* <li className={styles.box_nav_main_list}>
+                <p className={styles.title}>OUCHI DE MAINTENANCE Project</p>
+                <ul className={styles.list_links}>
+                  <li className={styles.link}><Link href='/maintenance-project' legacyBehavior><a>おうちでメンテナンス</a></Link></li>
+                </ul>
+              </li> */}
+              {/* <li className={styles.box_nav_main_list}>
+                <p className={styles.title}>Appraisal and purchase</p>
+                <ul className={styles.list_links}>
+                  <li className={styles.link}><Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior><a>必要なくなった一枚板の査定・買取</a></Link></li>
+                </ul>
+              </li> */}
+            </ul>
           </section>
 
           <section className={styles.footer_box}>
@@ -138,6 +158,7 @@ export const Footer = memo(() => {
               </div>
               <div className={styles.site_information}>
                   <ul className={styles.site_information_menu}>
+                    <li><a href="/initiatives-for-work-styles">一般事業主行動計画</a></li>
                       <li><a href="/privacy">プライバシーポリシー</a></li>
                       <li><a href="/company">会社概要</a></li>
                   </ul>

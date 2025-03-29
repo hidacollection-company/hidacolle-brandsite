@@ -828,6 +828,34 @@ const Home: NextPage<Props> = ({allPosts}) => {
             </div>
           </section>
 
+          <section id="initiatives_for_work_styles" className="box-initiatives_for_work_styles">
+            <div className="layout--left">
+              <div className="catch-initiatives_for_work_styles">
+                <h1>働き方への取り組み</h1>
+                <p className="caption">次世代育成支援対策推進法に基づく一般事業主行動計画</p>
+              </div>
+              <div className="body">
+                <p>
+                  日本における職場環境や女性が働きやすい環境づくり、<br />
+                  また時間外労働など、取り組むべき課題が多くあります。<br />
+                  ヒダコレ家具では、働く社員にとって、当社が働きやすく、<br />
+                  より良い職場環境となることを考え、実行します。
+                </p>
+              </div>
+              <div className="layout-button">
+                <Link href='/initiatives-for-work-styles' legacyBehavior><a className="button target_this_site">働き方への取り組み</a></Link>
+              </div>
+            </div>
+            <div className="images">
+              <Image
+                src="/images/index/initiatives-for-work-styles.jpg"
+                alt="「働き方への取り組み」のイメージ写真"
+                width={660}
+                height={435}
+              />
+            </div>
+          </section>
+
           <section className="box-member">
             <div className="heading-box-member">
               <div className="box-layout_left">

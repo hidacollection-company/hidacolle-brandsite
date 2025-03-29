@@ -167,10 +167,16 @@ export const Header = memo(() => {
                 </Link>
               </div>
               <div className={styles.block__nav}>
-              <Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior>
+                <Link href='/ichimaiita/maintenance/#appraisal-and-purchase' legacyBehavior>
                   <a>
                     必要なくなった一枚板の査定・買取
                     <span className="en__mim">Appraisal and purchase</span>
+                  </a>
+                </Link>
+                <Link href='/initiatives-for-work-styles' legacyBehavior>
+                  <a>
+                    働き方への取り組み
+                    <span className="en__mim">Initiatives for work styles</span>
                   </a>
                 </Link>
               </div>

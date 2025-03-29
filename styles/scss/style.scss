@@ -1316,6 +1316,61 @@ a{
                 width: 100%;
             }
         }
+        .box-initiatives_for_work_styles{
+            margin: 30px auto 0;
+            padding: 50px 20px 20px;
+            width: $mainWidth_sp;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            box-sizing: border-box;
+            position: relative;
+            .catch-initiatives_for_work_styles{
+                margin: 0 auto 0;
+                width: 100%;
+                position: relative;
+                h1{
+                    font-family: "Noto Sans JP";
+                    font-size: rem(26);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+                p{
+                    margin: 20px 0 0;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(18);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                }
+            }
+            .body{
+                margin: 50px auto 0;
+                width: 100%;
+                p{
+                    width: 100%;
+                    font-family: "Noto Sans JP";
+                    font-size: rem(16);
+                    font-weight: bold;
+                    line-height: 150%;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                }
+            }
+            .layout-button{
+                margin: 50px auto 0;
+                width: 100%;
+            }
+            .images{
+                margin: 50px 0 0;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
         .box-member{
             margin: 100px auto 0;
             width: $mainWidth_sp;
@@ -3429,6 +3484,120 @@ a{
 
         }
     }
+    .body-initiatives-for-work-styles{
+        .heading{
+            margin: 50px auto;
+            @include fts(ja, lead);
+            width: $mainWidth_sp;
+        }
+        .catch-images{
+            margin: 50px auto 0;
+            width: $mainWidth_sp;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .box--think-work-styles{
+            margin: 75px auto 0;
+            padding: 0 0 75px;
+            width: $mainWidth_sp;
+            border-bottom: 1px solid #000000;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 30px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--content-1{
+            margin: 75px auto 0;
+            width: $mainWidth_sp;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 50px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--period{
+            margin: 75px auto 0;
+            width: $mainWidth_sp;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 30px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--list{
+            margin: 75px auto 0;
+            .list--head{
+                margin: 0 auto;
+                width: $mainWidth_sp;
+                @include fts(ja, title);
+            }
+            .list-items{
+                margin: 30px 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 75px 0;
+                .list-item{
+                    .the-goal{
+                        .the-goal-head{
+                            margin: 0 auto;
+                            padding: 20px 20px;
+                            width: $mainWidth_sp;
+                            background-color: c(nc, g2);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px 0;
+                            .the-goal-head-title{
+                                font-size: rem(18);
+                                @include fts(ja, bold);
+                            }
+                            .the-goal-head-caption{
+                                font-size: rem(16);
+                                @include fts(ja, bold);
+                            }
+                        }
+                        .the-goal-body{
+                            margin: 50px auto 0;
+                            padding: 0 20px;
+                            width: $mainWidth_sp;
+                            .body-title{
+                                font-size: rem(16);
+                                @include fts(ja, bold);
+                                line-height: 100%;
+                            }
+                            .body-items{
+                                margin: 30px 0 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px 0;
+                                .body-item{
+                                    display: flex;
+                                    flex-direction: column;
+                                    .body-item-head{
+                                        font-size: rem(18);
+                                        @include fts(ja, bold);
+                                    }
+                                    .body-item-caption{
+                                        margin: 10px 0 0;
+                                        font-size: rem(16);
+                                        @include fts(ja, bold);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .body-ichimaiita{
         .box-contents{
             margin: 100px auto 0;
@@ -3682,7 +3851,6 @@ a{
             margin: 75px 0 0;
         }
     }
-
     .body__solidwood_product{
         .box__heading{
             margin: 50px auto 0;
@@ -3819,7 +3987,6 @@ a{
             margin: 75px 0 0;
         }
     }
-    
     .body-maintenance{
         .box-introduction{
             margin: 100px auto 0;
@@ -4089,7 +4256,6 @@ a{
             }
         }
     }
-
     .body-maintenance{
         margin: 50px 0 0;
         .box--heading{
@@ -5143,7 +5309,6 @@ a{
             }
         }
     }
-
     .body-order_tables{
         .box-heading_order_tables{
             margin: 40px auto 0;
@@ -5511,7 +5676,6 @@ a{
             }
         }
     }
-
     .body-original_products{
         .box-introduction{
             margin: 100px auto 0;
@@ -5579,7 +5743,6 @@ a{
             margin: 100px 0 0;
         }
     }
-    
     .body-handcrafts-of-hida{
         .box-introduction{
             margin: 100px auto 0;
@@ -5716,7 +5879,6 @@ a{
             }
         }
     }
-    
     .body-flagshipshop{
         .box__hero_slider{
             margin: 40px 0 0;
@@ -6028,7 +6190,6 @@ a{
             }
         }
     }
-
     .body-privacy,
     .body-company,
     .body-contact{
@@ -7599,6 +7760,61 @@ a{
                 margin: 75px auto 0;
                 width: 300px;
             }
+        }
+        .box-initiatives_for_work_styles{
+            margin: 100px auto 0;
+            padding: 100px 90px;
+            width: $wl;
+            border: 5px solid c(nc, b1);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .layout--left{
+                .catch-initiatives_for_work_styles{
+                    margin: 0 auto 0;
+                    position: relative;
+                    h1{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(36);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                    p.caption{
+                        margin: 30px 0 0;
+                        font-family: "Noto Sans JP";
+                        font-size: rem(14);
+                        line-height: 100%;
+                        letter-spacing: 0.4px;
+                        text-decoration: underline;
+                    }
+                }
+                .body{
+                    margin: 50px auto 0;
+                    p{
+                        font-family: "Noto Sans JP";
+                        font-size: rem(16);
+                        font-weight: bold;
+                        line-height: 150%;
+                        letter-spacing: 0.4px;
+                        text-align: left;
+                    }
+                }
+                .layout-button{
+                    margin: 50px 0 0;
+                    width: 300px;
+                }
+            }
+            .images{
+                img{
+                    width: 484px;
+                    height: auto;
+                }
+            }
+            
         }
         .box-member{
             margin: 200px auto 0;
@@ -9755,6 +9971,122 @@ a{
 
         }
     }
+    .body-initiatives-for-work-styles{
+        .heading{
+            margin: 50px auto 0;
+            @include fts(ja, lead);
+            width: $wm;
+        }
+        .catch-images{
+            margin: 200px auto 0;
+            width: $ws;
+            height: auto;
+        }
+        .box--think-work-styles{
+            margin: 150px auto 0;
+            padding: 0 0 150px;
+            width: $ws;
+            border-bottom: 1px solid #000000;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 50px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--content-1{
+            margin: 150px auto 0;
+            width: $ws;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 50px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--period{
+            margin: 150px auto 0;
+            width: $ws;
+            h2{
+                @include fts(ja, title);
+            }
+            p{
+                margin: 50px 0 0;
+                @include fts(ja, bold);
+            }
+        }
+        .box--list{
+            margin: 150px auto 0;
+            .list--head{
+                margin: 0 auto;
+                width: $ws;
+                @include fts(ja, title);
+            }
+            .list-items{
+                margin: 50px 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 100px 0;
+                .list-item{
+                    .the-goal{
+                        .the-goal-head{
+                            margin: 0 auto;
+                            padding: 0 170px;
+                            width: 1000px;
+                            height: 140px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            background-color: c(nc, g2);
+                            .the-goal-head-title{
+                                width: 170px;
+                                font-size: rem(18);
+                                @include fts(ja, bold);
+                            }
+                            .the-goal-head-caption{
+                                width: 490px;
+                                font-size: rem(16);
+                                @include fts(ja, bold);
+                            }
+                        }
+                        .the-goal-body{
+                            margin: 0 auto;
+                            width: $ws;
+                            .body-title{
+                                margin: 75px 0 0;
+                                font-size: rem(16);
+                                @include fts(ja, bold);
+                                line-height: 100%;
+                            }
+                            .body-items{
+                                margin: 75px 0 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px 0;
+                                .body-item{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    .body-item-head{
+                                        width: 170px;
+                                        font-size: rem(18);
+                                        @include fts(ja, bold);
+                                    }
+                                    .body-item-caption{
+                                        width: 490px;
+                                        font-size: rem(16);
+                                        @include fts(ja, bold);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .body-ichimaiita{
         .box-heading{
             // _utilities
@@ -9902,7 +10234,6 @@ a{
             margin: 200px 0 0;
         }
     }
-    
     .body-drying{
         .box-contents{
             margin: 200px 0 0;
@@ -9991,7 +10322,6 @@ a{
             margin: 200px 0 0;
         }
     }
-    
     .body__solidwood_product{
         .box__heading{
             margin: 100px auto 0;
@@ -10123,7 +10453,6 @@ a{
             margin: 200px 0 0;
         }
     }
-    
     .body-maintenance{
         margin: 100px 0 0;
         .box--heading{
@@ -11139,7 +11468,6 @@ a{
             }
         }
     }
-    
     .body-order_tables{
         .box-heading_order_tables{
             width: 100%;
@@ -11493,7 +11821,6 @@ a{
             }
         }
     }
-    
     .body-original_products{
         .box-introduction{
             margin: 200px auto 0;
@@ -11556,7 +11883,6 @@ a{
             margin: 200px 0 0;
         }
     }
-    
     .body-handcrafts-of-hida{
         .box-introduction{
             margin: 200px auto 0;
@@ -11735,7 +12061,6 @@ a{
             }
         }
     }
-    
     .body-flagshipshop{
         .box__hero_slider{
             margin: 50px 0 0;
@@ -12015,8 +12340,6 @@ a{
             }
         }
     }
-    
-    
     .body-privacy,
     .body-company,
     .body-contact{
@@ -12082,7 +12405,6 @@ a{
             }
         }
     }
-
     .body-contact{
         .box__contents{
             form{
