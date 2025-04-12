@@ -38,6 +38,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
     const postLists = data.postLists;
 
     const hero_image = "/images/index/001.jpg"
+    const hero_image_sp = "/images/index/001-sp.jpg"
 
     return (
 
@@ -54,12 +55,22 @@ const Home: NextPage<Props> = ({allPosts}) => {
 
         <section className="contents-body body-index">
           <section className="box__main_visual">
-            <Image
-              src={hero_image}
-              alt="ヒダコレ家具ショップの店内写真"
-              width={1180}
-              height={680}
-            />
+            <a href="/note/ichimaiita-table-exhibition-2025/">
+              <Image
+                src={hero_image}
+                alt="ヒダコレ家具ショップの店内写真"
+                width={1180}
+                height={680}
+                className="pc_only" // ここに付与したいクラス名を追加
+              />
+              <Image
+                src={hero_image_sp}
+                alt="ヒダコレ家具ショップの店内写真"
+                width={1180}
+                height={680}
+                className="sp_only" // ここに付与したいクラス名を追加
+              />
+            </a>
           </section>
 
           <section className="box-home_about">
@@ -916,7 +927,13 @@ const Home: NextPage<Props> = ({allPosts}) => {
               </div>
               <div className="contents">
                 <div className="notes-items">
-                  {allPosts.map((item) =>
+                {allPosts.map((item) => {
+                  // 様々な形式の <br> タグを削除し、半角スペースを挿入する処理
+                  const cleanTitle = item.title
+                  ? item.title.replace(/<br\s*[^>]*\/?>/gi, ' ')
+                  : '';
+
+                  return (
                     <Link
                       key={item.slug}
                       href={`/note/${item.slug}`}
@@ -937,10 +954,11 @@ const Home: NextPage<Props> = ({allPosts}) => {
                             <div>Alternative Content</div>
                           )}
                         </div>
-                        <h3 className="title">{item.title}</h3>
+                        <h3 className="title">{cleanTitle}</h3>
                       </a>
                     </Link>
-                  )}
+                  );
+                })}
                 </div>
               </div>
             </div>
