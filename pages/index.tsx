@@ -37,8 +37,8 @@ const Home: NextPage<Props> = ({allPosts}) => {
 
     const postLists = data.postLists;
 
-    const hero_image = "/images/index/001.jpg"
-    const hero_image_sp = "/images/index/001-sp.jpg"
+    const hero_image = "/images/index/250523.jpg"
+    // const hero_image_sp = "/images/index/001-sp.jpg"
 
     return (
 
@@ -55,7 +55,14 @@ const Home: NextPage<Props> = ({allPosts}) => {
 
         <section className="contents-body body-index">
           <section className="box__main_visual">
-            <a href="/note/ichimaiita-table-exhibition-2025/">
+            <Image
+              src={hero_image}
+              alt="ヒダコレ家具ショップの店内写真"
+              width={1180}
+              height={680}
+              className="pc_only" // ここに付与したいクラス名を追加
+            />
+            {/* <a href="/note/ichimaiita-table-exhibition-2025/">
               <Image
                 src={hero_image}
                 alt="ヒダコレ家具ショップの店内写真"
@@ -70,7 +77,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                 height={680}
                 className="sp_only" // ここに付与したいクラス名を追加
               />
-            </a>
+            </a> */}
           </section>
 
           <section className="box-home_about">
