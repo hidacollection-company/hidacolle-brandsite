@@ -60,7 +60,6 @@ const Home: NextPage<Props> = ({allPosts}) => {
               alt="ヒダコレ家具ショップの店内写真"
               width={1180}
               height={680}
-              className="pc_only" // ここに付与したいクラス名を追加
             />
             {/* <a href="/note/ichimaiita-table-exhibition-2025/">
               <Image
