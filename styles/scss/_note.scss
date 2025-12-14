@@ -1,3 +1,5 @@
+@import "note-compornents/_text-and-image";
+
 @include mq(s) {
     .body-hidacolle-note{
         .note-header{
@@ -194,7 +196,7 @@
                 flex-direction: column;
                 gap: 35px 0;
                 h3{
-                    margin: 75px 0 0;
+                    padding: 150px 0 0;
                     font-family: "Noto Sans JP";
                     font-size: rem(21);
                     font-weight: bold;
@@ -656,7 +658,7 @@
                 flex-direction: column;
                 gap: 50px 0;
                 h3{
-                    margin: 75px 0 0;
+                    padding: 150px 0 0;
                     font-family: "Noto Sans JP";
                     font-size: rem(21);
                     font-weight: bold;
@@ -921,6 +923,26 @@
         }
     }
 }
+
+.u--fonts-minimum{
+    @include fts(ja, minimum);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.u--line-highlight{
+    color: c(red,d2);
+    @include fts(ja, bold);
+    text-decoration: underline;
+}
+
+.u--line-bg-yellow{
+    padding: 5px 10px;
+    color: c(nc,b2);
+    @include fts(ja, bold);
+    background-color: c(yellow,d2);
+}
+
 
 
 .c--reserve-1{
