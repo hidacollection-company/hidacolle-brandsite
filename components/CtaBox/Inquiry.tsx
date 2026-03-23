@@ -31,7 +31,7 @@ export const Inquiry = memo((props) => {
                 <li className={styles.to_telephone}>
                   <div className={styles.heading__to_telephone}>
                     <h3>お電話から</h3>
-                    <p>受付時間 : 9:30 ~ 17:30<br />定休日 : 毎週水曜日</p>
+                    <p>受付時間 : 9:30 ~ 17:30<br />定休日 : 毎週水曜日・木曜日</p>
                   </div>
                   <div className={styles.inner__to_telephone}>
                     <p>フリーダイヤル</p>
