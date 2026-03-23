@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { ReactElement } from 'react'; // 追加
+import { ReactElement, ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,11 +11,15 @@ import { BreadList } from 'components/BreadList/BreadList'
 
 import {Link as Scroll} from "react-scroll"
 
+type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode
+}
+
 type Props = {
   ichimaiita_data: any[];
 }
 
-const Home: NextPage<Props> = ({ichimaiita_data}) => {
+const Home: NextPageWithLayout<Props> = ({ichimaiita_data}) => {
 
     const bread_list : { [key: string]: string }[] = [
       {
