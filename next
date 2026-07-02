@@ -1,0 +1,20 @@
+
+(node:7402) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7403) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /Users/taira/Desktop/Hidacolle/Brandsite/Develop/brandsite/.env.local
+warn  - You have enabled experimental feature (scrollRestoration) in next.config.js.
+warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+It looks like you're trying to use TypeScript but do not have the required package(s) installed.
+Installing dependencies
+
+If you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your pages directory).
+
+
+Installing devDependencies (yarn):
+- typescript
+- @types/react
+- @types/node[201

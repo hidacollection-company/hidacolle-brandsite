@@ -717,7 +717,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                   src="/images/furniture-studio/bg_index.png"
                   alt="ヒダコレ 家具工房のイメージ写真"
                   width={597}
-                  height={1206}
+                  height={1002}
                 />
               </div>
           </section>
