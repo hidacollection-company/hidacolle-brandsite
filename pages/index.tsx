@@ -81,7 +81,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
           </section>
 
           <section className="box-home_about">
-            <h1 className="heading-home_about">丸太から<br />一枚板と、<br className='sp_only' />カスタムオーダー家具</h1>
+            <h1 className="heading-home_about">丸太から<br />一枚板。<br className='sp_only' />カスタムオーダー家具</h1>
             <p className="title-home_about">なぜ「丸太から」？</p>
             <p className="text-home_about">SDGsの中に「つくる責任 つかう責任」という目標があります。<br />単なる資材としての木材から家具を作るのではなく、木材はもともと丸太であって、森で木として生きていたことを考えながら家具づくりをすることで、自然・社会・地域に少しでも「つくる責任」を果たせるように努めたいと考えています。</p>
           </section>
