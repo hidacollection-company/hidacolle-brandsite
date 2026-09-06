@@ -36,14 +36,14 @@ const Home: NextPage = () => {
                     <ul>
                         <li>
                             <p className="title">会社名</p>
-                            <p className="line">HIDA-COLLECTION Company</p>
+                            <p className="line">株式会社 HIDAコレクション</p>
                         </li>
                         <li>
                             <p className="title">設立</p>
                             <p className="line">2002年2月</p>
                         </li>
                         <li>
-                            <p className="title">代表取締役</p>
+                            <p className="title">社長</p>
                             <p className="line">浦西 正幸</p>
                         </li>
                         <li>
