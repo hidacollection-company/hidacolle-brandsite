@@ -311,7 +311,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
           <section id="costum_furniture" className="box-costum_furniture">
             <div className="box-heading box-layout">
               <div className="heading_en">
-                <p>Costum<br />furniture</p>
+                <p>Custom<br />furniture</p>
               </div>
               <div className="heading_ja">
                 <h1>ヒダコレの<br />カスタムオーダー家具は、</h1>
@@ -507,7 +507,7 @@ const Home: NextPage<Props> = ({allPosts}) => {
                 </ul>
                 <div className="caption-original_products">
                   <p>ヒダコレでは、すぐに暮らしに役立つインテリア家具、収納、小物などの開発を手掛けています。こんな家具あると便利だなあ、使いやすいなあ、というアイデアやお客様の声を形にしています。</p>
-                  <p>オリジナルのインテリア家具は、飛騨高山の直営店舗でも、オンランショップでもすぐにご購入いただけます。</p>
+                  <p>オリジナルのインテリア家具は、飛騨高山の直営店舗でも、オンラインショップでもすぐにご購入いただけます。</p>
                   <p>こたつ、ちゃぶ台、ハンガーラック、収納ボックス、スツールなどなど、ぜひご覧ください。</p>
                 </div>
 

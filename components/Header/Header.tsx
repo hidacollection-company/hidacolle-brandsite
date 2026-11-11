@@ -103,7 +103,7 @@ export const Header = memo(() => {
                 <Link href='/custom-furniture' legacyBehavior>
                   <a>
                     ヒダコレのカスタムオーダー家具は、
-                    <span className="en__mim">Costum furniture</span>
+                    <span className="en__mim">Custom furniture</span>
                   </a>
                 </Link>
                 <Link href='/ichimaiita/maintenance' legacyBehavior>

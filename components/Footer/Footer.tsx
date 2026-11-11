@@ -71,7 +71,7 @@ export const Footer = memo(() => {
                 </ul>
               </li>
               <li className={styles.box_nav_main_list}>
-                <p className={styles.title}>Costum furniture</p>
+                <p className={styles.title}>Custom furniture</p>
                 <ul className={styles.list_links}>
                   <li className={styles.link}><Link href='/custom-furniture' legacyBehavior><a>ヒダコレのオーダー家具は、</a></Link></li>
                   {/* <li className={styles.link}><Link href='/custom-furniture/kitchen' legacyBehavior><a>お困りごと解決事例(*6)</a></Link></li> */}
